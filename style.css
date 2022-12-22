@@ -222,6 +222,125 @@ body {
     background-color: #fff;
 }
 
+.path__top__day > .anime__span1 {
+    position: absolute;
+    width: 3px;
+    height: 0;
+    background-color: rgba(115, 162, 225, 1);
+    bottom: 0;
+    left: 199px;
+    transition: all 3s ease;
+}
+
+.path__top__day > .newClass {
+    bottom: -184px;
+    height: 184px;
+}
+
+
+.path__top__day > .anime__span2 {
+    position: absolute;
+    width: 3px;
+    height: 0;
+    background-color: rgba(115, 162, 225, 1);
+    bottom: 0;
+    left: 169px;
+    transition: all 3s ease;
+}
+
+.path__top__day > .newClass2 {
+    bottom: -212px;
+    height: 212px;
+}
+
+
+.path__top__low > .anime__span3 {
+    position: absolute;
+    width: 3px;
+    height: 0;
+    background-color: rgba(115, 162, 225, 1);
+    bottom: 0;
+    right: 169px;
+    transition: all 3s ease;
+}
+
+.path__top__low > .newClass3 {
+    bottom: -212px;
+    height: 212px;
+}
+
+
+.path__top__low > .anime__span4 {
+    position: absolute;
+    width: 3px;
+    height: 0;
+    background-color: rgba(115, 162, 225, 1);
+    bottom: 0;
+    right: 199px;
+    transition: all 3s ease;
+}
+
+.path__top__low > .newClass4 {
+    bottom: -183px;
+    height: 183px;
+}
+
+.path__main__block > .anime__span5 {
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background-color: rgba(115, 162, 225, 1);
+    bottom: 27px;
+    right: -143px;
+    transition: all 3s ease;
+}
+
+.path__main__block > .newClass5 {
+    width: 94px;
+}
+
+.path__main__block > .anime__span6 {
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background-color: rgba(115, 162, 225, 1);
+    bottom: 56px;
+    right: -110px;
+    transition: all 3s ease;
+}
+
+.path__main__block > .newClass6 {
+    width: 61px;
+}
+
+.path__main__block > .anime__span7 {
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background-color: rgba(115, 162, 225, 1);
+    bottom: 56px;
+    left: -110px;
+    transition: all 3s ease;
+}
+
+.path__main__block > .newClass7 {
+    width: 61px;
+}
+
+.path__main__block > .anime__span8 {
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background-color: rgba(115, 162, 225, 1);
+    bottom: 27px;
+    left: -143px;
+    transition: all 3s ease;
+}
+
+.path__main__block > .newClass8 {
+    width: 94px;
+}
+
 .path__top__day:before {
     content: "";
     position: absolute;
