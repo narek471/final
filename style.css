@@ -341,6 +341,186 @@ body {
     width: 94px;
 }
 
+.path__main__block > .anime__span9 {
+    position: absolute;
+    width: 3px;
+    height: 0;
+    background-color: rgba(115, 162, 225, 1);
+    bottom: 0;
+    left: 265px;
+    transition: all 3s ease;
+}
+
+.path__main__block > .newClass9 {
+    height: 205px;
+    bottom: -205px;
+}
+
+.path__main__block > .anime__span10 {
+    position: absolute;
+    width: 3px;
+    height: 0;
+    background-color: rgba(115, 162, 225, 1);
+    bottom: 0;
+    left: 293px;
+    transition: all 3s ease;
+}
+
+.path__main__block > .newClass10 {
+    height: 205px;
+    bottom: -205px;
+}
+
+.path__row > .anime__span11 {
+    position: absolute;
+    width: 3px;
+    height: 0;
+    background-color: rgba(115, 162, 225, 1);
+    bottom: 593px;
+    left: 606px;
+    transition: all 3s ease;
+}
+
+.path__row > .newClass11 {
+    height: 391px;
+    bottom: 202px;
+}
+
+.path__row > .anime__span12 {
+    position: absolute;
+    width: 3px;
+    height: 0;
+    background-color: rgba(115, 162, 225, 1);
+    bottom: 593px;
+    left: 634px;
+    transition: all 3s ease;
+}
+
+.path__row > .newClass12 {
+    height: 362px;
+    bottom: 231px;
+}
+
+.path__bottom__doctor > .anime__span13 {
+    position: absolute;
+    width: 3px;
+    height: 0;
+    background-color: rgba(115, 162, 225, 1);
+    bottom: 0;
+    left: 221px;
+    transition: all 3s ease;
+}
+
+.path__bottom__doctor > .newClass13 {
+    height: 186px;
+    bottom: -185px;
+}
+
+.path__bottom__doctor > .anime__span14 {
+    position: absolute;
+    width: 3px;
+    height: 0;
+    background-color: rgba(115, 162, 225, 1);
+    bottom: 0;
+    left: 250px;
+    transition: all 3s ease;
+}
+
+.path__bottom__doctor > .newClass14 {
+    height: 186px;
+    bottom: -185px;
+}
+
+.path__bottom__left > .anime__span15 {
+    position: absolute;
+    width: 3px;
+    height: 0;
+    background-color: rgba(115, 162, 225, 1);
+    bottom: 0;
+    left: 221px;
+    transition: all 3s ease;
+}
+
+.path__bottom__left > .newClass15 {
+    height: 118px;
+    bottom: -118px;
+}
+
+.path__bottom__left > .anime__span16 {
+    position: absolute;
+    width: 3px;
+    height: 0;
+    background-color: rgba(115, 162, 225, 1);
+    bottom: 0;
+    left: 250px;
+    transition: all 3s ease;
+}
+
+.path__bottom__left > .newClass16 {
+    height: 118px;
+    bottom: -118px;
+}
+
+.analysis__row > .anime__span17 {
+    position: absolute;
+    width: 3px;
+    height: 0;
+    background-color: rgba(115, 162, 225, 1);
+    bottom: 0;
+    left: 604px;
+    transition: all 3s ease;
+}
+
+.analysis__row > .newClass17 {
+    height: 100px;
+    bottom: -100px;
+}
+
+.analysis__row > .anime__span18 {
+    position: absolute;
+    width: 3px;
+    height: 0;
+    background-color: rgba(115, 162, 225, 1);
+    bottom: 0;
+    left: 632px;
+    transition: all 3s ease;
+}
+
+.analysis__row > .newClass18 {
+    height: 100px;
+    bottom: -100px;
+}
+
+.medic__top > .anime__span19 {
+    position: absolute;
+    width: 3px;
+    height: 0;
+    background-color: rgba(115, 162, 225, 1);
+    bottom: 0;
+    left: 604px;
+    transition: all 3s ease;
+}
+
+.medic__top > .newClass19 {
+    height: 147px;
+    bottom: -147px;
+}
+
+.medic__top > .anime__span20 {
+    position: absolute;
+    width: 3px;
+    height: 0;
+    background-color: rgba(115, 162, 225, 1);
+    bottom: 0;
+    left: 632px;
+    transition: all 3s ease;
+}
+
+.medic__top > .newClass20 {
+    height: 147px;
+    bottom: -147px;
+}
+
 .path__top__day:before {
     content: "";
     position: absolute;
