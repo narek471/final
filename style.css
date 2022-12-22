@@ -80,6 +80,21 @@ body {
 .bubble__img {
     width: 448px;
     height: 366px;
+    animation-name: moveBubble;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes moveBubble {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.8);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
 
 /************* Section 2 *************/
@@ -124,6 +139,70 @@ body {
     position: absolute;
     right: -35px;
     bottom: 17px;
+}
+
+#pulse_1 {
+    position: absolute;
+    right: -21px;
+    top: -48px;
+    width: 50px;
+    height: 50px;
+}
+
+#pulse_2 {
+    position: absolute;
+    right: -26px;
+    top: -48px;
+    width: 50px;
+    height: 50px;
+}
+
+#pulse_3 {
+    position: absolute;
+    right: -25px;
+    top: -7px;
+    width: 50px;
+    height: 50px;
+}
+
+#pulse_4 {
+    position: absolute;
+    right: -25px;
+    top: -7px;
+    width: 50px;
+    height: 50px;
+}
+
+.pulse::after,
+.pulse::before {
+    content: '';
+    position: absolute;
+    border: 2px solid #3D64FF;
+    left: -20px;
+    opacity: 0;
+    right: -20px;
+    top: -20px;
+    bottom: -20px;
+    border-radius: 50%;
+    animation: pulse 2.5s linear infinite;
+}
+
+.pulse::after {
+    animation-delay: 1.25s;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.9;
+    }
+    100% {
+        transform: scale(1.1);
+        opacity: 0;
+    }
 }
 
 .path__union__left {
