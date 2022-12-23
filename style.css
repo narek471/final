@@ -229,7 +229,7 @@ body {
     background-color: rgba(115, 162, 225, 1);
     bottom: 0;
     left: 199px;
-    transition: all 3s ease;
+    transition: all 2s ease;
 }
 
 .path__top__day > .newClass {
@@ -245,7 +245,7 @@ body {
     background-color: rgba(115, 162, 225, 1);
     bottom: 0;
     left: 169px;
-    transition: all 3s ease;
+    transition: all 2s ease;
 }
 
 .path__top__day > .newClass2 {
@@ -261,7 +261,7 @@ body {
     background-color: rgba(115, 162, 225, 1);
     bottom: 0;
     right: 169px;
-    transition: all 3s ease;
+    transition: all 2s ease;
 }
 
 .path__top__low > .newClass3 {
@@ -277,7 +277,7 @@ body {
     background-color: rgba(115, 162, 225, 1);
     bottom: 0;
     right: 199px;
-    transition: all 3s ease;
+    transition: all 2s ease;
 }
 
 .path__top__low > .newClass4 {
@@ -292,7 +292,7 @@ body {
     background-color: rgba(115, 162, 225, 1);
     bottom: 27px;
     right: -143px;
-    transition: all 3s ease;
+    transition: all 2s ease;
 }
 
 .path__main__block > .newClass5 {
@@ -306,7 +306,7 @@ body {
     background-color: rgba(115, 162, 225, 1);
     bottom: 56px;
     right: -110px;
-    transition: all 3s ease;
+    transition: all 2s ease;
 }
 
 .path__main__block > .newClass6 {
@@ -320,7 +320,7 @@ body {
     background-color: rgba(115, 162, 225, 1);
     bottom: 56px;
     left: -110px;
-    transition: all 3s ease;
+    transition: all 2s ease;
 }
 
 .path__main__block > .newClass7 {
@@ -334,7 +334,7 @@ body {
     background-color: rgba(115, 162, 225, 1);
     bottom: 27px;
     left: -143px;
-    transition: all 3s ease;
+    transition: all 2s ease;
 }
 
 .path__main__block > .newClass8 {
@@ -348,7 +348,7 @@ body {
     background-color: rgba(115, 162, 225, 1);
     bottom: 0;
     left: 265px;
-    transition: all 3s ease;
+    transition: all 2s ease;
 }
 
 .path__main__block > .newClass9 {
@@ -363,7 +363,7 @@ body {
     background-color: rgba(115, 162, 225, 1);
     bottom: 0;
     left: 293px;
-    transition: all 3s ease;
+    transition: all 2s ease;
 }
 
 .path__main__block > .newClass10 {
@@ -378,7 +378,7 @@ body {
     background-color: rgba(115, 162, 225, 1);
     bottom: 593px;
     left: 606px;
-    transition: all 3s ease;
+    transition: all 2s ease;
 }
 
 .path__row > .newClass11 {
@@ -393,7 +393,7 @@ body {
     background-color: rgba(115, 162, 225, 1);
     bottom: 593px;
     left: 634px;
-    transition: all 3s ease;
+    transition: all 2s ease;
 }
 
 .path__row > .newClass12 {
@@ -408,7 +408,7 @@ body {
     background-color: rgba(115, 162, 225, 1);
     bottom: 0;
     left: 221px;
-    transition: all 3s ease;
+    transition: all 2s ease;
 }
 
 .path__bottom__doctor > .newClass13 {
@@ -423,7 +423,7 @@ body {
     background-color: rgba(115, 162, 225, 1);
     bottom: 0;
     left: 250px;
-    transition: all 3s ease;
+    transition: all 2s ease;
 }
 
 .path__bottom__doctor > .newClass14 {
@@ -438,7 +438,7 @@ body {
     background-color: rgba(115, 162, 225, 1);
     bottom: 0;
     left: 221px;
-    transition: all 3s ease;
+    transition: all 2s ease;
 }
 
 .path__bottom__left > .newClass15 {
@@ -453,7 +453,7 @@ body {
     background-color: rgba(115, 162, 225, 1);
     bottom: 0;
     left: 250px;
-    transition: all 3s ease;
+    transition: all 2s ease;
 }
 
 .path__bottom__left > .newClass16 {
@@ -468,7 +468,7 @@ body {
     background-color: rgba(115, 162, 225, 1);
     bottom: 0;
     left: 604px;
-    transition: all 3s ease;
+    transition: all 2s ease;
 }
 
 .analysis__row > .newClass17 {
@@ -483,7 +483,7 @@ body {
     background-color: rgba(115, 162, 225, 1);
     bottom: 0;
     left: 632px;
-    transition: all 3s ease;
+    transition: all 2s ease;
 }
 
 .analysis__row > .newClass18 {
@@ -498,7 +498,7 @@ body {
     background-color: rgba(115, 162, 225, 1);
     bottom: 0;
     left: 604px;
-    transition: all 3s ease;
+    transition: all 2s ease;
 }
 
 .medic__top > .newClass19 {
@@ -513,12 +513,105 @@ body {
     background-color: rgba(115, 162, 225, 1);
     bottom: 0;
     left: 632px;
-    transition: all 3s ease;
+    transition: all 2s ease;
 }
 
 .medic__top > .newClass20 {
     height: 147px;
     bottom: -147px;
+}
+
+.path__main__block > .anime__span21 {
+    position: absolute;
+    width: 3px;
+    height: 0;
+    background-color: rgba(115, 162, 225, 1);
+    bottom: 56px;
+    left: 605px;
+    transition: all 1s;
+}
+
+.path__main__block > .newClass21 {
+    height: 22px;
+}
+
+.path__main__block > .anime__span22 {
+    position: absolute;
+    width: 3px;
+    height: 0;
+    background-color: rgba(115, 162, 225, 1);
+    bottom: 30px;
+    left: 605px;
+    transition: all 1s;
+}
+
+.path__main__block > .newClass22 {
+    height: 22px;
+    bottom: 8px;
+}
+
+
+.path__main__block > .anime__span23 {
+    position: absolute;
+    width: 3px;
+    height: 0;
+    background-color: rgba(115, 162, 225, 1);
+    bottom: 56px;
+    right: 605px;
+    transition: all 1s;
+}
+
+.path__main__block > .newClass23 {
+    height: 22px;
+}
+
+.path__main__block > .anime__span24 {
+    position: absolute;
+    width: 3px;
+    height: 0;
+    background-color: rgba(115, 162, 225, 1);
+    bottom: 30px;
+    right: 605px;
+    transition: all 1s;
+}
+
+.path__main__block > .newClass24 {
+    height: 22px;
+    bottom: 8px;
+}
+
+.path__main__block > .anime__span25 {
+    position: absolute;
+    width: 3px;
+    height: 0;
+    background-color: rgba(115, 162, 225, 1);
+    bottom: 27px;
+    right: 580px;
+    transition: all 1s;
+    transform: rotate(-126deg);
+    border-radius: 5px;
+}
+
+.path__main__block > .newClass25 {
+    height: 62px;
+    bottom: -7px;
+}
+
+.path__main__block > .anime__span26 {
+    position: absolute;
+    width: 3px;
+    height: 0;
+    background-color: rgba(115, 162, 225, 1);
+    bottom: 59px;
+    right: 580px;
+    transition: all 0.5s;
+    transform: rotate(126deg);
+    border-radius: 5px;
+}
+
+.path__main__block > .newClass26 {
+    height: 62px;
+    bottom: 30px;
 }
 
 .path__top__day:before {

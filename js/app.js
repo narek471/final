@@ -157,3 +157,52 @@ $(window).scroll(function(){
         $('#dynamic20').removeClass('newClass20');
     }
 });
+
+$(window).scroll(function(){
+    if ($(this).scrollTop() > 430) {
+        $('#dynamic21').addClass('newClass21');
+    } else {
+        $('#dynamic21').removeClass('newClass21');
+    }
+});
+
+$(window).scroll(function(){
+    if ($(this).scrollTop() > 430) {
+        $('#dynamic22').addClass('newClass22');
+    } else {
+        $('#dynamic22').removeClass('newClass22');
+    }
+});
+
+
+$(window).scroll(function(){
+    if ($(this).scrollTop() > 430) {
+        $('#dynamic23').addClass('newClass23');
+    } else {
+        $('#dynamic23').removeClass('newClass23');
+    }
+});
+
+$(window).scroll(function(){
+    if ($(this).scrollTop() > 430) {
+        $('#dynamic24').addClass('newClass24');
+    } else {
+        $('#dynamic24').removeClass('newClass24');
+    }
+});
+
+$(window).scroll(function(){
+    if ($(this).scrollTop() > 500) {
+        $('#dynamic25').addClass('newClass25');
+    } else {
+        $('#dynamic25').removeClass('newClass25');
+    }
+});
+
+$(window).scroll(function(){
+    if ($(this).scrollTop() > 500) {
+        $('#dynamic26').addClass('newClass26');
+    } else {
+        $('#dynamic26').removeClass('newClass26');
+    }
+});
