@@ -604,7 +604,7 @@ body {
     background-color: rgba(115, 162, 225, 1);
     bottom: 59px;
     right: 580px;
-    transition: all 0.5s;
+    transition: all 1s;
     transform: rotate(126deg);
     border-radius: 5px;
 }
@@ -612,6 +612,339 @@ body {
 .path__main__block > .newClass26 {
     height: 62px;
     bottom: 30px;
+}
+
+.path__main__block > .anime__span27 {
+    position: absolute;
+    width: 3px;
+    height: 0;
+    background-color: rgba(115, 162, 225, 1);
+    bottom: 27px;
+    left: 580px;
+    transition: all 1s;
+    transform: rotate(306deg);
+    border-radius: 5px;
+    z-index: -1;
+}
+
+.path__main__block > .newClass27 {
+    height: 62px;
+    bottom: -7px;
+}
+
+.path__main__block > .anime__span28 {
+    position: absolute;
+    width: 3px;
+    height: 0;
+    background-color: rgba(115, 162, 225, 1);
+    bottom: 59px;
+    left: 580px;
+    transition: all 1s;
+    transform: rotate(-306deg);
+    border-radius: 5px;
+    z-index: -1;
+}
+
+.path__main__block > .newClass28 {
+    height: 62px;
+    bottom: 30px;
+}
+
+.path__bottom > .anime__span29 {
+    position: absolute;
+    width: 3px;
+    height: 0;
+    background-color: rgba(115, 162, 225, 1);
+    bottom: 471px;
+    left: 585px;
+    transition: all 1s;
+    transform: rotate(306deg);
+    border-radius: 5px;
+    z-index: -1;
+}
+
+.path__bottom > .newClass29 {
+    height: 62px;
+    bottom: 458px;
+    left: 561px;
+}
+
+.path__bottom > .anime__span30 {
+    position: absolute;
+    width: 3px;
+    height: 0;
+    background-color: rgba(115, 162, 225, 1);
+    bottom: 540px;
+    left: 585px;
+    transition: all 1s;
+    transform: rotate(-306deg);
+    border-radius: 5px;
+    z-index: -1;
+}
+
+.path__bottom > .newClass30 {
+    height: 62px;
+    bottom: 494px;
+    left: 561px;
+}
+
+.path__bottom > .anime__span31 {
+    position: absolute;
+    width: 3px;
+    height: 0;
+    background-color: rgba(115, 162, 225, 1);
+    bottom: 485px;
+    right: 560px;
+    transition: all 1s;
+    transform: rotate(-126deg);
+    border-radius: 5px;
+    z-index: -1;
+}
+
+.path__bottom > .newClass31 {
+    height: 62px;
+    bottom: 458px;
+}
+
+.path__bottom > .anime__span32 {
+    position: absolute;
+    width: 3px;
+    height: 0;
+    background-color: rgba(115, 162, 225, 1);
+    bottom: 520px;
+    right: 560px;
+    transition: all 1s;
+    transform: rotate(-54deg);
+    border-radius: 5px;
+    z-index: -1;
+}
+
+.path__bottom > .newClass32 {
+    height: 62px;
+    bottom: 494px;
+}
+
+.path__bottom > .anime__span33 {
+    position: absolute;
+    width: 3px;
+    height: 0;
+    background-color: rgba(115, 162, 225, 1);
+    bottom: 82px;
+    right: 585px;
+    transition: all 1s;
+    transform: rotate(-126deg);
+    border-radius: 5px;
+    z-index: -1;
+}
+
+.path__bottom > .newClass33 {
+    height: 62px;
+    bottom: 69px;
+    right: 561px;
+}
+
+.path__bottom > .anime__span34 {
+    position: absolute;
+    width: 3px;
+    height: 0;
+    background-color: rgba(115, 162, 225, 1);
+    bottom: 148px;
+    right: 585px;
+    transition: all 1s;
+    transform: rotate(-54deg);
+    border-radius: 5px;
+    z-index: -1;
+}
+
+.path__bottom > .newClass34 {
+    height: 62px;
+    bottom: 104px;
+    right: 561px;
+}
+
+.path__bottom > .anime__span35 {
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background-color: rgba(115, 162, 225, 1);
+    bottom: 130px;
+    right: 603px;
+    transition: all 1s;
+    z-index: -1;
+}
+
+.path__bottom > .newClass35 {
+    width: 20px;
+    right: 586px;
+}
+
+.path__bottom > .anime__span36 {
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background-color: rgba(115, 162, 225, 1);
+    bottom: 102px;
+    right: 630px;
+    transition: all 1s;
+    z-index: -1;
+}
+
+.path__bottom > .newClass36 {
+    width: 45px;
+    right: 586px;
+}
+
+
+.path__bottom > .anime__span37 {
+    position: absolute;
+    width: 3px;
+    height: 0;
+    background-color: rgba(115, 162, 225, 1);
+    bottom: -118px;
+    right: 324px;
+    transition: all 1s;
+    transform: rotate(144deg);
+    border-radius: 5px;
+    z-index: -1;
+}
+
+.path__bottom > .newClass37 {
+    height: 62px;
+    bottom: -173px;
+    right: 310px;
+}
+
+.path__bottom > .anime__span38 {
+    position: absolute;
+    width: 3px;
+    height: 0;
+    background-color: rgba(115, 162, 225, 1);
+    bottom: -118px;
+    right: 257px;
+    transition: all 1s;
+    transform: rotate(36deg);
+    border-radius: 5px;
+    z-index: -1;
+}
+
+.path__bottom > .newClass38 {
+    height: 62px;
+    bottom: -173px;
+    right: 274px;
+}
+
+.path__bottom > .anime__span39 {
+    position: absolute;
+    width: 3px;
+    height: 0;
+    background-color: rgba(115, 162, 225, 1);
+    bottom: -118px;
+    left: 270px;
+    transition: all 1s;
+    transform: rotate(-144deg);
+    border-radius: 5px;
+    z-index: -1;
+}
+
+.path__bottom > .newClass39 {
+    height: 62px;
+    bottom: -173px;
+    left: 254px;
+}
+
+.path__bottom > .anime__span40 {
+    position: absolute;
+    width: 3px;
+    height: 0;
+    background-color: rgba(115, 162, 225, 1);
+    bottom: -118px;
+    left: 201px;
+    transition: all 1s;
+    transform: rotate(-36deg);
+    border-radius: 5px;
+    z-index: -1;
+}
+
+.path__bottom > .newClass40 {
+    height: 62px;
+    bottom: -173px;
+    left: 219px;
+}
+
+.analysis__row > .anime__span41 {
+    position: absolute;
+    width: 3px;
+    height: 0;
+    background-color: rgba(115, 162, 225, 1);
+    bottom: -101px;
+    left: 653px;
+    transition: all 1s;
+    transform: rotate(-144deg);
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.analysis__row > .newClass41 {
+    height: 62px;
+    bottom: -155px;
+    left: 635px;
+}
+
+.analysis__row > .anime__span42 {
+    position: absolute;
+    width: 3px;
+    height: 0;
+    background-color: rgba(115, 162, 225, 1);
+    bottom: -101px;
+    left: 584px;
+    transition: all 1s;
+    transform: rotate(-36deg);
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.analysis__row > .newClass42 {
+    height: 62px;
+    bottom: -155px;
+    left: 600px;
+}
+
+.analysis__row > .anime__span43 {
+    position: absolute;
+    width: 3px;
+    height: 0;
+    background-color: rgba(115, 162, 225, 1);
+    bottom: -407px;
+    left: 654px;
+    transition: all 1s;
+    transform: rotate(-144deg);
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.analysis__row > .newClass43 {
+    height: 62px;
+    bottom: -461px;
+    left: 635px;
+}
+
+.analysis__row > .anime__span44 {
+    position: absolute;
+    width: 3px;
+    height: 0;
+    background-color: rgba(115, 162, 225, 1);
+    bottom: -407px;
+    left: 584px;
+    transition: all 1s;
+    transform: rotate(-36deg);
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.analysis__row > .newClass44 {
+    height: 62px;
+    bottom: -461px;
+    left: 600px;
 }
 
 .path__top__day:before {
