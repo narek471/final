@@ -693,8 +693,8 @@ body {
     width: 3px;
     height: 0;
     background-color: rgba(115, 162, 225, 1);
-    bottom: 485px;
-    right: 560px;
+    bottom: 471px;
+    right: 585px;
     transition: all 1s;
     transform: rotate(-126deg);
     border-radius: 5px;
@@ -704,6 +704,7 @@ body {
 .path__bottom > .newClass31 {
     height: 62px;
     bottom: 458px;
+    right: 561px;
 }
 
 .path__bottom > .anime__span32 {
@@ -711,8 +712,8 @@ body {
     width: 3px;
     height: 0;
     background-color: rgba(115, 162, 225, 1);
-    bottom: 520px;
-    right: 560px;
+    bottom: 540px;
+    right: 585px;
     transition: all 1s;
     transform: rotate(-54deg);
     border-radius: 5px;
@@ -722,6 +723,7 @@ body {
 .path__bottom > .newClass32 {
     height: 62px;
     bottom: 494px;
+    right: 561px;
 }
 
 .path__bottom > .anime__span33 {
@@ -945,6 +947,291 @@ body {
     height: 62px;
     bottom: -461px;
     left: 600px;
+}
+
+.path__row > .anime__span45 {
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background-color: rgba(115, 162, 225, 1);
+    bottom: 590px;
+    left: 606px;
+    transition: all 2s ease;
+}
+
+.path__row > .newClass45 {
+    width: 20px;
+    left: 587px;
+}
+
+.path__row > .anime__span46 {
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background-color: rgba(115, 162, 225, 1);
+    bottom: 620px;
+    left: 606px;
+    transition: all 2s ease;
+}
+
+.path__row > .newClass46 {
+    width: 20px;
+    left: 587px;
+}
+
+.path__row > .anime__span47 {
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background-color: rgba(115, 162, 225, 1);
+    bottom: 590px;
+    right: 603px;
+    transition: all 2s ease;
+}
+
+.path__row > .newClass47 {
+    width: 20px;
+    right: 586px;
+}
+
+.path__row > .anime__span48 {
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background-color: rgba(115, 162, 225, 1);
+    bottom: 620px;
+    right: 603px;
+    transition: all 2s ease;
+}
+
+.path__row > .newClass48 {
+    width: 20px;
+    right: 586px;
+}
+
+.path__row > .anime__span49 {
+    position: absolute;
+    width: 3px;
+    height: 0;
+    background-color: rgba(115, 162, 225, 1);
+    bottom: 590px;
+    right: 585px;
+    transition: all 2s ease;
+}
+
+.path__row > .newClass49 {
+    height: 23px;
+    bottom: 570px;
+}
+
+.path__row > .anime__span50 {
+    position: absolute;
+    width: 3px;
+    height: 0;
+    background-color: rgba(115, 162, 225, 1);
+    bottom: 620px;
+    right: 585px;
+    transition: all 2s ease;
+}
+
+.path__row > .newClass50 {
+    height: 24px;
+}
+
+.path__row > .anime__span51 {
+    position: absolute;
+    width: 3px;
+    height: 0;
+    background-color: rgba(115, 162, 225, 1);
+    bottom: 590px;
+    left: 585px;
+    transition: all 2s ease;
+}
+
+.path__row > .newClass51 {
+    height: 23px;
+    bottom: 570px;
+}
+
+.path__row > .anime__span52 {
+    position: absolute;
+    width: 3px;
+    height: 0;
+    background-color: rgba(115, 162, 225, 1);
+    bottom: 620px;
+    left: 585px;
+    transition: all 2s ease;
+}
+
+.path__row > .newClass52 {
+    height: 24px;
+}
+
+.path__bottom > .anime__span53 {
+    position: absolute;
+    width: 3px;
+    height: 0;
+    background-color: rgba(115, 162, 225, 1);
+    bottom: 130px;
+    right: 586px;
+    transition: all 1s;
+    z-index: -1;
+}
+
+.path__bottom > .newClass53 {
+    height: 23px;
+}
+
+.path__bottom > .anime__span54 {
+    position: absolute;
+    width: 3px;
+    height: 0;
+    background-color: rgba(115, 162, 225, 1);
+    bottom: 102px;
+    right: 586px;
+    transition: all 1s;
+    z-index: -1;
+}
+
+.path__bottom > .newClass54 {
+    height: 20px;
+    bottom: 82px;
+}
+
+.path__bottom > .anime__span55 {
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background-color: rgba(115, 162, 225, 1);
+    bottom: -118px;
+    right: 308px;
+    transition: all 1s;
+    border-radius: 5px;
+    z-index: -1;
+}
+
+.path__bottom > .newClass55 {
+    width: 23px;
+    right: 308px;
+}
+
+.path__bottom > .anime__span56 {
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background-color: rgba(115, 162, 225, 1);
+    bottom: -118px;
+    right: 277px;
+    transition: all 1s;
+    border-radius: 5px;
+    z-index: -1;
+}
+
+.path__bottom > .newClass56 {
+    width: 21px;
+    right: 257px;
+}
+
+.path__bottom > .anime__span57 {
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background-color: rgba(115, 162, 225, 1);
+    bottom: -118px;
+    left: 220px;
+    transition: all 1s;
+    border-radius: 5px;
+    z-index: -1;
+}
+
+.path__bottom > .newClass57 {
+    width: 22px;
+    left: 200px;
+}
+
+.path__bottom > .anime__span58 {
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background-color: rgba(115, 162, 225, 1);
+    bottom: -118px;
+    left: 253px;
+    transition: all 1s;
+    border-radius: 5px;
+    z-index: -1;
+}
+
+.path__bottom > .newClass58 {
+    width: 23px;
+    left: 252px;
+}
+
+.analysis__row > .anime__span59 {
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background-color: rgba(115, 162, 225, 1);
+    bottom: -101px;
+    left: 633px;
+    transition: all 1s;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.analysis__row > .newClass59 {
+    width: 22px;
+    left: 633px;
+}
+
+.analysis__row > .anime__span60 {
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background-color: rgba(115, 162, 225, 1);
+    bottom: -101px;
+    left: 605px;
+    transition: all 1s;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.analysis__row > .newClass60 {
+    width: 22px;
+    left: 585px;
+}
+
+.analysis__row > .anime__span61 {
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background-color: rgba(115, 162, 225, 1);
+    bottom: -407px;
+    left: 633px;
+    transition: all 1s;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.analysis__row > .newClass61 {
+    width: 22px;
+    left: 633px;
+}
+
+.analysis__row > .anime__span62 {
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background-color: rgba(115, 162, 225, 1);
+    bottom: -407px;
+    left: 604px;
+    transition: all 1s;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.analysis__row > .newClass62 {
+    width: 22px;
+    left: 585px;
 }
 
 .path__top__day:before {
