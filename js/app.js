@@ -79,17 +79,13 @@ $(window).scroll(function(){
 });
 
 $(window).scroll(function(){
-    if ($(this).scrollTop() > 680) {
+    if ($(this).scrollTop() > 740) {
         $('#dynamic11').addClass('newClass11');
         $('#dynamic12').addClass('newClass12');
         $('#dynamic45').addClass('newClass45');
         $('#dynamic46').addClass('newClass46');
         $('#dynamic47').addClass('newClass47');
         $('#dynamic48').addClass('newClass48');
-        $('#dynamic49').addClass('newClass49');
-        $('#dynamic50').addClass('newClass50');
-        $('#dynamic51').addClass('newClass51');
-        $('#dynamic52').addClass('newClass52');
     } else {
         $('#dynamic11').removeClass('newClass11');
         $('#dynamic12').removeClass('newClass12');
@@ -97,6 +93,16 @@ $(window).scroll(function(){
         $('#dynamic46').removeClass('newClass46');
         $('#dynamic47').removeClass('newClass47');
         $('#dynamic48').removeClass('newClass48');
+    }
+});
+
+$(window).scroll(function(){
+    if ($(this).scrollTop() > 710) {
+        $('#dynamic49').addClass('newClass49');
+        $('#dynamic50').addClass('newClass50');
+        $('#dynamic51').addClass('newClass51');
+        $('#dynamic52').addClass('newClass52');
+    } else {
         $('#dynamic49').removeClass('newClass49');
         $('#dynamic50').removeClass('newClass50');
         $('#dynamic51').removeClass('newClass51');
@@ -296,19 +302,13 @@ $(window).scroll(function(){
 });
 
 $(window).scroll(function(){
-    if ($(this).scrollTop() > 650) {
+    if ($(this).scrollTop() > 710) {
         $('#dynamic29').addClass('newClass29');
-    } else {
-        $('#dynamic29').removeClass('newClass29');
-    }
-});
-
-$(window).scroll(function(){
-    if ($(this).scrollTop() > 650) {
         $('#dynamic30').addClass('newClass30');
         $('#dynamic31').addClass('newClass31');
         $('#dynamic32').addClass('newClass32');
     } else {
+        $('#dynamic29').removeClass('newClass29');
         $('#dynamic30').removeClass('newClass30');
         $('#dynamic31').removeClass('newClass31');
         $('#dynamic32').removeClass('newClass32');
