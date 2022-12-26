@@ -1934,3 +1934,9 @@ body {
         padding: 9px 10px;
     }
 }
+
+@media only screen and (max-width: 354px) {
+    #pulse_1 {
+        top: -45px;
+    }
+}
