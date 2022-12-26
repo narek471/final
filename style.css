@@ -1773,10 +1773,6 @@ body {
         align-content: center;
     }
 
-    .bubble__content {
-        margin-left: 7%;
-    }
-
     .bubble__picture {
         margin-left: 15%;
         margin-top: 50px;
@@ -1834,6 +1830,10 @@ body {
 @media only screen and (max-width: 641px) {
     body {
         font-size: 19px;
+    }
+
+    .bubble__content {
+        margin-left: 7%;
     }
 
     .bubble__text,
@@ -1932,6 +1932,10 @@ body {
     .path__top__day,
     .path__top__fast {
         padding: 9px 10px;
+    }
+
+    .path__top__low {
+        padding: 24px 30px 24px 10px;
     }
 
     .path__bottom__fast {
