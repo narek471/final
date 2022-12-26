@@ -1666,6 +1666,10 @@ body {
     display: none;
 }
 
+.path__union__mobile {
+    display: none;
+}
+
 /*************** Media ***************/
 
 @media only screen and (max-width: 1270px) {
@@ -1825,6 +1829,22 @@ body {
         font-size: 23px;
         text-align: start;
     }
+
+    .path__union__mobile {
+        display: block;
+        width: 144px;
+        height: 190px;
+        position: absolute;
+        bottom: -121px;
+        right: 0;
+        margin: auto;
+        left: 0;
+        z-index: -1;
+    }
+
+    .path__main > .path__union__mobile {
+        bottom: -100px;
+    }
 }
 
 @media only screen and (max-width: 641px) {
@@ -1925,6 +1945,11 @@ body {
     .path__main__block {
         width: 88%;
         margin-right: 6%;
+    }
+
+    .path__main > .path__union__mobile {
+        right: 6%;
+        bottom: -100px;
     }
 }
 
