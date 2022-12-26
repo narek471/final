@@ -15,7 +15,8 @@ html {
 body {
     color: #000000;
     background: #F9F9F9;
-    line-height: 1.5;
+    line-height: 29px;
+    font-size: 23px;
     font-family: Roboto, sans-serif;
     font-weight: 400;
 }
@@ -66,7 +67,6 @@ body {
     font-style: normal;
     font-weight: 700;
     font-size: 25px;
-    line-height: 29px;
     margin-bottom: 20px;
 }
 
@@ -74,7 +74,6 @@ body {
     font-style: normal;
     font-weight: 400;
     font-size: 25px;
-    line-height: 29px;
 }
 
 .bubble__img {
@@ -124,8 +123,6 @@ body {
 .path__top__text {
     font-style: normal;
     font-weight: 400;
-    font-size: 23px;
-    line-height: 29px;
 }
 
 .path__top__left {
@@ -409,6 +406,7 @@ body {
     bottom: 0;
     left: 221px;
     transition: all 2s ease;
+    z-index: -1;
 }
 
 .path__bottom__doctor > .newClass13 {
@@ -424,6 +422,7 @@ body {
     bottom: 0;
     left: 249px;
     transition: all 2s ease;
+    z-index: -1;
 }
 
 .path__bottom__doctor > .newClass14 {
@@ -874,7 +873,7 @@ body {
 .path__bottom > .newClass40 {
     height: 62px;
     bottom: -173px;
-    left: 219px;
+    left: 218px;
 }
 
 .analysis__row > .anime__span41 {
@@ -1399,8 +1398,6 @@ body {
     position: relative;
     font-style: normal;
     font-weight: 400;
-    font-size: 23px;
-    line-height: 29px;
 }
 
 .path__bottom__title {
@@ -1447,8 +1444,6 @@ body {
     position: relative;
     font-style: normal;
     font-weight: 400;
-    font-size: 23px;
-    line-height: 29px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -1525,8 +1520,6 @@ body {
     flex-direction: column;
     font-style: normal;
     font-weight: 400;
-    font-size: 23px;
-    line-height: 29px;
 }
 
 .analysis__img {
@@ -1590,8 +1583,6 @@ body {
     width: 100%;
     font-style: normal;
     font-weight: 400;
-    font-size: 23px;
-    line-height: 29px;
     color: #fff;
 }
 
@@ -1632,7 +1623,6 @@ body {
     font-style: normal;
     font-weight: 700;
     font-size: 25px;
-    line-height: 29px;
     padding: 23px;
     text-align: center;
     background: linear-gradient(-45deg, #F2B3BA 6.86%, #73A2E1 96.65%);
@@ -1643,8 +1633,6 @@ body {
 .medic__bottom__text {
     font-style: normal;
     font-weight: 400;
-    font-size: 23px;
-    line-height: 29px;
     padding: 40px;
 }
 
@@ -1653,6 +1641,7 @@ body {
     font-weight: 700;
     position: relative;
     cursor: pointer;
+    white-space: nowrap;
 }
 
 .medic__span:after {
@@ -1667,4 +1656,263 @@ body {
     animation-name: moveBubble;
     animation-duration: 2s;
     animation-iteration-count: infinite;
+}
+
+.br__hide {
+    display: none;
+}
+
+#bottom__br {
+    display: none;
+}
+
+/*************** Media ***************/
+
+@media only screen and (max-width: 1270px) {
+    body {
+        font-size: 21px;
+        line-height: 24px;
+    }
+
+    .anime__none {
+        display: none;
+    }
+
+    .bubble__title {
+        font-size: 23px;
+    }
+
+    .bubble__text {
+        font-size: 23px;
+    }
+
+    .path__union__left {
+        bottom: -208px;
+    }
+
+    .path__union__kr {
+        display: none;
+    }
+
+    .path__main__block {
+        width: 35%;
+    }
+
+    .path__bottom {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .path__bottom__doctor {
+        width: 100%;
+    }
+
+    .path__bottom__img {
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+
+    .analysis__row {
+        justify-content: center;
+        background-color: transparent;
+    }
+
+    .analysis__blood {
+        width: 580px;
+    }
+
+    .analysis__blood__text {
+        width: 100%;
+        padding: 45px 15px;
+        background-color: white;
+        margin-top: -25px;
+        border-radius: 12px;
+        margin-left: 0;
+    }
+
+    #pulse_1 {
+        right: -20.5px;
+        top: -62px;
+    }
+
+    #pulse_2 {
+        top: -62.5px;
+    }
+
+    #pulse_3 {
+        top: -11px;
+    }
+
+    #pulse_4 {
+        top: -11px;
+    }
+
+    .path__row {
+        padding: 0 0 28px 0;
+    }
+}
+
+@media only screen and (max-width: 1081px) {
+    body {
+        font-size: 20px;
+    }
+
+    .path__main__block {
+        width: 30%;
+    }
+}
+
+@media only screen and (max-width: 1006px) {
+
+    .bubble__row {
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .bubble__content {
+        margin-left: 7%;
+    }
+
+    .bubble__picture {
+        margin-left: 10%;
+        margin-top: 50px;
+    }
+
+    .path__top {
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        flex-direction: column-reverse;
+    }
+
+    #pulse_1 {
+        top: -68px;
+    }
+
+    #pulse_3 {
+        top: -32px;
+        right: -25.5px;
+    }
+
+    .path__union__left,
+    .path__union__right {
+        display: none;
+    }
+
+    .path__top__left {
+        width: 80%;
+        margin-top: 120px;
+    }
+
+    .path__top__right {
+        width: 80%;
+    }
+
+    .path__main__block {
+        width: 75%;
+        padding: 25px 0;
+    }
+
+    .path__bottom__doctor {
+        display: none;
+    }
+
+    .br__hide {
+        display: block;
+    }
+
+    .medic__bottom__title {
+        font-size: 23px;
+        text-align: start;
+    }
+}
+
+@media only screen and (max-width: 641px) {
+    body {
+        font-size: 19px;
+    }
+
+    .path__top__left,
+    .path__top__right {
+        width: 95%;
+    }
+
+    .path__main__block {
+        width: 82%;
+    }
+
+    .path__bottom__left,
+    .path__bottom__right {
+        width: 90%;
+    }
+
+    .medic__bottom__title {
+        font-size: 21px;
+        text-align: start;
+    }
+
+    .path__top__day,
+    .path__top__fast {
+        padding: 9px 10px 9px 30px;
+    }
+
+    .hide__br {
+        display: none;
+    }
+
+    .analysis__blood {
+        min-width: 500px;
+    }
+}
+
+@media only screen and (max-width: 510px) {
+    body {
+        font-size: 18px;
+    }
+
+    .analysis__blood {
+        min-width: 450px;
+    }
+
+    #bottom__br {
+        display: block;
+    }
+
+    .medic__bottom__text {
+        font-size: 19px;
+    }
+}
+
+@media only screen and (max-width: 490px) {
+    #pulse_2 {
+        top: -38.5px;
+    }
+
+    .analysis__blood {
+        min-width: 420px;
+    }
+}
+
+@media only screen and (max-width: 430px) {
+
+    body {
+        font-size: 17px;
+    }
+
+    #pulse_1 {
+        top: -69px;
+    }
+
+    .path__top {
+        padding: 0 20px 0 0;
+    }
+
+    .path__main__block {
+        width: 88%;
+        margin-right: 6%;
+    }
 }
