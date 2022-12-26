@@ -1237,6 +1237,102 @@ body {
     left: 585px;
 }
 
+.path__top__left > .anime__span63 {
+    position: absolute;
+    width: 3px;
+    height: 0;
+    background-color: blue;
+    bottom: 19px;
+    left: 46%;
+    transition: all 2s ease;
+    z-index: 1;
+}
+
+.path__top__left > .newClass63 {
+    height: 100px;
+    bottom: -80px;
+}
+
+.path__top__left > .anime__span64 {
+    position: absolute;
+    width: 3px;
+    height: 0;
+    background-color: blue;
+    bottom: 19px;
+    right: 46%;
+    transition: all 2s ease;
+    z-index: 1;
+}
+
+.path__top__left > .newClass64 {
+    height: 100px;
+    bottom: -80px;
+}
+
+.path__main > .anime__span65 {
+    position: absolute;
+    width: 3px;
+    height: 0;
+    background-color: blue;
+    bottom: 19px;
+    left: 43%;
+    transition: all 2s ease;
+    z-index: 1;
+}
+
+.path__main > .newClass65 {
+    height: 80px;
+    bottom: -59px;
+}
+
+.path__main > .anime__span66 {
+    position: absolute;
+    width: 3px;
+    height: 0;
+    background-color: blue;
+    bottom: 19px;
+    right: 49.5%;
+    transition: all 2s ease;
+    z-index: 1;
+}
+
+.path__main > .newClass66 {
+    height: 80px;
+    bottom: -59px;
+}
+
+.path__bottom__right > .anime__span67 {
+    position: absolute;
+    width: 3px;
+    height: 0;
+    background-color: blue;
+    bottom: 19px;
+    left: 45%;
+    transition: all 2s ease;
+    z-index: -1;
+}
+
+.path__bottom__right > .newClass67 {
+    height: 118px;
+    bottom: -118px;
+}
+
+.path__bottom__right > .anime__span68 {
+    position: absolute;
+    width: 3px;
+    height: 0;
+    background-color: blue;
+    bottom: 19px;
+    right: 45%;
+    transition: all 2s ease;
+    z-index: -1;
+}
+
+.path__bottom__right > .newClass68 {
+    height: 118px;
+    bottom: -118px;
+}
+
 .path__top__day:before {
     content: "";
     position: absolute;
@@ -1708,6 +1804,14 @@ body {
         flex-direction: column;
     }
 
+    .path__bottom__right {
+        margin-top: 40px;
+    }
+
+    .path__bottom__left > .path__bottom__img {
+        display: none;
+    }
+
     .path__bottom__doctor {
         width: 100%;
     }
@@ -1950,6 +2054,17 @@ body {
     .path__main > .path__union__mobile {
         right: 6%;
         bottom: -100px;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .path__bottom__right > .anime__span67,
+    .path__bottom__right > .anime__span68,
+    .path__main > .anime__span66,
+    .path__main > .anime__span65,
+    .path__top__left > .anime__span64,
+    .path__top__left > .anime__span63 {
+        display: block;
     }
 }
 
