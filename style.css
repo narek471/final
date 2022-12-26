@@ -1933,10 +1933,26 @@ body {
     .path__top__fast {
         padding: 9px 10px;
     }
+
+    .path__bottom__fast {
+        height: 375px;
+    }
 }
 
 @media only screen and (max-width: 354px) {
     #pulse_1 {
         top: -45px;
+    }
+
+    .analysis__blood {
+        min-width: 350px;
+    }
+
+    .path__bottom__fast {
+        height: 460px;
+    }
+
+    .medic__bottom__text {
+        padding: 40px 20px;
     }
 }
