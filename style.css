@@ -1489,32 +1489,62 @@ body {
 
 .analysis__row > .anime__span79 {
     position: absolute;
-    width: 3px;
-    height: 0;
+    width: 0;
+    height: 3px;
     background-color: rgba(230, 242, 255, 0.6);
-    bottom: 67px;
-    left: 45.5%;
+    bottom: -101px;
+    left: 40.5%;
     transition: all 2s ease;
     z-index: 1;
 }
 
 .analysis__row > .newClass79 {
-    width: 20px;
+    width: 22px;
 }
 
 .analysis__row > .anime__span80 {
     position: absolute;
-    width: 3px;
-    height: 0;
+    width: 0;
+    height: 3px;
     background-color: rgba(230, 242, 255, 0.6);
-    bottom: 67px;
-    right: 46%;
+    bottom: -101px;
+    right: 40.5%;
     transition: all 2s ease;
     z-index: 1;
 }
 
 .analysis__row > .newClass80 {
-    width: 20px;
+    width: 22px;
+}
+
+.medic__top > .anime__span81 {
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background-color: rgba(230, 242, 255, 0.6);
+    bottom: -146px;
+    left: 40%;
+    transition: all 2s ease;
+    z-index: 1;
+}
+
+.medic__top > .newClass81 {
+    width: 22px;
+}
+
+.medic__top > .anime__span82 {
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background-color: rgba(230, 242, 255, 0.6);
+    bottom: -146px;
+    right: 40.5%;
+    transition: all 2s ease;
+    z-index: 1;
+}
+
+.medic__top > .newClass82 {
+    width: 22px;
 }
 
 .path__top__day:before {

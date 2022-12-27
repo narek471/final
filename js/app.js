@@ -240,9 +240,13 @@ $(window).scroll(function(){
     if ($(this).scrollTop() > 3300) {
         $('#dynamic69').addClass('newClass69');
         $('#dynamic70').addClass('newClass70');
+        $('#dynamic79').addClass('newClass79');
+        $('#dynamic80').addClass('newClass80');
     } else {
         $('#dynamic69').removeClass('newClass69');
         $('#dynamic70').removeClass('newClass70');
+        $('#dynamic79').removeClass('newClass79');
+        $('#dynamic80').removeClass('newClass80');
     }
 });
 
@@ -250,9 +254,13 @@ $(window).scroll(function(){
     if ($(this).scrollTop() > 3800) {
         $('#dynamic72').addClass('newClass72');
         $('#dynamic71').addClass('newClass71');
+        $('#dynamic82').addClass('newClass82');
+        $('#dynamic81').addClass('newClass81');
     } else {
         $('#dynamic72').removeClass('newClass72');
         $('#dynamic71').removeClass('newClass71');
+        $('#dynamic82').removeClass('newClass82');
+        $('#dynamic81').removeClass('newClass81');
     }
 });
 
