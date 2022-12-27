@@ -194,11 +194,15 @@ $(window).scroll(function(){
         $('#dynamic66').addClass('newClass66');
         $('#dynamic75').addClass('newClass75');
         $('#dynamic76').addClass('newClass76');
+        $('#dynamic85').addClass('newClass85');
+        $('#dynamic86').addClass('newClass86');
     } else {
         $('#dynamic65').removeClass('newClass65');
         $('#dynamic66').removeClass('newClass66');
         $('#dynamic75').removeClass('newClass75');
         $('#dynamic76').removeClass('newClass76');
+        $('#dynamic85').removeClass('newClass85');
+        $('#dynamic86').removeClass('newClass86');
     }
 });
 
