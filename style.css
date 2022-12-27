@@ -1397,6 +1397,126 @@ body {
     bottom: -147px;
 }
 
+.path__top__left > .anime__span73 {
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background-color: rgba(230, 242, 255, 0.6);
+    bottom: -82px;
+    left: 41%;
+    transition: all 2s ease;
+    z-index: 1;
+}
+
+.path__top__left > .newClass73 {
+    width: 20px;
+}
+
+.path__top__left > .anime__span74 {
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background-color: rgba(230, 242, 255, 0.6);
+    bottom: -82px;
+    right: 41%;
+    transition: all 2s ease;
+    z-index: 1;
+}
+
+.path__top__left > .newClass74 {
+    width: 20px;
+}
+
+.path__main > .anime__span75 {
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background-color: rgba(230, 242, 255, 0.6);
+    bottom: -61px;
+    left: 39%;
+    transition: all 2s ease;
+    z-index: 1;
+}
+
+.path__main > .newClass75 {
+    width: 20px;
+}
+
+.path__main > .anime__span76 {
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background-color: rgba(230, 242, 255, 0.6);
+    bottom: -61px;
+    right: 45%;
+    transition: all 2s ease;
+    z-index: 1;
+}
+
+.path__main > .newClass76 {
+    width: 20px;
+}
+
+.path__bottom__right > .anime__span77 {
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background-color: rgba(230, 242, 255, 0.6);
+    bottom: -120px;
+    left: 39%;
+    transition: all 2s ease;
+    z-index: -1;
+}
+
+.path__bottom__right > .newClass77 {
+    width: 21px;
+}
+
+.path__bottom__right > .anime__span78 {
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background-color: rgba(230, 242, 255, 0.6);
+    bottom: -120px;
+    right: 39.5%;
+    transition: all 2s ease;
+    z-index: -1;
+}
+
+.path__bottom__right > .newClass78 {
+    width: 21px;
+}
+
+.analysis__row > .anime__span79 {
+    position: absolute;
+    width: 3px;
+    height: 0;
+    background-color: rgba(230, 242, 255, 0.6);
+    bottom: 67px;
+    left: 45.5%;
+    transition: all 2s ease;
+    z-index: 1;
+}
+
+.analysis__row > .newClass79 {
+    width: 20px;
+}
+
+.analysis__row > .anime__span80 {
+    position: absolute;
+    width: 3px;
+    height: 0;
+    background-color: rgba(230, 242, 255, 0.6);
+    bottom: 67px;
+    right: 46%;
+    transition: all 2s ease;
+    z-index: 1;
+}
+
+.analysis__row > .newClass80 {
+    width: 20px;
+}
+
 .path__top__day:before {
     content: "";
     position: absolute;
