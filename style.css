@@ -2167,6 +2167,21 @@ body {
     .path__bottom__fast {
         height: 375px;
     }
+
+    .path__top__left > .anime__span63 {
+        left: 45.5%;
+    }
+    .path__bottom__right > .anime__span67 {
+        left: 44.5%;
+    }
+
+    .analysis__row > .newClass69 {
+        left: 45%;
+    }
+
+    .medic__top > .anime__span71 {
+        left: 45%;
+    }
 }
 
 @media only screen and (max-width: 354px) {
@@ -2184,5 +2199,13 @@ body {
 
     .medic__bottom__text {
         padding: 40px 20px;
+    }
+
+    .path__top__left > .anime__span64 {
+        right: 45.5%;
+    }
+
+    .path__main > .anime__span66 {
+        right: 49%;
     }
 }
