@@ -111,7 +111,7 @@ $(window).scroll(function(){
 });
 
 $(window).scroll(function(){
-    if ($(this).scrollTop() > 800) {
+    if ($(this).scrollTop() > 730) {
         $('#dynamic63').addClass('newClass63');
         $('#dynamic64').addClass('newClass64');
     } else {
@@ -181,7 +181,7 @@ $(window).scroll(function(){
 });
 
 $(window).scroll(function(){
-    if ($(this).scrollTop() > 940) {
+    if ($(this).scrollTop() > 900) {
         $('#dynamic65').addClass('newClass65');
         $('#dynamic66').addClass('newClass66');
     } else {
@@ -249,7 +249,7 @@ $(window).scroll(function(){
 });
 
 $(window).scroll(function(){
-    if ($(this).scrollTop() > 2310) {
+    if ($(this).scrollTop() > 2150) {
         $('#dynamic67').addClass('newClass67');
         $('#dynamic68').addClass('newClass68');
     } else {
