@@ -1275,7 +1275,7 @@ body {
     height: 0;
     background-color: rgba(230, 242, 255, 0.6);
     bottom: 19px;
-    left: 43%;
+    left: 43.5%;
     transition: all 2s ease;
     z-index: 1;
 }
@@ -1323,7 +1323,7 @@ body {
     height: 0;
     background-color: rgba(230, 242, 255, 0.6);
     bottom: 19px;
-    right: 45%;
+    right: 45.5%;
     transition: all 2s ease;
     z-index: -1;
 }
@@ -1355,7 +1355,7 @@ body {
     height: 0;
     background-color: rgba(230, 242, 255, 0.6);
     bottom: 67px;
-    right: 45.5%;
+    right: 46%;
     transition: all 2s ease;
     z-index: 1;
 }
@@ -1387,7 +1387,7 @@ body {
     height: 0;
     background-color: rgba(230, 242, 255, 0.6);
     bottom: -3px;
-    right: 45.5%;
+    right: 46%;
     transition: all 2s ease;
     z-index: 1;
 }
