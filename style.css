@@ -1241,7 +1241,7 @@ body {
     position: absolute;
     width: 3px;
     height: 0;
-    background-color: blue;
+    background-color: rgba(230, 242, 255, 0.6);
     bottom: 19px;
     left: 46%;
     transition: all 2s ease;
@@ -1257,7 +1257,7 @@ body {
     position: absolute;
     width: 3px;
     height: 0;
-    background-color: blue;
+    background-color: rgba(230, 242, 255, 0.6);
     bottom: 19px;
     right: 46%;
     transition: all 2s ease;
@@ -1273,7 +1273,7 @@ body {
     position: absolute;
     width: 3px;
     height: 0;
-    background-color: blue;
+    background-color: rgba(230, 242, 255, 0.6);
     bottom: 19px;
     left: 43%;
     transition: all 2s ease;
@@ -1289,7 +1289,7 @@ body {
     position: absolute;
     width: 3px;
     height: 0;
-    background-color: blue;
+    background-color: rgba(230, 242, 255, 0.6);
     bottom: 19px;
     right: 49.5%;
     transition: all 2s ease;
@@ -1305,7 +1305,7 @@ body {
     position: absolute;
     width: 3px;
     height: 0;
-    background-color: blue;
+    background-color: rgba(230, 242, 255, 0.6);
     bottom: 19px;
     left: 45%;
     transition: all 2s ease;
@@ -1321,7 +1321,7 @@ body {
     position: absolute;
     width: 3px;
     height: 0;
-    background-color: blue;
+    background-color: rgba(230, 242, 255, 0.6);
     bottom: 19px;
     right: 45%;
     transition: all 2s ease;
@@ -1331,6 +1331,70 @@ body {
 .path__bottom__right > .newClass68 {
     height: 118px;
     bottom: -118px;
+}
+
+.analysis__row > .anime__span69 {
+    position: absolute;
+    width: 3px;
+    height: 0;
+    background-color: rgba(230, 242, 255, 0.6);
+    bottom: 67px;
+    left: 45.5%;
+    transition: all 2s ease;
+    z-index: 1;
+}
+
+.analysis__row > .newClass69 {
+    height: 170px;
+    bottom: -99px;
+}
+
+.analysis__row > .anime__span70 {
+    position: absolute;
+    width: 3px;
+    height: 0;
+    background-color: rgba(230, 242, 255, 0.6);
+    bottom: 67px;
+    right: 45.5%;
+    transition: all 2s ease;
+    z-index: 1;
+}
+
+.analysis__row > .newClass70 {
+    height: 170px;
+    bottom: -99px;
+}
+
+.medic__top > .anime__span71 {
+    position: absolute;
+    width: 3px;
+    height: 0;
+    background-color: rgba(230, 242, 255, 0.6);
+    bottom: -3px;
+    left: 45.5%;
+    transition: all 2s ease;
+    z-index: 1;
+}
+
+.medic__top > .newClass71 {
+    height: 147px;
+    bottom: -147px;
+}
+
+.medic__top > .anime__span72 {
+    position: absolute;
+    width: 3px;
+    height: 0;
+    background-color: rgba(230, 242, 255, 0.6);
+    bottom: -3px;
+    right: 45.5%;
+    transition: all 2s ease;
+    z-index: 1;
+}
+
+.medic__top > .newClass72 {
+    height: 147px;
+    bottom: -147px;
 }
 
 .path__top__day:before {
@@ -2058,6 +2122,10 @@ body {
 }
 
 @media only screen and (max-width: 425px) {
+    .medic__top > .anime__span72,
+    .medic__top > .anime__span71,
+    .analysis__row > .anime__span70,
+    .analysis__row > .anime__span69,
     .path__bottom__right > .anime__span67,
     .path__bottom__right > .anime__span68,
     .path__main > .anime__span66,

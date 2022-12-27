@@ -229,6 +229,26 @@ $(window).scroll(function(){
 });
 
 $(window).scroll(function(){
+    if ($(this).scrollTop() > 3380) {
+        $('#dynamic69').addClass('newClass69');
+        $('#dynamic70').addClass('newClass70');
+    } else {
+        $('#dynamic69').removeClass('newClass69');
+        $('#dynamic70').removeClass('newClass70');
+    }
+});
+
+$(window).scroll(function(){
+    if ($(this).scrollTop() > 3980) {
+        $('#dynamic72').addClass('newClass72');
+        $('#dynamic71').addClass('newClass71');
+    } else {
+        $('#dynamic72').removeClass('newClass72');
+        $('#dynamic71').removeClass('newClass71');
+    }
+});
+
+$(window).scroll(function(){
     if ($(this).scrollTop() > 2310) {
         $('#dynamic67').addClass('newClass67');
         $('#dynamic68').addClass('newClass68');
