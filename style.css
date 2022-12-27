@@ -892,7 +892,7 @@ body {
 .analysis__row > .newClass41 {
     height: 62px;
     bottom: -155px;
-    left: 635px;
+    left: 636px;
 }
 
 .analysis__row > .anime__span42 {
@@ -2128,6 +2128,29 @@ body {
 @media only screen and (max-width: 425px) {
     .anime__none__mobile {
         display: block;
+    }
+}
+
+@media only screen and (max-width: 390px) {
+
+    .path__main > .anime__span65 {
+        left: 43%;
+    }
+
+    .path__top__left > .anime__span63 {
+        left: 46%;
+    }
+
+    .path__bottom__right > .anime__span68 {
+        right: 45%;
+    }
+
+    .analysis__row > .anime__span70 {
+        right: 45.5%;
+    }
+
+    .medic__top > .anime__span72 {
+        right: 45.5%;
     }
 }
 
