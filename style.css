@@ -1830,6 +1830,10 @@ body {
     display: none;
 }
 
+.anime__none__mobile {
+    display: none;
+}
+
 /*************** Media ***************/
 
 @media only screen and (max-width: 1270px) {
@@ -2122,16 +2126,7 @@ body {
 }
 
 @media only screen and (max-width: 425px) {
-    .medic__top > .anime__span72,
-    .medic__top > .anime__span71,
-    .analysis__row > .anime__span70,
-    .analysis__row > .anime__span69,
-    .path__bottom__right > .anime__span67,
-    .path__bottom__right > .anime__span68,
-    .path__main > .anime__span66,
-    .path__main > .anime__span65,
-    .path__top__left > .anime__span64,
-    .path__top__left > .anime__span63 {
+    .anime__none__mobile {
         display: block;
     }
 }
