@@ -1547,6 +1547,42 @@ body {
     width: 22px;
 }
 
+.path__top__left > .anime__span83 {
+    position: absolute;
+    width: 3px;
+    height: 0;
+    background-color: rgba(230, 242, 255, 0.6);
+    bottom: -98px;
+    right: 46%;
+    transition: all 1s;
+    transform: rotate(36deg);
+    border-radius: 5px;
+    z-index: -1;
+}
+
+.path__top__left > .newClass83 {
+    height: 62px;
+    bottom: -135px;
+}
+
+.path__top__left > .anime__span84 {
+    position: absolute;
+    width: 3px;
+    height: 0;
+    background-color: rgba(230, 242, 255, 0.6);
+    bottom: -98px;
+    right: 53%;
+    transition: all 1s;
+    transform: rotate(144deg);
+    border-radius: 5px;
+    z-index: -1;
+}
+
+.path__top__left > .newClass84 {
+    height: 62px;
+    bottom: -135px;
+}
+
 .path__top__day:before {
     content: "";
     position: absolute;

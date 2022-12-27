@@ -116,11 +116,15 @@ $(window).scroll(function(){
         $('#dynamic64').addClass('newClass64');
         $('#dynamic73').addClass('newClass73');
         $('#dynamic74').addClass('newClass74');
+        $('#dynamic83').addClass('newClass83');
+        $('#dynamic84').addClass('newClass84');
     } else {
         $('#dynamic63').removeClass('newClass63');
         $('#dynamic64').removeClass('newClass64');
         $('#dynamic73').removeClass('newClass73');
         $('#dynamic74').removeClass('newClass74');
+        $('#dynamic83').removeClass('newClass83');
+        $('#dynamic84').removeClass('newClass84');
     }
 });
 
