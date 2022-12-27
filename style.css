@@ -1806,8 +1806,8 @@ body {
     border: 2px solid transparent;
     background: -webkit-linear-gradient(180deg,rgba(242, 179, 186, 1),rgba(115, 162, 225, 1)) border-box;
     -webkit-mask:
-            linear-gradient(#fff 0 0) padding-box,
-            linear-gradient(#fff 0 0);
+            -webkit-linear-gradient(#fff 0 0) padding-box,
+            -webkit-linear-gradient(#fff 0 0);
     -webkit-mask-composite: destination-out;
     mask-composite: exclude;
 }
@@ -1854,8 +1854,8 @@ body {
     border: 2px solid transparent;
     background: -webkit-linear-gradient(180deg,rgba(242, 179, 186, 1),rgba(115, 162, 225, 1)) border-box;
     -webkit-mask:
-            linear-gradient(#fff 0 0) padding-box,
-            linear-gradient(#fff 0 0);
+            -webkit-linear-gradient(#fff 0 0) padding-box,
+            -webkit-linear-gradient(#fff 0 0);
     -webkit-mask-composite: destination-out;
     mask-composite: exclude;
 }
@@ -1879,8 +1879,8 @@ body {
     border: 2px solid transparent;
     background: -webkit-linear-gradient(180deg,rgba(242, 179, 186, 1),rgba(115, 162, 225, 1)) border-box;
     -webkit-mask:
-            linear-gradient(#fff 0 0) padding-box,
-            linear-gradient(#fff 0 0);
+            -webkit-linear-gradient(#fff 0 0) padding-box,
+            -webkit-linear-gradient(#fff 0 0);
     -webkit-mask-composite: destination-out;
     mask-composite: exclude;
 }
@@ -1922,8 +1922,8 @@ body {
     border: 2px solid transparent;
     background: -webkit-linear-gradient(180deg,rgba(242, 179, 186, 1),rgba(115, 162, 225, 1)) border-box;
     -webkit-mask:
-            linear-gradient(#fff 0 0) padding-box,
-            linear-gradient(#fff 0 0);
+            -webkit-linear-gradient(#fff 0 0) padding-box,
+            -webkit-linear-gradient(#fff 0 0);
     -webkit-mask-composite: destination-out;
     mask-composite: exclude;
 }
@@ -2036,8 +2036,8 @@ body {
     border: 2px solid transparent;
     background: -webkit-linear-gradient(180deg,rgba(242, 179, 186, 1),rgba(115, 162, 225, 1)) border-box;
     -webkit-mask:
-            linear-gradient(#fff 0 0) padding-box,
-            linear-gradient(#fff 0 0);
+            -webkit-linear-gradient(#fff 0 0) padding-box,
+            -webkit-linear-gradient(#fff 0 0);
     -webkit-mask-composite: destination-out;
     mask-composite: exclude;
 }
@@ -2169,8 +2169,8 @@ body {
     border: 2px solid transparent;
     background: -webkit-linear-gradient(180deg,rgba(242, 179, 186, 1),rgba(115, 162, 225, 1)) border-box;
     -webkit-mask:
-            linear-gradient(#fff 0 0) padding-box,
-            linear-gradient(#fff 0 0);
+            -webkit-linear-gradient(#fff 0 0) padding-box,
+            -webkit-linear-gradient(#fff 0 0);
     -webkit-mask-composite: destination-out;
     mask-composite: exclude;
     border-top: 0;
