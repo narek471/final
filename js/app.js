@@ -278,11 +278,15 @@ $(window).scroll(function(){
         $('#dynamic68').addClass('newClass68');
         $('#dynamic77').addClass('newClass77');
         $('#dynamic78').addClass('newClass78');
+        $('#dynamic87').addClass('newClass87');
+        $('#dynamic88').addClass('newClass88');
     } else {
         $('#dynamic67').removeClass('newClass67');
         $('#dynamic68').removeClass('newClass68');
         $('#dynamic77').removeClass('newClass77');
         $('#dynamic78').removeClass('newClass78');
+        $('#dynamic87').removeClass('newClass87');
+        $('#dynamic88').removeClass('newClass88');
     }
 });
 
