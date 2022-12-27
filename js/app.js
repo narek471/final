@@ -111,7 +111,7 @@ $(window).scroll(function(){
 });
 
 $(window).scroll(function(){
-    if ($(this).scrollTop() > 730) {
+    if ($(this).scrollTop() > 650) {
         $('#dynamic63').addClass('newClass63');
         $('#dynamic64').addClass('newClass64');
     } else {
@@ -181,7 +181,7 @@ $(window).scroll(function(){
 });
 
 $(window).scroll(function(){
-    if ($(this).scrollTop() > 900) {
+    if ($(this).scrollTop() > 850) {
         $('#dynamic65').addClass('newClass65');
         $('#dynamic66').addClass('newClass66');
     } else {
@@ -229,7 +229,7 @@ $(window).scroll(function(){
 });
 
 $(window).scroll(function(){
-    if ($(this).scrollTop() > 3380) {
+    if ($(this).scrollTop() > 3300) {
         $('#dynamic69').addClass('newClass69');
         $('#dynamic70').addClass('newClass70');
     } else {
@@ -239,7 +239,7 @@ $(window).scroll(function(){
 });
 
 $(window).scroll(function(){
-    if ($(this).scrollTop() > 3980) {
+    if ($(this).scrollTop() > 3800) {
         $('#dynamic72').addClass('newClass72');
         $('#dynamic71').addClass('newClass71');
     } else {
