@@ -1655,6 +1655,78 @@ body {
     bottom: -174px;
 }
 
+.analysis__row > .anime__span89 {
+    position: absolute;
+    width: 3px;
+    height: 0;
+    background-color: rgba(230, 242, 255, 0.6);
+    bottom: -120px;
+    right: 45%;
+    transition: all 1s;
+    transform: rotate(36deg);
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.analysis__row > .newClass89 {
+    height: 63px;
+    bottom: -155px;
+}
+
+.analysis__row > .anime__span90 {
+    position: absolute;
+    width: 3px;
+    height: 0;
+    background-color: rgba(230, 242, 255, 0.6);
+    bottom: -120px;
+    right: 54%;
+    transition: all 1s;
+    transform: rotate(144deg);
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.analysis__row > .newClass90 {
+    height: 63px;
+    bottom: -155px;
+}
+
+.medic__top > .anime__span91 {
+    position: absolute;
+    width: 3px;
+    height: 0;
+    background-color: rgba(230, 242, 255, 0.6);
+    bottom: -170px;
+    right: 45%;
+    transition: all 1s;
+    transform: rotate(36deg);
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.medic__top > .newClass91 {
+    height: 63px;
+    bottom: -201px;
+}
+
+.medic__top > .anime__span92 {
+    position: absolute;
+    width: 3px;
+    height: 0;
+    background-color: rgba(230, 242, 255, 0.6);
+    bottom: -170px;
+    right: 54%;
+    transition: all 1s;
+    transform: rotate(144deg);
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.medic__top > .newClass92 {
+    height: 63px;
+    bottom: -201px;
+}
+
 .path__top__day:before {
     content: "";
     position: absolute;
