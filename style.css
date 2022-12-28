@@ -321,11 +321,13 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 .header__bottom__link {
     display: inline-block;
     color: #666666;
+    font-size: 21px;
 }
 
 .header__bottom__text {
     display: inline-block;
     color: #666666;
+    font-size: 21px;
 }
 
 /************* Main *************/
@@ -358,6 +360,12 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     flex-direction: column;
     justify-content: flex-start;
     padding-left: 37px;
+}
+
+.bubble__h1 {
+    font-size: 30px;
+    line-height: 32px;
+    margin-bottom: 60px;
 }
 
 .bubble__title {
@@ -2744,6 +2752,10 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     .bubble__picture {
         margin-left: 15%;
         margin-top: 50px;
+    }
+
+    .bubble__content {
+        padding-left: 0;
     }
 
     .path__top {
