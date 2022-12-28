@@ -2378,6 +2378,20 @@ body {
         margin-top: 120px;
     }
 
+    .path__main__block:before,
+    .path__top__fast:before,
+    .path__top__low:before,
+    .path__top__day:before {
+        display: none;
+    }
+
+    .path__main__block,
+    .path__top__low,
+    .path__top__day {
+        background-color: #E3B1BF;
+        border-radius: 12px 0 0 12px;
+    }
+
     .path__top__right {
         width: 80%;
     }
