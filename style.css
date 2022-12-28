@@ -201,6 +201,12 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     margin-left: 3px;
 }
 
+.dropdown__menu__img4 {
+    width: 23px;
+    object-fit: cover;
+    margin-left: 3px;
+}
+
 #text2 {
     margin-left: 20px;
     padding: 10px 0;
@@ -217,6 +223,16 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 }
 
 #text5 {
+    margin-left: 23px;
+    padding: 10px 0;
+}
+
+#text6 {
+    margin-left: 23px;
+    padding: 10px 0;
+}
+
+#text7 {
     margin-left: 23px;
     padding: 10px 0;
 }
@@ -341,6 +357,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    padding-left: 37px;
 }
 
 .bubble__title {
