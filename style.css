@@ -169,7 +169,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     flex-direction: row;
     justify-content: space-between;
     margin-top: 15px;
-    padding: 0 8px;
+    padding: 0 10px;
 }
 
 .nav__list__link {
@@ -183,6 +183,10 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 
 .nav__list__item {
     position: relative;
+}
+
+.dropdown__menu__img {
+    width: 35px;
 }
 
 .menu__item {
@@ -235,6 +239,11 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     padding: 10px 0 10px 20px;
     font-size: 17px;
     line-height: 22px;
+    align-items: center;
+}
+
+.menu__dropdown__link > p {
+    margin-left: 10px;
 }
 
 .nav__list__item:hover .menu__dropdown__content {
