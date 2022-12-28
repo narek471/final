@@ -213,6 +213,10 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     box-shadow: 5px 5px 15px 11px rgba(104,104,104,0.13);
 }
 
+#menu9 {
+    width: 45px;
+}
+
 .menu__dropdown__item {
     position: relative;
     padding: 0 16px 0 0;
