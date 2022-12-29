@@ -342,7 +342,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 .header__bottom__link {
     display: inline-block;
     color: #666666;
-    font-size: 19px;
+    font-size: 17px;
 }
 
 .header__row > .header__bottom__margin {
@@ -352,7 +352,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 .header__bottom__text {
     display: inline-block;
     color: #666666;
-    font-size: 19px;
+    font-size: 17px;
 }
 
 /************* Main *************/
