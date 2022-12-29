@@ -316,7 +316,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     left: 0;
     right: 0;
     top: 0;
-    padding: 0 178px;
+    padding: 0 177px;
     margin: auto;
     width: 100%;
     border-bottom: 1px solid rgba(128, 128, 128, 0.18);
@@ -338,7 +338,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 }
 
 .header__row > .header__bottom__margin {
-    margin-top: 193px;
+    margin-top: 178px;
 }
 
 .header__bottom__text {

@@ -1,5 +1,5 @@
 $(window).scroll(function(){
-    if ($(this).scrollTop() > 80) {
+    if ($(this).scrollTop() > 82) {
        $('#fixed__menu').addClass('fixed__menu');
        $('#header__bottom').addClass('header__bottom__margin');
     } else {
