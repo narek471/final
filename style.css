@@ -388,15 +388,16 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 }
 
 .bubble__h1 {
-    font-size: 30px;
-    line-height: 32px;
+    font-size: 40px;
+    font-weight: 400;
+    color: #000;
     margin-bottom: 60px;
-    font-weight: 300;
+    line-height: 50px;
 }
 
 .bubble__title {
     font-style: normal;
-    font-weight: 600;
+    font-weight: 400;
     font-size: 25px;
     margin-bottom: 20px;
 }
