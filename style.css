@@ -245,6 +245,10 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     margin-top: 5px;
 }
 
+.menu__item:hover {
+    color: #dd99a1;
+}
+
 .menu__list__img {
     object-fit: cover;
 }
@@ -293,6 +297,10 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     font-size: 17px;
     line-height: 22px;
     align-items: center;
+}
+
+.menu__dropdown__link:hover {
+    color: #dd99a1;
 }
 
 .menu__dropdown__link > p {
