@@ -169,7 +169,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     flex-direction: row;
     justify-content: space-between;
     margin-top: 15px;
-    padding: 0 10px;
+    padding: 0 10px 15px;
 }
 
 .nav__list__link {
@@ -257,6 +257,11 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     display: inline-block;
 }
 
+#dropdown3 {
+    top: 130px;
+}
+
+
 .menu__dropdown__content {
     display: none;
     position: absolute;
@@ -316,7 +321,11 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     left: 0;
     right: 0;
     margin: auto;
-    bottom: 13px;
+    bottom: 30px;
+}
+
+#dropdown__img {
+    bottom: 10px;
 }
 
 .fixed__menu {
@@ -330,6 +339,11 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     border-bottom: 1px solid rgba(128, 128, 128, 0.18);
     background-color: #F9F9F9;
     z-index: 10;
+}
+
+.container__hide {
+    max-width: 1165px;
+    margin: 0 auto;
 }
 
 .header__bottom {
@@ -346,7 +360,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 }
 
 .header__row > .header__bottom__margin {
-    margin-top: 178px;
+    margin-top: 214px;
 }
 
 .header__bottom__text {
@@ -630,7 +644,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     transition: all 2s ease;
 }
 
-.path__top__day > .newClass {
+.path__top__day > .newClass1 {
     bottom: -184px;
     height: 184px;
 }
@@ -2864,6 +2878,24 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     .popup__text {
         width: 110%;
     }
+
+    .footer__main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer__main__block {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        margin-top: 5%;
+        text-align: center;
+    }
+
+    #footer__right {
+        margin-right: 0;
+    }
 }
 
 @media only screen and (max-width: 641px) {
@@ -2984,6 +3016,18 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 @media only screen and (max-width: 425px) {
     .anime__none__mobile {
         display: block;
+    }
+
+    .footer__top > img {
+        width: 175px;
+    }
+
+    .footer__top__text {
+        font-size: 30px;
+    }
+
+    .footer__bottom__text {
+        font-size: 25px;
     }
 }
 

@@ -23,8 +23,8 @@
                                 <p class="header__right__text">
                                     18+
                                 </p>
-                                <form action="#" method="get" class="header__search">
-                                    <input type="search" >
+                                <form action="/search/" method="get" class="header__search">
+                                    <input name="q" type="search" >
                                     <button type="submit" class="header__button">
                                         <img src="img/search.png" alt="">
                                     </button>
@@ -39,6 +39,7 @@
                         </div>
                         <div class="header__menu" id="fixed__menu">
                             <nav class="nav">
+                                <div class="container__hide">
                                 <ul class="nav__list">
                                     <li class="nav__list__item">
                                         <a href="" class="nav__list__link">
@@ -121,6 +122,17 @@
                                             <img src="img/menu7.svg" class="menu__list__img" alt="">
                                             <p class="menu__item">Путь <br> пациента</p>
                                         </a>
+                                        <div class="menu__dropdown__first">
+                                            <img src="img/dropdown.svg" alt="" class="dropdown__img" id="dropdown__img">
+                                            <ul id="dropdown3" class="menu__dropdown__content">
+                                                <li class="menu__dropdown__item">
+                                                    <a href="" class="menu__dropdown__link"> <img src="img/menu1_3.png" alt="" class="dropdown__menu__img2"> <p id="text8"> ГМП </p></a>
+                                                </li>
+                                                <li class="menu__dropdown__item">
+                                                    <a href="" class="menu__dropdown__link"> <img src="img/menu1_4.png" alt="" class="dropdown__menu__img2"> <p id="text9"> РМП </p></a>
+                                                </li>
+                                            </ul>
+                                        </div>
                                     </li>
                                     <li class="nav__list__item">
                                         <a href="" class="nav__list__link">
@@ -146,6 +158,7 @@
                                         </a>
                                     </li>
                                 </ul>
+                                </div>
                             </nav>
                         </div>
                         <div class="header__bottom" id="header__bottom">
