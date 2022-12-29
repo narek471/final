@@ -11,8 +11,10 @@ $(window).scroll(function(){
 $(window).scroll(function(){
     if ($(this).scrollTop() > 150) {
         $('#dynamic2').addClass('newClass2');
+        $('#dynamic').addClass('newClass1');
     } else {
         $('#dynamic2').removeClass('newClass2');
+        $('#dynamic').removeClass('newClass1');
     }
 });
 
@@ -388,5 +390,24 @@ document.addEventListener('click', (e) => { // Вешаем обработчик
         popup.classList.remove('active'); // И с окна
     }
 });
+
+var acc = document.getElementsByClassName("footer__hide__button");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+        /* Toggle between adding and removing the "active" class,
+        to highlight the button that controls the panel */
+        this.classList.toggle("active");
+
+        /* Toggle between hiding and showing the active panel */
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+            panel.style.display = "none";
+        } else {
+            panel.style.display = "block";
+        }
+    });
+}
 
 
