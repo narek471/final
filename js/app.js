@@ -1,8 +1,10 @@
 $(window).scroll(function(){
-    if ($(this).scrollTop() > 150) {
-       $('#dynamic').addClass('newClass');
+    if ($(this).scrollTop() > 80) {
+       $('#fixed__menu').addClass('fixed__menu');
+       $('#header__bottom').addClass('header__bottom__margin');
     } else {
-       $('#dynamic').removeClass('newClass');
+       $('#fixed__menu').removeClass('fixed__menu');
+       $('#header__bottom').removeClass('header__bottom__margin');
     }
 });
 

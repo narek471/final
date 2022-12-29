@@ -311,6 +311,19 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     bottom: 13px;
 }
 
+.fixed__menu {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    padding: 0 178px;
+    margin: auto;
+    width: 100%;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.18);
+    background-color: #F9F9F9;
+    z-index: 10;
+}
+
 .header__bottom {
     width: 100%;
     position: relative;
@@ -322,6 +335,10 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     display: inline-block;
     color: #666666;
     font-size: 21px;
+}
+
+.header__row > .header__bottom__margin {
+    margin-top: 193px;
 }
 
 .header__bottom__text {
