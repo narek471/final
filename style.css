@@ -256,7 +256,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 .menu__dropdown__content {
     display: none;
     position: absolute;
-    top: 120px;
+    top: 110px;
     background-color: white;
     min-width: 350px;
     border-radius: 12px;
@@ -366,11 +366,12 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     font-size: 30px;
     line-height: 32px;
     margin-bottom: 60px;
+    font-weight: 300;
 }
 
 .bubble__title {
     font-style: normal;
-    font-weight: 700;
+    font-weight: 600;
     font-size: 25px;
     margin-bottom: 20px;
 }
