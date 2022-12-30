@@ -2872,6 +2872,12 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     .navbar__mobile {
         position: relative;
         display: flex;
+        padding-bottom: 4px;
+    }
+
+    .header__top__logo {
+        position: absolute;
+        left: 45px;
     }
 
     .navbar__wrap__mobile {
@@ -2957,11 +2963,11 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     }
 
     .hamb__field__mobile.active .bar__mobile:nth-child(1) {
-        transform: translateY(8px) rotate(45deg);
+        transform: translateY(9px) rotate(45deg);
     }
 
     .hamb__field__mobile.active .bar__mobile:nth-child(3) {
-        transform: translateY(-8px) rotate(-45deg);
+        transform: translateY(-9px) rotate(-45deg);
     }
 
     .header__menu {
