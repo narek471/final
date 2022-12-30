@@ -2924,7 +2924,6 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
         background-color: #F9F9F9;
         z-index: 100;
         display: flex;
-        transition: 0.3s;
         border-bottom: 1px solid rgba(128, 128, 128, 0.2);
     }
 
@@ -2942,6 +2941,10 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 
     .popup__mobile .menu__mobile > li {
         width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-top: 1px solid rgba(128, 128, 128, 0.2);
     }
 
     .popup__mobile .menu__mobile > li > a {
@@ -2951,7 +2954,11 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
         font-size: 17px;
         color: #799fbb;
         text-decoration: none;
-        border-top: 1px solid rgba(128, 128, 128, 0.2);
+    }
+
+    .popup__mobile .menu__mobile > li > img {
+        margin-right: 30px;
+        height: 15px;
     }
 
     .popup__mobile .menu__mobile > li > a:hover {
