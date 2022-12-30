@@ -391,8 +391,8 @@ document.addEventListener('click', (e) => { // Вешаем обработчик
     }
 });
 
-var acc = document.getElementsByClassName("footer__hide__button");
-var i;
+let acc = document.getElementsByClassName("footer__hide__button");
+let i;
 
 for (i = 0; i < acc.length; i++) {
     acc[i].addEventListener("click", function() {
@@ -401,7 +401,7 @@ for (i = 0; i < acc.length; i++) {
         this.classList.toggle("active");
 
         /* Toggle between hiding and showing the active panel */
-        var panel = this.nextElementSibling;
+        let panel = this.nextElementSibling;
         if (panel.style.display === "block") {
             panel.style.display = "none";
         } else {

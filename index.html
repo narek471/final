@@ -15,6 +15,30 @@
                     <div class="header__row">
                         <div class="header__top">
                             <div class="header__top__left">
+                                <nav class="navbar__mobile">
+                                    <div class="container__mobile">
+                                        <div class="navbar__wrap__mobile">
+                                            <div class="hamb__mobile">
+                                                <div class="hamb__field__mobile" id="hamb">
+                                                    <span class="bar__mobile"></span> <span class="bar__mobile"></span>
+                                                    <span class="bar__mobile"></span>
+                                                </div>
+                                            </div>
+                                            <ul class="menu__mobile" id="menu">
+                                                <li><a href="#">Заболевания</a></li>
+                                                <li><a href="#">Статьи</a></li>
+                                                <li><a href="#">Проверьте себя</a></li>
+                                                <li><a href="#">Видео</a></li>
+                                                <li><a href="#">Истории пациентов</a></li>
+                                                <li><a href="#">Вопросы урологу</a></li>
+                                                <li><a href="#">Путь пациента</a></li>
+                                                <li><a href="#">Карты</a></li>
+                                                <li><a href="#">Раздел для специалистов</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </nav>
+                                <div class="popup__mobile" id="popup"></div>
                                 <img src="img/logo.svg" alt="" class="header__top__logo">
                                 <p class="header__top__text">Портал об урологических <br>
                                     симптомах <br id="header__br"> и заболеваниях</p>
@@ -23,17 +47,17 @@
                                 <p class="header__right__text">
                                     18+
                                 </p>
+                                <div class="header__search__mobile">
+                                    <button type="submit" class="header__button__mobile">
+                                        <img src="img/search.png" alt="">
+                                    </button>
+                                </div>
                                 <form action="/search/" method="get" class="header__search">
                                     <input name="q" type="search" >
                                     <button type="submit" class="header__button">
                                         <img src="img/search.png" alt="">
                                     </button>
                                 </form>
-                                <div class="header__search__mobile">
-                                    <button type="submit" class="header__button__mobile">
-                                        <img src="img/search.png" alt="">
-                                    </button>
-                                </div>
                                 <a href="/" class="header__right__star">
                                     <img src="img/star.svg" alt="">
                                     <p class="header__star__text">
@@ -535,5 +559,6 @@
         </div>
         <script src="js/jquery-3.6.1.min.js"></script>
         <script src="js/app.js"></script>
+        <script src="js/mobile.js"></script>
     </body>
 </html>

@@ -2740,6 +2740,14 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     text-align: center;
 }
 
+.navbar__mobile {
+    display: none;
+}
+
+.popup__mobile {
+    display: none;
+}
+
 /*************** Media ***************/
 
 @media only screen and (max-width: 1270px) {
@@ -2860,6 +2868,101 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 }
 
 @media only screen and (max-width: 1006px) {
+
+    .navbar__mobile {
+        position: relative;
+        display: flex;
+    }
+
+    .navbar__wrap__mobile {
+        display: flex;
+        justify-content: space-between;
+        height: 100%;
+    }
+
+
+    .navbar__wrap__mobile .menu__mobile > li > a {
+        display: flex;
+        align-items: center;
+        padding: 0 20px;
+        color: rgba(255, 255, 255, 0.7);
+    }
+
+    .navbar__wrap__mobile .menu__mobile {
+        display: none;
+    }
+
+    .hamb__mobile {
+        display: flex;
+        align-items: center;
+    }
+
+    .hamb__field__mobile {
+        cursor: pointer;
+    }
+
+    .bar__mobile {
+        display: block;
+        width: 30px;
+        height: 3px;
+        margin: 6px auto;
+        background-color: #333;
+        transition: 0.2s;
+    }
+
+    .popup__mobile {
+        position: absolute;
+        top: 100px;
+        left: -300%;
+        width: 270%;
+        background-color: #F9F9F9;
+        z-index: 100;
+        display: flex;
+        transition: 0.3s;
+        border-bottom: 1px solid rgba(128, 128, 128, 0.2);
+    }
+
+    .popup__mobile.open {
+        left: -17%;
+    }
+
+    .popup__mobile .menu__mobile {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 10px 0;
+        overflow: auto;
+    }
+
+    .popup__mobile .menu__mobile > li {
+        width: 100%;
+    }
+
+    .popup__mobile .menu__mobile > li > a {
+        width: 100%;
+        display: flex;
+        padding: 8px 5% 10px;
+        font-size: 17px;
+        color: #799fbb;
+        text-decoration: none;
+        border-top: 1px solid rgba(128, 128, 128, 0.2);
+    }
+
+    .popup__mobile .menu__mobile > li > a:hover {
+        background-color: rgba(122, 82, 179, 0.1);
+    }
+
+    .hamb__field__mobile.active .bar__mobile:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamb__field__mobile.active .bar__mobile:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamb__field__mobile.active .bar__mobile:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
 
     .header__menu {
         display: none;
