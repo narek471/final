@@ -3275,6 +3275,14 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
         font-size: 11px;
     }
 
+    .header__top__logo {
+        left: 40px;
+    }
+
+    .header__top__right {
+        width: 130px;
+    }
+
     .medic__bottom__title,
     .bubble__text,
     .bubble__title {
@@ -3333,6 +3341,14 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 }
 
 @media only screen and (max-width: 390px) {
+
+    .navbar__mobile {
+        margin-left: -5px;
+    }
+
+    .header__top__logo {
+        left: 35px;
+    }
 
     .path__main > .anime__span65 {
         left: 43%;
