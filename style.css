@@ -139,6 +139,7 @@ body {
     width: 10%;
     position: relative;
     justify-content: center;
+    align-items: center;
     display: none;
 }
 
@@ -180,8 +181,6 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 
 .header__button__mobile {
     position: absolute;
-    right: 7%;
-    top: 20%;
     border: 0;
     background-color: transparent;
     cursor: pointer;
@@ -2904,7 +2903,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 
     .header__top__right {
         width: 175px;
-        margin-right: 5%;
+        margin-right: 10%;
         margin-top: -3px;
     }
 
