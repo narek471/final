@@ -2920,8 +2920,21 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
         background-color: #fff;
     }
 
+    #img1,
+    #img2,
+    #img3,
+    #img4
+    {
+        margin-right: 5%;
+        height: 8px;
+    }
+
     .img__rotate {
-        transform: rotate(90deg);
+        transform: rotate(-90deg);
+    }
+    
+    .mobile__dropdown__active {
+        color: #dd99a1 !important;
     }
 
     .navbar__wrap__mobile .menu__mobile {
@@ -2989,10 +3002,6 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     .popup__mobile .menu__mobile > li > img {
         margin-right: 30px;
         height: 15px;
-    }
-
-    .popup__mobile .menu__mobile > li > a:hover {
-        background-color: rgba(122, 82, 179, 0.1);
     }
 
     .hamb__field__mobile.active .bar__mobile:nth-child(2) {
