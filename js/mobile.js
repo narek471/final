@@ -3,7 +3,7 @@ const popupMobile = document.querySelector("#popup");
 const body = document.body;
 
 // Клонируем меню, чтобы задать свои стили для мобильной версии
-const menu = document.querySelector("#menu").cloneNode(1);
+const menu = document.querySelector("#menu");
 
 // При клике на иконку hamb вызываем ф-ию hambHandler
 hamb.addEventListener("click", hambHandler);
@@ -43,4 +43,42 @@ function getSearch() {
     document.querySelector('.header__top__right').style.width = '120%';
     document.querySelector('.header__search').style.width = '90%';
     document.querySelector('.header__top__right').style.marginRight = '0';
+}
+
+let dropDown1 = document.getElementById('dropdown__mobile1');
+let dropDown2 = document.getElementById('dropdown__mobile2');
+let dropDown3 = document.getElementById('dropdown__mobile3');
+
+
+function myFunction3() {
+    if(dropDown3.style.display === 'none') {
+        dropDown3.style.display = 'block';
+        $('#img3').addClass('img__rotate');
+    }
+    else {
+        dropDown3.style.display = 'none';
+        $('#img3').removeClass('img__rotate');
+    }
+}
+
+function myFunction2() {
+    if(dropDown2.style.display === 'none') {
+        dropDown2.style.display = 'block';
+        $('#img2').addClass('img__rotate');
+    }
+    else {
+        dropDown2.style.display = 'none';
+        $('#img2').removeClass('img__rotate');
+    }
+}
+
+function myFunction1() {
+    if(dropDown1.style.display === 'none') {
+        dropDown1.style.display = 'block';
+        $('#img1').addClass('img__rotate');
+    }
+    else {
+        dropDown1.style.display = 'none';
+        $('#img1').removeClass('img__rotate');
+    }
 }

@@ -2907,6 +2907,22 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
         color: rgba(255, 255, 255, 0.7);
     }
 
+    #dropdown__mobile3 > li > a,
+    #dropdown__mobile2 > li > a,
+    #dropdown__mobile1 > li > a {
+        width: 100%;
+        display: flex;
+        padding: 8px 5% 10px;
+        font-size: 17px;
+        color: #799fbb;
+        text-decoration: none;
+        background-color: #fff;
+    }
+
+    .img__rotate {
+        transform: rotate(90deg);
+    }
+
     .navbar__wrap__mobile .menu__mobile {
         display: none;
     }
@@ -3009,6 +3025,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     .header__search > input {
         width: 300%;
         left: 20%;
+        height: 45px;
     }
 
     .header__search__mobile {
