@@ -80,10 +80,12 @@ function myFunction3() {
 function myFunction2() {
     if(dropDown2.style.display === 'none') {
         dropDown2.style.display = 'block';
+        $('#img2').addClass('img__rotate');
         $('#dropdown__open2').addClass('mobile__dropdown__active');
     }
     else {
         dropDown2.style.display = 'none';
+        $('#img2').removeClass('img__rotate');
         $('#dropdown__open2').removeClass('mobile__dropdown__active');
     }
 }
@@ -91,10 +93,12 @@ function myFunction2() {
 function myFunction1() {
     if(dropDown1.style.display === 'none') {
         dropDown1.style.display = 'block';
+        $('#img1').addClass('img__rotate');
         $('#dropdown__open1').addClass('mobile__dropdown__active');
     }
     else {
         dropDown1.style.display = 'none';
+        $('#img1').removeClass('img__rotate');
         $('#dropdown__open1').removeClass('mobile__dropdown__active');
     }
 }
