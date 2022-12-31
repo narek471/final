@@ -32,7 +32,15 @@ links.forEach((link) => {
 
 // Закрытие попапа при клике на меню
 function closeOnClick() {
-    popupMobile.classList.remove("open");
-    hamb.classList.remove("active");
+    // popupMobile.classList.remove("open");
+    // hamb.classList.remove("active");
     body.classList.remove("noscroll");
+}
+
+function getSearch() {
+    document.querySelector('.header__search').style.display = 'flex';
+    document.querySelector('.header__top__right').style.position = 'absolute';
+    document.querySelector('.header__top__right').style.width = '120%';
+    document.querySelector('.header__search').style.width = '90%';
+    document.querySelector('.header__top__right').style.marginRight = '0';
 }
