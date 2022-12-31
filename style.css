@@ -2907,6 +2907,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
         color: rgba(255, 255, 255, 0.7);
     }
 
+    #dropdown__mobile4 > li > a,
     #dropdown__mobile3 > li > a,
     #dropdown__mobile2 > li > a,
     #dropdown__mobile1 > li > a {

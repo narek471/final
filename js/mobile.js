@@ -48,7 +48,19 @@ function getSearch() {
 let dropDown1 = document.getElementById('dropdown__mobile1');
 let dropDown2 = document.getElementById('dropdown__mobile2');
 let dropDown3 = document.getElementById('dropdown__mobile3');
+let dropDown4 = document.getElementById('dropdown__mobile4');
 
+
+function myFunction4() {
+    if(dropDown4.style.display === 'none') {
+        dropDown4.style.display = 'block';
+        $('#img4').addClass('img__rotate');
+    }
+    else {
+        dropDown4.style.display = 'none';
+        $('#img4').removeClass('img__rotate');
+    }
+}
 
 function myFunction3() {
     if(dropDown3.style.display === 'none') {
