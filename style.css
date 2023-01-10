@@ -1799,7 +1799,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 
 .analysis__row > .newClass69 {
     height: 170px;
-    bottom: -99px;
+    bottom: -104px;
 }
 
 .analysis__row > .anime__span70 {
@@ -1815,7 +1815,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 
 .analysis__row > .newClass70 {
     height: 170px;
-    bottom: -99px;
+    bottom: -104px;
 }
 
 .medic__top > .anime__span71 {
@@ -1945,7 +1945,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     width: 0;
     height: 3px;
     background-color: rgba(230, 242, 255, 0.6);
-    bottom: -101px;
+    bottom: -105px;
     left: 40.5%;
     transition: all 2s ease;
     z-index: 1;
@@ -1960,7 +1960,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     width: 0;
     height: 3px;
     background-color: rgba(230, 242, 255, 0.6);
-    bottom: -101px;
+    bottom: -105px;
     right: 40.5%;
     transition: all 2s ease;
     z-index: 1;
@@ -2118,12 +2118,12 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     transition: all 1s;
     transform: rotate(36deg);
     border-radius: 5px;
-    z-index: 1;
+    z-index: -1;
 }
 
 .analysis__row > .newClass89 {
     height: 63px;
-    bottom: -155px;
+    bottom: -159px;
 }
 
 .analysis__row > .anime__span90 {
@@ -2132,16 +2132,16 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     height: 0;
     background-color: rgba(230, 242, 255, 0.6);
     bottom: -120px;
-    right: 54%;
+    right: 54.5%;
     transition: all 1s;
     transform: rotate(144deg);
     border-radius: 5px;
-    z-index: 1;
+    z-index: -1;
 }
 
 .analysis__row > .newClass90 {
     height: 63px;
-    bottom: -155px;
+    bottom: -159px;
 }
 
 .medic__top > .anime__span91 {
@@ -3710,7 +3710,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     }
 
     .analysis__blood {
-        min-width: 200px;
+        min-width: 100px;
     }
 
     .popup__text {
@@ -3896,10 +3896,6 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 
     .header__logo__link {
         left: 25px;
-    }
-
-    .analysis__blood {
-        min-width: 350px;
     }
 
     .path__bottom__fast {
