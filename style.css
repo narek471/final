@@ -857,7 +857,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     height: 0;
     background-color: rgba(230, 242, 255, 0.6);
     bottom: 0;
-    left: 221px;
+    left: 187px;
     transition: all 2s ease;
     z-index: 1;
 }
@@ -873,7 +873,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     height: 0;
     background-color: rgba(230, 242, 255, 0.6);
     bottom: 0;
-    left: 249px;
+    left: 216px;
     transition: all 2s ease;
     z-index: 1;
 }
@@ -889,7 +889,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     height: 0;
     background-color: rgba(230, 242, 255, 0.6);
     bottom: 0;
-    left: 221px;
+    left: 279px;
     transition: all 2s ease;
 }
 
@@ -904,7 +904,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     height: 0;
     background-color: rgba(230, 242, 255, 0.6);
     bottom: 0;
-    left: 250px;
+    left: 307px;
     transition: all 2s ease;
 }
 
@@ -1259,7 +1259,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     height: 0;
     background-color: rgba(230, 242, 255, 0.6);
     bottom: -118px;
-    right: 324px;
+    right: 360px;
     transition: all 1s;
     transform: rotate(144deg);
     border-radius: 5px;
@@ -1269,7 +1269,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 .path__bottom > .newClass37 {
     height: 62px;
     bottom: -173px;
-    right: 310px;
+    right: 343px;
 }
 
 .path__bottom > .anime__span38 {
@@ -1278,7 +1278,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     height: 0;
     background-color: rgba(230, 242, 255, 0.6);
     bottom: -118px;
-    right: 257px;
+    right: 288px;
     transition: all 1s;
     transform: rotate(36deg);
     border-radius: 5px;
@@ -1288,7 +1288,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 .path__bottom > .newClass38 {
     height: 62px;
     bottom: -173px;
-    right: 274px;
+    right: 307px;
 }
 
 .path__bottom > .anime__span39 {
@@ -1297,7 +1297,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     height: 0;
     background-color: rgba(230, 242, 255, 0.6);
     bottom: -118px;
-    left: 270px;
+    left: 325px;
     transition: all 1s;
     transform: rotate(-144deg);
     border-radius: 5px;
@@ -1307,7 +1307,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 .path__bottom > .newClass39 {
     height: 62px;
     bottom: -173px;
-    left: 254px;
+    left: 311px;
 }
 
 .path__bottom > .anime__span40 {
@@ -1316,7 +1316,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     height: 0;
     background-color: rgba(230, 242, 255, 0.6);
     bottom: -118px;
-    left: 201px;
+    left: 258px;
     transition: all 1s;
     transform: rotate(-36deg);
     border-radius: 5px;
@@ -1326,7 +1326,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 .path__bottom > .newClass40 {
     height: 62px;
     bottom: -173px;
-    left: 218px;
+    left: 275px;
 }
 
 .analysis__row > .anime__span41 {
@@ -1559,8 +1559,8 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     width: 0;
     height: 3px;
     background-color: rgba(230, 242, 255, 0.6);
-    bottom: -118px;
-    right: 308px;
+    bottom: -120px;
+    right: 340px;
     transition: all 1s;
     border-radius: 5px;
     z-index: -1;
@@ -1568,7 +1568,6 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 
 .path__bottom > .newClass55 {
     width: 23px;
-    right: 308px;
 }
 
 .path__bottom > .anime__span56 {
@@ -1576,16 +1575,16 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     width: 0;
     height: 3px;
     background-color: rgba(230, 242, 255, 0.6);
-    bottom: -118px;
-    right: 277px;
+    bottom: -120px;
+    right: 301px;
     transition: all 1s;
     border-radius: 5px;
     z-index: -1;
 }
 
 .path__bottom > .newClass56 {
-    width: 21px;
-    right: 257px;
+    width: 22px;
+    right: 291px;
 }
 
 .path__bottom > .anime__span57 {
@@ -1593,8 +1592,8 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     width: 0;
     height: 3px;
     background-color: rgba(230, 242, 255, 0.6);
-    bottom: -118px;
-    left: 220px;
+    bottom: -120px;
+    left: 278px;
     transition: all 1s;
     border-radius: 5px;
     z-index: -1;
@@ -1602,7 +1601,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 
 .path__bottom > .newClass57 {
     width: 22px;
-    left: 200px;
+    left: 259px;
 }
 
 .path__bottom > .anime__span58 {
@@ -1610,16 +1609,16 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     width: 0;
     height: 3px;
     background-color: rgba(230, 242, 255, 0.6);
-    bottom: -118px;
-    left: 253px;
+    bottom: -120px;
+    left: 307px;
     transition: all 1s;
     border-radius: 5px;
     z-index: -1;
 }
 
 .path__bottom > .newClass58 {
-    width: 23px;
-    left: 252px;
+    width: 22px;
+    left: 308px;
 }
 
 .analysis__row > .anime__span59 {
