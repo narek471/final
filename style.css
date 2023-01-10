@@ -919,12 +919,12 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     height: 0;
     background-color: rgba(230, 242, 255, 0.6);
     bottom: 0;
-    left: 604px;
+    left: 276px;
     transition: all 2s ease;
 }
 
 .analysis__row > .newClass17 {
-    height: 100px;
+    height: 130px;
     bottom: -100px;
 }
 
@@ -934,12 +934,12 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     height: 0;
     background-color: rgba(230, 242, 255, 0.6);
     bottom: 0;
-    left: 632px;
+    left: 305px;
     transition: all 2s ease;
 }
 
 .analysis__row > .newClass18 {
-    height: 100px;
+    height: 130px;
     bottom: -100px;
 }
 
@@ -1335,7 +1335,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     height: 0;
     background-color: rgba(230, 242, 255, 0.6);
     bottom: -101px;
-    left: 653px;
+    left: 326px;
     transition: all 1s;
     transform: rotate(-144deg);
     border-radius: 5px;
@@ -1345,7 +1345,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 .analysis__row > .newClass41 {
     height: 62px;
     bottom: -155px;
-    left: 636px;
+    left: 309px;
 }
 
 .analysis__row > .anime__span42 {
@@ -1354,7 +1354,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     height: 0;
     background-color: rgba(230, 242, 255, 0.6);
     bottom: -101px;
-    left: 584px;
+    left: 257px;
     transition: all 1s;
     transform: rotate(-36deg);
     border-radius: 5px;
@@ -1364,7 +1364,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 .analysis__row > .newClass42 {
     height: 62px;
     bottom: -155px;
-    left: 600px;
+    left: 273px;
 }
 
 .analysis__row > .anime__span43 {
@@ -1627,7 +1627,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     height: 3px;
     background-color: rgba(230, 242, 255, 0.6);
     bottom: -101px;
-    left: 633px;
+    left: 305px;
     transition: all 1s;
     border-radius: 5px;
     z-index: 1;
@@ -1635,7 +1635,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 
 .analysis__row > .newClass59 {
     width: 22px;
-    left: 633px;
+    left: 305px;
 }
 
 .analysis__row > .anime__span60 {
@@ -1644,7 +1644,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     height: 3px;
     background-color: rgba(230, 242, 255, 0.6);
     bottom: -101px;
-    left: 605px;
+    left: 277px;
     transition: all 1s;
     border-radius: 5px;
     z-index: 1;
@@ -1652,7 +1652,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 
 .analysis__row > .newClass60 {
     width: 22px;
-    left: 585px;
+    left: 255px;
 }
 
 .analysis__row > .anime__span61 {
