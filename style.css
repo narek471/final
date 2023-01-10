@@ -2431,7 +2431,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     position: absolute;
     bottom: -168px;
     z-index: -1;
-    left: 255px;
+    left: 258px;
 }
 
 
@@ -2439,7 +2439,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     position: absolute;
     bottom: -168px;
     z-index: -1;
-    left: 165px;
+    left: 167px;
 }
 
 /************* Section 3 *************/
