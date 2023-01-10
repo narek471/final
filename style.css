@@ -1794,7 +1794,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     bottom: 67px;
     left: 45.5%;
     transition: all 2s ease;
-    z-index: 1;
+    z-index: -1;
 }
 
 .analysis__row > .newClass69 {
@@ -1810,7 +1810,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     bottom: 67px;
     right: 46%;
     transition: all 2s ease;
-    z-index: 1;
+    z-index: -1;
 }
 
 .analysis__row > .newClass70 {
@@ -3144,7 +3144,16 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     }
 
     .path__bottom__right {
-        margin-top: 40px;
+        margin-top: 100px;
+    }
+
+    .path__bottom__img1 {
+        left: 0;
+        right: 0;
+        margin: auto;
+        bottom: -100px;
+        width: 144px;
+        height: 190px;
     }
 
     .path__bottom__left > .path__bottom__img {
@@ -3161,9 +3170,38 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
         margin: auto;
     }
 
+    .analysis {
+        margin-top: 30px;
+    }
+
     .analysis__row {
         justify-content: center;
+        flex-direction: column;
+        align-items: center;
         background-color: transparent;
+    }
+
+    .analysis__blood {
+        margin-top: 80px;
+    }
+
+    #analysis__blood__mr {
+        margin-right: 0;
+        margin-top: 80px;
+    }
+
+    .analysis__union__long,
+    .analysis__bottom__img1,
+    .analysis__bottom__img2{
+        display: none;
+    }
+
+
+    .analysis__bottom__img3,
+    .path__bottom__img2 {
+        left: 0;
+        right: 0;
+        margin: auto;
     }
 
     .analysis__blood {
@@ -3591,7 +3629,8 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     }
 
     .analysis__blood {
-        min-width: 500px;
+        width: 90%;
+        min-width: 300px;
     }
 }
 
@@ -3671,9 +3710,8 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     }
 
     .analysis__blood {
-        min-width: 420px;
+        min-width: 200px;
     }
-
 
     .popup__text {
         width: 130%;
@@ -3706,6 +3744,20 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     .bubble__h1 {
         font-size: 28px;
         line-height: 35px;
+    }
+
+    .analysis__blood {
+        width: 95%;
+        min-width: 200px;
+    }
+
+    .analysis__blood__block {
+        padding: 15px;
+    }
+
+    .analysis__blood__text {
+        font-size: 20px;
+        padding: 45px 15px 15px 15px;
     }
 
     .medic__bottom__title,
