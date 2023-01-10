@@ -3152,8 +3152,8 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
         right: 0;
         margin: auto;
         bottom: -100px;
-        width: 144px;
-        height: 190px;
+        width: 150px;
+        height: 210px;
     }
 
     .path__bottom__left > .path__bottom__img {
