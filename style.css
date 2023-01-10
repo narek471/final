@@ -671,6 +671,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     margin-bottom: 20px;
     position: relative;
     background-color: #fff;
+    border-radius: 12px 0 0 12px;
 }
 
 .path__top__day > .anime__span1 {
@@ -857,7 +858,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     height: 0;
     background-color: rgba(230, 242, 255, 0.6);
     bottom: 0;
-    left: 187px;
+    left: 211px;
     transition: all 2s ease;
     z-index: 1;
 }
@@ -873,7 +874,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     height: 0;
     background-color: rgba(230, 242, 255, 0.6);
     bottom: 0;
-    left: 216px;
+    left: 240px;
     transition: all 2s ease;
     z-index: 1;
 }
@@ -1259,7 +1260,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     height: 0;
     background-color: rgba(230, 242, 255, 0.6);
     bottom: -118px;
-    right: 360px;
+    right: 336px;
     transition: all 1s;
     transform: rotate(144deg);
     border-radius: 5px;
@@ -1269,7 +1270,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 .path__bottom > .newClass37 {
     height: 62px;
     bottom: -173px;
-    right: 343px;
+    right: 319px;
 }
 
 .path__bottom > .anime__span38 {
@@ -1278,7 +1279,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     height: 0;
     background-color: rgba(230, 242, 255, 0.6);
     bottom: -118px;
-    right: 288px;
+    right: 266px;
     transition: all 1s;
     transform: rotate(36deg);
     border-radius: 5px;
@@ -1288,7 +1289,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 .path__bottom > .newClass38 {
     height: 62px;
     bottom: -173px;
-    right: 307px;
+    right: 285px;
 }
 
 .path__bottom > .anime__span39 {
@@ -1560,7 +1561,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     height: 3px;
     background-color: rgba(230, 242, 255, 0.6);
     bottom: -120px;
-    right: 340px;
+    right: 318px;
     transition: all 1s;
     border-radius: 5px;
     z-index: -1;
@@ -1576,7 +1577,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     height: 3px;
     background-color: rgba(230, 242, 255, 0.6);
     bottom: -120px;
-    right: 301px;
+    right: 276px;
     transition: all 1s;
     border-radius: 5px;
     z-index: -1;
@@ -1584,7 +1585,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 
 .path__bottom > .newClass56 {
     width: 22px;
-    right: 291px;
+    right: 266px;
 }
 
 .path__bottom > .anime__span57 {
@@ -2185,7 +2186,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     height: 0;
     background-color: rgba(230, 242, 255, 0.6);
     bottom: 25px;
-    right: 46.5%;
+    right: 48.5%;
     transition: all 1s;
     transform: rotate(36deg);
     border-radius: 5px;
@@ -2203,7 +2204,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     height: 0;
     background-color: rgba(230, 242, 255, 0.6);
     bottom: 25px;
-    right: 52.8%;
+    right: 54.5%;
     transition: all 1s;
     transform: rotate(144deg);
     border-radius: 5px;
@@ -2282,7 +2283,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     height: 0;
     background-color: rgba(230, 242, 255, 0.6);
     top: 300px;
-    right: 256px;
+    right: 276px;
     transition: all 1s;
     transform: rotate(36deg);
     border-radius: 5px;
@@ -2292,7 +2293,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 .analysis__blood > .newClass99 {
     height: 63px;
     top: 295px;
-    right: 274px;
+    right: 294px;
 }
 
 .analysis__blood > .anime__span100 {
@@ -2379,7 +2380,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     height: 0;
     background-color: rgba(230, 242, 255, 0.6);
     top: 400%;
-    right: 251px;
+    right: 261px;
     transition: all 1s;
     transform: rotate(36deg);
     border-radius: 5px;
@@ -2388,7 +2389,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 
 .analysis__blood > .newClass105 {
     height: 63px;
-    right: 272px;
+    right: 282px;
 }
 
 .analysis__blood > .anime__span106 {
@@ -2397,7 +2398,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     height: 0;
     background-color: rgba(230, 242, 255, 0.6);
     top: 400%;
-    left: 251px;
+    left: 261px;
     transition: all 1s;
     transform: rotate(144deg);
     border-radius: 5px;
@@ -2406,7 +2407,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 
 .analysis__blood > .newClass106 {
     height: 63px;
-    left: 272px;
+    left: 282px;
 }
 
 .analysis__blood > .anime__span107 {
@@ -2415,7 +2416,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     height: 0;
     background-color: rgba(230, 242, 255, 0.6);
     top: 100%;
-    left: 275px;
+    left: 285px;
     transition: all 2s ease;
 }
 
@@ -2429,7 +2430,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     height: 0;
     background-color: rgba(230, 242, 255, 0.6);
     top: 100%;
-    left: 305px;
+    left: 316px;
     transition: all 2s ease;
 }
 
@@ -2443,7 +2444,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     height: 3px;
     background-color: rgba(230, 242, 255, 0.6);
     top: 402%;
-    left: 274px;
+    left: 283px;
     transition: all 1s;
     border-radius: 5px;
     z-index: -1;
@@ -2451,7 +2452,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 
 .analysis__blood > .newClass109 {
     width: 23px;
-    left: 254px;
+    left: 263px;
 }
 
 .analysis__blood > .anime__span110 {
@@ -2460,7 +2461,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     height: 3px;
     background-color: rgba(230, 242, 255, 0.6);
     top: 402%;
-    left: 307px;
+    left: 319px;
     transition: all 2s ease;
 }
 
@@ -2539,6 +2540,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     padding: 24px 30px;
     margin-bottom: 20px;
     background-color: #fff;
+    border-radius: 12px 0 0 12px;
 }
 
 .path__top__low:before {
@@ -2727,7 +2729,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     position: absolute;
     bottom: -168px;
     z-index: -1;
-    left: 167px;
+    left: 190px;
 }
 
 /************* Section 3 *************/
@@ -2741,7 +2743,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 .analysis__row {
     width: 100%;
     border-radius: 12px;
-    padding: 30px 40px 30px 0;
+    padding: 30px 0;
     position: relative;
     display: flex;
     flex-wrap: wrap;
@@ -2750,7 +2752,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 }
 
 .analysis__blood {
-    width: 585px;
+    width: 605px;
     position: relative;
     border-radius: 12px;
     display: flex;
@@ -2818,9 +2820,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     position: absolute;
     bottom: 0;
     z-index: -1;
-    left: 0;
-    right: 0;
-    margin: auto;
+    left: 255px;
 }
 
 
@@ -2828,18 +2828,14 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     position: absolute;
     top: 49%;
     z-index: -1;
-    left: 0;
-    right: 0;
-    margin: auto;
+    left: 255px;
 }
 
 .analysis__bottom__img3 {
     position: absolute;
     top: 76.5%;
     z-index: -1;
-    left: 0;
-    right: 0;
-    margin: auto;
+    left: 255px;
 }
 
 /************Section 4***********/
@@ -3558,7 +3554,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     }
 
     .bubble__content {
-
+        padding-left: 25px;
     }
 
     .bubble__text,
@@ -3617,11 +3613,18 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
         display: block;
     }
 
+    .bubble {
+        padding: 40px 0;
+    }
+
+    .bubble__content {
+        padding-left: 15px;
+    }
+
     .bubble__h1 {
-        text-align: center;
-        font-size: 32px;
+        font-size: 30px;
         margin-right: 9%;
-        line-height: 40px;
+        line-height: 38px;
     }
 
     .medic__bottom__text {
@@ -3700,6 +3703,11 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
         width: 130px;
     }
 
+    .bubble__h1 {
+        font-size: 28px;
+        line-height: 35px;
+    }
+
     .medic__bottom__title,
     .bubble__text,
     .bubble__title {
@@ -3726,6 +3734,11 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 }
 
 @media only screen and (max-width: 425px) {
+
+    .bubble {
+        padding: 35px 0;
+    }
+
     .anime__none__mobile {
         display: block;
     }
