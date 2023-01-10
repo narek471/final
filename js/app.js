@@ -171,6 +171,20 @@ $(window).scroll(function(){
 });
 
 $(window).scroll(function(){
+    if ($(this).scrollTop() > 1800) {
+        $('#dynamic111').addClass('newClass111');
+        $('#dynamic112').addClass('newClass112');
+        $('#dynamic113').addClass('newClass113');
+        $('#dynamic114').addClass('newClass114');
+    } else {
+        $('#dynamic111').removeClass('newClass111');
+        $('#dynamic112').removeClass('newClass112');
+        $('#dynamic113').removeClass('newClass113');
+        $('#dynamic114').removeClass('newClass114');
+    }
+});
+
+$(window).scroll(function(){
     if ($(this).scrollTop() > 1900) {
         $('#dynamic107').addClass('newClass107');
         $('#dynamic108').addClass('newClass108');

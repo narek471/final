@@ -2469,6 +2469,64 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     width: 22px;
 }
 
+.path__bottom__left > .anime__span111 {
+    position: absolute;
+    width: 3px;
+    height: 0;
+    background-color: rgba(230, 242, 255, 0.6);
+    bottom: 0;
+    left: 45.5%;
+    transition: all 2s ease;
+}
+
+.path__bottom__left > .newClass111 {
+    height: 56px;
+    bottom: -56px;
+}
+
+.path__bottom__left > .anime__span112 {
+    position: absolute;
+    width: 3px;
+    height: 0;
+    background-color: rgba(230, 242, 255, 0.6);
+    bottom: 0;
+    right: 46%;
+    transition: all 2s ease;
+}
+
+.path__bottom__left > .newClass112 {
+    height: 56px;
+    bottom: -56px;
+}
+
+.path__bottom__left > .anime__span113 {
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    background-color: rgba(230, 242, 255, 0.6);
+    bottom: -56px;
+    left: 53.5%;
+    transition: all 2s ease;
+}
+
+.path__bottom__left > .newClass113 {
+    width: 22px;
+}
+
+.path__bottom__left > .anime__span114 {
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    background-color: rgba(230, 242, 255, 0.6);
+    bottom: -56px;
+    right: 53.5%;
+    transition: all 2s ease;
+}
+
+.path__bottom__left > .newClass114 {
+    width: 22px;
+}
+
 .path__top__day:before {
     content: "";
     position: absolute;
@@ -3820,6 +3878,10 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     .footer__row {
         padding: 0;
     }
+
+    .medic__top > .anime__span92 {
+        right: 55%;
+    }
 }
 
 @media only screen and (max-width: 390px) {
@@ -3850,6 +3912,10 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 
     .medic__top > .anime__span72 {
         right: 45.5%;
+    }
+
+    .medic__top > .anime__span91 {
+        right: 44%;
     }
 }
 
@@ -3886,6 +3952,14 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 
     .medic__top > .anime__span71 {
         left: 45%;
+    }
+
+    .analysis__row > .anime__span89 {
+        right: 44%;
+    }
+
+    .analysis__row > .anime__span90 {
+        right: 55%;
     }
 }
 
