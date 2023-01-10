@@ -2527,6 +2527,44 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     width: 22px;
 }
 
+.path__bottom__left > .anime__span115 {
+    position: absolute;
+    width: 3px;
+    height: 0;
+    background-color: rgba(230, 242, 255, 0.6);
+    bottom: -56px;
+    left: 58%;
+    transition: all 1s;
+    transform: rotate(36deg);
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.path__bottom__left > .newClass115 {
+    height: 56px;
+    bottom: -105px;
+    left: 54.5%;
+}
+
+.path__bottom__left > .anime__span116 {
+    position: absolute;
+    width: 3px;
+    height: 0;
+    background-color: rgba(230, 242, 255, 0.6);
+    bottom: -56px;
+    right: 58%;
+    transition: all 1s;
+    transform: rotate(144deg);
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.path__bottom__left > .newClass116 {
+    height: 56px;
+    bottom: -105px;
+    right: 54.5%;
+}
+
 .path__top__day:before {
     content: "";
     position: absolute;
