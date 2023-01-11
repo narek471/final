@@ -184,18 +184,6 @@ $(window).scroll(function(){
         $('#dynamic120').addClass('newClass120');
         $('#dynamic121').addClass('newClass121');
         $('#dynamic122').addClass('newClass122');
-        $('#dynamic123').addClass('newClass123');
-        $('#dynamic124').addClass('newClass124');
-        $('#dynamic125').addClass('newClass125');
-        $('#dynamic126').addClass('newClass126');
-        $('#dynamic127').addClass('newClass127');
-        $('#dynamic128').addClass('newClass128');
-        $('#dynamic129').addClass('newClass129');
-        $('#dynamic130').addClass('newClass130');
-        $('#dynamic131').addClass('newClass131');
-        $('#dynamic132').addClass('newClass132');
-        $('#dynamic133').addClass('newClass133');
-        $('#dynamic134').addClass('newClass134');
     } else {
         $('#dynamic111').removeClass('newClass111');
         $('#dynamic112').removeClass('newClass112');
@@ -209,12 +197,36 @@ $(window).scroll(function(){
         $('#dynamic120').removeClass('newClass120');
         $('#dynamic121').removeClass('newClass121');
         $('#dynamic122').removeClass('newClass122');
+    }
+});
+
+$(window).scroll(function(){
+    if ($(this).scrollTop() > 2470) {
+        $('#dynamic123').addClass('newClass123');
+        $('#dynamic124').addClass('newClass124');
+        $('#dynamic125').addClass('newClass125');
+        $('#dynamic126').addClass('newClass126');
+        $('#dynamic127').addClass('newClass127');
+        $('#dynamic128').addClass('newClass128');
+    } else {
         $('#dynamic123').removeClass('newClass123');
         $('#dynamic124').removeClass('newClass124');
         $('#dynamic125').removeClass('newClass125');
         $('#dynamic126').removeClass('newClass126');
         $('#dynamic127').removeClass('newClass127');
         $('#dynamic128').removeClass('newClass128');
+    }
+});
+
+$(window).scroll(function(){
+    if ($(this).scrollTop() > 2700) {
+        $('#dynamic129').addClass('newClass129');
+        $('#dynamic130').addClass('newClass130');
+        $('#dynamic131').addClass('newClass131');
+        $('#dynamic132').addClass('newClass132');
+        $('#dynamic133').addClass('newClass133');
+        $('#dynamic134').addClass('newClass134');
+    } else {
         $('#dynamic129').removeClass('newClass129');
         $('#dynamic130').removeClass('newClass130');
         $('#dynamic131').removeClass('newClass131');
