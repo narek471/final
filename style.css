@@ -4001,6 +4001,8 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 
     .medic__bottom {
         border: 2px solid rgba(115, 162, 225, 1);
+        border-right: 2px solid #F2B3BA;
+        border-bottom: 2px solid rgba(93, 86, 134, 0.4);
         border-radius: 12px;
         border-top: 0;
     }
