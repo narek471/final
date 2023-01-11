@@ -1798,8 +1798,8 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 }
 
 .analysis__row > .newClass69 {
-    height: 170px;
-    bottom: -104px;
+    height: 167px;
+    bottom: -101px;
 }
 
 .analysis__row > .anime__span70 {
@@ -1814,8 +1814,8 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 }
 
 .analysis__row > .newClass70 {
-    height: 170px;
-    bottom: -104px;
+    height: 167px;
+    bottom: -101px;
 }
 
 .medic__top > .anime__span71 {
@@ -1945,8 +1945,8 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     width: 0;
     height: 3px;
     background-color: rgba(230, 242, 255, 0.6);
-    bottom: -105px;
-    left: 40.5%;
+    bottom: -102px;
+    left: 39.5%;
     transition: all 2s ease;
     z-index: 1;
 }
@@ -1960,8 +1960,8 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     width: 0;
     height: 3px;
     background-color: rgba(230, 242, 255, 0.6);
-    bottom: -105px;
-    right: 40.5%;
+    bottom: -102px;
+    right: 40%;
     transition: all 2s ease;
     z-index: 1;
 }
@@ -2114,7 +2114,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     height: 0;
     background-color: rgba(230, 242, 255, 0.6);
     bottom: -120px;
-    right: 45%;
+    right: 45.5%;
     transition: all 1s;
     transform: rotate(36deg);
     border-radius: 5px;
@@ -2132,7 +2132,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     height: 0;
     background-color: rgba(230, 242, 255, 0.6);
     bottom: -120px;
-    right: 54.5%;
+    right: 54%;
     transition: all 1s;
     transform: rotate(144deg);
     border-radius: 5px;
@@ -3976,9 +3976,16 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     .footer__row {
         padding: 0;
     }
+}
+
+@media only screen and (max-width: 415px){
+    .path__bottom__right > .anime__span78,
+    .path__bottom__right > .anime__span77 {
+        bottom: -119px;
+    }
 
     .medic__top > .anime__span92 {
-        right: 55%;
+        right: 54.5%;
     }
 }
 
@@ -4058,6 +4065,14 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
         left: 45%;
     }
 
+    .path__main > .anime__span75 {
+        left: 38%;
+    }
+
+    .path__main > .anime__span76 {
+        right: 44%;
+    }
+
     .path__main > .anime__span85 {
         right: 48.5%;
     }
@@ -4075,10 +4090,14 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     }
 
     .analysis__row > .anime__span89 {
-        right: 44%;
+        right: 45%;
     }
 
     .analysis__row > .anime__span90 {
+        right: 54.5%;
+    }
+
+    .medic__top > .anime__span92 {
         right: 55%;
     }
 }
