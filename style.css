@@ -3300,7 +3300,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 
 
     .analysis__bottom__img2 {
-        top: 65.5%;
+        top: 66%;
         left: 0;
         right: 0;
         margin: auto;
@@ -3313,10 +3313,14 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
         margin: auto;
     }
 
+    .analysis__bottom__img3 {
+        top: 78%;
+    }
+
     .analysis__bottom__img4 {
         display: block;
         position: absolute;
-        top: 68.3%;
+        top: 66.3%;
         left: 0;
         right: 0;
         margin: auto;
@@ -3759,6 +3763,10 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
         width: 90%;
         min-width: 300px;
     }
+
+    .analysis__bottom__img4 {
+        top: 68.3%;
+    }
 }
 
 @media only screen and (max-width: 510px) {
@@ -3795,6 +3803,10 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 
     .medic__bottom__text {
         font-size: 19px;
+    }
+
+    .analysis__bottom__img4 {
+        top: 71.6%;
     }
 
     .footer__main {
@@ -3838,6 +3850,10 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 
     .analysis__blood {
         min-width: 100px;
+    }
+
+    .analysis__bottom__img2 {
+        top: 69.5%;
     }
 
     .popup__text {
@@ -3885,6 +3901,19 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     .analysis__blood__text {
         font-size: 20px;
         padding: 45px 15px 15px 15px;
+    }
+
+
+    .analysis__bottom__img2 {
+        top: 65.5%;
+    }
+
+    .analysis__bottom__img3 {
+        top: 75%;
+    }
+
+    .analysis__bottom__img4 {
+        top: 68.3%;
     }
 
     .medic__bottom__title,
@@ -3985,6 +4014,12 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 
     .medic__top > .anime__span91 {
         right: 44%;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    .analysis__bottom__img2 {
+        top: 68%;
     }
 }
 
