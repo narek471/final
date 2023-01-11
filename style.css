@@ -2637,8 +2637,8 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 }
 
 .analysis__blood > .newClass121 {
-    height: 56px;
-    bottom: -153px;
+    height: 60px;
+    bottom: -156px;
     left: 54.5%;
 }
 
@@ -2656,8 +2656,200 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 }
 
 .analysis__blood > .newClass122 {
-    height: 56px;
-    bottom: -153px;
+    height: 60px;
+    bottom: -156px;
+    right: 54.5%;
+}
+
+.analysis__blood > .anime__span123 {
+    position: absolute;
+    width: 3px;
+    height: 0;
+    background-color: rgba(230, 242, 255, 0.6);
+    bottom: 0;
+    left: 45.5%;
+    transition: all 2s ease;
+}
+
+.analysis__blood > .newClass123 {
+    height: 101px;
+    bottom: -101px;
+}
+
+.analysis__blood > .anime__span124 {
+    position: absolute;
+    width: 3px;
+    height: 0;
+    background-color: rgba(230, 242, 255, 0.6);
+    bottom: 0;
+    right: 46%;
+    transition: all 2s ease;
+}
+
+.analysis__blood > .newClass124 {
+    height: 101px;
+    bottom: -101px;
+}
+
+.analysis__blood > .anime__span125 {
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    background-color: rgba(230, 242, 255, 0.6);
+    bottom: -102px;
+    left: 53.5%;
+    transition: all 2s ease;
+}
+
+.analysis__blood > .newClass125 {
+    width: 24px;
+}
+
+.analysis__blood > .anime__span126 {
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    background-color: rgba(230, 242, 255, 0.6);
+    bottom: -102px;
+    right: 53.5%;
+    transition: all 2s ease;
+}
+
+.analysis__blood > .newClass126 {
+    width: 24px;
+}
+
+.analysis__blood > .anime__span127 {
+    position: absolute;
+    width: 3px;
+    height: 0;
+    background-color: rgba(230, 242, 255, 0.6);
+    bottom: -109px;
+    left: 58%;
+    transition: all 1s;
+    transform: rotate(36deg);
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.analysis__blood > .newClass127 {
+    height: 60px;
+    bottom: -156px;
+    left: 54.5%;
+}
+
+.analysis__blood > .anime__span128 {
+    position: absolute;
+    width: 3px;
+    height: 0;
+    background-color: rgba(230, 242, 255, 0.6);
+    bottom: -109px;
+    right: 58%;
+    transition: all 1s;
+    transform: rotate(144deg);
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.analysis__blood > .newClass128 {
+    height: 60px;
+    bottom: -156px;
+    right: 54.5%;
+}
+
+.analysis__blood > .anime__span129 {
+    position: absolute;
+    width: 3px;
+    height: 0;
+    background-color: rgba(230, 242, 255, 0.6);
+    bottom: 0;
+    left: 45.5%;
+    transition: all 2s ease;
+}
+
+.analysis__blood > .newClass129 {
+    height: 101px;
+    bottom: -101px;
+}
+
+.analysis__blood > .anime__span130 {
+    position: absolute;
+    width: 3px;
+    height: 0;
+    background-color: rgba(230, 242, 255, 0.6);
+    bottom: 0;
+    right: 46%;
+    transition: all 2s ease;
+}
+
+.analysis__blood > .newClass130 {
+    height: 101px;
+    bottom: -101px;
+}
+
+.analysis__blood > .anime__span131 {
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    background-color: rgba(230, 242, 255, 0.6);
+    bottom: -102px;
+    left: 53.5%;
+    transition: all 2s ease;
+}
+
+.analysis__blood > .newClass131 {
+    width: 24px;
+}
+
+.analysis__blood > .anime__span132 {
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    background-color: rgba(230, 242, 255, 0.6);
+    bottom: -102px;
+    right: 53.5%;
+    transition: all 2s ease;
+}
+
+.analysis__blood > .newClass132 {
+    width: 24px;
+}
+
+.analysis__blood > .anime__span133 {
+    position: absolute;
+    width: 3px;
+    height: 0;
+    background-color: rgba(230, 242, 255, 0.6);
+    bottom: -109px;
+    left: 58%;
+    transition: all 1s;
+    transform: rotate(36deg);
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.analysis__blood > .newClass133 {
+    height: 60px;
+    bottom: -156px;
+    left: 54.5%;
+}
+
+.analysis__blood > .anime__span134 {
+    position: absolute;
+    width: 3px;
+    height: 0;
+    background-color: rgba(230, 242, 255, 0.6);
+    bottom: -109px;
+    right: 58%;
+    transition: all 1s;
+    transform: rotate(144deg);
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.analysis__blood > .newClass134 {
+    height: 60px;
+    bottom: -156px;
     right: 54.5%;
 }
 
