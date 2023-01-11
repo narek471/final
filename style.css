@@ -2565,6 +2565,102 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     right: 54.5%;
 }
 
+.analysis__blood > .anime__span117 {
+    position: absolute;
+    width: 3px;
+    height: 0;
+    background-color: rgba(230, 242, 255, 0.6);
+    bottom: 0;
+    left: 45.5%;
+    transition: all 2s ease;
+}
+
+.analysis__blood > .newClass117 {
+    height: 101px;
+    bottom: -101px;
+}
+
+.analysis__blood > .anime__span118 {
+    position: absolute;
+    width: 3px;
+    height: 0;
+    background-color: rgba(230, 242, 255, 0.6);
+    bottom: 0;
+    right: 46%;
+    transition: all 2s ease;
+}
+
+.analysis__blood > .newClass118 {
+    height: 101px;
+    bottom: -101px;
+}
+
+.analysis__blood > .anime__span119 {
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    background-color: rgba(230, 242, 255, 0.6);
+    bottom: -102px;
+    left: 53.5%;
+    transition: all 2s ease;
+}
+
+.analysis__blood > .newClass119 {
+    width: 24px;
+}
+
+.analysis__blood > .anime__span120 {
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    background-color: rgba(230, 242, 255, 0.6);
+    bottom: -102px;
+    right: 53.5%;
+    transition: all 2s ease;
+}
+
+.analysis__blood > .newClass120 {
+    width: 24px;
+}
+
+.analysis__blood > .anime__span121 {
+    position: absolute;
+    width: 3px;
+    height: 0;
+    background-color: rgba(230, 242, 255, 0.6);
+    bottom: -109px;
+    left: 58%;
+    transition: all 1s;
+    transform: rotate(36deg);
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.analysis__blood > .newClass121 {
+    height: 56px;
+    bottom: -153px;
+    left: 54.5%;
+}
+
+.analysis__blood > .anime__span122 {
+    position: absolute;
+    width: 3px;
+    height: 0;
+    background-color: rgba(230, 242, 255, 0.6);
+    bottom: -109px;
+    right: 58%;
+    transition: all 1s;
+    transform: rotate(144deg);
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.analysis__blood > .newClass122 {
+    height: 56px;
+    bottom: -153px;
+    right: 54.5%;
+}
+
 .path__top__day:before {
     content: "";
     position: absolute;
