@@ -3773,6 +3773,14 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
         transition: 0.2s;
     }
 
+    .popup {
+        border: 3px solid rgba(115, 162, 225, 1);
+    }
+
+    .popup::before {
+        display: none;
+    }
+
     .popup__mobile {
         position: absolute;
         top: 96px;
@@ -3951,6 +3959,11 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     .path__main__block {
         width: 75%;
         padding: 25px 0;
+        border: 2px solid rgba(115, 162, 225, 1);
+    }
+
+    .path__main__block::before {
+        display: none;
     }
 
     .path__bottom__doctor {
@@ -3984,6 +3997,16 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 
     .popup__text {
         width: 110%;
+    }
+
+    .medic__bottom {
+        border: 2px solid rgba(115, 162, 225, 1);
+        border-radius: 12px;
+        border-top: 0;
+    }
+
+    .medic__bottom::before {
+        display: none;
     }
 
     .footer__main {
