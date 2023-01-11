@@ -4373,6 +4373,10 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
         right: 43.5%;
     }
 
+    .path__bottom__left > .anime__span112 {
+        right: 45.5%;
+    }
+
     .path__bottom__right > .anime__span88 {
         right: 55.5%;
     }
@@ -4407,11 +4411,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
         padding: 40px 20px;
     }
 
-    .path__top__left > .anime__span64 {
-        right: 45.5%;
-    }
-
-    .path__main > .anime__span66 {
-        right: 49%;
+    .anime__none__mobile {
+        display: none;
     }
 }
