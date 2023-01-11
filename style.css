@@ -3298,7 +3298,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     text-align: center;
     background: linear-gradient(-45deg, #F2B3BA 6.86%, #73A2E1 96.65%);
     color: #fff;
-    border-radius: 12px;
+    border-radius: 10px;
 }
 
 .medic__bottom__text {
