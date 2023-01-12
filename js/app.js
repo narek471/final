@@ -361,7 +361,7 @@ $(window).scroll(function(){
 });
 
 $(window).scroll(function(){
-    if ($(this).scrollTop() > 3300) {
+    if ($(this).scrollTop() > 3600) {
         $('#dynamic69').addClass('newClass69');
         $('#dynamic70').addClass('newClass70');
         $('#dynamic79').addClass('newClass79');
@@ -379,7 +379,7 @@ $(window).scroll(function(){
 });
 
 $(window).scroll(function(){
-    if ($(this).scrollTop() > 3800) {
+    if ($(this).scrollTop() > 3900) {
         $('#dynamic72').addClass('newClass72');
         $('#dynamic71').addClass('newClass71');
         $('#dynamic82').addClass('newClass82');
