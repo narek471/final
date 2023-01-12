@@ -3573,9 +3573,9 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
         margin-top: 150px;
     }
 
-    .analysis__blood:first-child {
-        margin-top: 80px;
-    }
+    /*.analysis__blood:first-child {*/
+    /*    margin-top: 80px;*/
+    /*}*/
 
     #analysis__blood__mr {
         margin-right: 0;
@@ -4217,7 +4217,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     }
 
     .analysis__bottom__img1 {
-        top: 165px;
+        top: 147px;
         height: 236px;
     }
 
