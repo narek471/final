@@ -4315,6 +4315,18 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     .medic__top > .anime__span92 {
         right: 54.5%;
     }
+
+    .analysis__blood > .anime__span117 {
+        left: 45%;
+    }
+
+    .analysis__blood > .anime__span118 {
+        right: 45.5%;
+    }
+
+    .analysis__blood > .anime__span130 {
+        right: 45.3%;
+    }
 }
 
 @media only screen and (max-width: 390px) {
@@ -4350,11 +4362,24 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     .medic__top > .anime__span91 {
         right: 44%;
     }
+
+    .analysis__blood > .anime__span123 {
+        left: 45%;
+    }
+
+    .analysis__blood > .anime__span124 {
+        right: 45.5%;
+    }
 }
 
 @media only screen and (max-width: 380px) {
     .analysis__bottom__img2 {
         top: 68%;
+    }
+
+    .analysis__blood > .anime__span120,
+    .analysis__blood > .anime__span119 {
+        bottom: -101px;
     }
 }
 
@@ -4413,6 +4438,10 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
         right: 43.5%;
     }
 
+    .path__bottom__left > .anime__span111 {
+        left: 45%;
+    }
+
     .path__bottom__left > .anime__span112 {
         right: 45.5%;
     }
@@ -4431,6 +4460,10 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 
     .medic__top > .anime__span92 {
         right: 55%;
+    }
+
+    .analysis__blood > .anime__span129 {
+        left: 45%;
     }
 }
 
