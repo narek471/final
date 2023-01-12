@@ -3480,6 +3480,10 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     display: none;
 }
 
+.analysis__dead__img1 {
+    display: none;
+}
+
 /*************** Media ***************/
 
 @media only screen and (max-width: 1270px) {
@@ -3595,10 +3599,17 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     }
 
     .analysis__bottom__img1 {
-        top: 147px;
+        display: none;
+    }
+
+    .analysis__dead__img1 {
+        position: absolute;
+        top: 30px;
         left: 0;
         right: 0;
         margin: auto;
+        display: block;
+        z-index: -1;
     }
 
     .analysis__bottom__img3 {
