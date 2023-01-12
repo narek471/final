@@ -3146,7 +3146,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     background-color: #fff;
 }
 
-#analysis__blood__white {
+.analysis__blood.analysis__blood__white {
     background-color: transparent;
 }
 
@@ -3573,9 +3573,9 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
         margin-top: 150px;
     }
 
-    /*.analysis__blood:first-child {*/
-    /*    margin-top: 80px;*/
-    /*}*/
+    .analysis__blood:first-child {
+        margin-top: 80px;
+    }
 
     #analysis__blood__mr {
         margin-right: 0;
