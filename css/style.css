@@ -244,6 +244,10 @@ body {
     margin-bottom: 50px;
 }
 
+.people__main__text > sup {
+    font-size: 14px;
+}
+
 .people__main__button {
     position: absolute;
     right: 20px;
