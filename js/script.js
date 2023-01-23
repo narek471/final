@@ -3,11 +3,9 @@ var i;
 
 for (i = 0; i < acc.length; i++) {
     acc[i].addEventListener("click", function() {
-        /* Toggle between adding and removing the "active" class,
-        to highlight the button that controls the panel */
+
         this.classList.toggle("active");
 
-        /* Toggle between hiding and showing the active panel */
         var panel = this.nextElementSibling;
         if (panel.style.display === "block") {
             panel.style.display = "none";
@@ -16,3 +14,28 @@ for (i = 0; i < acc.length; i++) {
         }
     });
 }
+
+let popupBg = document.querySelector('.popup__bg'); // Фон попап окна
+let popup = document.querySelector('.popup'); // Само окно
+let openPopupButtons = document.querySelectorAll('.open-popup'); // Кнопки для показа окна
+let closePopupButton = document.querySelector('.close-popup');
+
+openPopupButtons.forEach((button) => { // Перебираем все кнопки
+    button.addEventListener('click', (e) => { // Для каждой вешаем обработчик событий на клик
+        e.preventDefault(); // Предотвращаем дефолтное поведение браузера
+        popupBg.classList.add('active'); // Добавляем класс 'active' для фона
+        popup.classList.add('active'); // И для самого окна
+    })
+});
+
+closePopupButton.addEventListener('click',() => { // Вешаем обработчик на крестик
+    popupBg.classList.remove('active'); // Убираем активный класс с фона
+    popup.classList.remove('active'); // И с окна
+});
+
+document.addEventListener('click', (e) => { // Вешаем обработчик на весь документ
+    if(e.target === popupBg) { // Если цель клика - фот, то:
+        popupBg.classList.remove('active'); // Убираем активный класс с фона
+        popup.classList.remove('active'); // И с окна
+    }
+});
