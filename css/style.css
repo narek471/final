@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Ubuntu:wght@400;500;700&display=swap');
+
 
 * {
     margin: 0;
@@ -27,7 +28,7 @@ body {
 
 .container {
     width: 100%;
-    max-width: 1200px;
+    max-width: 1230px;
     padding: 0 15px;
     margin: 0 auto;
 }
@@ -284,4 +285,146 @@ body {
     height: 599px;
     border-radius: 24px;
     border: 0;
+}
+
+.instruction {
+    width: 100%;
+    position: relative;
+}
+
+.instruction__row {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 120px 0;
+}
+
+.instruction__top {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.instruction__top__right {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-left: 65px;
+    align-items: flex-start;
+}
+
+.instruction__title {
+    width: 638px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 46px;
+    color: #00309D;
+    margin-bottom: 30px;
+}
+
+.instruction__subtitle {
+    width: 451px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    height: 28px;
+    display: flex;
+}
+
+.instruction__subtitle:before {
+    content: '';
+    position: relative;
+    display: inline-block;
+    width: 31px;
+    height: 31px;
+    background: #F8C206;
+    margin-right: 16px;
+}
+
+.instruction__text {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    margin-top: 10px;
+}
+
+.instruction__text__content {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    margin-top: 30px;
+}
+
+.instruction__bottom {
+    width: 1200px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 45px;
+    color: #C0CBDF;
+    margin-top: 60px;
+}
+
+.instruction__bottom > span {
+    font-size: 32px;
+}
+
+.accordion {
+    background-color: #F2F5FA;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    margin-top: 30px;
+    transition: all 0.9s ease;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.accordion:hover {
+    background-color: rgba(204, 204, 204, 0.32);
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+    padding: 30px 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+    transition: all 1.5s ease;
+}
+
+.panel > p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    margin-bottom: 20px;
+}
+
+.accordion:after {
+    content: '';
+    width: 30px;
+    height: 17px;
+    background-image: url("../img/arrow_down.png");
+    float: right;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.active:after {
+    content: '';
+    background-image: url("../img/arrow_top.png");
+    width: 30px;
+    height: 17px;
+    margin-left: 10px;
 }
