@@ -39,3 +39,21 @@ document.addEventListener('click', (e) => { // Вешаем обработчик
         popup.classList.remove('active'); // И с окна
     }
 });
+
+$('.why__content__mobile').owlCarousel({
+    loop:true,
+    margin: 20,
+    dots: true,
+    nav:true,
+    items:1,
+    autoplay:false
+})
+
+$('.drops__content__mobile').owlCarousel({
+    loop:true,
+    margin:100,
+    dots: true,
+    nav:true,
+    items:1,
+    autoplay:false
+})

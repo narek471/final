@@ -6,16 +6,20 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="wrapper">
-        <main class="main">
+<div class="wrapper">
+    <main class="main">
         <section class="buy">
             <img src="img/bg_layer.svg" alt="" class="buy__bg__img">
             <div class="container">
                 <div class="buy__row">
                     <div class="buy__left">
+                        <p class="buy__path">
+                            главная &nbsp  / &nbsp <span>Катинорм</span>
+                        </p>
                         <h1 class="buy__title">
                             Катионорм –
                         </h1>
@@ -33,9 +37,12 @@
                         </a>
                     </div>
                     <div class="buy__right">
-                        <img src="img/bg_img.svg" alt="" class="buy__left__img">
+                        <img src="img/bg_img.svg" alt="" class="buy__right__img">
                     </div>
                 </div>
+                <p class="buy__copyright">
+                    Медицинское изделие РУ № РЗН 2013/783 от 04.07.2013
+                </p>
             </div>
         </section>
         <section class="why">
@@ -60,17 +67,32 @@
                         <div class="why__content__block">
                             <img src="img/why_icon2.svg" alt="">
                             <h3 class="why__content__title">
-                                Увлажнение и защита глазной поверхности
+                                Переносимость
                             </h3>
                             <p class="why__content__text">
-                                восстанавливает все 3 слоя слёзной плёнки, препятствуя дальнейшему развитию заболевания1
+                                без консервантов<sup>3</sup>
                             </p>
                             <p class="why__content__text">
-                                восстанавливает все 3 слоя слёзной плёнки, препятствуя дальнейшему развитию заболевания1
+                                гипотонический раствор снижает повреждающее действие солей в гипертоничной
+                                слезе<sup>1,3</sup>
                             </p>
                         </div>
                         <div class="why__content__block">
                             <img src="img/why_icon3.svg" alt="">
+                            <h3 class="why__content__title">
+                                Удобство применения
+                            </h3>
+                            <p class="why__content__text">
+                                Катионорм не влияет на качество контактных линз<sup>3</sup>
+                            </p>
+                            <p class="why__content__text">
+                                удобный флакон с коротким носиком<sup>3</sup>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="why__content__mobile owl-carousel">
+                        <div class="item why__content__block">
+                            <img src="img/why_icon1.svg" alt="">
                             <h3 class="why__content__title">
                                 Увлажнение и защита глазной поверхности
                             </h3>
@@ -81,10 +103,36 @@
                                 восстанавливает все 3 слоя слёзной плёнки, препятствуя дальнейшему развитию заболевания1
                             </p>
                         </div>
+                        <div class="item why__content__block">
+                            <img src="img/why_icon2.svg" alt="">
+                            <h3 class="why__content__title">
+                                Переносимость
+                            </h3>
+                            <p class="why__content__text">
+                                без консервантов<sup>3</sup>
+                            </p>
+                            <p class="why__content__text">
+                                гипотонический раствор снижает повреждающее действие солей в гипертоничной
+                                слезе<sup>1,3</sup>
+                            </p>
+                        </div>
+                        <div class="item why__content__block">
+                            <img src="img/why_icon3.svg" alt="">
+                            <h3 class="why__content__title">
+                                Удобство применения
+                            </h3>
+                            <p class="why__content__text">
+                                Катионорм не влияет на качество контактных линз<sup>3</sup>
+                            </p>
+                            <p class="why__content__text">
+                                удобный флакон с коротким носиком<sup>3</sup>
+                            </p>
+                        </div>
                     </div>
                     <div class="why__bottom">
                         <p class="why__bottom__text">
-                            1. Бржеский В.В. Алгоритм выбора слезозаместительной терапии у пациентов в амбулаторной практике, Клиническая офтальмология. 2018, № 1
+                            1. Бржеский В.В. Алгоритм выбора слезозаместительной терапии у пациентов в амбулаторной
+                            практике, Клиническая офтальмология. 2018, № 1
                         </p>
                         <p class="why__bottom__text">
                             2. Lallemand F, et al. J Drug Deliv. 2012;2012:604204
@@ -126,7 +174,7 @@
                         <div class="people__main__block">
                             <img src="img/people_icon.svg" alt="">
                             <p class="people__main__text">
-                                Людям с жалобами на сухость глаз постоянно, даже с утра<sup>1</sup>
+                                Людям с жалобами на сухость, которые носят контактные линзы длительно<sup>6</sup>
                             </p>
                             <span class="people__main__button open-popup">
                                 подробнее
@@ -135,7 +183,7 @@
                         <div class="people__main__block">
                             <img src="img/people_icon.svg" alt="">
                             <p class="people__main__text">
-                                Людям с жалобами на сухость глаз постоянно, даже с утра<sup>1</sup>
+                                Женщинам 45+ с жалобами на сухость глаз и факторами риска<sup>7</sup>:
                             </p>
                             <span class="people__main__button open-popup">
                                 подробнее
@@ -144,41 +192,267 @@
                     </div>
                     <div class="people__bottom">
                         <p class="people__bottom__text">
-                            1. Бржеский В.В., Алгоритм выбора слезозаместительной терапии у пациентов в амбулаторной практике, Клиническая офтальмология 2018, № 1
+                            1. Бржеский В.В., Алгоритм выбора слезозаместительной терапии у пациентов в амбулаторной
+                            практике, Клиническая офтальмология 2018, № 1
                         </p>
                         <p class="people__bottom__text">
-                            1. Бржеский В.В., Алгоритм выбора слезозаместительной терапии у пациентов в амбулаторной практике, Клиническая офтальмология 2018, № 1
+                            2. Бржеский В.В. Синдром «сухого» глаза и заболевания глазной поверхности: клиника,
+                            диагностика, лечение. М.:ГЭОТАР — Медиа, 2016, стр.367
                         </p>
                         <p class="people__bottom__text">
-                            1. Бржеский В.В., Алгоритм выбора слезозаместительной терапии у пациентов в амбулаторной практике, Клиническая офтальмология 2018, № 1
+                            3. Lallemand F, et al. J Drug Deliv 2012; 2012:604204
                         </p>
                         <p class="people__bottom__text">
-                            1. Бржеский В.В., Алгоритм выбора слезозаместительной терапии у пациентов в амбулаторной практике, Клиническая офтальмология 2018, № 1
+                            4. Amrane М, et al. J Fr Ophtalmol 2014;37:589-598
                         </p>
                         <p class="people__bottom__text">
-                            1. Бржеский В.В., Алгоритм выбора слезозаместительной терапии у пациентов в амбулаторной практике, Клиническая офтальмология 2018, № 1
+                            5. Инструкция по применению глазных капель Катионорм
                         </p>
                         <p class="people__bottom__text">
-                            1. Бржеский В.В., Алгоритм выбора слезозаместительной терапии у пациентов в амбулаторной практике, Клиническая офтальмология 2018, № 1
+                            6. Егоров Е.А. Синдром “сухого глаза”, ассоциированный с ношением контактных линз.
+                            Особенности терапевтического подхода. Клиническая офтальмология. 2018 № 2
                         </p>
                         <p class="people__bottom__text">
-                            1. Бржеский В.В., Алгоритм выбора слезозаместительной терапии у пациентов в амбулаторной практике, Клиническая офтальмология 2018, № 1
+                            7. Dry Eye Workshop // Ocular Surface. 2007. Vol. 5. P. 75 - 92
                         </p>
                         <p class="people__bottom__text">
-                            1. Бржеский В.В., Алгоритм выбора слезозаместительной терапии у пациентов в амбулаторной практике, Клиническая офтальмология 2018, № 1
+                            8. Nichols КК, et al. The international workshop on MGD: Executive summary. IOVS, Special
+                            Issue 2011;52(4):1922-9
                         </p>
                     </div>
                     <div class="people__video">
-                        <iframe width="885" height="498" src="https://www.youtube.com/embed/nuB_1XXh7SA"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <iframe width="885" height="498" src="https://www.youtube.com/embed/nuB_1XXh7SA"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
                     </div>
                 </div>
             </div>
             <div class="popup__bg">
                 <div class="popup">
                     <img src="img/close.png" alt="close" class="close-popup">
+                    <h3 class="popup__title">
+                        Люди с блефаритами<sup>8</sup>
+                    </h3>
                     <p class="popup__text">
-                        (блефарит - воспалительное заболевание век, частыми симптомами которого являются зуд век, появление чешуек на веках, а также дискомфорт, сухость, ощущение инородного тела в глазу)
+                        (блефарит - воспалительное заболевание век, частыми симптомами которого являются зуд век,
+                        появление чешуек на веках, а также дискомфорт, сухость, ощущение инородного тела в глазу)
                     </p>
+                </div>
+            </div>
+        </section>
+        <section class="drops">
+            <div class="container">
+                <div class="drops__row">
+                    <h2 class="drops__title">
+                        Глазные капли Катионорм - это
+                    </h2>
+                    <div class="drops__content">
+                        <div class="item drops__content__block">
+                            <img src="img/drops_icon1.svg" alt="">
+                            <h3 class="drops__content__title">
+                                Удобство применения
+                            </h3>
+                            <p class="drops__content__text">
+                                В основе действия капель Катионорм лежит запатентованная технология Novasorb®
+                                (Новасорб®), которая способствует восстановлению всех 3 слоёв cлёзной плёнки и
+                                препятствует дальнейшему развитию синдрома «сухого глаза»<sup>2</sup>
+                            </p>
+                        </div>
+                        <div class="item drops__content__block">
+                            <img src="img/drops_icon2.svg" alt="">
+                            <h3 class="drops__content__title">
+                                Удобство применения
+                            </h3>
+                            <p class="drops__content__text">
+                                Способствует заживлению глазной поверхности, удерживая влагу в течение более длительного
+                                времени и снижая трение во время мигания<sup>3,4</sup>
+                            </p>
+                        </div>
+                        <div class="item drops__content__block">
+                            <img src="img/drops_icon3.svg" alt="">
+                            <h3 class="drops__content__title">
+                                Удобство применения
+                            </h3>
+                            <p class="drops__content__text">
+                                Токсическое воздействие некоторых консервантов на глазную поверхность доказано многими
+                                исследованиями<sup>2</sup>. Катионорм не содержит консервантов в своём
+                                составе<sup>5</sup>
+                            </p>
+                        </div>
+                        <div class="item drops__content__block">
+                            <img src="img/why_icon1.svg" alt="">
+                            <h3 class="drops__content__title">
+                                Удобство применения
+                            </h3>
+                            <p class="drops__content__text">
+                                Глазные капли Катионорм — это катионная эмульсия, которая равномерно распределяясь и
+                                длительно удерживаясь на глазной поверхности, способствует устранению сухости глаз у
+                                людей с настойчивыми жалобами на сухость глаз в течение всего дня, даже с
+                                утра<sup>1</sup>
+                            </p>
+                        </div>
+                        <div class="item drops__content__block">
+                            <img src="img/drops_icon4.svg" alt="">
+                            <h3 class="drops__content__title">
+                                Удобство применения
+                            </h3>
+                            <p class="drops__content__text">
+                                Катионорм не влияет на качество контактных линз<sup>5</sup>
+                            </p>
+                        </div>
+                        <div class="item drops__content__block">
+                            <img src="img/drops_icon5.svg" alt="">
+                            <h3 class="drops__content__title">
+                                Удобство применения
+                            </h3>
+                            <p class="drops__content__text">
+                                Глазные капли Катионорм представлены в 38 странах мира, производятся во
+                                Франции5<sup>5</sup>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="drops__content__mobile owl-carousel">
+                        <div class="item drops__content__block">
+                            <img src="img/drops_icon1.svg" alt="">
+                            <h3 class="drops__content__title">
+                                Удобство применения
+                            </h3>
+                            <p class="drops__content__text">
+                                В основе действия капель Катионорм лежит запатентованная технология Novasorb®
+                                (Новасорб®), которая способствует восстановлению всех 3 слоёв cлёзной плёнки и
+                                препятствует дальнейшему развитию синдрома «сухого глаза»<sup>2</sup>
+                            </p>
+                        </div>
+                        <div class="item drops__content__block">
+                            <img src="img/drops_icon2.svg" alt="">
+                            <h3 class="drops__content__title">
+                                Удобство применения
+                            </h3>
+                            <p class="drops__content__text">
+                                Способствует заживлению глазной поверхности, удерживая влагу в течение более длительного
+                                времени и снижая трение во время мигания<sup>3,4</sup>
+                            </p>
+                        </div>
+                        <div class="item drops__content__block">
+                            <img src="img/drops_icon3.svg" alt="">
+                            <h3 class="drops__content__title">
+                                Удобство применения
+                            </h3>
+                            <p class="drops__content__text">
+                                Токсическое воздействие некоторых консервантов на глазную поверхность доказано многими
+                                исследованиями<sup>2</sup>. Катионорм не содержит консервантов в своём
+                                составе<sup>5</sup>
+                            </p>
+                        </div>
+                        <div class="item drops__content__block">
+                            <img src="img/why_icon1.svg" alt="">
+                            <h3 class="drops__content__title">
+                                Удобство применения
+                            </h3>
+                            <p class="drops__content__text">
+                                Глазные капли Катионорм — это катионная эмульсия, которая равномерно распределяясь и
+                                длительно удерживаясь на глазной поверхности, способствует устранению сухости глаз у
+                                людей с настойчивыми жалобами на сухость глаз в течение всего дня, даже с
+                                утра<sup>1</sup>
+                            </p>
+                        </div>
+                        <div class="item drops__content__block">
+                            <img src="img/drops_icon4.svg" alt="">
+                            <h3 class="drops__content__title">
+                                Удобство применения
+                            </h3>
+                            <p class="drops__content__text">
+                                Катионорм не влияет на качество контактных линз<sup>5</sup>
+                            </p>
+                        </div>
+                        <div class="item drops__content__block">
+                            <img src="img/drops_icon5.svg" alt="">
+                            <h3 class="drops__content__title">
+                                Удобство применения
+                            </h3>
+                            <p class="drops__content__text">
+                                Глазные капли Катионорм представлены в 38 странах мира, производятся во
+                                Франции5<sup>5</sup>
+                            </p>
+                        </div>
+                    </div>
+                    <p class="drops__bottom__text">
+                        3. Инструкция по применению глазных капель Катионорм
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="work">
+            <div class="container">
+                <div class="work__row">
+                    <h2 class="work__title">
+                        Как работает технология Novasorb®*
+                    </h2>
+                    <h3 class="work__subtitle">
+                        в составе Катионорм
+                    </h3>
+                    <div class="work__content">
+                        <div class="work__content__top">
+                            <div class="work__content__left">
+                                <h3 class="work__content__title">
+                                    Технология Novasorb®*
+                                </h3>
+                                <p class="work__content__text">
+                                    Катионорм — это катионная липидная эмульсия, созданная на основе запатентованной
+                                    технологии Novasorb®*. Катионорм содержит положительно заряженные частицы (катионы)
+                                    с масляным ядром, которые притягиваются к поверхности глаза, имеющей отрицательный
+                                    заряд от природы
+                                </p>
+                                <p class="work__content__text">
+                                    Равномерно распределяясь по поверхности глаза, Катионорм способствует восстановлению
+                                    всех 3 слоёв слёзной плёнки, увлажнению и защите глазной поверхности<sup>1–3</sup>
+                                </p>
+                            </div>
+                            <img src="img/work_img1.svg" alt="">
+                        </div>
+                        <div class="work__content__bottom">
+                            <div class="work__content__left">
+                                <h3 class="work__content__title">
+                                    Катионорм<sup>1-3</sup>:
+                                </h3>
+                                <p class="work__content__text">
+                                    Восстанавливает липидный слой, за счет уменьшения испарения слезы и стабилизации
+                                    слёзной плёнки
+                                    Восполняет водный слой слёзной плёнки, увлажняя роговицу
+                                </p>
+                                <p class="work__content__text">
+                                    Облегчает скольжение век при мигательных движениях, способствуя восстановлению
+                                    муцинового слоя слёзной плёнки и защищая поверхность глаза
+                                </p>
+                                <p class="work__content__text">
+                                    Катионная эмульсия равномерно распределяется и удерживается на глазной поверхности
+                                </p>
+                                <p class="work__content__text">
+                                    Катионорм способствует устранению и облегчению симптомов «синдрома сухого глаза»
+                                </p>
+                            </div>
+                            <img src="img/work_img2.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="work__bottom">
+                        <p class="people__bottom__text">
+                            1. Lallemand F, Daull P, Benita S, Buggage R, Garrigue JS. Successfully improving ocular
+                            drug delivery using the cationic nanoemulsion, novasorb. J Drug Deliv. 2012;2012:604204
+                        </p>
+                        <p class="people__bottom__text">
+                            2. Daull P, Lallemand F, Garrigue JS. Benefits of cetalkonium chloride cationic oil-in-water
+                            nanoemulsions for topical ophthalmic drug delivery. J Pharm Pharmacol. 2014
+                            Apr;66(4):531-41.
+                        </p>
+                        <p class="people__bottom__text">
+                            3. Amrane M et al. Ocular tolerability and efficacy of a cationic emulsion in patients with
+                            mild to moderate dry eye disease — a randomised comparative study. J Fr Ophtalmol. 2014
+                            Oct;37(8):589-98.
+                        </p>
+                        <p class="people__bottom__text">
+                            * Новасорб®
+                        </p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -188,6 +462,9 @@
                     <div class="instruction__top">
                         <div class="instruction__top__left">
                             <img src="img/people-bg.svg" alt="">
+                            <p class="instruction__copyright__text">
+                                Медицинское изделие РУ № РЗН 2013/783 от 04.07.2013
+                            </p>
                         </div>
                         <div class="instruction__top__right">
                             <h2 class="instruction__title">
@@ -203,36 +480,38 @@
                                 Перед применением внимательно ознакомьтесь с данной инструкцией.
                             </p>
                             <p class="instruction__text__content">
-                                Сохраните данную инструкцию; она может понадобиться вам снова. Если у вас возникли вопросы, обратитесь к вашему лечащему врачу. Если симптомы сохраняются, обратитесь к вашему лечащему врачу.
+                                Сохраните данную инструкцию; она может понадобиться вам снова. Если у вас возникли
+                                вопросы, обратитесь к вашему лечащему врачу. Если симптомы сохраняются, обратитесь к
+                                вашему лечащему врачу.
                             </p>
                         </div>
                     </div>
                     <div class="instruction__accordion">
-                        <button class="accordion">фармакологическое действие</button>
+                        <button class="accordion">форма выпуска, состав и упаковка</button>
                         <div class="panel">
                             <p>Катионорм увлажняет, смазывает и защищает поверхность глаза.</p>
                         </div>
-                        <button class="accordion">фармакологическое действие</button>
+                        <button class="accordion">показания и область применения</button>
                         <div class="panel">
                             <p>Катионорм увлажняет, смазывает и защищает поверхность глаза.</p>
                         </div>
-                        <button class="accordion">фармакологическое действие</button>
+                        <button class="accordion">рекомендации по применению и дозы</button>
                         <div class="panel">
                             <p>Катионорм увлажняет, смазывает и защищает поверхность глаза.</p>
                         </div>
-                        <button class="accordion">фармакологическое действие</button>
+                        <button class="accordion">побочные действия</button>
                         <div class="panel">
                             <p>Катионорм увлажняет, смазывает и защищает поверхность глаза.</p>
                         </div>
-                        <button class="accordion">фармакологическое действие</button>
+                        <button class="accordion">особые указания</button>
                         <div class="panel">
                             <p>Катионорм увлажняет, смазывает и защищает поверхность глаза.</p>
                         </div>
-                        <button class="accordion">фармакологическое действие</button>
+                        <button class="accordion">условия и сроки хранения</button>
                         <div class="panel">
                             <p>Катионорм увлажняет, смазывает и защищает поверхность глаза.</p>
                         </div>
-                        <button class="accordion">фармакологическое действие</button>
+                        <button class="accordion">производитель</button>
                         <div class="panel">
                             <p>Катионорм увлажняет, смазывает и защищает поверхность глаза.</p>
                         </div>
@@ -249,8 +528,108 @@
                 </div>
             </div>
         </section>
+        <section class="apply">
+            <img src="img/apply_bg.svg" class="apply__img__bg" alt="">
+            <div class="container">
+                <div class="apply__row">
+                    <div class="apply__block">
+                        <h2 class="apply__title">
+                            Как применять
+                        </h2>
+                        <h4 class="apply__subtitle">
+                            Способ применения и дозы Катионорм1
+                        </h4>
+                        <p class="apply__text">
+                            Рекомендуемая доза составляет 1 капля в каждый глаз
+                            1–4 раза в день
+                        </p>
+                        <p class="apply__text__item">
+                            <span>1</span> Вымойте руки
+                        </p>
+                        <p class="apply__text__item">
+                            <span>2</span> Перед первым применением удалите с колпачка защитное кольцо, потянув за отгибаемый клапан
+                        </p>
+                        <p class="apply__text__item">
+                            <span>3</span> Откройте флакон, осторожно потянув колпачок
+                        </p>
+                        <p class="apply__text__item">
+                            <span>4</span> Расположите корпус флакона между большим и указательным пальцами
+                        </p>
+                        <p class="apply__text__item">
+                            <span>5</span> Запрокиньте голову
+                        </p>
+                        <p class="apply__text__item">
+                            <span>6</span> Аккуратно отведите вниз нижнее веко и посмотрите наверх
+                        </p>
+                        <p class="apply__text__item">
+                            <span>7</span> Удерживая флакон над глазом, аккуратно закапайте 1 каплю внутрь нижнего века и поморгайте несколько раз
+                        </p>
+                        <div class="apply__content">
+                            <div class="apply__content__block">
+                                <p class="apply__content__text">
+                                    Избегайте контакта носика флакона с глазом или ресницами
+                                </p>
+                            </div>
+                            <div class="apply__content__block">
+                                <p class="apply__content__text">
+                                    После каждого применения закрывайте флакон колпачком
+                                </p>
+                            </div>
+                            <div class="apply__content__block">
+                                <p class="apply__content__text">
+                                    Храните флакон в картонной пачке, если вы не применяете препарат
+                                </p>
+                            </div>
+                            <div class="apply__content__block">
+                                <p class="apply__content__text">
+                                    Катионорм не следует применять более 3 месяцев после первого вскрытия флакона
+                                </p>
+                            </div>
+                        </div>
+                        <p class="apply__bottom__text">
+                            Не применять по истечении срока годности. Не глотать
+                        </p>
+                        <p class="apply__bottom__text">
+                            Катионорм не 9влияет на качество контактных линз
+                        </p>
+                        <p class="apply__bottom__copyright">
+                            1. Инструкция по применению глазных капель Катионорм
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="last">
+            <div class="container">
+                <div class="last__row">
+                    <div class="last__top">
+                        <div class="last__top__left">
+                            <h2 class="last__title">
+                                Где купить глазные капли Катионорм?
+                            </h2>
+                            <p class="last__text">
+                                Вы можете приобрести глазные капли Катионорм в аптеках вашего города и заказать онлайн
+                            </p>
+                            <a href="#" class="last__button">купить</a>
+                        </div>
+                        <div class="last__top__right">
+                            <img src="img/people-bg.svg" alt="">
+                            <span class="last__top__text">
+                                Медицинское изделие РУ № РЗН 2013/783 от 04.07.2013
+                            </span>
+                        </div>
+                    </div>
+                    <h3 class="instruction__bottom">
+                        ИМЕЮТСЯ ПРОТИВОПОКАЗАНИЯ. ПЕРЕД ПРИМЕНЕНИЕМ ОЗНАКОМЬТЕСЬ
+                        <span>С ИНСТРУКЦИЕЙ ПО ПРИМЕНЕНИЮ ИЛИ ПРОКОНСУЛЬТИРУЙТЕСЬ СО СПЕЦИАЛИСТОМ</span>
+                    </h3>
+                </div>
+            </div>
+        </section>
     </main>
-    </div>
-    <script src="js/script.js"></script>
+</div>
+<script src="js/jquery-3.6.1.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
