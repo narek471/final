@@ -109,5 +109,69 @@ audioButton5.addEventListener('click', () => {
     }
 })
 
+const audioButton6 = document.querySelector('.audio__block__but.bl6');
+const audioBlock6 = document.querySelector('.audio__block.bl6');
+const audioClock6 = document.querySelector('.audio__block__icon.bl6');
+
+audioButton6.addEventListener('click', () => {
+    if(audioBlock6.classList.contains('active')) {
+        audioBlock6.classList.remove('active');
+        audioButton6.src = 'img/audio_but_off.svg';
+        audioClock6.src = 'img/audio_icon_clock_b.svg'
+    } else {
+        audioBlock6.classList.add('active');
+        audioButton6.src = 'img/audio_but_on.svg';
+        audioClock6.src = 'img/audio_icon_clock.svg'
+    }
+})
+
+const audioButton7 = document.querySelector('.audio__block__but.bl7');
+const audioBlock7 = document.querySelector('.audio__block.bl7');
+const audioClock7 = document.querySelector('.audio__block__icon.bl7');
+
+audioButton7.addEventListener('click', () => {
+    if(audioBlock7.classList.contains('active')) {
+        audioBlock7.classList.remove('active');
+        audioButton7.src = 'img/audio_but_off.svg';
+        audioClock7.src = 'img/audio_icon_clock_b.svg'
+    } else {
+        audioBlock7.classList.add('active');
+        audioButton7.src = 'img/audio_but_on.svg';
+        audioClock7.src = 'img/audio_icon_clock.svg'
+    }
+})
+
+const audioButton8 = document.querySelector('.audio__block__but.bl8');
+const audioBlock8 = document.querySelector('.audio__block.bl8');
+const audioClock8 = document.querySelector('.audio__block__icon.bl8');
+
+audioButton8.addEventListener('click', () => {
+    if(audioBlock8.classList.contains('active')) {
+        audioBlock8.classList.remove('active');
+        audioButton8.src = 'img/audio_but_off.svg';
+        audioClock8.src = 'img/audio_icon_clock_b.svg'
+    } else {
+        audioBlock8.classList.add('active');
+        audioButton8.src = 'img/audio_but_on.svg';
+        audioClock8.src = 'img/audio_icon_clock.svg'
+    }
+})
+
+const audioButton9 = document.querySelector('.audio__block__but.bl9');
+const audioBlock9 = document.querySelector('.audio__block.bl9');
+const audioClock9 = document.querySelector('.audio__block__icon.bl9');
+
+audioButton9.addEventListener('click', () => {
+    if(audioBlock9.classList.contains('active')) {
+        audioBlock9.classList.remove('active');
+        audioButton9.src = 'img/audio_but_off.svg';
+        audioClock9.src = 'img/audio_icon_clock_b.svg'
+    } else {
+        audioBlock9.classList.add('active');
+        audioButton9.src = 'img/audio_but_on.svg';
+        audioClock9.src = 'img/audio_icon_clock.svg'
+    }
+})
+
 
 

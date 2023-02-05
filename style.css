@@ -532,6 +532,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 }
 
 .audio__block__title {
+    width: 382px;
     font-weight: 600;
     font-size: 17px;
     line-height: 20px;
@@ -552,6 +553,10 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     flex-direction: row;
     margin-top: 42px;
     align-items: center;
+}
+
+.audio__block__bottom.audio__block__line2 {
+    margin-top: 22px;
 }
 
 .audio__block__time {
