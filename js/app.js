@@ -29,6 +29,9 @@ for (i = 0; i < acc.length; i++) {
 
 // Audio
 
+const audioButtons = document.querySelectorAll('.audio__block__but');
+const audioBlocks = document.querySelectorAll('.audio__block');
+const audioClocks = document.querySelectorAll('.audio__block__icon');
 const audioButton1 = document.querySelector('.audio__block__but.bl1');
 const audioBlock1 = document.querySelector('.audio__block.bl1');
 const audioClock1 = document.querySelector('.audio__block__icon.bl1');
@@ -39,6 +42,7 @@ audioButton1.addEventListener('click', () => {
         audioButton1.src = 'img/audio_but_off.svg';
         audioClock1.src = 'img/audio_icon_clock_b.svg'
     } else {
+        defaultStyles();
         audioBlock1.classList.add('active');
         audioButton1.src = 'img/audio_but_on.svg';
         audioClock1.src = 'img/audio_icon_clock.svg'
@@ -55,6 +59,7 @@ audioButton2.addEventListener('click', () => {
         audioButton2.src = 'img/audio_but_off.svg';
         audioClock2.src = 'img/audio_icon_clock_b.svg'
     } else {
+        defaultStyles();
         audioBlock2.classList.add('active');
         audioButton2.src = 'img/audio_but_on.svg';
         audioClock2.src = 'img/audio_icon_clock.svg'
@@ -71,6 +76,7 @@ audioButton3.addEventListener('click', () => {
         audioButton3.src = 'img/audio_but_off.svg';
         audioClock3.src = 'img/audio_icon_clock_b.svg'
     } else {
+        defaultStyles();
         audioBlock3.classList.add('active');
         audioButton3.src = 'img/audio_but_on.svg';
         audioClock3.src = 'img/audio_icon_clock.svg'
@@ -87,6 +93,7 @@ audioButton4.addEventListener('click', () => {
         audioButton4.src = 'img/audio_but_off.svg';
         audioClock4.src = 'img/audio_icon_clock_b.svg'
     } else {
+        defaultStyles();
         audioBlock4.classList.add('active');
         audioButton4.src = 'img/audio_but_on.svg';
         audioClock4.src = 'img/audio_icon_clock.svg'
@@ -103,6 +110,7 @@ audioButton5.addEventListener('click', () => {
         audioButton5.src = 'img/audio_but_off.svg';
         audioClock5.src = 'img/audio_icon_clock_b.svg'
     } else {
+        defaultStyles();
         audioBlock5.classList.add('active');
         audioButton5.src = 'img/audio_but_on.svg';
         audioClock5.src = 'img/audio_icon_clock.svg'
@@ -119,6 +127,7 @@ audioButton6.addEventListener('click', () => {
         audioButton6.src = 'img/audio_but_off.svg';
         audioClock6.src = 'img/audio_icon_clock_b.svg'
     } else {
+        defaultStyles();
         audioBlock6.classList.add('active');
         audioButton6.src = 'img/audio_but_on.svg';
         audioClock6.src = 'img/audio_icon_clock.svg'
@@ -135,6 +144,7 @@ audioButton7.addEventListener('click', () => {
         audioButton7.src = 'img/audio_but_off.svg';
         audioClock7.src = 'img/audio_icon_clock_b.svg'
     } else {
+        defaultStyles();
         audioBlock7.classList.add('active');
         audioButton7.src = 'img/audio_but_on.svg';
         audioClock7.src = 'img/audio_icon_clock.svg'
@@ -151,6 +161,7 @@ audioButton8.addEventListener('click', () => {
         audioButton8.src = 'img/audio_but_off.svg';
         audioClock8.src = 'img/audio_icon_clock_b.svg'
     } else {
+        defaultStyles();
         audioBlock8.classList.add('active');
         audioButton8.src = 'img/audio_but_on.svg';
         audioClock8.src = 'img/audio_icon_clock.svg'
@@ -165,13 +176,20 @@ audioButton9.addEventListener('click', () => {
     if(audioBlock9.classList.contains('active')) {
         audioBlock9.classList.remove('active');
         audioButton9.src = 'img/audio_but_off.svg';
-        audioClock9.src = 'img/audio_icon_clock_b.svg'
+        audioClock9.src = 'img/audio_icon_clock_b.svg';
     } else {
+        defaultStyles();
         audioBlock9.classList.add('active');
         audioButton9.src = 'img/audio_but_on.svg';
-        audioClock9.src = 'img/audio_icon_clock.svg'
+        audioClock9.src = 'img/audio_icon_clock.svg';
     }
 })
+
+function defaultStyles() {
+    audioButtons.forEach(element => element.src = 'img/audio_but_off.svg');
+    audioBlocks.forEach(element => element.classList.remove('active'));
+    audioClocks.forEach(element => element.src = 'img/audio_icon_clock_b.svg');
+}
 
 
 
