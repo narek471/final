@@ -945,6 +945,22 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 
 /*************** Media ***************/
 
+@media only screen and (max-width: 1490px) {
+    .first__img {
+        right: -50px;
+    }
+}
+
+@media only screen and (max-width: 1380px) {
+    .first__img {
+        right: -100px;
+    }
+
+    .how__top__left {
+        margin-left: 50px;
+    }
+}
+
 @media only screen and (max-width: 1270px) {
     body {
         font-size: 21px;
@@ -964,167 +980,42 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
         width: 43%;
     }
 
-    .anime__none {
-        display: none;
+    .can__right__img {
+        width: 500px;
     }
 
-    .bubble__title {
-        font-size: 23px;
+    .consultation__bottom__text,
+    .how__bottom__text,
+    .attempts__bottom__text,
+    .first__bottom__text {
+        width: 1000px;
     }
 
-    .bubble__text {
-        font-size: 23px;
-    }
+}
 
-    .path__union__left {
-        bottom: -208px;
-    }
-
-    .path__union__kr {
-        display: none;
-    }
-
-    .path__main__block {
-        width: 35%;
-    }
-
-    .path__bottom {
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
-
-    .path__bottom__right {
-        margin-top: 100px;
-    }
-
-    .path__bottom__img1 {
-        left: 0;
-        right: 0;
-        margin: auto;
-        bottom: -100px;
-        width: 150px;
-        height: 210px;
-    }
-
-    .path__bottom__left > .path__bottom__img {
-        display: none;
-    }
-
-    .path__bottom__doctor {
-        width: 100%;
-    }
-
-    .path__bottom__img {
-        left: 0;
-        right: 0;
-        margin: auto;
-    }
-
-    .analysis {
+@media only screen and (max-width: 1135px) {
+    .can__right__img {
+        width: 450px;
         margin-top: 30px;
     }
 
-    .analysis__row {
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-        background-color: transparent;
+    .content__menu {
+        padding: 0 0 35px 100px;
     }
 
-    .analysis__blood {
-        margin-top: 150px;
+    .content__title {
+        margin-right: -50px;
     }
 
-    .analysis__blood:first-child {
-        margin-top: 80px;
+    .attempts__top__right > img {
+        width: 450px;
     }
 
-    #analysis__blood__mr {
-        margin-right: 0;
-        margin-top: 150px;
-    }
-
-    .analysis__union__long{
-        display: none;
-    }
-
-
-    .analysis__bottom__img2 {
-        top: 66%;
-        left: 0;
-        right: 0;
-        margin: auto;
-    }
-
-    .analysis__bottom__img1 {
-        display: none;
-    }
-
-    .analysis__dead__img1 {
-        position: absolute;
-        top: 30px;
-        left: 0;
-        right: 0;
-        margin: auto;
-        display: block;
-        z-index: -1;
-    }
-
-    .analysis__bottom__img3 {
-        top: 78%;
-    }
-
-    .analysis__bottom__img4 {
-        display: block;
-        position: absolute;
-        top: 66.3%;
-        left: 0;
-        right: 0;
-        margin: auto;
-        z-index: -1;
-    }
-
-
-    .analysis__bottom__img3,
-    .path__bottom__img2 {
-        left: 0;
-        right: 0;
-        margin: auto;
-    }
-
-    .analysis__blood {
-        width: 580px;
-    }
-
-    .analysis__blood__text {
-        width: 100%;
-        padding: 45px 15px;
-        background-color: white;
-        margin-top: -25px;
-        border-radius: 12px;
-        margin-left: 0;
-    }
-
-    #pulse_1 {
-        right: -20.5px;
-        top: -62px;
-    }
-
-    #pulse_2 {
-        top: -62.5px;
-    }
-
-    #pulse_3 {
-        top: -11px;
-    }
-
-    #pulse_4 {
-        top: -11px;
-    }
-
-    .path__row {
-        padding: 0 0 28px 0;
+    .consultation__bottom__text,
+    .how__bottom__text,
+    .attempts__bottom__text,
+    .first__bottom__text {
+        width: 900px;
     }
 }
 
@@ -1133,8 +1024,66 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
         font-size: 20px;
     }
 
-    .path__main__block {
-        width: 30%;
+    .can__row {
+        flex-direction: column;
+    }
+
+    .can__title {
+        width: 90%;
+        margin-top: 70px;
+    }
+
+    .can__text {
+        width: 90%;
+    }
+
+    .can__right {
+        text-align: center;
+    }
+
+    .can__right__img {
+        width: 630px;
+    }
+
+    .how__top,
+    .consultation__top,
+    .attempts__top,
+    .first__top {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .how__text,
+    .consultation__text,
+    .attempts__text,
+    .first__text {
+        width: 80%;
+        margin-bottom: 50px;
+    }
+
+    .how__top__right,
+    .consultation__top__right,
+    .attempts__top__right,
+    .first__top__right {
+        width: 100%;
+        text-align: center;
+    }
+    .consultation__top__right > img,
+    .attempts__top__right > img,
+    .first__top__right > img {
+        width: 580px;
+    }
+
+    .consultation__bottom__text,
+    .first__bottom__text,
+    .attempts__bottom__text,
+    .how__bottom__text {
+        width: 90%;
+    }
+
+    .content__title {
+        font-size: 35px;
+        margin-right: -145px;
     }
 }
 
@@ -1368,117 +1317,8 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
         display: block;
     }
 
-    .bubble__row {
-        flex-wrap: wrap;
-        flex-direction: column;
-        justify-content: center;
-        align-content: center;
-    }
-
-    .bubble__picture {
-        margin-left: 15%;
-        margin-top: 50px;
-    }
-
-    .bubble__content {
-
-    }
-
-    .path__top {
-        flex-wrap: wrap;
-        align-content: center;
-        justify-content: center;
-        flex-direction: column-reverse;
-    }
-
-    #pulse_1 {
-        top: -68px;
-    }
-
-    #pulse_3 {
-        top: -32px;
-        right: -25.5px;
-    }
-
-    .path__union__left,
-    .path__union__right {
-        display: none;
-    }
-
-    .path__top__left {
-        width: 80%;
-        margin-top: 120px;
-    }
-
-    .path__top__fast:before,
-    .path__top__low:before,
-    .path__top__day:before {
-        display: none;
-    }
-
-    .path__top__low,
-    .path__top__day {
-        background-color: #E3B1BF;
-        border-radius: 12px 0 0 12px;
-    }
-
-    .path__top__right {
-        width: 80%;
-    }
-
-    .path__main__block {
-        width: 75%;
-        padding: 25px 0;
-        border: 2px solid rgba(115, 162, 225, 1);
-    }
-
-    .path__main__block::before {
-        display: none;
-    }
-
-    .path__bottom__doctor {
-        display: none;
-    }
-
-    .br__hide {
-        display: block;
-    }
-
-    .medic__bottom__title {
-        font-size: 23px;
-        text-align: start;
-    }
-
-    .path__union__mobile {
-        display: block;
-        width: 144px;
-        height: 190px;
-        position: absolute;
-        bottom: -121px;
-        right: 0;
-        margin: auto;
-        left: 0;
-        z-index: -1;
-    }
-
-    .path__main > .path__union__mobile {
-        bottom: -100px;
-    }
-
     .popup__text {
         width: 110%;
-    }
-
-    .medic__bottom {
-        border: 2px solid rgba(115, 162, 225, 1);
-        border-right: 2px solid #F2B3BA;
-        border-bottom: 2px solid rgba(78, 37, 145, 0.4);
-        border-radius: 12px;
-        border-top: 0;
-    }
-
-    .medic__bottom::before {
-        display: none;
     }
 
     .footer__main {
@@ -1500,55 +1340,99 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     }
 }
 
+@media only screen and (max-width: 960px) {
+
+    .can__title {
+        font-size: 35px;
+        line-height: 106.1%;
+    }
+
+    .content__menu {
+        padding: 0 0 35px 20px;
+    }
+
+    .content__title {
+        transform: rotate(-90deg);
+        margin-right: -350px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+
+    .can__row,
+    .content__row,
+    .attempts__row,
+    .first__row,
+    .how__row,
+    .consultation__row {
+        padding-bottom: 60px;
+    }
+
+    .can__title,
+    .consultation__title,
+    .attempts__title,
+    .first__title,
+    .how__title {
+        font-size: 30px;
+        width: 95%;
+        line-height: 26px;
+    }
+
+    .content__row {
+        justify-content: flex-start;
+    }
+
+    .content__menu {
+        margin-left: 70px;
+        width: unset;
+    }
+
+    .content__title {
+        display: inline-block;
+        position: absolute;
+        left: -90px;
+    }
+
+    .can__text,
+    .content__text,
+    .consultation__text,
+    .attempts__text,
+    .first__text,
+    .how__text {
+        font-size: 24px;
+        width: 95%;
+        line-height: 24px;
+    }
+
+    .can__row,
+    .content__row,
+    .consultation__row,
+    .attempts__row,
+    .first__row,
+    .how__row {
+        padding-left: 10px;
+    }
+
+    .can__right__img,
+    .consultation__top__right > img,
+    .attempts__top__right > img,
+    .first__top__right > img,
+    .how__top__right > img{
+        width: 400px;
+    }
+
+    .how__top__left {
+        margin-left: 0;
+    }
+}
+
 @media only screen and (max-width: 641px) {
     body {
         font-size: 19px;
     }
 
-    .bubble__content {
-        padding-left: 25px;
-    }
-
-    .bubble__text,
-    .bubble__title {
-        font-size: 21px;
-    }
-
-    .path__top__left,
-    .path__top__right {
-        width: 95%;
-    }
-
-    .path__main__block {
-        width: 82%;
-    }
-
-    .path__bottom__left,
-    .path__bottom__right {
-        width: 90%;
-    }
-
-    .medic__bottom__title {
-        font-size: 21px;
-        text-align: start;
-    }
-
-    .path__top__day,
-    .path__top__fast {
-        padding: 9px 10px 9px 30px;
-    }
-
     .hide__br {
         display: none;
-    }
-
-    .analysis__blood {
-        width: 90%;
-        min-width: 300px;
-    }
-
-    .analysis__bottom__img4 {
-        top: 68.3%;
     }
 }
 
@@ -1568,28 +1452,6 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 
     #bottom__br {
         display: block;
-    }
-
-    .bubble {
-        padding: 40px 0;
-    }
-
-    .bubble__content {
-        padding-left: 15px;
-    }
-
-    .bubble__h1 {
-        font-size: 30px;
-        margin-right: 9%;
-        line-height: 38px;
-    }
-
-    .medic__bottom__text {
-        font-size: 19px;
-    }
-
-    .analysis__bottom__img4 {
-        top: 71.6%;
     }
 
     .footer__main {
@@ -1627,18 +1489,6 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
         margin-top: -3px;
     }
 
-    #pulse_2 {
-        top: -38.5px;
-    }
-
-    .analysis__blood {
-        min-width: 100px;
-    }
-
-    .analysis__bottom__img2 {
-        top: 69.5%;
-    }
-
     .popup__text {
         width: 130%;
     }
@@ -1667,76 +1517,67 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
         width: 130px;
     }
 
-    .bubble__h1 {
-        font-size: 28px;
-        line-height: 35px;
+    .can__title,
+    .consultation__title,
+    .attempts__title,
+    .first__title,
+    .how__title {
+        font-size: 26px;
+        width: 100%;
+        line-height: 26px;
     }
 
-    .analysis__blood {
-        width: 95%;
-        min-width: 200px;
+    .content__menu {
+        margin-left: 60px;
+        width: unset;
     }
 
-    .analysis__blood__block {
-        padding: 15px;
+    .content__title {
+        display: inline-block;
+        position: absolute;
+        left: -50px;
+        font-size: 26px;
     }
 
-    .analysis__blood__text {
+    .content__link {
         font-size: 20px;
-        padding: 45px 15px 15px 15px;
     }
 
-    .analysis__bottom__img1 {
-        top: 147px !important;
-        height: 236px !important;
+    .can__text,
+    .content__text,
+    .consultation__text,
+    .attempts__text,
+    .first__text,
+    .how__text {
+        font-size: 22px;
+        width: 100%;
+        line-height: 24px;
     }
 
-    .analysis__bottom__img2 {
-        top: 65.5%;
+    .can__row,
+    .content__row,
+    .consultation__row,
+    .attempts__row,
+    .first__row,
+    .how__row {
+        padding-left: 5px;
     }
 
-    .analysis__bottom__img3 {
-        top: 75%;
+    .can__right__img,
+    .consultation__top__right > img,
+    .attempts__top__right > img,
+    .first__top__right > img,
+    .how__top__right > img{
+        width: 320px;
     }
 
-    .analysis__bottom__img4 {
-        top: 68.3%;
+    .how__top__left {
+        margin-left: 0;
     }
 
-    .medic__bottom__title,
-    .bubble__text,
-    .bubble__title {
-        font-size: 19px;
-    }
-
-    #pulse_1 {
-        top: -69px;
-    }
-
-    .path__top {
-        padding: 0 20px 0 0;
-    }
-
-    .path__main__block {
-        width: 88%;
-        margin-right: 6%;
-    }
-
-    .path__main > .path__union__mobile {
-        right: 6%;
-        bottom: -100px;
-    }
 }
 
 @media only screen and (max-width: 425px) {
-
-    .bubble {
-        padding: 35px 0;
-    }
-
-    .anime__none__mobile {
-        display: block;
-    }
 
     .footer__top > img {
         width: 175px;
@@ -1766,26 +1607,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 }
 
 @media only screen and (max-width: 415px){
-    .path__bottom__right > .anime__span78,
-    .path__bottom__right > .anime__span77 {
-        bottom: -119px;
-    }
 
-    .medic__top > .anime__span92 {
-        right: 54.5%;
-    }
-
-    .analysis__blood > .anime__span117 {
-        left: 45%;
-    }
-
-    .analysis__blood > .anime__span118 {
-        right: 45.5%;
-    }
-
-    .analysis__blood > .anime__span130 {
-        right: 45.3%;
-    }
 }
 
 @media only screen and (max-width: 390px) {
@@ -1797,49 +1619,10 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     .header__top__logo {
         left: 35px;
     }
-
-    .path__main > .anime__span65 {
-        left: 43%;
-    }
-
-    .path__top__left > .anime__span63 {
-        left: 46%;
-    }
-
-    .path__bottom__right > .anime__span68 {
-        right: 45%;
-    }
-
-    .analysis__row > .anime__span70 {
-        right: 45.5%;
-    }
-
-    .medic__top > .anime__span72 {
-        right: 45.5%;
-    }
-
-    .medic__top > .anime__span91 {
-        right: 44%;
-    }
-
-    .analysis__blood > .anime__span123 {
-        left: 45%;
-    }
-
-    .analysis__blood > .anime__span124 {
-        right: 45.5%;
-    }
 }
 
 @media only screen and (max-width: 380px) {
-    .analysis__bottom__img2 {
-        top: 68%;
-    }
 
-    .analysis__blood > .anime__span120,
-    .analysis__blood > .anime__span119 {
-        bottom: -101px;
-    }
 }
 
 @media only screen and (max-width: 376px) {
@@ -1849,101 +1632,11 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
         left: 25px;
     }
 
-    .path__top__day,
-    .path__top__fast {
-        padding: 9px 10px;
-    }
 
-    .path__top__low {
-        padding: 24px 30px 24px 10px;
-    }
-
-    .path__bottom__fast {
-        height: 375px;
-    }
-
-    .path__top__left > .anime__span63 {
-        left: 45.5%;
-    }
-    .path__bottom__right > .anime__span67 {
-        left: 44.5%;
-    }
-
-    .analysis__row > .newClass69 {
-        left: 45%;
-    }
-
-    .medic__top > .anime__span71 {
-        left: 45%;
-    }
-
-    .path__main > .anime__span75 {
-        left: 38%;
-    }
-
-    .path__main > .anime__span76 {
-        right: 44%;
-    }
-
-    .path__main > .anime__span85 {
-        right: 48.5%;
-    }
-
-    .path__main > .anime__span86 {
-        right: 56.5%;
-    }
-
-    .path__bottom__right > .anime__span87 {
-        right: 43.5%;
-    }
-
-    .path__bottom__left > .anime__span111 {
-        left: 45%;
-    }
-
-    .path__bottom__left > .anime__span112 {
-        right: 45.5%;
-    }
-
-    .path__bottom__right > .anime__span88 {
-        right: 55.5%;
-    }
-
-    .analysis__row > .anime__span89 {
-        right: 45%;
-    }
-
-    .analysis__row > .anime__span90 {
-        right: 54.5%;
-    }
-
-    .medic__top > .anime__span92 {
-        right: 55%;
-    }
-
-    .analysis__blood > .anime__span129 {
-        left: 45%;
-    }
 }
 
 @media only screen and (max-width: 354px) {
-    #pulse_1 {
-        top: -45px;
-    }
-
     .header__logo__link {
         left: 25px;
-    }
-
-    .path__bottom__fast {
-        height: 460px;
-    }
-
-    .medic__bottom__text {
-        padding: 40px 20px;
-    }
-
-    .anime__none__mobile {
-        display: none;
     }
 }
