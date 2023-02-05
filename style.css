@@ -409,6 +409,11 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     font-size: 17px;
 }
 
+.header__bottom__text > a {
+    color: #666666;
+    font-size: 17px;
+}
+
 #header__br {
     display: none;
 }
@@ -1368,6 +1373,12 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
         padding-bottom: 60px;
     }
 
+    .content__img,
+    .consultation__img,
+    .first__img {
+        display: none;
+    }
+
     .can__title,
     .consultation__title,
     .attempts__title,
@@ -1442,6 +1453,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     }
 
     .header__bottom__text,
+    .header__bottom__text > a,
     .header__bottom__link {
         font-size: 13px;
     }
@@ -1505,6 +1517,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     }
 
     .header__bottom__text,
+    .header__bottom__text > a,
     .header__bottom__link {
         font-size: 11px;
     }
@@ -1515,6 +1528,13 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 
     .header__top__right {
         width: 130px;
+    }
+
+    .attempts__bottom__text,
+    .first__bottom__text,
+    .consultation__bottom__text,
+    .how__bottom__text {
+        width: 100%;
     }
 
     .can__title,
