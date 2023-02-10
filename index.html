@@ -231,7 +231,7 @@
                                     Серия аудио-подкастов по гиперактивному мочевому пузырю с ведущими мировыми экспертами
                                 </h1>
                                 <p class="info__text">
-                                    Ниже размещена серия подкастов <span>«Срочные вопросы»</span> - это первая в своем роде серия, посвящённая ГМП и охватывающая ряд ключевых тем с ведущими экспертами по различным дисциплинам. Представленная «отцом ГМП» профессором Полом Абрамсом, эта серия подкастов включает экспертов со всего мира, которые поделятся своими взглядами на состояние, которое быстро становится одним из наиболее распространённых заболеваний среди населения и особенно в пожилом возрасте.
+                                    Ниже размещена серия подкастов <span>«Срочные вопросы»</span> - это первая в своем роде серия, посвящённая ГМП и охватывающая ряд ключевых тем с ведущими экспертами по различным дисциплинам. Представленная «отцом ГМП» профессором Полом Абрамсом, эта серия подкастов включает экспертов со всего мира, которые поделятся своими взглядами на состояние, которое быстро становится одним из наиболее распространённых заболеваний среди населения, особенно в пожилом возрасте.
                                 </p>
                             </div>
                         </div>
@@ -242,6 +242,7 @@
                         <div class="audio__row">
                             <div class="audio__playlist">
                                 <div class="audio__block bl1">
+                                    <audio src="audio/audio_1.mp3" class="audio__playlist__audio bl1"></audio>
                                     <img src="img/audio_img.svg" alt="">
                                     <div class="audio__block__content ">
                                         <p class="audio__block__episode">
@@ -256,8 +257,18 @@
                                         <div class="audio__block__bottom">
                                             <img src="img/audio_icon_clock_b.svg" alt="" class="audio__block__icon bl1">
                                             <p class="audio__block__time">
-                                                3 часа 45 минут
+                                                19 минут 31 секунда
                                             </p>
+                                        </div>
+                                    </div>
+                                    <div class="audio__block__popup bl1">
+                                        <div class="audio__popup__description">
+                                            <img src="img/description_icon.svg" alt="">
+                                            <button class="popup__description__button " onclick="openPopUpEpisode(0)">Описание эпизода</button>
+                                        </div>
+                                        <div class="audio__popup__share">
+                                            <img src="img/share_icon.svg" alt="">
+                                            <button class="popup__share__button" data-id="1">Поделиться</button>
                                         </div>
                                     </div>
                                     <div class="audio__block__options">
@@ -265,16 +276,21 @@
                                         <span class="audio__block__span"></span>
                                         <span class="audio__block__span"></span>
                                     </div>
-                                    <img src="img/audio_but_off.svg" class="audio__block__but bl1" alt="">
+                                    <div class="ico-share_st audio__share__block" data-id="1">
+                                        <script src="https://yastatic.net/share2/share.js"></script>
+                                        <div class="ya-share2" data-curtain data-size="s" data-shape="round" data-url="https://uro-info.ru/" data-services="vkontakte,odnoklassniki,telegram,twitter,whatsapp"></div>
+                                    </div>
+                                    <img src="img/audio_but_off.svg" class="audio__block__but bl1" alt="" onclick="lineTrack(0)">
                                 </div>
                                 <div class="audio__block bl2">
+                                    <audio src="audio/audio_2.mp3" class="audio__playlist__audio bl2"></audio>
                                     <img src="img/audio_img.svg" alt="">
                                     <div class="audio__block__content ">
                                         <p class="audio__block__episode">
                                             Эпизод 2
                                         </p>
                                         <p class="audio__block__title">
-                                            «ГМП ВО ВРЕМЯ ПАНДЕМИИ COVID-19»
+                                            «ГМП во время пандемии Covid-19»
                                         </p>
                                         <p class="audio__block__prof">
                                             Проф. Кристофер Чаппл
@@ -282,8 +298,18 @@
                                         <div class="audio__block__bottom">
                                             <img src="img/audio_icon_clock_b.svg" alt="" class="audio__block__icon bl2">
                                             <p class="audio__block__time">
-                                                1 час 15 минут
+                                                9 минут 57 секунд
                                             </p>
+                                        </div>
+                                    </div>
+                                    <div class="audio__block__popup bl2">
+                                        <div class="audio__popup__description">
+                                            <img src="img/description_icon.svg" alt="">
+                                            <button class="popup__description__button" onclick="openPopUpEpisode(1)">Описание эпизода</button>
+                                        </div>
+                                        <div class="audio__popup__share">
+                                            <img src="img/share_icon.svg" alt="">
+                                            <button class="popup__share__button" data-id="2">Поделиться</button>
                                         </div>
                                     </div>
                                     <div class="audio__block__options">
@@ -291,9 +317,14 @@
                                         <span class="audio__block__span"></span>
                                         <span class="audio__block__span"></span>
                                     </div>
-                                    <img src="img/audio_but_off.svg" class="audio__block__but bl2" alt="">
+                                    <div class="ico-share_st audio__share__block" data-id="2">
+                                        <script src="https://yastatic.net/share2/share.js"></script>
+                                        <div class="ya-share2" data-curtain data-size="s" data-shape="round" data-url="https://uro-info.ru/" data-services="vkontakte,odnoklassniki,telegram,twitter,whatsapp"></div>
+                                    </div>
+                                    <img src="img/audio_but_off.svg" class="audio__block__but bl2" alt="" onclick="lineTrack(1)">
                                 </div>
                                 <div class="audio__block bl3">
+                                    <audio src="audio/audio_3.mp3" class="audio__playlist__audio bl3"></audio>
                                     <img src="img/audio_img.svg" alt="">
                                     <div class="audio__block__content ">
                                         <p class="audio__block__episode">
@@ -308,8 +339,18 @@
                                         <div class="audio__block__bottom">
                                             <img src="img/audio_icon_clock_b.svg" alt="" class="audio__block__icon bl3">
                                             <p class="audio__block__time">
-                                                54 минуты
+                                                25 минут 15 секунд
                                             </p>
+                                        </div>
+                                    </div>
+                                    <div class="audio__block__popup bl3">
+                                        <div class="audio__popup__description">
+                                            <img src="img/description_icon.svg" alt="">
+                                            <button class="popup__description__button" onclick="openPopUpEpisode(2)">Описание эпизода</button>
+                                        </div>
+                                        <div class="audio__popup__share">
+                                            <img src="img/share_icon.svg" alt="">
+                                            <button class="popup__share__button" data-id="3">Поделиться</button>
                                         </div>
                                     </div>
                                     <div class="audio__block__options">
@@ -317,9 +358,14 @@
                                         <span class="audio__block__span"></span>
                                         <span class="audio__block__span"></span>
                                     </div>
-                                    <img src="img/audio_but_off.svg" class="audio__block__but bl3" alt="">
+                                    <div class="ico-share_st audio__share__block" data-id="3">
+                                        <script src="https://yastatic.net/share2/share.js"></script>
+                                        <div class="ya-share2" data-curtain data-size="s" data-shape="round" data-url="https://uro-info.ru/" data-services="vkontakte,odnoklassniki,telegram,twitter,whatsapp"></div>
+                                    </div>
+                                    <img src="img/audio_but_off.svg" class="audio__block__but bl3" alt="" onclick="lineTrack(2)">
                                 </div>
                                 <div class="audio__block bl4">
+                                    <audio src="audio/audio_4.mp3" class="audio__playlist__audio bl4"></audio>
                                     <img src="img/audio_img.svg" alt="">
                                     <div class="audio__block__content ">
                                         <p class="audio__block__episode">
@@ -334,8 +380,18 @@
                                         <div class="audio__block__bottom">
                                             <img src="img/audio_icon_clock_b.svg" alt="" class="audio__block__icon bl4">
                                             <p class="audio__block__time">
-                                                2 часа 15 минут
+                                                22 минуты 26 секунд
                                             </p>
+                                        </div>
+                                    </div>
+                                    <div class="audio__block__popup bl4">
+                                        <div class="audio__popup__description">
+                                            <img src="img/description_icon.svg" alt="">
+                                            <button class="popup__description__button" onclick="openPopUpEpisode(3)">Описание эпизода</button>
+                                        </div>
+                                        <div class="audio__popup__share">
+                                            <img src="img/share_icon.svg" alt="">
+                                            <button class="popup__share__button" data-id="4">Поделиться</button>
                                         </div>
                                     </div>
                                     <div class="audio__block__options">
@@ -343,9 +399,14 @@
                                         <span class="audio__block__span"></span>
                                         <span class="audio__block__span"></span>
                                     </div>
-                                    <img src="img/audio_but_off.svg" class="audio__block__but bl4" alt="">
+                                    <div class="ico-share_st audio__share__block" data-id="4">
+                                        <script src="https://yastatic.net/share2/share.js"></script>
+                                        <div class="ya-share2" data-curtain data-size="s" data-shape="round" data-url="https://uro-info.ru/" data-services="vkontakte,odnoklassniki,telegram,twitter,whatsapp"></div>
+                                    </div>
+                                    <img src="img/audio_but_off.svg" class="audio__block__but bl4" alt="" onclick="lineTrack(3)">
                                 </div>
                                 <div class="audio__block bl5">
+                                    <audio src="audio/audio_5.mp3" class="audio__playlist__audio bl5"></audio>
                                     <img src="img/audio_img.svg" alt="">
                                     <div class="audio__block__content ">
                                         <p class="audio__block__episode">
@@ -360,8 +421,18 @@
                                         <div class="audio__block__bottom">
                                             <img src="img/audio_icon_clock_b.svg" alt="" class="audio__block__icon bl5">
                                             <p class="audio__block__time">
-                                                49 минут
+                                                16 минут 43 секунды
                                             </p>
+                                        </div>
+                                    </div>
+                                    <div class="audio__block__popup bl5">
+                                        <div class="audio__popup__description">
+                                            <img src="img/description_icon.svg" alt="">
+                                            <button class="popup__description__button" onclick="openPopUpEpisode(4)">Описание эпизода</button>
+                                        </div>
+                                        <div class="audio__popup__share">
+                                            <img src="img/share_icon.svg" alt="">
+                                            <button class="popup__share__button" data-id="5">Поделиться</button>
                                         </div>
                                     </div>
                                     <div class="audio__block__options">
@@ -369,16 +440,21 @@
                                         <span class="audio__block__span"></span>
                                         <span class="audio__block__span"></span>
                                     </div>
-                                    <img src="img/audio_but_off.svg" class="audio__block__but bl5" alt="">
+                                    <div class="ico-share_st audio__share__block" data-id="5">
+                                        <script src="https://yastatic.net/share2/share.js"></script>
+                                        <div class="ya-share2" data-curtain data-size="s" data-shape="round" data-url="https://uro-info.ru/" data-services="vkontakte,odnoklassniki,telegram,twitter,whatsapp"></div>
+                                    </div>
+                                    <img src="img/audio_but_off.svg" class="audio__block__but bl5" alt="" onclick="lineTrack(4)">
                                 </div>
                                 <div class="audio__block bl6">
+                                    <audio src="audio/audio_6.mp3" class="audio__playlist__audio bl6"></audio>
                                     <img src="img/audio_img.svg" alt="">
                                     <div class="audio__block__content ">
                                         <p class="audio__block__episode">
                                             Эпизод 6
                                         </p>
                                         <p class="audio__block__title">
-                                            «ОСВЕДОМЛЕННОСТЬ О ГМП В ПЕРВИЧНОМ МЕДИКО-САНИТАРНОМ ЗВЕНЕ»
+                                            «Осведомлённость о ГМП в первичном медико-санитарном звене»
                                         </p>
                                         <p class="audio__block__prof">
                                             Проф. Филипп Ван Керребрек
@@ -386,8 +462,18 @@
                                         <div class="audio__block__bottom audio__block__line2">
                                             <img src="img/audio_icon_clock_b.svg" alt="" class="audio__block__icon bl6">
                                             <p class="audio__block__time">
-                                                1 час 32 минуты
+                                                14 минут 33 секунды
                                             </p>
+                                        </div>
+                                    </div>
+                                    <div class="audio__block__popup bl6">
+                                        <div class="audio__popup__description">
+                                            <img src="img/description_icon.svg" alt="">
+                                            <button class="popup__description__button" onclick="openPopUpEpisode(5)">Описание эпизода</button>
+                                        </div>
+                                        <div class="audio__popup__share">
+                                            <img src="img/share_icon.svg" alt="">
+                                            <button class="popup__share__button" data-id="6">Поделиться</button>
                                         </div>
                                     </div>
                                     <div class="audio__block__options">
@@ -395,9 +481,14 @@
                                         <span class="audio__block__span"></span>
                                         <span class="audio__block__span"></span>
                                     </div>
-                                    <img src="img/audio_but_off.svg" class="audio__block__but bl6" alt="">
+                                    <div class="ico-share_st audio__share__block" data-id="6">
+                                        <script src="https://yastatic.net/share2/share.js"></script>
+                                        <div class="ya-share2" data-curtain data-size="s" data-shape="round" data-url="https://uro-info.ru/" data-services="vkontakte,odnoklassniki,telegram,twitter,whatsapp"></div>
+                                    </div>
+                                    <img src="img/audio_but_off.svg" class="audio__block__but bl6" alt="" onclick="lineTrack(5)">
                                 </div>
                                 <div class="audio__block bl7">
+                                    <audio src="audio/audio_7.mp3" class="audio__playlist__audio bl7"></audio>
                                     <img src="img/audio_img.svg" alt="">
                                     <div class="audio__block__content ">
                                         <p class="audio__block__episode">
@@ -412,8 +503,18 @@
                                         <div class="audio__block__bottom">
                                             <img src="img/audio_icon_clock_b.svg" alt="" class="audio__block__icon bl7">
                                             <p class="audio__block__time">
-                                                23 минуты
+                                                28 минут
                                             </p>
+                                        </div>
+                                    </div>
+                                    <div class="audio__block__popup bl7">
+                                        <div class="audio__popup__description">
+                                            <img src="img/description_icon.svg" alt="">
+                                            <button class="popup__description__button" onclick="openPopUpEpisode(6)">Описание эпизода</button>
+                                        </div>
+                                        <div class="audio__popup__share">
+                                            <img src="img/share_icon.svg" alt="">
+                                            <button class="popup__share__button" data-id="7">Поделиться</button>
                                         </div>
                                     </div>
                                     <div class="audio__block__options">
@@ -421,16 +522,21 @@
                                         <span class="audio__block__span"></span>
                                         <span class="audio__block__span"></span>
                                     </div>
-                                    <img src="img/audio_but_off.svg" class="audio__block__but bl7" alt="">
+                                    <div class="ico-share_st audio__share__block" data-id="7">
+                                        <script src="https://yastatic.net/share2/share.js"></script>
+                                        <div class="ya-share2" data-curtain data-size="s" data-shape="round" data-url="https://uro-info.ru/" data-services="vkontakte,odnoklassniki,telegram,twitter,whatsapp"></div>
+                                    </div>
+                                    <img src="img/audio_but_off.svg" class="audio__block__but bl7" alt="" onclick="lineTrack(6)">
                                 </div>
                                 <div class="audio__block bl8">
+                                    <audio src="audio/audio_8.mp3" class="audio__playlist__audio bl8"></audio>
                                     <img src="img/audio_img.svg" alt="">
                                     <div class="audio__block__content ">
                                         <p class="audio__block__episode">
                                             Эпизод 8
                                         </p>
                                         <p class="audio__block__title">
-                                            «Ведение пациентов с ГМП: ПУТИ ПРОДВИЖЕНИЯ ВПЕРЕД»
+                                            «Ведение пациентов с ГМП: пути продвижения вперед»
                                         </p>
                                         <p class="audio__block__prof">
                                             Проф. Маркус Дрейк
@@ -438,8 +544,18 @@
                                         <div class="audio__block__bottom audio__block__line2">
                                             <img src="img/audio_icon_clock_b.svg" alt="" class="audio__block__icon bl8">
                                             <p class="audio__block__time">
-                                                1 час 52 минуты
+                                                17 минут 11 секунд
                                             </p>
+                                        </div>
+                                    </div>
+                                    <div class="audio__block__popup bl8">
+                                        <div class="audio__popup__description">
+                                            <img src="img/description_icon.svg" alt="">
+                                            <button class="popup__description__button" onclick="openPopUpEpisode(7)">Описание эпизода</button>
+                                        </div>
+                                        <div class="audio__popup__share">
+                                            <img src="img/share_icon.svg" alt="">
+                                            <button class="popup__share__button" data-id="8">Поделиться</button>
                                         </div>
                                     </div>
                                     <div class="audio__block__options">
@@ -447,9 +563,14 @@
                                         <span class="audio__block__span"></span>
                                         <span class="audio__block__span"></span>
                                     </div>
-                                    <img src="img/audio_but_off.svg" class="audio__block__but bl8" alt="">
+                                    <div class="ico-share_st audio__share__block" data-id="8">
+                                        <script src="https://yastatic.net/share2/share.js"></script>
+                                        <div class="ya-share2" data-curtain data-size="s" data-shape="round" data-url="https://uro-info.ru/" data-services="vkontakte,odnoklassniki,telegram,twitter,whatsapp"></div>
+                                    </div>
+                                    <img src="img/audio_but_off.svg" class="audio__block__but bl8" alt="" onclick="lineTrack(7)">
                                 </div>
                                 <div class="audio__block bl9">
+                                    <audio src="audio/audio_9.mp3" class="audio__playlist__audio bl9"></audio>
                                     <img src="img/audio_img.svg" alt="">
                                     <div class="audio__block__content ">
                                         <p class="audio__block__episode">
@@ -464,8 +585,18 @@
                                         <div class="audio__block__bottom">
                                             <img src="img/audio_icon_clock_b.svg" alt="" class="audio__block__icon bl9">
                                             <p class="audio__block__time">
-                                                1 час 13 минут
+                                                12 минут 15 секунд
                                             </p>
+                                        </div>
+                                    </div>
+                                    <div class="audio__block__popup bl9">
+                                        <div class="audio__popup__description">
+                                            <img src="img/description_icon.svg" alt="">
+                                            <button class="popup__description__button open-popup" onclick="openPopUpEpisode(8)">Описание эпизода</button>
+                                        </div>
+                                        <div class="audio__popup__share">
+                                            <img src="img/share_icon.svg" alt="">
+                                            <button class="popup__share__button" data-id="9">Поделиться</button>
                                         </div>
                                     </div>
                                     <div class="audio__block__options">
@@ -473,12 +604,86 @@
                                         <span class="audio__block__span"></span>
                                         <span class="audio__block__span"></span>
                                     </div>
-                                    <img src="img/audio_but_off.svg" class="audio__block__but bl9" alt="">
+                                    <div class="ico-share_st audio__share__block" data-id = "9">
+                                        <script src="https://yastatic.net/share2/share.js"></script>
+                                        <div class="ya-share2" data-curtain data-size="s" data-shape="round" data-url="https://uro-info.ru/" data-services="vkontakte,odnoklassniki,telegram,twitter,whatsapp"></div>
+                                    </div>
+                                    <img src="img/audio_but_off.svg" class="audio__block__but bl9" alt="" onclick="lineTrack(8)">
                                 </div>
                             </div>
                             <div class="audio__player">
+                                <div class="audio__player__top">
+                                    <img src="img/audio_img.svg" alt="" class="player__top__img">
+                                    <div class="audio__top__content">
+                                        <p class="audio__top__episode">Эпизод 1</p>
+                                        <audio src="audio/audio_1.mp3" class="player__cur__audio"></audio>
+                                        <p class="audio__top__title">«Обзор проблемы ГМП»</p>
+                                    </div>
+                                </div>
+                                <img src="img/player_disc2.svg" alt="" class="player__disc__img">
+                                <img src="img/player_absolute.svg" alt="" class="player__disc__absolute">
+                                <div class="audio__player__btns">
+                                    <div class="audio__volume__block">
+                                        <div class="audio__volume__offline"></div>
+                                        <img src="img/player_volume.svg" alt="" class="audio__player__volume" onclick="f()">
+                                    </div>
+                                    <div class="player__btns__center">
+                                        <img src="img/player_prev.svg" alt="" class="audio__player__prev" onclick="prevTrack()">
+                                        <img src="img/player_pause_img.svg" alt="" class="audio__player__pause" onclick="playPauseTrack()">
+                                        <img src="img/player_next.svg" alt="" class="audio__player__next" onclick="nextTrack()">
+                                    </div>
+                                    <img src="img/player_diff.svg" alt="" class="audio__player__diff" onclick="reset()">
+                                </div>
+                                <div class="player__volume__line">
+                                    <div class="player__volume__progress">
 
+                                    </div>
+                                </div>
+                                <div class="player__volume__block">
+                                    <p class="player__volume__cur">
+                                        00:00
+                                    </p>
+                                    <p class="player__volume__full">
+                                        00:00
+                                    </p>
+                                </div>
+                                <div class="audio__player__description">
+                                    <p class="player__description__title">
+                                        Описание эпизода
+                                    </p>
+                                    <p class="player__description__text">
+                                        Первый подкаст представляет собой беседу основоположника ГМП проф. Пола Абрамса с проф. Кристофером Чапплом, который даст обзор проблемы ГМП и сосредоточится на патофизиологии, этиологии, методах диагностики и подходах к терапии ГМП. Профессор Кристофер Чаппл - хирург-уролог-консультант в учебных больницах Шеффилда и почетный профессор Университета Шеффилда. Он является активным членом многих урологических ассоциаций и обществ, включая Британскую ассоциацию хирургов-урологов, Европейскую ассоциацию урологов и Международное общество по удержанию мочи.
+                                    </p>
+                                </div>
                             </div>
+                        </div>
+                        <div class="popup__bg">
+                            <div class="popup">
+                                <img src="img/close.png" class="close-popup">
+                                <strong>Описание эпизода</strong> <br> <br>
+                                <p class="popup__text__episode">
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="contacts">
+                    <div class="container">
+                        <div class="contacts__row">
+                            <div class="contacts__line"></div>
+                            <p class="contacts__title">
+                                Материал подготовлен компанией Астеллас и предназначен для специалистов здравоохранения.
+                            </p>
+                            <p class="contacts__text">
+                                ООО «Астеллас Фарма Продакшен»
+                            </p>
+                            <p class="contacts__text">
+                                Россия, 109147, Москва, ул. Марксистская 16, +7 (495) 737-07-56
+                            </p>
+                            <p class="contacts__text">
+                                MAT-RU-BET-2023-00003-FEB-2023-DIGITALGENERATION
+                            </p>
                         </div>
                     </div>
                 </section>
