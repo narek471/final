@@ -1197,6 +1197,16 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     .climax__block__img > img {
         width: 220px;
     }
+
+    .climax__count__img,
+    .stress__count__img {
+        width: 30px;
+    }
+
+    .climax__count__text,
+    .stress__count__text {
+        margin-left: 8px;
+    }
 }
 
 @media only screen and (max-width: 510px) {
