@@ -1188,11 +1188,14 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 
     .advice__img,
     .stress__block__img > img,
-    .climax__block__img > img,
     .night__block__img > img,
     .women__block__img > img,
     .adaptation__block__img > img {
         width: 320px;
+    }
+
+    .climax__block__img > img {
+        width: 220px;
     }
 }
 
