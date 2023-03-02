@@ -509,6 +509,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     font-size: 45px;
+    line-height: 130%;
     color: #FF647D;
 }
 
@@ -671,7 +672,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 
 .col__pink__img {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .adaptation {
@@ -878,6 +879,11 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 
     .can__right__img {
         width: 500px;
+    }
+
+    .section__block__text,
+    .advice__text {
+        width: unset;
     }
 
 }
@@ -1139,6 +1145,25 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     }
 }
 
+@media only screen and (max-width: 997px) {
+    .advice__title {
+        font-size: 40px;
+        line-height: 90%;
+    }
+
+    .advice__img {
+        width: 600px;
+    }
+
+    .stress__block__img > img,
+    .climax__block__img > img,
+    .night__block__img > img,
+    .women__block__img > img,
+    .adaptation__block__img > img {
+        width: 600px;
+    }
+}
+
 @media only screen and (max-width: 641px) {
     body {
         font-size: 19px;
@@ -1146,6 +1171,28 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 
     .hide__br {
         display: none;
+    }
+
+    .pl35 {
+        padding-left: 15px;
+    }
+
+    .advice__title {
+        font-size: 35px;
+    }
+
+    .section__title {
+        font-size: 35px;
+        line-height: 90%;
+    }
+
+    .advice__img,
+    .stress__block__img > img,
+    .climax__block__img > img,
+    .night__block__img > img,
+    .women__block__img > img,
+    .adaptation__block__img > img {
+        width: 320px;
     }
 }
 
@@ -1209,6 +1256,22 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 
     .popup {
         width: 90%;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .pl35 {
+        padding-left: 5px;
+    }
+
+    .advice__title,
+    .section__title {
+        font-size: 25px;
+        line-height: 90%;
+    }
+
+    .section__block__text {
+        font-size: 19px;
     }
 }
 
