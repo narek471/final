@@ -1270,6 +1270,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
         line-height: 110%;
     }
 
+    .advice__text,
     .climax__count__text,
     .stress__count__text,
     .section__block__text {
