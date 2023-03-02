@@ -1267,7 +1267,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     .advice__title,
     .section__title {
         font-size: 26px;
-        line-height: 100%;
+        line-height: 110%;
     }
 
     .climax__count__text,
