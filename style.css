@@ -666,7 +666,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     margin-top: 50px;
 }
 
-.col__pink__img {
+._pink__img {
     display: flex;
     align-items: flex-start;
 }
