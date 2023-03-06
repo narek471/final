@@ -433,7 +433,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 
 .col__pink {
     color: #FF647D;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .col__blue {
