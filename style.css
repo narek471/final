@@ -721,6 +721,10 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     margin-bottom: -3px;
 }
 
+.adaptation__block__list{
+    margin: 30px;
+}
+
 /*************** Footer ***************/
 
 .footer {
@@ -1289,6 +1293,14 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     .section__block__text {
         font-size: 18px;
         line-height: 120%;
+    }
+
+    .adaptation__block__list {
+        margin-left: 20px;
+    }
+
+    .adaptation__block__list > li {
+        margin-bottom: 10px;
     }
 }
 
