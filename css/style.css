@@ -730,6 +730,10 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     color: #254660;
 }
 
+.different__half__text > a {
+    text-decoration: none;
+}
+
 .accept__row {
     flex-direction: column;
 }
