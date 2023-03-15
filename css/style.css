@@ -561,6 +561,23 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     display: inline-block;
 }
 
+.section__content__instruction {
+    padding: 12px 0;
+    border-top: 1px solid rgba(51, 88, 117, 0.25);
+    margin-top: 20px;
+}
+
+.section__instruction__text {
+    width: 1048px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    color: rgba(51, 88, 117, 0.35);
+    margin-bottom: 10px;
+}
+
 .col-pink {
     color: #F05555;
     font-weight: 600;
