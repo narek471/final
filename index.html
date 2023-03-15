@@ -1,1048 +1,1362 @@
 <!doctype html>
 <html lang="ru">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport"
-              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Уро-Инфо – портал об урологических симптомах и заболеваниях</title>
-        <link rel="stylesheet" href="css/style.css">
-    </head>
-    <body>
-        <div class="wrapper">
-            <header class="header">
-                <div class="container">
-                    <div class="header__row">
-                        <div class="header__top">
-                            <div class="header__top__left">
-                                <nav class="navbar__mobile">
-                                    <div class="container__mobile">
-                                        <div class="navbar__wrap__mobile">
-                                            <div class="hamb__mobile">
-                                                <div class="hamb__field__mobile" id="hamb">
-                                                    <span class="bar__mobile"></span> <span class="bar__mobile"></span>
-                                                    <span class="bar__mobile"></span>
-                                                </div>
-                                            </div>
-                                            <ul class="menu__mobile" id="menu">
-                                                <li onclick="myFunction1()"><a href="javascript:void(0)" id="dropdown__open1">Заболевания</a> <img src="img/dropdown.svg" id="img1" alt=""></li>
-                                                <ul style="display: none;" id="dropdown__mobile1">
-                                                    <li><a href="https://uro-info.ru/zabolevanie/gmp/">ГМП</a></li>
-                                                    <li><a href="https://uro-info.ru/zabolevanie/cistit/">Цистит</a></li>
-                                                    <li><a href="https://uro-info.ru/zabolevanie/prostatit/">Простатит</a></li>
-                                                    <li><a href="https://uro-info.ru/zabolevanie/adenoma/">Аденома простаты</a></li>
-                                                    <li><a href="https://uro-info.ru/zabolevanie/rpz/">Рак предстательной железы</a></li>
-                                                    <li><a href="https://uro-info.ru/articles/opukhol-mochevogo-puzyrya/">Рак мочевого пузыря</a></li>
-                                                </ul>
-                                                <li><a href="https://uro-info.ru/articles/">Статьи</a></li>
-                                                <li onclick="myFunction2()"><a href="javascript:void(0)" id="dropdown__open2">Проверьте себя</a> <img src="img/dropdown.svg" id="img2" alt=""></li>
-                                                <ul style="display: none;" id="dropdown__mobile2">
-                                                    <li><a href="https://uro-info.ru/tests/mezhdunarodnaya-sistema-summarnoy-otsenki-zabolevaniy-predstatelnoy-zhelezy-v-ballakh-ipss-/">Международная система суммарной оценки заболеваний предстательной железы в баллах (IPSS)</a></li>
-                                                    <li><a href="https://uro-info.ru/tests/oprosnik-dlya-otsenki-simptomov-giperaktivnogo-mochevogo-puzyrya/">Опросник для оценки симптомов гиперактивного мочевого пузыря</a></li>
-                                                    <li><a href="https://uro-info.ru/tests/ekspress-diagnostika-tipov-nederzhaniya-mochi/">Экспресс-диагностика типов недержания мочи</a></li>
-                                                    <li><a href="https://uro-info.ru/diary/">Дневник мочеиспускания</a></li>
-                                                </ul>
-                                                <li><a href="https://uro-info.ru/video/">Видео</a></li>
-                                                <li><a href="https://uro-info.ru/istorii-pacientov/">Истории пациентов</a></li>
-                                                <li><a href="https://uro-info.ru/voprosy-urologu/">Вопросы урологу</a></li>
-                                                <li onclick="myFunction4()"><a href="javascript:void(0)" id="dropdown__open4">Путь пациента</a> <img src="img/dropdown.svg" id="img4" alt=""></li>
-                                                <ul style="display: none;" id="dropdown__mobile4">
-                                                    <li><a href="https://uro-info.ru/patient-journey/gmp/">ГМП</a></li>
-                                                    <li><a href="https://uro-info.ru/patient-journey/rmp/">РМП</a></li>
-                                                </ul>
-                                                <li onclick="myFunction3()"><a href="javascript:void(0)" id="dropdown__open3"> Карты </a> <img src="img/dropdown.svg" id="img3" alt=""></li>
-                                                <ul style="display: none;" id="dropdown__mobile3">
-                                                    <li><a href="https://uro-info.ru/map/">Карты туалетов</a></li>
-                                                    <li><a href="https://uro-info.ru/map-clinics/">Карта поликлиник</a></li>
-                                                </ul>
-                                                <li><a href="https://uro-info.ru/specTest/">Раздел для специалистов</a></li>
-                                            </ul>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Уро-Инфо – портал об урологических симптомах и заболеваниях</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="wrapper">
+    <header class="header">
+        <div class="container">
+            <div class="header__row">
+                <div class="header__top">
+                    <div class="header__top__left">
+                        <nav class="navbar__mobile">
+                            <div class="container__mobile">
+                                <div class="navbar__wrap__mobile">
+                                    <div class="hamb__mobile">
+                                        <div class="hamb__field__mobile" id="hamb">
+                                            <span class="bar__mobile"></span> <span class="bar__mobile"></span>
+                                            <span class="bar__mobile"></span>
                                         </div>
                                     </div>
-                                </nav>
-                                <div class="popup__mobile" id="popup"></div>
-                                <a href="https://uro-info.ru/" class="header__logo__link"><img src="img/logo.svg" alt="" class="header__top__logo"></a>
-                                <p class="header__top__text">Портал об урологических <br>
-                                    симптомах <br id="header__br"> и заболеваниях</p>
-                            </div>
-                            <div class="header__top__right">
-                                <p class="header__right__text">
-                                    18+
-                                </p>
-                                <div class="header__search__mobile">
-                                    <button onclick="getSearch()" class="header__button__mobile">
-                                        <img src="img/search.png" alt="">
-                                    </button>
-                                </div>
-                                <form action="/search/" method="get" class="header__search">
-                                    <input name="q" type="search" >
-                                    <button type="submit" class="header__button">
-                                        <img src="img/search.png" alt="">
-                                    </button>
-                                </form>
-                                <a href="/" class="header__right__star">
-                                    <img src="img/star.svg" alt="">
-                                    <p class="header__star__text">
-                                        Избранное
-                                    </p>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="header__menu" id="fixed__menu">
-                            <nav class="nav">
-                                <div class="container__hide">
-                                <ul class="nav__list">
-                                    <li class="nav__list__item">
-                                        <a href="" class="nav__list__link">
-                                            <img src="img/menu1.svg" class="menu__list__img" alt="">
-                                            <p class="menu__item">Заболевания</p>
-                                        </a>
-                                        <div class="menu__dropdown__first">
-                                            <img src="img/dropdown.svg" alt="" class="dropdown__img">
-                                            <ul class="menu__dropdown__content">
-                                                <li class="menu__dropdown__item">
-                                                    <a href="https://uro-info.ru/zabolevanie/gmp/" class="menu__dropdown__link"> <img src="img/menu1_3.png" alt="" class="dropdown__menu__img"> <p>ГМП</p></a>
-                                                </li>
-                                                <li class="menu__dropdown__item">
-                                                    <a href="https://uro-info.ru/zabolevanie/cistit/" class="menu__dropdown__link"> <img src="img/menu1_2.png" alt="" class="dropdown__menu__img"> <p>Цистит</p></a>
-                                                </li>
-                                                <li class="menu__dropdown__item">
-                                                    <a href="https://uro-info.ru/zabolevanie/prostatit/" class="menu__dropdown__link"> <img src="img/menu1_1.png" alt="" class="dropdown__menu__img"> <p>Простатит</p></a>
-                                                </li>
-                                                <li class="menu__dropdown__item">
-                                                    <a href="https://uro-info.ru/zabolevanie/adenoma/" class="menu__dropdown__link"> <img src="img/menu1_4.png" alt="" class="dropdown__menu__img"> <p>Аденома простаты</p></a>
-                                                </li>
-                                                <li class="menu__dropdown__item">
-                                                    <a href="https://uro-info.ru/zabolevanie/rpz/" class="menu__dropdown__link"> <img src="img/menu1_5.png" alt="" class="dropdown__menu__img"> <p>Рак предстательной железы</p></a>
-                                                </li>
-                                                <li class="menu__dropdown__item">
-                                                    <a href="https://uro-info.ru/articles/opukhol-mochevogo-puzyrya/" class="menu__dropdown__link"> <img src="img/menu1_4.png" alt="" class="dropdown__menu__img"> <p>Рак мочевого пузыря</p></a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    <li class="nav__list__item">
-                                        <a href="https://uro-info.ru/articles/" class="nav__list__link">
-                                            <img src="img/menu2.svg" class="menu__list__img" alt="">
-                                            <p class="menu__item">Статьи</p>
-                                        </a>
-                                    </li>
-                                    <li class="nav__list__item">
-                                        <a href="" class="nav__list__link">
-                                            <img src="img/menu3.svg" class="menu__list__img" alt="">
-                                            <p class="menu__item">Проверьте себя</p>
-                                        </a>
-                                        <div class="menu__dropdown__first">
-                                            <img src="img/dropdown.svg" alt="" class="dropdown__img">
-                                            <ul id="dropdown2" class="menu__dropdown__content">
-                                                <li class="menu__dropdown__item">
-                                                    <a href="https://uro-info.ru/tests/mezhdunarodnaya-sistema-summarnoy-otsenki-zabolevaniy-predstatelnoy-zhelezy-v-ballakh-ipss-/" class="menu__dropdown__link"> <img src="img/menu2_1.png" alt="" class="dropdown__menu__img2"> <p id="text2">Международная система суммарной оценки заболеваний предстательной железы в баллах (IPSS) </p></a>
-                                                </li>
-                                                <li class="menu__dropdown__item">
-                                                    <a href="https://uro-info.ru/tests/oprosnik-dlya-otsenki-simptomov-giperaktivnogo-mochevogo-puzyrya/" class="menu__dropdown__link"> <img src="img/menu2_2.png" alt="" class="dropdown__menu__img2"> <p id="text3">Опросник для оценки симптомов гиперактивного мочевого пузыря </p></a>
-                                                </li>
-                                                <li class="menu__dropdown__item">
-                                                    <a href="https://uro-info.ru/tests/ekspress-diagnostika-tipov-nederzhaniya-mochi/" class="menu__dropdown__link"> <img src="img/menu2_3.png" alt="" class="dropdown__menu__img3"> <p id="text4">Экспресс-диагностика типов недержания мочи </p></a>
-                                                </li>
-                                                <li class="menu__dropdown__item">
-                                                    <a href="https://uro-info.ru/diary/" class="menu__dropdown__link"> <img src="img/menu2_4.png" alt="" class="dropdown__menu__img2"> <p id="text5">Дневник мочеиспускания </p></a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    <li class="nav__list__item">
-                                        <a href="https://uro-info.ru/video/" class="nav__list__link">
-                                            <img src="img/menu4.svg" class="menu__list__img" alt="">
-                                            <p class="menu__item">Видео</p>
-                                        </a>
-                                    </li>
-                                    <li class="nav__list__item">
-                                        <a href="https://uro-info.ru/istorii-pacientov/" class="nav__list__link">
-                                            <img src="img/menu5.svg" class="menu__list__img" alt="">
-                                            <p class="menu__item">Истории <br> пациентов</p>
-                                        </a>
-                                    </li>
-                                    <li class="nav__list__item">
-                                        <a href="https://uro-info.ru/voprosy-urologu/" class="nav__list__link">
-                                            <img src="img/menu6.svg" class="menu__list__img" alt="">
-                                            <p class="menu__item">Вопросы <br> урологу</p>
-                                        </a>
-                                    </li>
-                                    <li class="nav__list__item">
-                                        <a href="" class="nav__list__link">
-                                            <img src="img/menu7.svg" class="menu__list__img" alt="">
-                                            <p class="menu__item">Путь <br> пациента</p>
-                                        </a>
-                                        <div class="menu__dropdown__first">
-                                            <img src="img/dropdown.svg" alt="" class="dropdown__img" id="dropdown__img">
-                                            <ul id="dropdown3" class="menu__dropdown__content">
-                                                <li class="menu__dropdown__item">
-                                                    <a href="https://uro-info.ru/patient-journey/gmp/" class="menu__dropdown__link"> <img src="img/menu1_3.png" alt="" class="dropdown__menu__img2"> <p id="text8"> ГМП </p></a>
-                                                </li>
-                                                <li class="menu__dropdown__item">
-                                                    <a href="https://uro-info.ru/patient-journey/rmp/" class="menu__dropdown__link"> <img src="img/menu1_4.png" alt="" class="dropdown__menu__img2"> <p id="text9"> РМП </p></a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    <li class="nav__list__item">
-                                        <a href="" class="nav__list__link">
-                                            <img src="img/menu9.png" id="menu9" class="menu__list__img" alt="">
-                                            <p class="menu__item">Карты</p>
-                                        </a>
-                                        <div class="menu__dropdown__first">
-                                            <img src="img/dropdown.svg" alt="" class="dropdown__img">
-                                            <ul class="menu__dropdown__content">
-                                                <li class="menu__dropdown__item">
-                                                    <a href="https://uro-info.ru/map/" class="menu__dropdown__link"><img src="img/menu3_1.png" alt="" class="dropdown__menu__img4"> <p id="text6">Карта туалетов </p></a>
-                                                </li>
-                                                <li class="menu__dropdown__item">
-                                                    <a href="https://uro-info.ru/map-clinics/" class="menu__dropdown__link"> <img src="img/menu3_2.png" alt="" class="dropdown__menu__img4"> <p id="text7">Карта поликлиник </p></a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    <li class="nav__list__item">
-                                        <a href="https://uro-info.ru/specTest/" class="nav__list__link">
-                                            <img src="img/menu8.svg" class="menu__list__img" alt="">
-                                            <p class="menu__item">Раздел для <br> специалистов</p>
-                                        </a>
-                                    </li>
-                                </ul>
-                                </div>
-                            </nav>
-                        </div>
-                        <div class="header__bottom" id="header__bottom">
-                            <a href="/" class="header__bottom__link">Главная</a>
-                            <p class="header__bottom__text"> > Вопросы урологу</p>
-                        </div>
-                    </div>
-                </div>
-            </header>
-            <main class="main">
-                <section class="urolog section">
-                    <div class="container">
-                        <div class="urolog__row row">
-                            <div class="urolog__left">
-                                <img src="img/urolog-img/1.svg" alt="">
-                            </div>
-                            <div class="urolog__right">
-                                <h1 class="urolog__title">
-                                    Вопросы урологу
-                                </h1>
-                                <p class="urolog__text">
-                                    Ответы на популярные вопросы пациентов с урологическими проблемами о мочеиспускании, аденоме и простатите от реальных врачей на портале Уро-Инфо. Не заменяет консультацию, по любым вопросам обращайтесь к лечащему врачу!
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section class="ipss section">
-                    <div class="container">
-                        <div class="ipss__row row">
-                            <div class="section__top ipss__top">
-                                <h3 class="section__title ipss__title">Что такое шкала IPSS?</h3>
-                                <img src="img/urolog-img/7.svg" class="section__flag__bottom" alt="">
-                            </div>
-                            <div class="section__content ipss__content">
-                                <div class="section__first__block ipss__content__block">
-                                    <p class="ipss__block__text section__block__text">
-                                        Доброкачественная гиперплазия предстательной железы (или аденома простаты) чаще всего проявляется различными нарушениями мочеиспускания. Для оценки характера
-                                        <br> и выраженности таких нарушений у пациентов любого возраста используется шкала IPSS (International Prostate Symptom Score).
-                                    </p>
-                                </div>
-                                <div class="section__pink__block ipss__content__block">
-                                    <p class="ipss__block__text section__pink__text">
-                                        <span class="col-pink">IPSS — международная шкала оценки простатических симптомов,</span> утверждена ВОЗ* в 1992 году и широко используется в клинической практике. Шкала проста в заполнении и представляет собой опросник, состоящий из 8 вопросов, 7 из которых относятся к оценке симптомов мочеиспускания, а один определяет влияние заболевания на качество жизни. Выраженность симптомов распределяют по степени нарушений: отсутствие (0 баллов), лёгкая степень (1–7 баллов), умеренная степень (8–19 баллов) и тяжёлая степень (20–35 баллов).
-                                    </p>
-                                </div>
-                                <div class="section__content__block ipss__content__block">
-                                    <p class="ipss__block__text section__block__text">
-                                        Опросник можно заполнять дома, в спокойной обстановке, после заполнения его будет удобно распечатать и взять с собой на плановый визит к урологу.
-                                    </p>
-                                </div>
-                                <div class="section__content__block ipss__content__block">
-                                    <p class="ipss__block__text section__block__text">
-                                        Обращаем ваше внимание, что только врач может правильно интерпретировать результаты заполненного опросника с учётом жалоб, истории развития заболевания и его особенностей, результатов анализов и обследований, сделать заключение и подобрать или продолжить необходимую терапию.
-                                    </p>
-                                </div>
-                                <div class="section__content__block ipss__content__block">
-                                    <p class="ipss__block__text section__block__text">
-                                        Опросник является универсальным и подходит всем пациентам, независимо от характера нарушений мочеиспускания и наличия или отсутствия самостоятельного мочеиспускания.
-                                    </p>
-                                </div>
-                                <a href="#" class="section__content__link ipss__content__link">
-                                    Шкала IPSS размещена на сайте
-                                </a>
-                                <div class="section__content__instruction ipss__content__instruction">
-                                    <p class="section__instruction__text ipss__instruction__text">
-                                        *ВОЗ — Всемирная организация здравоохранения
-                                    </p>
-                                    <p class="section__instruction__text ipss__instruction__text">
-                                        1. Дударев В.А., Старцев В.Ю., Бакшеева Е.Г. Клиническая оценка использования опросников симптомов нижних мочевых путей у мужчин. Вестник урологии. 2020;8(4):23–31. DOI: 10.21886/2308–6424–2020–8-4–23–31.
-                                    </p>
-                                    <p class="section__instruction__text ipss__instruction__text">
-                                        2. Клинические рекомендации. Доброкачественная гиперплазия предстательной железы. 2020. Утверждены Минздравом РФ.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section class="diary section">
-                    <div class="container">
-                        <div class="diary__row row">
-                            <div class="section__top diary__top">
-                                <h3 class="section__title diary__title">Для чего нужен дневник мочеиспускания?</h3>
-                                <img src="img/urolog-img/7.svg" class="section__flag__bottom" alt="">
-                            </div>
-                            <div class="section__content diary__content">
-                                <div class="section__first__block diary__check__block">
-                                    <div class="diary__check__content">
-                                        <img src="img/urolog-img/2.svg" alt="" class="diary__check__img">
-                                        <p class="section__block__text">
-                                            Дневник мочеиспускания — простой, но важный инструмент, помогающий врачу определить состояние, объективно проанализировать жалобы и оценить функции мочеиспускания.
-                                        </p>
-                                    </div>
-                                    <div class="diary__check__content">
-                                        <img src="img/urolog-img/2.svg" alt="" class="diary__check__img">
-                                        <p class="section__block__text">
-                                            Дневник мочеиспускания позволяет зафиксировать частоту мочеиспускания, объём каждой порции и общий объём мочи в сутки, соотношение дневного и ночного объёма мочи. Заполнение дневника может помочь при первичном обследовании и в дальнейшем для оценки эффективности терапии.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="section__pink__block diary__content__block">
-                                    <p class="diary__block__text section__pink__text">
-                                        Как правило, уролог на приёме поясняет как вести дневник мочеиспускания. Все данные вносят в течение минимум 3-х суток и очень подробно заполняют информацию об объёме потребляемой жидкости, времени каждого мочеиспускания, объёме мочи, неожиданных сильных позывов к мочеиспусканию, эпизодов недержания мочи, ночных позывов и ночного диуреза.
-                                    </p>
-                                </div>
-                                <div class="section__content__block diary__content__block">
-                                    <p class="diary__block__text section__block__text">
-                                        В разные дни объём суточного диуреза может значительно отличаться, и это может быть в пределах нормы, поскольку зависит от разных обстоятельств, например, от объёма выпитой жидкости. И, пожалуйста, постарайтесь определять объём порции мочи максимально точно, от этого зависит дальнейшая интерпретация данных врачом.
-                                    </p>
-                                </div>
-                                <div class="section__content__block diary__content__block">
-                                    <p class="diary__block__text section__block__text">
-                                        Не забывайте заполненный дневник мочеиспускания сохранить и взять с собой на визит к урологу.
-                                    </p>
-                                </div>
-                                <a href="#" class="section__content__link diary__content__link">
-                                    Дневник мочеиспускания (образец для мужчин) представлен на сайте
-                                </a>
-                                <div class="section__content__instruction diary__content__instruction">
-                                    <p class="section__instruction__text diary__instruction__text">
-                                        1. Клинические рекомендации. Доброкачественная гиперплазия предстательной железы. 2020. Утверждены Минздравом РФ.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section class="tell section">
-                    <div class="container">
-                        <div class="tell__row row">
-                            <div class="section__top tell__top">
-                                <h3 class="section__title tell__title">О чем важно рассказать врачу?</h3>
-                                <img src="img/urolog-img/7.svg" class="section__flag__bottom" alt="">
-                            </div>
-                            <div class="section__content tell__content">
-                                <div class="section__first__block tell__content__block">
-                                    <p class="tell__block__text section__block__text">
-                                        Несмотря на деликатность проблем (частое мочеиспускание, частые позывы к мочеиспусканию, частое мочеиспускание и днём, и ночью или затруднённое мочеиспускание) важно без стеснения рассказать урологу обо всем, что вас беспокоит.
-                                    </p>
-                                </div>
-                                <div class="section__content__block tell__content__block">
-                                    <p class="tell__block__text section__block__text">
-                                        Причины частого мочеиспускания могут быть разные, поэтому на приёме важно сообщить доктору следующую информацию:
-                                    </p>
-                                </div>
-                                <div class="section__content__list tell__content__list">
-                                    <ul class="section__list">
-                                        <li class="section__list__item">
-                                            О всех сопутствующих заболеваниях, в том числе хронических, поскольку некоторые состояния способны привести к нарушению мочеиспускания. К таким заболеваниям относятся рассеянный склероз, нарушения мозгового кровообращения, инсульт, паркинсонизм, заболевания спинного мозга, сахарный диабет, заболевания сердечно-сосудистой системы и другие;
-                                        </li>
-                                        <li class="section__list__item">
-                                            О наличии эпизодов острой задержки мочеиспускания или примеси крови в моче (гематурии);
-                                        </li>
-                                        <li class="section__list__item">
-                                            О перенесённых травмах позвоночника;
-                                        </li>
-                                        <li class="section__list__item">
-                                            О принимаемых лекарственных препаратах, как для лечения аденомы простаты, так и для терапии сопутствующих заболеваний
-                                        </li>
-                                        <li class="section__list__item">
-                                            О факторах, связанных с образом жизни, вредных привычках (злоупотреблении алкоголем);
-                                        </li>
-                                        <li class="section__list__item">
-                                            О перенесенных ранее хирургических операциях
-                                        </li>
-                                        <li class="section__list__item">
-                                            О принимаемых лекарственных препаратах, как для лечения аденомы простаты, так и для терапии сопутствующих заболеваний
-                                        </li>
-                                        <li class="section__list__item">
-                                            О своих страхах, тревоге, навязчивых мыслях, эмоциональном и психическом состоянии
-                                        </li>
+                                    <ul class="menu__mobile" id="menu">
+                                        <li onclick="myFunction1()"><a href="javascript:void(0)" id="dropdown__open1">Заболевания</a>
+                                            <img src="img/dropdown.svg" id="img1" alt=""></li>
+                                        <ul style="display: none;" id="dropdown__mobile1">
+                                            <li><a href="https://uro-info.ru/zabolevanie/gmp/">ГМП</a></li>
+                                            <li><a href="https://uro-info.ru/zabolevanie/cistit/">Цистит</a></li>
+                                            <li><a href="https://uro-info.ru/zabolevanie/prostatit/">Простатит</a></li>
+                                            <li><a href="https://uro-info.ru/zabolevanie/adenoma/">Аденома простаты</a>
+                                            </li>
+                                            <li><a href="https://uro-info.ru/zabolevanie/rpz/">Рак предстательной
+                                                железы</a></li>
+                                            <li><a href="https://uro-info.ru/articles/opukhol-mochevogo-puzyrya/">Рак
+                                                мочевого пузыря</a></li>
+                                        </ul>
+                                        <li><a href="https://uro-info.ru/articles/">Статьи</a></li>
+                                        <li onclick="myFunction2()"><a href="javascript:void(0)" id="dropdown__open2">Проверьте
+                                            себя</a> <img src="img/dropdown.svg" id="img2" alt=""></li>
+                                        <ul style="display: none;" id="dropdown__mobile2">
+                                            <li>
+                                                <a href="https://uro-info.ru/tests/mezhdunarodnaya-sistema-summarnoy-otsenki-zabolevaniy-predstatelnoy-zhelezy-v-ballakh-ipss-/">Международная
+                                                    система суммарной оценки заболеваний предстательной железы в баллах
+                                                    (IPSS)</a></li>
+                                            <li>
+                                                <a href="https://uro-info.ru/tests/oprosnik-dlya-otsenki-simptomov-giperaktivnogo-mochevogo-puzyrya/">Опросник
+                                                    для оценки симптомов гиперактивного мочевого пузыря</a></li>
+                                            <li>
+                                                <a href="https://uro-info.ru/tests/ekspress-diagnostika-tipov-nederzhaniya-mochi/">Экспресс-диагностика
+                                                    типов недержания мочи</a></li>
+                                            <li><a href="https://uro-info.ru/diary/">Дневник мочеиспускания</a></li>
+                                        </ul>
+                                        <li><a href="https://uro-info.ru/video/">Видео</a></li>
+                                        <li><a href="https://uro-info.ru/istorii-pacientov/">Истории пациентов</a></li>
+                                        <li><a href="https://uro-info.ru/voprosy-urologu/">Вопросы урологу</a></li>
+                                        <li onclick="myFunction4()"><a href="javascript:void(0)" id="dropdown__open4">Путь
+                                            пациента</a> <img src="img/dropdown.svg" id="img4" alt=""></li>
+                                        <ul style="display: none;" id="dropdown__mobile4">
+                                            <li><a href="https://uro-info.ru/patient-journey/gmp/">ГМП</a></li>
+                                            <li><a href="https://uro-info.ru/patient-journey/rmp/">РМП</a></li>
+                                        </ul>
+                                        <li onclick="myFunction3()"><a href="javascript:void(0)" id="dropdown__open3">
+                                            Карты </a> <img src="img/dropdown.svg" id="img3" alt=""></li>
+                                        <ul style="display: none;" id="dropdown__mobile3">
+                                            <li><a href="https://uro-info.ru/map/">Карты туалетов</a></li>
+                                            <li><a href="https://uro-info.ru/map-clinics/">Карта поликлиник</a></li>
+                                        </ul>
+                                        <li><a href="https://uro-info.ru/specTest/">Раздел для специалистов</a></li>
                                     </ul>
                                 </div>
-                                <div class="section__content__block tell__content__block">
-                                    <p class="tell__block__text section__block__text">
-                                        Вся эта информация поможет врачу найти причину появления тех или иных жалоб и симптомов, поставить правильный диагноз и назначить эффективную терапию.
-                                    </p>
-                                </div>
-                                <div class="section__content__instruction tell__content__instruction">
-                                    <p class="section__instruction__text tell__instruction__text">
-                                        Клинические рекомендации. Доброкачественная гиперплазия предстательной железы. 2020. Утверждены Минздравом РФ.
-                                    </p>
-                                </div>
                             </div>
-                        </div>
+                        </nav>
+                        <div class="popup__mobile" id="popup"></div>
+                        <a href="https://uro-info.ru/" class="header__logo__link"><img src="img/logo.svg" alt=""
+                                                                                       class="header__top__logo"></a>
+                        <p class="header__top__text">Портал об урологических <br>
+                            симптомах <br id="header__br"> и заболеваниях</p>
                     </div>
-                </section>
-                <section class="ipss section">
-                    <div class="container">
-                        <div class="ipss__row row">
-                            <div class="section__top ipss__top">
-                                <h3 class="section__title ipss__title">Чем отличается аденома простаты от простатита?</h3>
-                                <img src="img/urolog-img/7.svg" class="section__flag__bottom" alt="">
-                            </div>
-                            <div class="section__content ipss__content">
-                                <div class="section__first__block ipss__content__block">
-                                    <p class="ipss__block__text section__block__text">
-                                        Доброкачественная гиперплазия предстательной железы (или аденома простаты) чаще всего проявляется различными нарушениями мочеиспускания. Для оценки характера
-                                        <br> и выраженности таких нарушений у пациентов любого возраста используется шкала IPSS (International Prostate Symptom Score).
-                                    </p>
-                                </div>
-                                <div class="section__pink__block ipss__content__block">
-                                    <p class="ipss__block__text section__pink__text">
-                                        <span class="col-pink">IPSS — международная шкала оценки простатических симптомов,</span> утверждена ВОЗ* в 1992 году и широко используется в клинической практике. Шкала проста в заполнении и представляет собой опросник, состоящий из 8 вопросов, 7 из которых относятся к оценке симптомов мочеиспускания, а один определяет влияние заболевания на качество жизни. Выраженность симптомов распределяют по степени нарушений: отсутствие (0 баллов), лёгкая степень (1–7 баллов), умеренная степень (8–19 баллов) и тяжёлая степень (20–35 баллов).
-                                    </p>
-                                </div>
-                                <div class="section__content__block ipss__content__block">
-                                    <p class="ipss__block__text section__block__text">
-                                        Опросник можно заполнять дома, в спокойной обстановке, после заполнения его будет удобно распечатать и взять с собой на плановый визит к урологу.
-                                    </p>
-                                </div>
-                                <div class="section__content__block ipss__content__block">
-                                    <p class="ipss__block__text section__block__text">
-                                        Обращаем ваше внимание, что только врач может правильно интерпретировать результаты заполненного опросника с учётом жалоб, истории развития заболевания и его особенностей, результатов анализов и обследований, сделать заключение и подобрать или продолжить необходимую терапию.
-                                    </p>
-                                </div>
-                                <div class="section__content__block ipss__content__block">
-                                    <p class="ipss__block__text section__block__text">
-                                        Опросник является универсальным и подходит всем пациентам, независимо от характера нарушений мочеиспускания и наличия или отсутствия самостоятельного мочеиспускания.
-                                    </p>
-                                </div>
-                                <a href="#" class="section__content__link ipss__content__link">
-                                    Шкала IPSS размещена на сайте
-                                </a>
-                                <div class="section__content__instruction ipss__content__instruction">
-                                    <p class="section__instruction__text ipss__instruction__text">
-                                        *ВОЗ — Всемирная организация здравоохранения
-                                    </p>
-                                    <p class="section__instruction__text ipss__instruction__text">
-                                        1. Дударев В.А., Старцев В.Ю., Бакшеева Е.Г. Клиническая оценка использования опросников симптомов нижних мочевых путей у мужчин. Вестник урологии. 2020;8(4):23–31. DOI: 10.21886/2308–6424–2020–8-4–23–31.
-                                    </p>
-                                    <p class="section__instruction__text ipss__instruction__text">
-                                        2. Клинические рекомендации. Доброкачественная гиперплазия предстательной железы. 2020. Утверждены Минздравом РФ.
-                                    </p>
-                                </div>
-                            </div>
+                    <div class="header__top__right">
+                        <p class="header__right__text">
+                            18+
+                        </p>
+                        <div class="header__search__mobile">
+                            <button onclick="getSearch()" class="header__button__mobile">
+                                <img src="img/search.png" alt="">
+                            </button>
                         </div>
+                        <form action="/search/" method="get" class="header__search">
+                            <input name="q" type="search">
+                            <button type="submit" class="header__button">
+                                <img src="img/search.png" alt="">
+                            </button>
+                        </form>
+                        <a href="/" class="header__right__star">
+                            <img src="img/star.svg" alt="">
+                            <p class="header__star__text">
+                                Избранное
+                            </p>
+                        </a>
                     </div>
-                </section>
-                <section class="ipss section">
-                    <div class="container">
-                        <div class="ipss__row row">
-                            <div class="section__top ipss__top">
-                                <h3 class="section__title ipss__title">Как долго нужно принимать препараты для лечения аденомы</h3>
-                                <img src="img/urolog-img/7.svg" class="section__flag__bottom" alt="">
-                            </div>
-                            <div class="section__content ipss__content">
-                                <div class="section__first__block ipss__content__block">
-                                    <p class="ipss__block__text section__block__text">
-                                        Доброкачественная гиперплазия предстательной железы (или аденома простаты) чаще всего проявляется различными нарушениями мочеиспускания. Для оценки характера
-                                        <br> и выраженности таких нарушений у пациентов любого возраста используется шкала IPSS (International Prostate Symptom Score).
-                                    </p>
-                                </div>
-                                <div class="section__pink__block ipss__content__block">
-                                    <p class="ipss__block__text section__pink__text">
-                                        <span class="col-pink">IPSS — международная шкала оценки простатических симптомов,</span> утверждена ВОЗ* в 1992 году и широко используется в клинической практике. Шкала проста в заполнении и представляет собой опросник, состоящий из 8 вопросов, 7 из которых относятся к оценке симптомов мочеиспускания, а один определяет влияние заболевания на качество жизни. Выраженность симптомов распределяют по степени нарушений: отсутствие (0 баллов), лёгкая степень (1–7 баллов), умеренная степень (8–19 баллов) и тяжёлая степень (20–35 баллов).
-                                    </p>
-                                </div>
-                                <div class="section__content__block ipss__content__block">
-                                    <p class="ipss__block__text section__block__text">
-                                        Опросник можно заполнять дома, в спокойной обстановке, после заполнения его будет удобно распечатать и взять с собой на плановый визит к урологу.
-                                    </p>
-                                </div>
-                                <div class="section__content__block ipss__content__block">
-                                    <p class="ipss__block__text section__block__text">
-                                        Обращаем ваше внимание, что только врач может правильно интерпретировать результаты заполненного опросника с учётом жалоб, истории развития заболевания и его особенностей, результатов анализов и обследований, сделать заключение и подобрать или продолжить необходимую терапию.
-                                    </p>
-                                </div>
-                                <div class="section__content__block ipss__content__block">
-                                    <p class="ipss__block__text section__block__text">
-                                        Опросник является универсальным и подходит всем пациентам, независимо от характера нарушений мочеиспускания и наличия или отсутствия самостоятельного мочеиспускания.
-                                    </p>
-                                </div>
-                                <a href="#" class="section__content__link ipss__content__link">
-                                    Шкала IPSS размещена на сайте
-                                </a>
-                                <div class="section__content__instruction ipss__content__instruction">
-                                    <p class="section__instruction__text ipss__instruction__text">
-                                        *ВОЗ — Всемирная организация здравоохранения
-                                    </p>
-                                    <p class="section__instruction__text ipss__instruction__text">
-                                        1. Дударев В.А., Старцев В.Ю., Бакшеева Е.Г. Клиническая оценка использования опросников симптомов нижних мочевых путей у мужчин. Вестник урологии. 2020;8(4):23–31. DOI: 10.21886/2308–6424–2020–8-4–23–31.
-                                    </p>
-                                    <p class="section__instruction__text ipss__instruction__text">
-                                        2. Клинические рекомендации. Доброкачественная гиперплазия предстательной железы. 2020. Утверждены Минздравом РФ.
-                                    </p>
-                                </div>
-                            </div>
+                </div>
+                <div class="header__menu" id="fixed__menu">
+                    <nav class="nav">
+                        <div class="container__hide">
+                            <ul class="nav__list">
+                                <li class="nav__list__item">
+                                    <a href="" class="nav__list__link">
+                                        <img src="img/menu1.svg" class="menu__list__img" alt="">
+                                        <p class="menu__item">Заболевания</p>
+                                    </a>
+                                    <div class="menu__dropdown__first">
+                                        <img src="img/dropdown.svg" alt="" class="dropdown__img">
+                                        <ul class="menu__dropdown__content">
+                                            <li class="menu__dropdown__item">
+                                                <a href="https://uro-info.ru/zabolevanie/gmp/"
+                                                   class="menu__dropdown__link"> <img src="img/menu1_3.png" alt=""
+                                                                                      class="dropdown__menu__img">
+                                                    <p>ГМП</p></a>
+                                            </li>
+                                            <li class="menu__dropdown__item">
+                                                <a href="https://uro-info.ru/zabolevanie/cistit/"
+                                                   class="menu__dropdown__link"> <img src="img/menu1_2.png" alt=""
+                                                                                      class="dropdown__menu__img">
+                                                    <p>Цистит</p></a>
+                                            </li>
+                                            <li class="menu__dropdown__item">
+                                                <a href="https://uro-info.ru/zabolevanie/prostatit/"
+                                                   class="menu__dropdown__link"> <img src="img/menu1_1.png" alt=""
+                                                                                      class="dropdown__menu__img">
+                                                    <p>Простатит</p></a>
+                                            </li>
+                                            <li class="menu__dropdown__item">
+                                                <a href="https://uro-info.ru/zabolevanie/adenoma/"
+                                                   class="menu__dropdown__link"> <img src="img/menu1_4.png" alt=""
+                                                                                      class="dropdown__menu__img">
+                                                    <p>Аденома простаты</p></a>
+                                            </li>
+                                            <li class="menu__dropdown__item">
+                                                <a href="https://uro-info.ru/zabolevanie/rpz/"
+                                                   class="menu__dropdown__link"> <img src="img/menu1_5.png" alt=""
+                                                                                      class="dropdown__menu__img">
+                                                    <p>Рак предстательной железы</p></a>
+                                            </li>
+                                            <li class="menu__dropdown__item">
+                                                <a href="https://uro-info.ru/articles/opukhol-mochevogo-puzyrya/"
+                                                   class="menu__dropdown__link"> <img src="img/menu1_4.png" alt=""
+                                                                                      class="dropdown__menu__img">
+                                                    <p>Рак мочевого пузыря</p></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="nav__list__item">
+                                    <a href="https://uro-info.ru/articles/" class="nav__list__link">
+                                        <img src="img/menu2.svg" class="menu__list__img" alt="">
+                                        <p class="menu__item">Статьи</p>
+                                    </a>
+                                </li>
+                                <li class="nav__list__item">
+                                    <a href="" class="nav__list__link">
+                                        <img src="img/menu3.svg" class="menu__list__img" alt="">
+                                        <p class="menu__item">Проверьте себя</p>
+                                    </a>
+                                    <div class="menu__dropdown__first">
+                                        <img src="img/dropdown.svg" alt="" class="dropdown__img">
+                                        <ul id="dropdown2" class="menu__dropdown__content">
+                                            <li class="menu__dropdown__item">
+                                                <a href="https://uro-info.ru/tests/mezhdunarodnaya-sistema-summarnoy-otsenki-zabolevaniy-predstatelnoy-zhelezy-v-ballakh-ipss-/"
+                                                   class="menu__dropdown__link"> <img src="img/menu2_1.png" alt=""
+                                                                                      class="dropdown__menu__img2">
+                                                    <p id="text2">Международная система суммарной оценки заболеваний
+                                                        предстательной железы в баллах (IPSS) </p></a>
+                                            </li>
+                                            <li class="menu__dropdown__item">
+                                                <a href="https://uro-info.ru/tests/oprosnik-dlya-otsenki-simptomov-giperaktivnogo-mochevogo-puzyrya/"
+                                                   class="menu__dropdown__link"> <img src="img/menu2_2.png" alt=""
+                                                                                      class="dropdown__menu__img2">
+                                                    <p id="text3">Опросник для оценки симптомов гиперактивного мочевого
+                                                        пузыря </p></a>
+                                            </li>
+                                            <li class="menu__dropdown__item">
+                                                <a href="https://uro-info.ru/tests/ekspress-diagnostika-tipov-nederzhaniya-mochi/"
+                                                   class="menu__dropdown__link"> <img src="img/menu2_3.png" alt=""
+                                                                                      class="dropdown__menu__img3">
+                                                    <p id="text4">Экспресс-диагностика типов недержания мочи </p></a>
+                                            </li>
+                                            <li class="menu__dropdown__item">
+                                                <a href="https://uro-info.ru/diary/" class="menu__dropdown__link"> <img
+                                                        src="img/menu2_4.png" alt="" class="dropdown__menu__img2">
+                                                    <p id="text5">Дневник мочеиспускания </p></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="nav__list__item">
+                                    <a href="https://uro-info.ru/video/" class="nav__list__link">
+                                        <img src="img/menu4.svg" class="menu__list__img" alt="">
+                                        <p class="menu__item">Видео</p>
+                                    </a>
+                                </li>
+                                <li class="nav__list__item">
+                                    <a href="https://uro-info.ru/istorii-pacientov/" class="nav__list__link">
+                                        <img src="img/menu5.svg" class="menu__list__img" alt="">
+                                        <p class="menu__item">Истории <br> пациентов</p>
+                                    </a>
+                                </li>
+                                <li class="nav__list__item">
+                                    <a href="https://uro-info.ru/voprosy-urologu/" class="nav__list__link">
+                                        <img src="img/menu6.svg" class="menu__list__img" alt="">
+                                        <p class="menu__item">Вопросы <br> урологу</p>
+                                    </a>
+                                </li>
+                                <li class="nav__list__item">
+                                    <a href="" class="nav__list__link">
+                                        <img src="img/menu7.svg" class="menu__list__img" alt="">
+                                        <p class="menu__item">Путь <br> пациента</p>
+                                    </a>
+                                    <div class="menu__dropdown__first">
+                                        <img src="img/dropdown.svg" alt="" class="dropdown__img" id="dropdown__img">
+                                        <ul id="dropdown3" class="menu__dropdown__content">
+                                            <li class="menu__dropdown__item">
+                                                <a href="https://uro-info.ru/patient-journey/gmp/"
+                                                   class="menu__dropdown__link"> <img src="img/menu1_3.png" alt=""
+                                                                                      class="dropdown__menu__img2">
+                                                    <p id="text8"> ГМП </p></a>
+                                            </li>
+                                            <li class="menu__dropdown__item">
+                                                <a href="https://uro-info.ru/patient-journey/rmp/"
+                                                   class="menu__dropdown__link"> <img src="img/menu1_4.png" alt=""
+                                                                                      class="dropdown__menu__img2">
+                                                    <p id="text9"> РМП </p></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="nav__list__item">
+                                    <a href="" class="nav__list__link">
+                                        <img src="img/menu9.png" id="menu9" class="menu__list__img" alt="">
+                                        <p class="menu__item">Карты</p>
+                                    </a>
+                                    <div class="menu__dropdown__first">
+                                        <img src="img/dropdown.svg" alt="" class="dropdown__img">
+                                        <ul class="menu__dropdown__content">
+                                            <li class="menu__dropdown__item">
+                                                <a href="https://uro-info.ru/map/" class="menu__dropdown__link"><img
+                                                        src="img/menu3_1.png" alt="" class="dropdown__menu__img4">
+                                                    <p id="text6">Карта туалетов </p></a>
+                                            </li>
+                                            <li class="menu__dropdown__item">
+                                                <a href="https://uro-info.ru/map-clinics/" class="menu__dropdown__link">
+                                                    <img src="img/menu3_2.png" alt="" class="dropdown__menu__img4">
+                                                    <p id="text7">Карта поликлиник </p></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="nav__list__item">
+                                    <a href="https://uro-info.ru/specTest/" class="nav__list__link">
+                                        <img src="img/menu8.svg" class="menu__list__img" alt="">
+                                        <p class="menu__item">Раздел для <br> специалистов</p>
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
+                    </nav>
+                </div>
+                <div class="header__bottom" id="header__bottom">
+                    <a href="/" class="header__bottom__link">Главная</a>
+                    <p class="header__bottom__text"> > Вопросы урологу</p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="urolog section">
+            <div class="container">
+                <div class="urolog__row row">
+                    <div class="urolog__left">
+                        <img src="img/urolog-img/1.svg" alt="">
                     </div>
-                </section>
-                <section class="ipss section">
-                    <div class="container">
-                        <div class="ipss__row row">
-                            <div class="section__top ipss__top">
-                                <h3 class="section__title ipss__title">В каких случаях для лечения аденомы простаты необходима операция</h3>
-                                <img src="img/urolog-img/7.svg" class="section__flag__bottom" alt="">
-                            </div>
-                            <div class="section__content ipss__content">
-                                <div class="section__first__block ipss__content__block">
-                                    <p class="ipss__block__text section__block__text">
-                                        Доброкачественная гиперплазия предстательной железы (или аденома простаты) чаще всего проявляется различными нарушениями мочеиспускания. Для оценки характера
-                                        <br> и выраженности таких нарушений у пациентов любого возраста используется шкала IPSS (International Prostate Symptom Score).
-                                    </p>
-                                </div>
-                                <div class="section__pink__block ipss__content__block">
-                                    <p class="ipss__block__text section__pink__text">
-                                        <span class="col-pink">IPSS — международная шкала оценки простатических симптомов,</span> утверждена ВОЗ* в 1992 году и широко используется в клинической практике. Шкала проста в заполнении и представляет собой опросник, состоящий из 8 вопросов, 7 из которых относятся к оценке симптомов мочеиспускания, а один определяет влияние заболевания на качество жизни. Выраженность симптомов распределяют по степени нарушений: отсутствие (0 баллов), лёгкая степень (1–7 баллов), умеренная степень (8–19 баллов) и тяжёлая степень (20–35 баллов).
-                                    </p>
-                                </div>
-                                <div class="section__content__block ipss__content__block">
-                                    <p class="ipss__block__text section__block__text">
-                                        Опросник можно заполнять дома, в спокойной обстановке, после заполнения его будет удобно распечатать и взять с собой на плановый визит к урологу.
-                                    </p>
-                                </div>
-                                <div class="section__content__block ipss__content__block">
-                                    <p class="ipss__block__text section__block__text">
-                                        Обращаем ваше внимание, что только врач может правильно интерпретировать результаты заполненного опросника с учётом жалоб, истории развития заболевания и его особенностей, результатов анализов и обследований, сделать заключение и подобрать или продолжить необходимую терапию.
-                                    </p>
-                                </div>
-                                <div class="section__content__block ipss__content__block">
-                                    <p class="ipss__block__text section__block__text">
-                                        Опросник является универсальным и подходит всем пациентам, независимо от характера нарушений мочеиспускания и наличия или отсутствия самостоятельного мочеиспускания.
-                                    </p>
-                                </div>
-                                <a href="#" class="section__content__link ipss__content__link">
-                                    Шкала IPSS размещена на сайте
-                                </a>
-                                <div class="section__content__instruction ipss__content__instruction">
-                                    <p class="section__instruction__text ipss__instruction__text">
-                                        *ВОЗ — Всемирная организация здравоохранения
-                                    </p>
-                                    <p class="section__instruction__text ipss__instruction__text">
-                                        1. Дударев В.А., Старцев В.Ю., Бакшеева Е.Г. Клиническая оценка использования опросников симптомов нижних мочевых путей у мужчин. Вестник урологии. 2020;8(4):23–31. DOI: 10.21886/2308–6424–2020–8-4–23–31.
-                                    </p>
-                                    <p class="section__instruction__text ipss__instruction__text">
-                                        2. Клинические рекомендации. Доброкачественная гиперплазия предстательной железы. 2020. Утверждены Минздравом РФ.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="urolog__right">
+                        <h1 class="urolog__title">
+                            Вопросы урологу
+                        </h1>
+                        <p class="urolog__text">
+                            Ответы на популярные вопросы пациентов с урологическими проблемами о мочеиспускании, аденоме
+                            и простатите от реальных врачей на портале Уро-Инфо. Не заменяет консультацию, по любым
+                            вопросам обращайтесь к лечащему врачу!
+                        </p>
                     </div>
-                </section>
-                <section class="ipss section">
-                    <div class="container">
-                        <div class="ipss__row row">
-                            <div class="section__top ipss__top">
-                                <h3 class="section__title ipss__title">Какими могут быть первые симптомы аденомы простаты</h3>
-                                <img src="img/urolog-img/7.svg" class="section__flag__bottom" alt="">
-                            </div>
-                            <div class="section__content ipss__content">
-                                <div class="section__first__block ipss__content__block">
-                                    <p class="ipss__block__text section__block__text">
-                                        Доброкачественная гиперплазия предстательной железы (или аденома простаты) чаще всего проявляется различными нарушениями мочеиспускания. Для оценки характера
-                                        <br> и выраженности таких нарушений у пациентов любого возраста используется шкала IPSS (International Prostate Symptom Score).
-                                    </p>
-                                </div>
-                                <div class="section__pink__block ipss__content__block">
-                                    <p class="ipss__block__text section__pink__text">
-                                        <span class="col-pink">IPSS — международная шкала оценки простатических симптомов,</span> утверждена ВОЗ* в 1992 году и широко используется в клинической практике. Шкала проста в заполнении и представляет собой опросник, состоящий из 8 вопросов, 7 из которых относятся к оценке симптомов мочеиспускания, а один определяет влияние заболевания на качество жизни. Выраженность симптомов распределяют по степени нарушений: отсутствие (0 баллов), лёгкая степень (1–7 баллов), умеренная степень (8–19 баллов) и тяжёлая степень (20–35 баллов).
-                                    </p>
-                                </div>
-                                <div class="section__content__block ipss__content__block">
-                                    <p class="ipss__block__text section__block__text">
-                                        Опросник можно заполнять дома, в спокойной обстановке, после заполнения его будет удобно распечатать и взять с собой на плановый визит к урологу.
-                                    </p>
-                                </div>
-                                <div class="section__content__block ipss__content__block">
-                                    <p class="ipss__block__text section__block__text">
-                                        Обращаем ваше внимание, что только врач может правильно интерпретировать результаты заполненного опросника с учётом жалоб, истории развития заболевания и его особенностей, результатов анализов и обследований, сделать заключение и подобрать или продолжить необходимую терапию.
-                                    </p>
-                                </div>
-                                <div class="section__content__block ipss__content__block">
-                                    <p class="ipss__block__text section__block__text">
-                                        Опросник является универсальным и подходит всем пациентам, независимо от характера нарушений мочеиспускания и наличия или отсутствия самостоятельного мочеиспускания.
-                                    </p>
-                                </div>
-                                <a href="#" class="section__content__link ipss__content__link">
-                                    Шкала IPSS размещена на сайте
-                                </a>
-                                <div class="section__content__instruction ipss__content__instruction">
-                                    <p class="section__instruction__text ipss__instruction__text">
-                                        *ВОЗ — Всемирная организация здравоохранения
-                                    </p>
-                                    <p class="section__instruction__text ipss__instruction__text">
-                                        1. Дударев В.А., Старцев В.Ю., Бакшеева Е.Г. Клиническая оценка использования опросников симптомов нижних мочевых путей у мужчин. Вестник урологии. 2020;8(4):23–31. DOI: 10.21886/2308–6424–2020–8-4–23–31.
-                                    </p>
-                                    <p class="section__instruction__text ipss__instruction__text">
-                                        2. Клинические рекомендации. Доброкачественная гиперплазия предстательной железы. 2020. Утверждены Минздравом РФ.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
+                </div>
+            </div>
+        </section>
+        <section class="ipss section">
+            <div class="container">
+                <div class="ipss__row row">
+                    <div class="section__top ipss__top">
+                        <h3 class="section__title ipss__title">Что такое шкала IPSS?</h3>
+                        <img src="img/urolog-img/7.svg" class="section__flag__bottom" alt="">
                     </div>
-                </section>
-                <section class="ipss section">
-                    <div class="container">
-                        <div class="ipss__row row">
-                            <div class="section__top ipss__top">
-                                <h3 class="section__title ipss__title">Анализы при аденоме: что важно знать и какие анализы при аденоме нужны</h3>
-                                <img src="img/urolog-img/7.svg" class="section__flag__bottom" alt="">
-                            </div>
-                            <div class="section__content ipss__content">
-                                <div class="section__first__block ipss__content__block">
-                                    <p class="ipss__block__text section__block__text">
-                                        Доброкачественная гиперплазия предстательной железы (или аденома простаты) чаще всего проявляется различными нарушениями мочеиспускания. Для оценки характера
-                                        <br> и выраженности таких нарушений у пациентов любого возраста используется шкала IPSS (International Prostate Symptom Score).
-                                    </p>
-                                </div>
-                                <div class="section__pink__block ipss__content__block">
-                                    <p class="ipss__block__text section__pink__text">
-                                        <span class="col-pink">IPSS — международная шкала оценки простатических симптомов,</span> утверждена ВОЗ* в 1992 году и широко используется в клинической практике. Шкала проста в заполнении и представляет собой опросник, состоящий из 8 вопросов, 7 из которых относятся к оценке симптомов мочеиспускания, а один определяет влияние заболевания на качество жизни. Выраженность симптомов распределяют по степени нарушений: отсутствие (0 баллов), лёгкая степень (1–7 баллов), умеренная степень (8–19 баллов) и тяжёлая степень (20–35 баллов).
-                                    </p>
-                                </div>
-                                <div class="section__content__block ipss__content__block">
-                                    <p class="ipss__block__text section__block__text">
-                                        Опросник можно заполнять дома, в спокойной обстановке, после заполнения его будет удобно распечатать и взять с собой на плановый визит к урологу.
-                                    </p>
-                                </div>
-                                <div class="section__content__block ipss__content__block">
-                                    <p class="ipss__block__text section__block__text">
-                                        Обращаем ваше внимание, что только врач может правильно интерпретировать результаты заполненного опросника с учётом жалоб, истории развития заболевания и его особенностей, результатов анализов и обследований, сделать заключение и подобрать или продолжить необходимую терапию.
-                                    </p>
-                                </div>
-                                <div class="section__content__block ipss__content__block">
-                                    <p class="ipss__block__text section__block__text">
-                                        Опросник является универсальным и подходит всем пациентам, независимо от характера нарушений мочеиспускания и наличия или отсутствия самостоятельного мочеиспускания.
-                                    </p>
-                                </div>
-                                <a href="#" class="section__content__link ipss__content__link">
-                                    Шкала IPSS размещена на сайте
-                                </a>
-                                <div class="section__content__instruction ipss__content__instruction">
-                                    <p class="section__instruction__text ipss__instruction__text">
-                                        *ВОЗ — Всемирная организация здравоохранения
-                                    </p>
-                                    <p class="section__instruction__text ipss__instruction__text">
-                                        1. Дударев В.А., Старцев В.Ю., Бакшеева Е.Г. Клиническая оценка использования опросников симптомов нижних мочевых путей у мужчин. Вестник урологии. 2020;8(4):23–31. DOI: 10.21886/2308–6424–2020–8-4–23–31.
-                                    </p>
-                                    <p class="section__instruction__text ipss__instruction__text">
-                                        2. Клинические рекомендации. Доброкачественная гиперплазия предстательной железы. 2020. Утверждены Минздравом РФ.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section class="ipss section">
-                    <div class="container">
-                        <div class="ipss__row row">
-                            <div class="section__top ipss__top">
-                                <h3 class="section__title ipss__title">Рекомендации по образу жизни</h3>
-                                <img src="img/urolog-img/7.svg" class="section__flag__bottom" alt="">
-                            </div>
-                            <div class="section__content ipss__content">
-                                <div class="section__first__block ipss__content__block">
-                                    <p class="ipss__block__text section__block__text">
-                                        Доброкачественная гиперплазия предстательной железы (или аденома простаты) чаще всего проявляется различными нарушениями мочеиспускания. Для оценки характера
-                                        <br> и выраженности таких нарушений у пациентов любого возраста используется шкала IPSS (International Prostate Symptom Score).
-                                    </p>
-                                </div>
-                                <div class="section__pink__block ipss__content__block">
-                                    <p class="ipss__block__text section__pink__text">
-                                        <span class="col-pink">IPSS — международная шкала оценки простатических симптомов,</span> утверждена ВОЗ* в 1992 году и широко используется в клинической практике. Шкала проста в заполнении и представляет собой опросник, состоящий из 8 вопросов, 7 из которых относятся к оценке симптомов мочеиспускания, а один определяет влияние заболевания на качество жизни. Выраженность симптомов распределяют по степени нарушений: отсутствие (0 баллов), лёгкая степень (1–7 баллов), умеренная степень (8–19 баллов) и тяжёлая степень (20–35 баллов).
-                                    </p>
-                                </div>
-                                <div class="section__content__block ipss__content__block">
-                                    <p class="ipss__block__text section__block__text">
-                                        Опросник можно заполнять дома, в спокойной обстановке, после заполнения его будет удобно распечатать и взять с собой на плановый визит к урологу.
-                                    </p>
-                                </div>
-                                <div class="section__content__block ipss__content__block">
-                                    <p class="ipss__block__text section__block__text">
-                                        Обращаем ваше внимание, что только врач может правильно интерпретировать результаты заполненного опросника с учётом жалоб, истории развития заболевания и его особенностей, результатов анализов и обследований, сделать заключение и подобрать или продолжить необходимую терапию.
-                                    </p>
-                                </div>
-                                <div class="section__content__block ipss__content__block">
-                                    <p class="ipss__block__text section__block__text">
-                                        Опросник является универсальным и подходит всем пациентам, независимо от характера нарушений мочеиспускания и наличия или отсутствия самостоятельного мочеиспускания.
-                                    </p>
-                                </div>
-                                <a href="#" class="section__content__link ipss__content__link">
-                                    Шкала IPSS размещена на сайте
-                                </a>
-                                <div class="section__content__instruction ipss__content__instruction">
-                                    <p class="section__instruction__text ipss__instruction__text">
-                                        *ВОЗ — Всемирная организация здравоохранения
-                                    </p>
-                                    <p class="section__instruction__text ipss__instruction__text">
-                                        1. Дударев В.А., Старцев В.Ю., Бакшеева Е.Г. Клиническая оценка использования опросников симптомов нижних мочевых путей у мужчин. Вестник урологии. 2020;8(4):23–31. DOI: 10.21886/2308–6424–2020–8-4–23–31.
-                                    </p>
-                                    <p class="section__instruction__text ipss__instruction__text">
-                                        2. Клинические рекомендации. Доброкачественная гиперплазия предстательной железы. 2020. Утверждены Минздравом РФ.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section class="ipss section">
-                    <div class="container">
-                        <div class="ipss__row row">
-                            <div class="section__top ipss__top">
-                                <h3 class="section__title ipss__title">Специальные упражнения для контроля мочеиспускания</h3>
-                                <img src="img/urolog-img/7.svg" class="section__flag__bottom" alt="">
-                            </div>
-                            <div class="section__content ipss__content">
-                                <div class="section__first__block ipss__content__block">
-                                    <p class="ipss__block__text section__block__text">
-                                        Доброкачественная гиперплазия предстательной железы (или аденома простаты) чаще всего проявляется различными нарушениями мочеиспускания. Для оценки характера
-                                        <br> и выраженности таких нарушений у пациентов любого возраста используется шкала IPSS (International Prostate Symptom Score).
-                                    </p>
-                                </div>
-                                <div class="section__pink__block ipss__content__block">
-                                    <p class="ipss__block__text section__pink__text">
-                                        <span class="col-pink">IPSS — международная шкала оценки простатических симптомов,</span> утверждена ВОЗ* в 1992 году и широко используется в клинической практике. Шкала проста в заполнении и представляет собой опросник, состоящий из 8 вопросов, 7 из которых относятся к оценке симптомов мочеиспускания, а один определяет влияние заболевания на качество жизни. Выраженность симптомов распределяют по степени нарушений: отсутствие (0 баллов), лёгкая степень (1–7 баллов), умеренная степень (8–19 баллов) и тяжёлая степень (20–35 баллов).
-                                    </p>
-                                </div>
-                                <div class="section__content__block ipss__content__block">
-                                    <p class="ipss__block__text section__block__text">
-                                        Опросник можно заполнять дома, в спокойной обстановке, после заполнения его будет удобно распечатать и взять с собой на плановый визит к урологу.
-                                    </p>
-                                </div>
-                                <div class="section__content__block ipss__content__block">
-                                    <p class="ipss__block__text section__block__text">
-                                        Обращаем ваше внимание, что только врач может правильно интерпретировать результаты заполненного опросника с учётом жалоб, истории развития заболевания и его особенностей, результатов анализов и обследований, сделать заключение и подобрать или продолжить необходимую терапию.
-                                    </p>
-                                </div>
-                                <div class="section__content__block ipss__content__block">
-                                    <p class="ipss__block__text section__block__text">
-                                        Опросник является универсальным и подходит всем пациентам, независимо от характера нарушений мочеиспускания и наличия или отсутствия самостоятельного мочеиспускания.
-                                    </p>
-                                </div>
-                                <a href="#" class="section__content__link ipss__content__link">
-                                    Шкала IPSS размещена на сайте
-                                </a>
-                                <div class="section__content__instruction ipss__content__instruction">
-                                    <p class="section__instruction__text ipss__instruction__text">
-                                        *ВОЗ — Всемирная организация здравоохранения
-                                    </p>
-                                    <p class="section__instruction__text ipss__instruction__text">
-                                        1. Дударев В.А., Старцев В.Ю., Бакшеева Е.Г. Клиническая оценка использования опросников симптомов нижних мочевых путей у мужчин. Вестник урологии. 2020;8(4):23–31. DOI: 10.21886/2308–6424–2020–8-4–23–31.
-                                    </p>
-                                    <p class="section__instruction__text ipss__instruction__text">
-                                        2. Клинические рекомендации. Доброкачественная гиперплазия предстательной железы. 2020. Утверждены Минздравом РФ.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section class="ipss section">
-                    <div class="container">
-                        <div class="ipss__row row">
-                            <div class="section__top ipss__top">
-                                <h3 class="section__title ipss__title">Аденома простаты: когда нужна срочная госпитализация</h3>
-                                <img src="img/urolog-img/7.svg" class="section__flag__bottom" alt="">
-                            </div>
-                            <div class="section__content ipss__content">
-                                <div class="section__first__block ipss__content__block">
-                                    <p class="ipss__block__text section__block__text">
-                                        Доброкачественная гиперплазия предстательной железы (или аденома простаты) чаще всего проявляется различными нарушениями мочеиспускания. Для оценки характера
-                                        <br> и выраженности таких нарушений у пациентов любого возраста используется шкала IPSS (International Prostate Symptom Score).
-                                    </p>
-                                </div>
-                                <div class="section__pink__block ipss__content__block">
-                                    <p class="ipss__block__text section__pink__text">
-                                        <span class="col-pink">IPSS — международная шкала оценки простатических симптомов,</span> утверждена ВОЗ* в 1992 году и широко используется в клинической практике. Шкала проста в заполнении и представляет собой опросник, состоящий из 8 вопросов, 7 из которых относятся к оценке симптомов мочеиспускания, а один определяет влияние заболевания на качество жизни. Выраженность симптомов распределяют по степени нарушений: отсутствие (0 баллов), лёгкая степень (1–7 баллов), умеренная степень (8–19 баллов) и тяжёлая степень (20–35 баллов).
-                                    </p>
-                                </div>
-                                <div class="section__content__block ipss__content__block">
-                                    <p class="ipss__block__text section__block__text">
-                                        Опросник можно заполнять дома, в спокойной обстановке, после заполнения его будет удобно распечатать и взять с собой на плановый визит к урологу.
-                                    </p>
-                                </div>
-                                <div class="section__content__block ipss__content__block">
-                                    <p class="ipss__block__text section__block__text">
-                                        Обращаем ваше внимание, что только врач может правильно интерпретировать результаты заполненного опросника с учётом жалоб, истории развития заболевания и его особенностей, результатов анализов и обследований, сделать заключение и подобрать или продолжить необходимую терапию.
-                                    </p>
-                                </div>
-                                <div class="section__content__block ipss__content__block">
-                                    <p class="ipss__block__text section__block__text">
-                                        Опросник является универсальным и подходит всем пациентам, независимо от характера нарушений мочеиспускания и наличия или отсутствия самостоятельного мочеиспускания.
-                                    </p>
-                                </div>
-                                <a href="#" class="section__content__link ipss__content__link">
-                                    Шкала IPSS размещена на сайте
-                                </a>
-                                <div class="section__content__instruction ipss__content__instruction">
-                                    <p class="section__instruction__text ipss__instruction__text">
-                                        *ВОЗ — Всемирная организация здравоохранения
-                                    </p>
-                                    <p class="section__instruction__text ipss__instruction__text">
-                                        1. Дударев В.А., Старцев В.Ю., Бакшеева Е.Г. Клиническая оценка использования опросников симптомов нижних мочевых путей у мужчин. Вестник урологии. 2020;8(4):23–31. DOI: 10.21886/2308–6424–2020–8-4–23–31.
-                                    </p>
-                                    <p class="section__instruction__text ipss__instruction__text">
-                                        2. Клинические рекомендации. Доброкачественная гиперплазия предстательной железы. 2020. Утверждены Минздравом РФ.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section class="ipss section">
-                    <div class="container">
-                        <div class="ipss__row row">
-                            <div class="section__top ipss__top">
-                                <h3 class="section__title ipss__title">Является ли импотенция симптомом аденомы простаты</h3>
-                                <img src="img/urolog-img/7.svg" class="section__flag__bottom" alt="">
-                            </div>
-                            <div class="section__content ipss__content">
-                                <div class="section__first__block ipss__content__block">
-                                    <p class="ipss__block__text section__block__text">
-                                        Доброкачественная гиперплазия предстательной железы (или аденома простаты) чаще всего проявляется различными нарушениями мочеиспускания. Для оценки характера
-                                        <br> и выраженности таких нарушений у пациентов любого возраста используется шкала IPSS (International Prostate Symptom Score).
-                                    </p>
-                                </div>
-                                <div class="section__pink__block ipss__content__block">
-                                    <p class="ipss__block__text section__pink__text">
-                                        <span class="col-pink">IPSS — международная шкала оценки простатических симптомов,</span> утверждена ВОЗ* в 1992 году и широко используется в клинической практике. Шкала проста в заполнении и представляет собой опросник, состоящий из 8 вопросов, 7 из которых относятся к оценке симптомов мочеиспускания, а один определяет влияние заболевания на качество жизни. Выраженность симптомов распределяют по степени нарушений: отсутствие (0 баллов), лёгкая степень (1–7 баллов), умеренная степень (8–19 баллов) и тяжёлая степень (20–35 баллов).
-                                    </p>
-                                </div>
-                                <div class="section__content__block ipss__content__block">
-                                    <p class="ipss__block__text section__block__text">
-                                        Опросник можно заполнять дома, в спокойной обстановке, после заполнения его будет удобно распечатать и взять с собой на плановый визит к урологу.
-                                    </p>
-                                </div>
-                                <div class="section__content__block ipss__content__block">
-                                    <p class="ipss__block__text section__block__text">
-                                        Обращаем ваше внимание, что только врач может правильно интерпретировать результаты заполненного опросника с учётом жалоб, истории развития заболевания и его особенностей, результатов анализов и обследований, сделать заключение и подобрать или продолжить необходимую терапию.
-                                    </p>
-                                </div>
-                                <div class="section__content__block ipss__content__block">
-                                    <p class="ipss__block__text section__block__text">
-                                        Опросник является универсальным и подходит всем пациентам, независимо от характера нарушений мочеиспускания и наличия или отсутствия самостоятельного мочеиспускания.
-                                    </p>
-                                </div>
-                                <a href="#" class="section__content__link ipss__content__link">
-                                    Шкала IPSS размещена на сайте
-                                </a>
-                                <div class="section__content__instruction ipss__content__instruction">
-                                    <p class="section__instruction__text ipss__instruction__text">
-                                        *ВОЗ — Всемирная организация здравоохранения
-                                    </p>
-                                    <p class="section__instruction__text ipss__instruction__text">
-                                        1. Дударев В.А., Старцев В.Ю., Бакшеева Е.Г. Клиническая оценка использования опросников симптомов нижних мочевых путей у мужчин. Вестник урологии. 2020;8(4):23–31. DOI: 10.21886/2308–6424–2020–8-4–23–31.
-                                    </p>
-                                    <p class="section__instruction__text ipss__instruction__text">
-                                        2. Клинические рекомендации. Доброкачественная гиперплазия предстательной железы. 2020. Утверждены Минздравом РФ.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section class="ipss section">
-                    <div class="container">
-                        <div class="ipss__row row">
-                            <div class="section__top ipss__top">
-                                <h3 class="section__title ipss__title">При каких симптомах стоит обратиться к урологу?</h3>
-                                <img src="img/urolog-img/7.svg" class="section__flag__bottom" alt="">
-                            </div>
-                            <div class="section__content ipss__content">
-                                <div class="section__first__block ipss__content__block">
-                                    <p class="ipss__block__text section__block__text">
-                                        Доброкачественная гиперплазия предстательной железы (или аденома простаты) чаще всего проявляется различными нарушениями мочеиспускания. Для оценки характера
-                                        <br> и выраженности таких нарушений у пациентов любого возраста используется шкала IPSS (International Prostate Symptom Score).
-                                    </p>
-                                </div>
-                                <div class="section__pink__block ipss__content__block">
-                                    <p class="ipss__block__text section__pink__text">
-                                        <span class="col-pink">IPSS — международная шкала оценки простатических симптомов,</span> утверждена ВОЗ* в 1992 году и широко используется в клинической практике. Шкала проста в заполнении и представляет собой опросник, состоящий из 8 вопросов, 7 из которых относятся к оценке симптомов мочеиспускания, а один определяет влияние заболевания на качество жизни. Выраженность симптомов распределяют по степени нарушений: отсутствие (0 баллов), лёгкая степень (1–7 баллов), умеренная степень (8–19 баллов) и тяжёлая степень (20–35 баллов).
-                                    </p>
-                                </div>
-                                <div class="section__content__block ipss__content__block">
-                                    <p class="ipss__block__text section__block__text">
-                                        Опросник можно заполнять дома, в спокойной обстановке, после заполнения его будет удобно распечатать и взять с собой на плановый визит к урологу.
-                                    </p>
-                                </div>
-                                <div class="section__content__block ipss__content__block">
-                                    <p class="ipss__block__text section__block__text">
-                                        Обращаем ваше внимание, что только врач может правильно интерпретировать результаты заполненного опросника с учётом жалоб, истории развития заболевания и его особенностей, результатов анализов и обследований, сделать заключение и подобрать или продолжить необходимую терапию.
-                                    </p>
-                                </div>
-                                <div class="section__content__block ipss__content__block">
-                                    <p class="ipss__block__text section__block__text">
-                                        Опросник является универсальным и подходит всем пациентам, независимо от характера нарушений мочеиспускания и наличия или отсутствия самостоятельного мочеиспускания.
-                                    </p>
-                                </div>
-                                <a href="#" class="section__content__link ipss__content__link">
-                                    Шкала IPSS размещена на сайте
-                                </a>
-                                <div class="section__content__instruction ipss__content__instruction">
-                                    <p class="section__instruction__text ipss__instruction__text">
-                                        *ВОЗ — Всемирная организация здравоохранения
-                                    </p>
-                                    <p class="section__instruction__text ipss__instruction__text">
-                                        1. Дударев В.А., Старцев В.Ю., Бакшеева Е.Г. Клиническая оценка использования опросников симптомов нижних мочевых путей у мужчин. Вестник урологии. 2020;8(4):23–31. DOI: 10.21886/2308–6424–2020–8-4–23–31.
-                                    </p>
-                                    <p class="section__instruction__text ipss__instruction__text">
-                                        2. Клинические рекомендации. Доброкачественная гиперплазия предстательной железы. 2020. Утверждены Минздравом РФ.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section class="ipss section">
-                    <div class="container">
-                        <div class="ipss__row row">
-                            <div class="section__top ipss__top">
-                                <h3 class="section__title ipss__title">Стоит ли обращаться к урологу, если ничего не беспокоит?</h3>
-                                <img src="img/urolog-img/7.svg" class="section__flag__bottom" alt="">
-                            </div>
-                            <div class="section__content ipss__content">
-                                <div class="section__first__block ipss__content__block">
-                                    <p class="ipss__block__text section__block__text">
-                                        Доброкачественная гиперплазия предстательной железы (или аденома простаты) чаще всего проявляется различными нарушениями мочеиспускания. Для оценки характера
-                                        <br> и выраженности таких нарушений у пациентов любого возраста используется шкала IPSS (International Prostate Symptom Score).
-                                    </p>
-                                </div>
-                                <div class="section__pink__block ipss__content__block">
-                                    <p class="ipss__block__text section__pink__text">
-                                        <span class="col-pink">IPSS — международная шкала оценки простатических симптомов,</span> утверждена ВОЗ* в 1992 году и широко используется в клинической практике. Шкала проста в заполнении и представляет собой опросник, состоящий из 8 вопросов, 7 из которых относятся к оценке симптомов мочеиспускания, а один определяет влияние заболевания на качество жизни. Выраженность симптомов распределяют по степени нарушений: отсутствие (0 баллов), лёгкая степень (1–7 баллов), умеренная степень (8–19 баллов) и тяжёлая степень (20–35 баллов).
-                                    </p>
-                                </div>
-                                <div class="section__content__block ipss__content__block">
-                                    <p class="ipss__block__text section__block__text">
-                                        Опросник можно заполнять дома, в спокойной обстановке, после заполнения его будет удобно распечатать и взять с собой на плановый визит к урологу.
-                                    </p>
-                                </div>
-                                <div class="section__content__block ipss__content__block">
-                                    <p class="ipss__block__text section__block__text">
-                                        Обращаем ваше внимание, что только врач может правильно интерпретировать результаты заполненного опросника с учётом жалоб, истории развития заболевания и его особенностей, результатов анализов и обследований, сделать заключение и подобрать или продолжить необходимую терапию.
-                                    </p>
-                                </div>
-                                <div class="section__content__block ipss__content__block">
-                                    <p class="ipss__block__text section__block__text">
-                                        Опросник является универсальным и подходит всем пациентам, независимо от характера нарушений мочеиспускания и наличия или отсутствия самостоятельного мочеиспускания.
-                                    </p>
-                                </div>
-                                <a href="#" class="section__content__link ipss__content__link">
-                                    Шкала IPSS размещена на сайте
-                                </a>
-                                <div class="section__content__instruction ipss__content__instruction">
-                                    <p class="section__instruction__text ipss__instruction__text">
-                                        *ВОЗ — Всемирная организация здравоохранения
-                                    </p>
-                                    <p class="section__instruction__text ipss__instruction__text">
-                                        1. Дударев В.А., Старцев В.Ю., Бакшеева Е.Г. Клиническая оценка использования опросников симптомов нижних мочевых путей у мужчин. Вестник урологии. 2020;8(4):23–31. DOI: 10.21886/2308–6424–2020–8-4–23–31.
-                                    </p>
-                                    <p class="section__instruction__text ipss__instruction__text">
-                                        2. Клинические рекомендации. Доброкачественная гиперплазия предстательной железы. 2020. Утверждены Минздравом РФ.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            </main>
-            <footer class="footer">
-                <div class="container">
-                    <div class="footer__row">
-                        <div class="footer__top">
-                            <img src="img/logo-footer.png.svg" alt="">
-                            <p class="footer__top__text ">
-                                18+
+                    <div class="section__content ipss__content">
+                        <div class="section__first__block ipss__content__block">
+                            <p class="ipss__block__text section__block__text">
+                                Доброкачественная гиперплазия предстательной железы (или аденома простаты) чаще всего
+                                проявляется различными нарушениями мочеиспускания. Для оценки характера
+                                <br> и выраженности таких нарушений у пациентов любого возраста используется шкала IPSS
+                                (International Prostate Symptom Score).
                             </p>
                         </div>
-                        <div class="footer__main">
-                            <div class="footer__main__block">
-                                <a href="https://uro-info.ru/zabolevanie/" class="footer__main__link_l">Заболевания</a>
-                                <a href="https://uro-info.ru/zabolevanie/gmp/" class="footer__main__link">ГМП</a>
-                                <a href="https://uro-info.ru/zabolevanie/cistit/" class="footer__main__link">Цистит</a>
-                                <a href="https://uro-info.ru/zabolevanie/prostatit/" class="footer__main__link">Простатит</a>
-                                <a href="https://uro-info.ru/zabolevanie/adenoma/" class="footer__main__link">Аденома простаты</a>
-                                <a href="https://uro-info.ru/zabolevanie/rpz/" class="footer__main__link">Рак предстательной железы</a>
-                            </div>
-
-                            <div class="footer__main__block">
-                                <a href="https://uro-info.ru/tests/" class="footer__main__link_l">Проверьте себя</a>
-                                <a href="https://uro-info.ru/tests/mezhdunarodnaya-sistema-summarnoy-otsenki-zabolevaniy-predstatelnoy-zhelezy-v-ballakh-ipss-/" class="footer__main__link">Международная система <br> суммарной оценки заболеваний
-                                    <br> предстательной железы в баллах <br> (IPSS)</a>
-                                <a href="https://uro-info.ru/tests/oprosnik-dlya-otsenki-simptomov-giperaktivnogo-mochevogo-puzyrya/" class="footer__main__link">Опросник для оценки симптомов <br> гиперактивного мочевого пузыря</a>
-                                <a href="https://uro-info.ru/tests/ekspress-diagnostika-tipov-nederzhaniya-mochi/" class="footer__main__link">Экспресс-диагностика <br> типов недержания мочи</a>
-                                <a href="https://uro-info.ru/diary/" class="footer__main__link">Дневник мочеиспускания</a>
-                            </div>
-
-                            <div class="footer__main__block">
-                                <a href="https://uro-info.ru/about-us/" class="footer__main__link_l">О компании</a>
-                                <a href="https://uro-info.ru/voprosy-urologu/" class="footer__main__link_l">Вопросы урологу</a>
-                                <a href="https://uro-info.ru/istorii-pacientov/" class="footer__main__link_l">Истории пациентов</a>
-                                <a href="https://uro-info.ru/articles/" class="footer__main__link_l">Статьи</a>
-                                <a href="https://uro-info.ru/video/" class="footer__main__link_l">Видео</a>
-                                <a href="https://uro-info.ru/specTest/" class="footer__main__link_l">Раздел для специалистов</a>
-                            </div>
-
-                            <div id="footer__right" class="footer__main__block">
-                                <a href="https://uro-info.ru/politika_konfidentsialnosti/" class="footer__main__link_l">Политика конфиденциальности</a>
-                                <a href="https://uro-info.ru/map/" class="footer__main__link_l">Карта туалетов</a>
-                                <a href="https://uro-info.ru/map-clinics/" class="footer__main__link_l">Карта поликлиник</a>
-                                <a href="https://uro-info.ru/sitemap/" class="footer__main__link_l">Карта сайта</a>
-                            </div>
-                        </div>
-                        <div class="footer__bottom">
-                            <p class="footer__bottom__title">
-                                Сайт (www.uro-info.ru) (далее- «Сайт») является собственностью Общества с ограниченной ответственностью «Астеллас Фарма Продакшен». Адрес: 109147, Россия, г. Москва, Марксистская, 16. Информация на Сайте носит информационный характер и не содержит персональных данных. Общество с ограниченной ответственностью «Астеллас Фарма Продакшен» не обрабатывает персональные данные посредством Сайта. Запрещается любое копирование Сайта и материалов, размещённых на Сайте, без разрешения собственника – Общества с ограниченной ответственностью «Астеллас Фарма Продакшен». Информация на Сайте разработана при поддержке Общества с ограниченной ответственностью «Астеллас Фарма Продакшен» в целях повышения осведомленности пациентов о своём заболевании.
-                            </p>
-
-                            <p class="footer__bottom__text">
-                                Информация на сайте не заменяет консультацию специалиста здравоохранения. Имеются противопоказания, обратитесь к лечащему врачу.
+                        <div class="section__pink__block ipss__content__block">
+                            <p class="ipss__block__text section__pink__text">
+                                <span class="col-pink">IPSS — международная шкала оценки простатических симптомов,</span>
+                                утверждена ВОЗ* в 1992 году и широко используется в клинической практике. Шкала проста
+                                в заполнении и представляет собой опросник, состоящий из 8 вопросов, 7 из которых
+                                относятся к оценке симптомов мочеиспускания, а один определяет влияние заболевания
+                                на качество жизни. Выраженность симптомов распределяют по степени нарушений: отсутствие
+                                (0 баллов), лёгкая степень (1–7 баллов), умеренная степень (8–19 баллов) и тяжёлая
+                                степень (20–35 баллов).
                             </p>
                         </div>
-
-                        <div class="footer__hide">
-                            <button class="footer__hide__button"><img src="img/footer.png" alt=""></button>
-                            <div class="footer__hide__panel">
-                                <p class="footer__bottom__title">
-                                    Сайт (www.uro-info.ru) (далее- «Сайт») является собственностью Общества с ограниченной ответственностью «Астеллас Фарма Продакшен». Адрес: 109147, Россия, г. Москва, Марксистская, 16. Информация на Сайте носит информационный характер и не содержит персональных данных. Общество с ограниченной ответственностью «Астеллас Фарма Продакшен» не обрабатывает персональные данные посредством Сайта. Запрещается любое копирование Сайта и материалов, размещённых на Сайте, без разрешения собственника – Общества с ограниченной ответственностью «Астеллас Фарма Продакшен». Информация на Сайте разработана при поддержке Общества с ограниченной ответственностью «Астеллас Фарма Продакшен» в целях повышения осведомленности пациентов о своём заболевании.
-                                </p>
-
-                                <p class="footer__bottom__text">
-                                    Информация на сайте не заменяет консультацию специалиста здравоохранения. Имеются противопоказания, обратитесь к лечащему врачу.
-                                </p>
-                            </div>
+                        <div class="section__content__block ipss__content__block">
+                            <p class="ipss__block__text section__block__text">
+                                Опросник можно заполнять дома, в спокойной обстановке, после заполнения его будет удобно
+                                распечатать и взять с собой на плановый визит к урологу.
+                            </p>
+                        </div>
+                        <div class="section__content__block ipss__content__block">
+                            <p class="ipss__block__text section__block__text">
+                                Обращаем ваше внимание, что только врач может правильно интерпретировать результаты
+                                заполненного опросника с учётом жалоб, истории развития заболевания и его особенностей,
+                                результатов анализов и обследований, сделать заключение и подобрать или продолжить
+                                необходимую терапию.
+                            </p>
+                        </div>
+                        <div class="section__content__block ipss__content__block">
+                            <p class="ipss__block__text section__block__text">
+                                Опросник является универсальным и подходит всем пациентам, независимо от характера
+                                нарушений мочеиспускания и наличия или отсутствия самостоятельного мочеиспускания.
+                            </p>
+                        </div>
+                        <a href="#" class="section__content__link ipss__content__link">
+                            Шкала IPSS размещена на сайте
+                        </a>
+                        <div class="section__content__instruction ipss__content__instruction">
+                            <p class="section__instruction__text ipss__instruction__text">
+                                *ВОЗ — Всемирная организация здравоохранения
+                            </p>
+                            <p class="section__instruction__text ipss__instruction__text">
+                                1. Дударев В.А., Старцев В.Ю., Бакшеева Е.Г. Клиническая оценка использования опросников
+                                симптомов нижних мочевых путей у мужчин. Вестник урологии. 2020;8(4):23–31. DOI:
+                                10.21886/2308–6424–2020–8-4–23–31.
+                            </p>
+                            <p class="section__instruction__text ipss__instruction__text">
+                                2. Клинические рекомендации. Доброкачественная гиперплазия предстательной железы. 2020.
+                                Утверждены Минздравом РФ.
+                            </p>
                         </div>
                     </div>
                 </div>
-            </footer>
+            </div>
+        </section>
+        <section class="diary section">
+            <div class="container">
+                <div class="diary__row row">
+                    <div class="section__top diary__top">
+                        <h3 class="section__title diary__title">Для чего нужен дневник мочеиспускания?</h3>
+                        <img src="img/urolog-img/7.svg" class="section__flag__bottom" alt="">
+                    </div>
+                    <div class="section__content diary__content">
+                        <div class="section__first__block diary__check__block">
+                            <div class="diary__check__content">
+                                <img src="img/urolog-img/2.svg" alt="" class="diary__check__img">
+                                <p class="section__block__text">
+                                    Дневник мочеиспускания — простой, но важный инструмент, помогающий врачу определить
+                                    состояние, объективно проанализировать жалобы и оценить функции мочеиспускания.
+                                </p>
+                            </div>
+                            <div class="diary__check__content">
+                                <img src="img/urolog-img/2.svg" alt="" class="diary__check__img">
+                                <p class="section__block__text">
+                                    Дневник мочеиспускания позволяет зафиксировать частоту мочеиспускания, объём каждой
+                                    порции и общий объём мочи в сутки, соотношение дневного и ночного объёма мочи.
+                                    Заполнение дневника может помочь при первичном обследовании и в дальнейшем
+                                    для оценки эффективности терапии.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="section__pink__block diary__content__block">
+                            <p class="diary__block__text section__pink__text">
+                                Как правило, уролог на приёме поясняет как вести дневник мочеиспускания. Все данные
+                                вносят в течение минимум 3-х суток и очень подробно заполняют информацию об объёме
+                                потребляемой жидкости, времени каждого мочеиспускания, объёме мочи, неожиданных сильных
+                                позывов к мочеиспусканию, эпизодов недержания мочи, ночных позывов и ночного диуреза.
+                            </p>
+                        </div>
+                        <div class="section__content__block diary__content__block">
+                            <p class="diary__block__text section__block__text">
+                                В разные дни объём суточного диуреза может значительно отличаться, и это может быть
+                                в пределах нормы, поскольку зависит от разных обстоятельств, например, от объёма выпитой
+                                жидкости. И, пожалуйста, постарайтесь определять объём порции мочи максимально точно,
+                                от этого зависит дальнейшая интерпретация данных врачом.
+                            </p>
+                        </div>
+                        <div class="section__content__block diary__content__block">
+                            <p class="diary__block__text section__block__text">
+                                Не забывайте заполненный дневник мочеиспускания сохранить и взять с собой на визит
+                                к урологу.
+                            </p>
+                        </div>
+                        <a href="#" class="section__content__link diary__content__link">
+                            Дневник мочеиспускания (образец для мужчин) представлен на сайте
+                        </a>
+                        <div class="section__content__instruction diary__content__instruction">
+                            <p class="section__instruction__text diary__instruction__text">
+                                1. Клинические рекомендации. Доброкачественная гиперплазия предстательной железы. 2020.
+                                Утверждены Минздравом РФ.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="tell section">
+            <div class="container">
+                <div class="tell__row row">
+                    <div class="section__top tell__top">
+                        <h3 class="section__title tell__title">О чем важно рассказать врачу?</h3>
+                        <img src="img/urolog-img/7.svg" class="section__flag__bottom" alt="">
+                    </div>
+                    <div class="section__content tell__content">
+                        <div class="section__first__block tell__content__block">
+                            <p class="tell__block__text section__block__text">
+                                Несмотря на деликатность проблем (частое мочеиспускание, частые позывы к мочеиспусканию,
+                                частое мочеиспускание и днём, и ночью или затруднённое мочеиспускание) важно
+                                без стеснения рассказать урологу обо всем, что вас беспокоит.
+                            </p>
+                        </div>
+                        <div class="section__content__block tell__content__block">
+                            <p class="tell__block__text section__block__text">
+                                Причины частого мочеиспускания могут быть разные, поэтому на приёме важно сообщить
+                                доктору следующую информацию:
+                            </p>
+                        </div>
+                        <div class="section__content__list tell__content__list">
+                            <ul class="section__list">
+                                <li class="section__list__item">
+                                    <img src="img/urolog-img/8.svg" alt="" class="tell__check__img">
+                                    <p class="section__list__text">
+                                        О всех сопутствующих заболеваниях, в том числе хронических, поскольку некоторые
+                                        состояния способны привести к нарушению мочеиспускания. К таким заболеваниям
+                                        относятся рассеянный склероз, нарушения мозгового кровообращения, инсульт,
+                                        паркинсонизм, заболевания спинного мозга, сахарный диабет, заболевания
+                                        сердечно-сосудистой системы и другие;
+                                    </p>
+                                </li>
+                                <li class="section__list__item">
+                                    <img src="img/urolog-img/8.svg" alt="" class="tell__check__img">
+                                    <p class="section__list__text">
+                                        О наличии эпизодов острой задержки мочеиспускания или примеси крови в моче
+                                        (гематурии);
+                                    </p>
+                                </li>
+                                <li class="section__list__item">
+                                    <img src="img/urolog-img/8.svg" alt="" class="tell__check__img">
+                                    <p class="section__list__text">
+                                        О перенесённых травмах позвоночника;
+                                    </p>
+                                </li>
+                                <li class="section__list__item">
+                                    <img src="img/urolog-img/8.svg" alt="" class="tell__check__img">
+                                    <p class="section__list__text">
+                                        О принимаемых лекарственных препаратах, как для лечения аденомы простаты,
+                                        так и для терапии сопутствующих заболеваний;
+                                    </p>
+                                </li>
+                                <li class="section__list__item">
+                                    <img src="img/urolog-img/8.svg" alt="" class="tell__check__img">
+                                    <p class="section__list__text">
+                                        О факторах, связанных с образом жизни, вредных привычках (злоупотреблении
+                                        алкоголем);
+                                    </p>
+                                </li>
+                                <li class="section__list__item">
+                                    <img src="img/urolog-img/8.svg" alt="" class="tell__check__img">
+                                    <p class="section__list__text">
+                                        О перенесенных ранее хирургических операциях;
+                                    </p>
+                                </li>
+                                <li class="section__list__item">
+                                    <img src="img/urolog-img/8.svg" alt="" class="tell__check__img">
+                                    <p class="section__list__text">
+                                        О принимаемых лекарственных препаратах, как для лечения аденомы простаты, так и для
+                                        терапии сопутствующих заболеваний;
+                                    </p>
+                                </li>
+                                <li class="section__list__item">
+                                    <img src="img/urolog-img/8.svg" alt="" class="tell__check__img">
+                                    <p class="section__list__text">
+                                        О перенесенных ранее хирургических операциях;
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="section__content__block tell__content__block">
+                            <p class="tell__block__text section__block__text">
+                                Вся эта информация поможет врачу найти причину появления тех или иных жалоб и симптомов,
+                                поставить правильный диагноз и назначить эффективную терапию.
+                            </p>
+                        </div>
+                        <div class="section__content__instruction tell__content__instruction">
+                            <p class="section__instruction__text tell__instruction__text">
+                                Клинические рекомендации. Доброкачественная гиперплазия предстательной железы. 2020.
+                                Утверждены Минздравом РФ.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="different section">
+            <div class="container">
+                <div class="different__row row">
+                    <div class="section__top different__top">
+                        <h3 class="section__title different__title">Чем отличается аденома простаты от простатита?</h3>
+                        <img src="img/urolog-img/7.svg" class="section__flag__bottom" alt="">
+                    </div>
+                    <div class="section__content different__content">
+                        <div class="section__first__block different__content__block">
+                            <p class="different__block__text section__block__text">
+                                Аденома предстательной железы и простатит — одни из самых распространённых урологических заболеваний.
+                            </p>
+                        </div>
+                        <div class="section__content__block different__content__block">
+                            <p class="different__block__text section__block__text">
+                                При этом простатит может встречаться у мужчин в любом возрасте, чаще молодом, а аденома больше характерна для мужчин зрелого возраста.
+                            </p>
+                        </div>
+                        <div class="different__content__cols">
+                            <div class="different__half__block">
+                                <h3 class="different__half__title">
+                                    Простатит
+                                </h3>
+                                <p class="different__half__text">
+                                    В основе <span class="col-pink">простатита</span> лежит воспаление и связанные с ним патологические процессы, включающие застой крови в предстательной железе, нарушения нервной и мышечной функций предстательной железы.
+                                </p>
+                            </div>
+                            <div class="different__half__block">
+                                <h3 class="different__half__title">
+                                    Аденома
+                                </h3>
+                                <p class="different__half__text">
+                                    <span class="col-pink">Аденома</span> — это доброкачественная опухоль предстательной железы, которая характеризуется разрастанием железистой ткани и образованием железистых узелков в ней. Важно знать, что аденома — это не рак и метастазов при ней не бывает.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="section__content__block different__content__block">
+                            <p class="different__block__text section__block__text">
+                                И простатит, и аденома могут проявляться одинаковыми симптомами, но основное отличие простатита от аденомы простаты заключается в присутствии воспалительного процесса при простатите и разрастании ткани простаты при аденоме.
+                            </p>
+                        </div>
+                        <div class="section__content__block different__content__block">
+                            <p class="different__block__text section__block__text">
+                                Поскольку в основе развития аденомы и простатита лежат разные механизмы, подходы к их терапии тоже отличаются. Только уролог может правильно поставить диагноз и назначить необходимое лечение.
+                            </p>
+                        </div>
+                        <div class="section__content__instruction ipss__content__instruction">
+                            <p class="section__instruction__text ipss__instruction__text">
+                                1. Аполихин О.И., Сивков А.В., Комарова В.А., Никушина А.А. Болезни предстательной железы в Российской Федерации: статистические данные 2008–2017 гг. Экспериментальная и клиническая урология, 2019
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="ipss section">
+            <div class="container">
+                <div class="ipss__row row">
+                    <div class="section__top ipss__top">
+                        <h3 class="section__title ipss__title">Как долго нужно принимать препараты для лечения
+                            аденомы</h3>
+                        <img src="img/urolog-img/7.svg" class="section__flag__bottom" alt="">
+                    </div>
+                    <div class="section__content ipss__content">
+                        <div class="section__first__block ipss__content__block">
+                            <p class="ipss__block__text section__block__text">
+                                Доброкачественная гиперплазия предстательной железы (или аденома простаты) чаще всего
+                                проявляется различными нарушениями мочеиспускания. Для оценки характера
+                                <br> и выраженности таких нарушений у пациентов любого возраста используется шкала IPSS
+                                (International Prostate Symptom Score).
+                            </p>
+                        </div>
+                        <div class="section__pink__block ipss__content__block">
+                            <p class="ipss__block__text section__pink__text">
+                                <span class="col-pink">IPSS — международная шкала оценки простатических симптомов,</span>
+                                утверждена ВОЗ* в 1992 году и широко используется в клинической практике. Шкала проста
+                                в заполнении и представляет собой опросник, состоящий из 8 вопросов, 7 из которых
+                                относятся к оценке симптомов мочеиспускания, а один определяет влияние заболевания
+                                на качество жизни. Выраженность симптомов распределяют по степени нарушений: отсутствие
+                                (0 баллов), лёгкая степень (1–7 баллов), умеренная степень (8–19 баллов) и тяжёлая
+                                степень (20–35 баллов).
+                            </p>
+                        </div>
+                        <div class="section__content__block ipss__content__block">
+                            <p class="ipss__block__text section__block__text">
+                                Опросник можно заполнять дома, в спокойной обстановке, после заполнения его будет удобно
+                                распечатать и взять с собой на плановый визит к урологу.
+                            </p>
+                        </div>
+                        <div class="section__content__block ipss__content__block">
+                            <p class="ipss__block__text section__block__text">
+                                Обращаем ваше внимание, что только врач может правильно интерпретировать результаты
+                                заполненного опросника с учётом жалоб, истории развития заболевания и его особенностей,
+                                результатов анализов и обследований, сделать заключение и подобрать или продолжить
+                                необходимую терапию.
+                            </p>
+                        </div>
+                        <div class="section__content__block ipss__content__block">
+                            <p class="ipss__block__text section__block__text">
+                                Опросник является универсальным и подходит всем пациентам, независимо от характера
+                                нарушений мочеиспускания и наличия или отсутствия самостоятельного мочеиспускания.
+                            </p>
+                        </div>
+                        <a href="#" class="section__content__link ipss__content__link">
+                            Шкала IPSS размещена на сайте
+                        </a>
+                        <div class="section__content__instruction ipss__content__instruction">
+                            <p class="section__instruction__text ipss__instruction__text">
+                                *ВОЗ — Всемирная организация здравоохранения
+                            </p>
+                            <p class="section__instruction__text ipss__instruction__text">
+                                1. Дударев В.А., Старцев В.Ю., Бакшеева Е.Г. Клиническая оценка использования опросников
+                                симптомов нижних мочевых путей у мужчин. Вестник урологии. 2020;8(4):23–31. DOI:
+                                10.21886/2308–6424–2020–8-4–23–31.
+                            </p>
+                            <p class="section__instruction__text ipss__instruction__text">
+                                2. Клинические рекомендации. Доброкачественная гиперплазия предстательной железы. 2020.
+                                Утверждены Минздравом РФ.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="ipss section">
+            <div class="container">
+                <div class="ipss__row row">
+                    <div class="section__top ipss__top">
+                        <h3 class="section__title ipss__title">В каких случаях для лечения аденомы простаты необходима
+                            операция</h3>
+                        <img src="img/urolog-img/7.svg" class="section__flag__bottom" alt="">
+                    </div>
+                    <div class="section__content ipss__content">
+                        <div class="section__first__block ipss__content__block">
+                            <p class="ipss__block__text section__block__text">
+                                Доброкачественная гиперплазия предстательной железы (или аденома простаты) чаще всего
+                                проявляется различными нарушениями мочеиспускания. Для оценки характера
+                                <br> и выраженности таких нарушений у пациентов любого возраста используется шкала IPSS
+                                (International Prostate Symptom Score).
+                            </p>
+                        </div>
+                        <div class="section__pink__block ipss__content__block">
+                            <p class="ipss__block__text section__pink__text">
+                                <span class="col-pink">IPSS — международная шкала оценки простатических симптомов,</span>
+                                утверждена ВОЗ* в 1992 году и широко используется в клинической практике. Шкала проста
+                                в заполнении и представляет собой опросник, состоящий из 8 вопросов, 7 из которых
+                                относятся к оценке симптомов мочеиспускания, а один определяет влияние заболевания
+                                на качество жизни. Выраженность симптомов распределяют по степени нарушений: отсутствие
+                                (0 баллов), лёгкая степень (1–7 баллов), умеренная степень (8–19 баллов) и тяжёлая
+                                степень (20–35 баллов).
+                            </p>
+                        </div>
+                        <div class="section__content__block ipss__content__block">
+                            <p class="ipss__block__text section__block__text">
+                                Опросник можно заполнять дома, в спокойной обстановке, после заполнения его будет удобно
+                                распечатать и взять с собой на плановый визит к урологу.
+                            </p>
+                        </div>
+                        <div class="section__content__block ipss__content__block">
+                            <p class="ipss__block__text section__block__text">
+                                Обращаем ваше внимание, что только врач может правильно интерпретировать результаты
+                                заполненного опросника с учётом жалоб, истории развития заболевания и его особенностей,
+                                результатов анализов и обследований, сделать заключение и подобрать или продолжить
+                                необходимую терапию.
+                            </p>
+                        </div>
+                        <div class="section__content__block ipss__content__block">
+                            <p class="ipss__block__text section__block__text">
+                                Опросник является универсальным и подходит всем пациентам, независимо от характера
+                                нарушений мочеиспускания и наличия или отсутствия самостоятельного мочеиспускания.
+                            </p>
+                        </div>
+                        <a href="#" class="section__content__link ipss__content__link">
+                            Шкала IPSS размещена на сайте
+                        </a>
+                        <div class="section__content__instruction ipss__content__instruction">
+                            <p class="section__instruction__text ipss__instruction__text">
+                                *ВОЗ — Всемирная организация здравоохранения
+                            </p>
+                            <p class="section__instruction__text ipss__instruction__text">
+                                1. Дударев В.А., Старцев В.Ю., Бакшеева Е.Г. Клиническая оценка использования опросников
+                                симптомов нижних мочевых путей у мужчин. Вестник урологии. 2020;8(4):23–31. DOI:
+                                10.21886/2308–6424–2020–8-4–23–31.
+                            </p>
+                            <p class="section__instruction__text ipss__instruction__text">
+                                2. Клинические рекомендации. Доброкачественная гиперплазия предстательной железы. 2020.
+                                Утверждены Минздравом РФ.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="ipss section">
+            <div class="container">
+                <div class="ipss__row row">
+                    <div class="section__top ipss__top">
+                        <h3 class="section__title ipss__title">Какими могут быть первые симптомы аденомы простаты</h3>
+                        <img src="img/urolog-img/7.svg" class="section__flag__bottom" alt="">
+                    </div>
+                    <div class="section__content ipss__content">
+                        <div class="section__first__block ipss__content__block">
+                            <p class="ipss__block__text section__block__text">
+                                Доброкачественная гиперплазия предстательной железы (или аденома простаты) чаще всего
+                                проявляется различными нарушениями мочеиспускания. Для оценки характера
+                                <br> и выраженности таких нарушений у пациентов любого возраста используется шкала IPSS
+                                (International Prostate Symptom Score).
+                            </p>
+                        </div>
+                        <div class="section__pink__block ipss__content__block">
+                            <p class="ipss__block__text section__pink__text">
+                                <span class="col-pink">IPSS — международная шкала оценки простатических симптомов,</span>
+                                утверждена ВОЗ* в 1992 году и широко используется в клинической практике. Шкала проста
+                                в заполнении и представляет собой опросник, состоящий из 8 вопросов, 7 из которых
+                                относятся к оценке симптомов мочеиспускания, а один определяет влияние заболевания
+                                на качество жизни. Выраженность симптомов распределяют по степени нарушений: отсутствие
+                                (0 баллов), лёгкая степень (1–7 баллов), умеренная степень (8–19 баллов) и тяжёлая
+                                степень (20–35 баллов).
+                            </p>
+                        </div>
+                        <div class="section__content__block ipss__content__block">
+                            <p class="ipss__block__text section__block__text">
+                                Опросник можно заполнять дома, в спокойной обстановке, после заполнения его будет удобно
+                                распечатать и взять с собой на плановый визит к урологу.
+                            </p>
+                        </div>
+                        <div class="section__content__block ipss__content__block">
+                            <p class="ipss__block__text section__block__text">
+                                Обращаем ваше внимание, что только врач может правильно интерпретировать результаты
+                                заполненного опросника с учётом жалоб, истории развития заболевания и его особенностей,
+                                результатов анализов и обследований, сделать заключение и подобрать или продолжить
+                                необходимую терапию.
+                            </p>
+                        </div>
+                        <div class="section__content__block ipss__content__block">
+                            <p class="ipss__block__text section__block__text">
+                                Опросник является универсальным и подходит всем пациентам, независимо от характера
+                                нарушений мочеиспускания и наличия или отсутствия самостоятельного мочеиспускания.
+                            </p>
+                        </div>
+                        <a href="#" class="section__content__link ipss__content__link">
+                            Шкала IPSS размещена на сайте
+                        </a>
+                        <div class="section__content__instruction ipss__content__instruction">
+                            <p class="section__instruction__text ipss__instruction__text">
+                                *ВОЗ — Всемирная организация здравоохранения
+                            </p>
+                            <p class="section__instruction__text ipss__instruction__text">
+                                1. Дударев В.А., Старцев В.Ю., Бакшеева Е.Г. Клиническая оценка использования опросников
+                                симптомов нижних мочевых путей у мужчин. Вестник урологии. 2020;8(4):23–31. DOI:
+                                10.21886/2308–6424–2020–8-4–23–31.
+                            </p>
+                            <p class="section__instruction__text ipss__instruction__text">
+                                2. Клинические рекомендации. Доброкачественная гиперплазия предстательной железы. 2020.
+                                Утверждены Минздравом РФ.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="ipss section">
+            <div class="container">
+                <div class="ipss__row row">
+                    <div class="section__top ipss__top">
+                        <h3 class="section__title ipss__title">Анализы при аденоме: что важно знать и какие анализы
+                            при аденоме нужны</h3>
+                        <img src="img/urolog-img/7.svg" class="section__flag__bottom" alt="">
+                    </div>
+                    <div class="section__content ipss__content">
+                        <div class="section__first__block ipss__content__block">
+                            <p class="ipss__block__text section__block__text">
+                                Доброкачественная гиперплазия предстательной железы (или аденома простаты) чаще всего
+                                проявляется различными нарушениями мочеиспускания. Для оценки характера
+                                <br> и выраженности таких нарушений у пациентов любого возраста используется шкала IPSS
+                                (International Prostate Symptom Score).
+                            </p>
+                        </div>
+                        <div class="section__pink__block ipss__content__block">
+                            <p class="ipss__block__text section__pink__text">
+                                <span class="col-pink">IPSS — международная шкала оценки простатических симптомов,</span>
+                                утверждена ВОЗ* в 1992 году и широко используется в клинической практике. Шкала проста
+                                в заполнении и представляет собой опросник, состоящий из 8 вопросов, 7 из которых
+                                относятся к оценке симптомов мочеиспускания, а один определяет влияние заболевания
+                                на качество жизни. Выраженность симптомов распределяют по степени нарушений: отсутствие
+                                (0 баллов), лёгкая степень (1–7 баллов), умеренная степень (8–19 баллов) и тяжёлая
+                                степень (20–35 баллов).
+                            </p>
+                        </div>
+                        <div class="section__content__block ipss__content__block">
+                            <p class="ipss__block__text section__block__text">
+                                Опросник можно заполнять дома, в спокойной обстановке, после заполнения его будет удобно
+                                распечатать и взять с собой на плановый визит к урологу.
+                            </p>
+                        </div>
+                        <div class="section__content__block ipss__content__block">
+                            <p class="ipss__block__text section__block__text">
+                                Обращаем ваше внимание, что только врач может правильно интерпретировать результаты
+                                заполненного опросника с учётом жалоб, истории развития заболевания и его особенностей,
+                                результатов анализов и обследований, сделать заключение и подобрать или продолжить
+                                необходимую терапию.
+                            </p>
+                        </div>
+                        <div class="section__content__block ipss__content__block">
+                            <p class="ipss__block__text section__block__text">
+                                Опросник является универсальным и подходит всем пациентам, независимо от характера
+                                нарушений мочеиспускания и наличия или отсутствия самостоятельного мочеиспускания.
+                            </p>
+                        </div>
+                        <a href="#" class="section__content__link ipss__content__link">
+                            Шкала IPSS размещена на сайте
+                        </a>
+                        <div class="section__content__instruction ipss__content__instruction">
+                            <p class="section__instruction__text ipss__instruction__text">
+                                *ВОЗ — Всемирная организация здравоохранения
+                            </p>
+                            <p class="section__instruction__text ipss__instruction__text">
+                                1. Дударев В.А., Старцев В.Ю., Бакшеева Е.Г. Клиническая оценка использования опросников
+                                симптомов нижних мочевых путей у мужчин. Вестник урологии. 2020;8(4):23–31. DOI:
+                                10.21886/2308–6424–2020–8-4–23–31.
+                            </p>
+                            <p class="section__instruction__text ipss__instruction__text">
+                                2. Клинические рекомендации. Доброкачественная гиперплазия предстательной железы. 2020.
+                                Утверждены Минздравом РФ.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="ipss section">
+            <div class="container">
+                <div class="ipss__row row">
+                    <div class="section__top ipss__top">
+                        <h3 class="section__title ipss__title">Рекомендации по образу жизни</h3>
+                        <img src="img/urolog-img/7.svg" class="section__flag__bottom" alt="">
+                    </div>
+                    <div class="section__content ipss__content">
+                        <div class="section__first__block ipss__content__block">
+                            <p class="ipss__block__text section__block__text">
+                                Доброкачественная гиперплазия предстательной железы (или аденома простаты) чаще всего
+                                проявляется различными нарушениями мочеиспускания. Для оценки характера
+                                <br> и выраженности таких нарушений у пациентов любого возраста используется шкала IPSS
+                                (International Prostate Symptom Score).
+                            </p>
+                        </div>
+                        <div class="section__pink__block ipss__content__block">
+                            <p class="ipss__block__text section__pink__text">
+                                <span class="col-pink">IPSS — международная шкала оценки простатических симптомов,</span>
+                                утверждена ВОЗ* в 1992 году и широко используется в клинической практике. Шкала проста
+                                в заполнении и представляет собой опросник, состоящий из 8 вопросов, 7 из которых
+                                относятся к оценке симптомов мочеиспускания, а один определяет влияние заболевания
+                                на качество жизни. Выраженность симптомов распределяют по степени нарушений: отсутствие
+                                (0 баллов), лёгкая степень (1–7 баллов), умеренная степень (8–19 баллов) и тяжёлая
+                                степень (20–35 баллов).
+                            </p>
+                        </div>
+                        <div class="section__content__block ipss__content__block">
+                            <p class="ipss__block__text section__block__text">
+                                Опросник можно заполнять дома, в спокойной обстановке, после заполнения его будет удобно
+                                распечатать и взять с собой на плановый визит к урологу.
+                            </p>
+                        </div>
+                        <div class="section__content__block ipss__content__block">
+                            <p class="ipss__block__text section__block__text">
+                                Обращаем ваше внимание, что только врач может правильно интерпретировать результаты
+                                заполненного опросника с учётом жалоб, истории развития заболевания и его особенностей,
+                                результатов анализов и обследований, сделать заключение и подобрать или продолжить
+                                необходимую терапию.
+                            </p>
+                        </div>
+                        <div class="section__content__block ipss__content__block">
+                            <p class="ipss__block__text section__block__text">
+                                Опросник является универсальным и подходит всем пациентам, независимо от характера
+                                нарушений мочеиспускания и наличия или отсутствия самостоятельного мочеиспускания.
+                            </p>
+                        </div>
+                        <a href="#" class="section__content__link ipss__content__link">
+                            Шкала IPSS размещена на сайте
+                        </a>
+                        <div class="section__content__instruction ipss__content__instruction">
+                            <p class="section__instruction__text ipss__instruction__text">
+                                *ВОЗ — Всемирная организация здравоохранения
+                            </p>
+                            <p class="section__instruction__text ipss__instruction__text">
+                                1. Дударев В.А., Старцев В.Ю., Бакшеева Е.Г. Клиническая оценка использования опросников
+                                симптомов нижних мочевых путей у мужчин. Вестник урологии. 2020;8(4):23–31. DOI:
+                                10.21886/2308–6424–2020–8-4–23–31.
+                            </p>
+                            <p class="section__instruction__text ipss__instruction__text">
+                                2. Клинические рекомендации. Доброкачественная гиперплазия предстательной железы. 2020.
+                                Утверждены Минздравом РФ.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="ipss section">
+            <div class="container">
+                <div class="ipss__row row">
+                    <div class="section__top ipss__top">
+                        <h3 class="section__title ipss__title">Специальные упражнения для контроля мочеиспускания</h3>
+                        <img src="img/urolog-img/7.svg" class="section__flag__bottom" alt="">
+                    </div>
+                    <div class="section__content ipss__content">
+                        <div class="section__first__block ipss__content__block">
+                            <p class="ipss__block__text section__block__text">
+                                Доброкачественная гиперплазия предстательной железы (или аденома простаты) чаще всего
+                                проявляется различными нарушениями мочеиспускания. Для оценки характера
+                                <br> и выраженности таких нарушений у пациентов любого возраста используется шкала IPSS
+                                (International Prostate Symptom Score).
+                            </p>
+                        </div>
+                        <div class="section__pink__block ipss__content__block">
+                            <p class="ipss__block__text section__pink__text">
+                                <span class="col-pink">IPSS — международная шкала оценки простатических симптомов,</span>
+                                утверждена ВОЗ* в 1992 году и широко используется в клинической практике. Шкала проста
+                                в заполнении и представляет собой опросник, состоящий из 8 вопросов, 7 из которых
+                                относятся к оценке симптомов мочеиспускания, а один определяет влияние заболевания
+                                на качество жизни. Выраженность симптомов распределяют по степени нарушений: отсутствие
+                                (0 баллов), лёгкая степень (1–7 баллов), умеренная степень (8–19 баллов) и тяжёлая
+                                степень (20–35 баллов).
+                            </p>
+                        </div>
+                        <div class="section__content__block ipss__content__block">
+                            <p class="ipss__block__text section__block__text">
+                                Опросник можно заполнять дома, в спокойной обстановке, после заполнения его будет удобно
+                                распечатать и взять с собой на плановый визит к урологу.
+                            </p>
+                        </div>
+                        <div class="section__content__block ipss__content__block">
+                            <p class="ipss__block__text section__block__text">
+                                Обращаем ваше внимание, что только врач может правильно интерпретировать результаты
+                                заполненного опросника с учётом жалоб, истории развития заболевания и его особенностей,
+                                результатов анализов и обследований, сделать заключение и подобрать или продолжить
+                                необходимую терапию.
+                            </p>
+                        </div>
+                        <div class="section__content__block ipss__content__block">
+                            <p class="ipss__block__text section__block__text">
+                                Опросник является универсальным и подходит всем пациентам, независимо от характера
+                                нарушений мочеиспускания и наличия или отсутствия самостоятельного мочеиспускания.
+                            </p>
+                        </div>
+                        <a href="#" class="section__content__link ipss__content__link">
+                            Шкала IPSS размещена на сайте
+                        </a>
+                        <div class="section__content__instruction ipss__content__instruction">
+                            <p class="section__instruction__text ipss__instruction__text">
+                                *ВОЗ — Всемирная организация здравоохранения
+                            </p>
+                            <p class="section__instruction__text ipss__instruction__text">
+                                1. Дударев В.А., Старцев В.Ю., Бакшеева Е.Г. Клиническая оценка использования опросников
+                                симптомов нижних мочевых путей у мужчин. Вестник урологии. 2020;8(4):23–31. DOI:
+                                10.21886/2308–6424–2020–8-4–23–31.
+                            </p>
+                            <p class="section__instruction__text ipss__instruction__text">
+                                2. Клинические рекомендации. Доброкачественная гиперплазия предстательной железы. 2020.
+                                Утверждены Минздравом РФ.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="ipss section">
+            <div class="container">
+                <div class="ipss__row row">
+                    <div class="section__top ipss__top">
+                        <h3 class="section__title ipss__title">Аденома простаты: когда нужна срочная госпитализация</h3>
+                        <img src="img/urolog-img/7.svg" class="section__flag__bottom" alt="">
+                    </div>
+                    <div class="section__content ipss__content">
+                        <div class="section__first__block ipss__content__block">
+                            <p class="ipss__block__text section__block__text">
+                                Доброкачественная гиперплазия предстательной железы (или аденома простаты) чаще всего
+                                проявляется различными нарушениями мочеиспускания. Для оценки характера
+                                <br> и выраженности таких нарушений у пациентов любого возраста используется шкала IPSS
+                                (International Prostate Symptom Score).
+                            </p>
+                        </div>
+                        <div class="section__pink__block ipss__content__block">
+                            <p class="ipss__block__text section__pink__text">
+                                <span class="col-pink">IPSS — международная шкала оценки простатических симптомов,</span>
+                                утверждена ВОЗ* в 1992 году и широко используется в клинической практике. Шкала проста
+                                в заполнении и представляет собой опросник, состоящий из 8 вопросов, 7 из которых
+                                относятся к оценке симптомов мочеиспускания, а один определяет влияние заболевания
+                                на качество жизни. Выраженность симптомов распределяют по степени нарушений: отсутствие
+                                (0 баллов), лёгкая степень (1–7 баллов), умеренная степень (8–19 баллов) и тяжёлая
+                                степень (20–35 баллов).
+                            </p>
+                        </div>
+                        <div class="section__content__block ipss__content__block">
+                            <p class="ipss__block__text section__block__text">
+                                Опросник можно заполнять дома, в спокойной обстановке, после заполнения его будет удобно
+                                распечатать и взять с собой на плановый визит к урологу.
+                            </p>
+                        </div>
+                        <div class="section__content__block ipss__content__block">
+                            <p class="ipss__block__text section__block__text">
+                                Обращаем ваше внимание, что только врач может правильно интерпретировать результаты
+                                заполненного опросника с учётом жалоб, истории развития заболевания и его особенностей,
+                                результатов анализов и обследований, сделать заключение и подобрать или продолжить
+                                необходимую терапию.
+                            </p>
+                        </div>
+                        <div class="section__content__block ipss__content__block">
+                            <p class="ipss__block__text section__block__text">
+                                Опросник является универсальным и подходит всем пациентам, независимо от характера
+                                нарушений мочеиспускания и наличия или отсутствия самостоятельного мочеиспускания.
+                            </p>
+                        </div>
+                        <a href="#" class="section__content__link ipss__content__link">
+                            Шкала IPSS размещена на сайте
+                        </a>
+                        <div class="section__content__instruction ipss__content__instruction">
+                            <p class="section__instruction__text ipss__instruction__text">
+                                *ВОЗ — Всемирная организация здравоохранения
+                            </p>
+                            <p class="section__instruction__text ipss__instruction__text">
+                                1. Дударев В.А., Старцев В.Ю., Бакшеева Е.Г. Клиническая оценка использования опросников
+                                симптомов нижних мочевых путей у мужчин. Вестник урологии. 2020;8(4):23–31. DOI:
+                                10.21886/2308–6424–2020–8-4–23–31.
+                            </p>
+                            <p class="section__instruction__text ipss__instruction__text">
+                                2. Клинические рекомендации. Доброкачественная гиперплазия предстательной железы. 2020.
+                                Утверждены Минздравом РФ.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="ipss section">
+            <div class="container">
+                <div class="ipss__row row">
+                    <div class="section__top ipss__top">
+                        <h3 class="section__title ipss__title">Является ли импотенция симптомом аденомы простаты</h3>
+                        <img src="img/urolog-img/7.svg" class="section__flag__bottom" alt="">
+                    </div>
+                    <div class="section__content ipss__content">
+                        <div class="section__first__block ipss__content__block">
+                            <p class="ipss__block__text section__block__text">
+                                Доброкачественная гиперплазия предстательной железы (или аденома простаты) чаще всего
+                                проявляется различными нарушениями мочеиспускания. Для оценки характера
+                                <br> и выраженности таких нарушений у пациентов любого возраста используется шкала IPSS
+                                (International Prostate Symptom Score).
+                            </p>
+                        </div>
+                        <div class="section__pink__block ipss__content__block">
+                            <p class="ipss__block__text section__pink__text">
+                                <span class="col-pink">IPSS — международная шкала оценки простатических симптомов,</span>
+                                утверждена ВОЗ* в 1992 году и широко используется в клинической практике. Шкала проста
+                                в заполнении и представляет собой опросник, состоящий из 8 вопросов, 7 из которых
+                                относятся к оценке симптомов мочеиспускания, а один определяет влияние заболевания
+                                на качество жизни. Выраженность симптомов распределяют по степени нарушений: отсутствие
+                                (0 баллов), лёгкая степень (1–7 баллов), умеренная степень (8–19 баллов) и тяжёлая
+                                степень (20–35 баллов).
+                            </p>
+                        </div>
+                        <div class="section__content__block ipss__content__block">
+                            <p class="ipss__block__text section__block__text">
+                                Опросник можно заполнять дома, в спокойной обстановке, после заполнения его будет удобно
+                                распечатать и взять с собой на плановый визит к урологу.
+                            </p>
+                        </div>
+                        <div class="section__content__block ipss__content__block">
+                            <p class="ipss__block__text section__block__text">
+                                Обращаем ваше внимание, что только врач может правильно интерпретировать результаты
+                                заполненного опросника с учётом жалоб, истории развития заболевания и его особенностей,
+                                результатов анализов и обследований, сделать заключение и подобрать или продолжить
+                                необходимую терапию.
+                            </p>
+                        </div>
+                        <div class="section__content__block ipss__content__block">
+                            <p class="ipss__block__text section__block__text">
+                                Опросник является универсальным и подходит всем пациентам, независимо от характера
+                                нарушений мочеиспускания и наличия или отсутствия самостоятельного мочеиспускания.
+                            </p>
+                        </div>
+                        <a href="#" class="section__content__link ipss__content__link">
+                            Шкала IPSS размещена на сайте
+                        </a>
+                        <div class="section__content__instruction ipss__content__instruction">
+                            <p class="section__instruction__text ipss__instruction__text">
+                                *ВОЗ — Всемирная организация здравоохранения
+                            </p>
+                            <p class="section__instruction__text ipss__instruction__text">
+                                1. Дударев В.А., Старцев В.Ю., Бакшеева Е.Г. Клиническая оценка использования опросников
+                                симптомов нижних мочевых путей у мужчин. Вестник урологии. 2020;8(4):23–31. DOI:
+                                10.21886/2308–6424–2020–8-4–23–31.
+                            </p>
+                            <p class="section__instruction__text ipss__instruction__text">
+                                2. Клинические рекомендации. Доброкачественная гиперплазия предстательной железы. 2020.
+                                Утверждены Минздравом РФ.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="ipss section">
+            <div class="container">
+                <div class="ipss__row row">
+                    <div class="section__top ipss__top">
+                        <h3 class="section__title ipss__title">При каких симптомах стоит обратиться к урологу?</h3>
+                        <img src="img/urolog-img/7.svg" class="section__flag__bottom" alt="">
+                    </div>
+                    <div class="section__content ipss__content">
+                        <div class="section__first__block ipss__content__block">
+                            <p class="ipss__block__text section__block__text">
+                                Доброкачественная гиперплазия предстательной железы (или аденома простаты) чаще всего
+                                проявляется различными нарушениями мочеиспускания. Для оценки характера
+                                <br> и выраженности таких нарушений у пациентов любого возраста используется шкала IPSS
+                                (International Prostate Symptom Score).
+                            </p>
+                        </div>
+                        <div class="section__pink__block ipss__content__block">
+                            <p class="ipss__block__text section__pink__text">
+                                <span class="col-pink">IPSS — международная шкала оценки простатических симптомов,</span>
+                                утверждена ВОЗ* в 1992 году и широко используется в клинической практике. Шкала проста
+                                в заполнении и представляет собой опросник, состоящий из 8 вопросов, 7 из которых
+                                относятся к оценке симптомов мочеиспускания, а один определяет влияние заболевания
+                                на качество жизни. Выраженность симптомов распределяют по степени нарушений: отсутствие
+                                (0 баллов), лёгкая степень (1–7 баллов), умеренная степень (8–19 баллов) и тяжёлая
+                                степень (20–35 баллов).
+                            </p>
+                        </div>
+                        <div class="section__content__block ipss__content__block">
+                            <p class="ipss__block__text section__block__text">
+                                Опросник можно заполнять дома, в спокойной обстановке, после заполнения его будет удобно
+                                распечатать и взять с собой на плановый визит к урологу.
+                            </p>
+                        </div>
+                        <div class="section__content__block ipss__content__block">
+                            <p class="ipss__block__text section__block__text">
+                                Обращаем ваше внимание, что только врач может правильно интерпретировать результаты
+                                заполненного опросника с учётом жалоб, истории развития заболевания и его особенностей,
+                                результатов анализов и обследований, сделать заключение и подобрать или продолжить
+                                необходимую терапию.
+                            </p>
+                        </div>
+                        <div class="section__content__block ipss__content__block">
+                            <p class="ipss__block__text section__block__text">
+                                Опросник является универсальным и подходит всем пациентам, независимо от характера
+                                нарушений мочеиспускания и наличия или отсутствия самостоятельного мочеиспускания.
+                            </p>
+                        </div>
+                        <a href="#" class="section__content__link ipss__content__link">
+                            Шкала IPSS размещена на сайте
+                        </a>
+                        <div class="section__content__instruction ipss__content__instruction">
+                            <p class="section__instruction__text ipss__instruction__text">
+                                *ВОЗ — Всемирная организация здравоохранения
+                            </p>
+                            <p class="section__instruction__text ipss__instruction__text">
+                                1. Дударев В.А., Старцев В.Ю., Бакшеева Е.Г. Клиническая оценка использования опросников
+                                симптомов нижних мочевых путей у мужчин. Вестник урологии. 2020;8(4):23–31. DOI:
+                                10.21886/2308–6424–2020–8-4–23–31.
+                            </p>
+                            <p class="section__instruction__text ipss__instruction__text">
+                                2. Клинические рекомендации. Доброкачественная гиперплазия предстательной железы. 2020.
+                                Утверждены Минздравом РФ.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="ipss section">
+            <div class="container">
+                <div class="ipss__row row">
+                    <div class="section__top ipss__top">
+                        <h3 class="section__title ipss__title">Стоит ли обращаться к урологу, если ничего
+                            не беспокоит?</h3>
+                        <img src="img/urolog-img/7.svg" class="section__flag__bottom" alt="">
+                    </div>
+                    <div class="section__content ipss__content">
+                        <div class="section__first__block ipss__content__block">
+                            <p class="ipss__block__text section__block__text">
+                                Доброкачественная гиперплазия предстательной железы (или аденома простаты) чаще всего
+                                проявляется различными нарушениями мочеиспускания. Для оценки характера
+                                <br> и выраженности таких нарушений у пациентов любого возраста используется шкала IPSS
+                                (International Prostate Symptom Score).
+                            </p>
+                        </div>
+                        <div class="section__pink__block ipss__content__block">
+                            <p class="ipss__block__text section__pink__text">
+                                <span class="col-pink">IPSS — международная шкала оценки простатических симптомов,</span>
+                                утверждена ВОЗ* в 1992 году и широко используется в клинической практике. Шкала проста
+                                в заполнении и представляет собой опросник, состоящий из 8 вопросов, 7 из которых
+                                относятся к оценке симптомов мочеиспускания, а один определяет влияние заболевания
+                                на качество жизни. Выраженность симптомов распределяют по степени нарушений: отсутствие
+                                (0 баллов), лёгкая степень (1–7 баллов), умеренная степень (8–19 баллов) и тяжёлая
+                                степень (20–35 баллов).
+                            </p>
+                        </div>
+                        <div class="section__content__block ipss__content__block">
+                            <p class="ipss__block__text section__block__text">
+                                Опросник можно заполнять дома, в спокойной обстановке, после заполнения его будет удобно
+                                распечатать и взять с собой на плановый визит к урологу.
+                            </p>
+                        </div>
+                        <div class="section__content__block ipss__content__block">
+                            <p class="ipss__block__text section__block__text">
+                                Обращаем ваше внимание, что только врач может правильно интерпретировать результаты
+                                заполненного опросника с учётом жалоб, истории развития заболевания и его особенностей,
+                                результатов анализов и обследований, сделать заключение и подобрать или продолжить
+                                необходимую терапию.
+                            </p>
+                        </div>
+                        <div class="section__content__block ipss__content__block">
+                            <p class="ipss__block__text section__block__text">
+                                Опросник является универсальным и подходит всем пациентам, независимо от характера
+                                нарушений мочеиспускания и наличия или отсутствия самостоятельного мочеиспускания.
+                            </p>
+                        </div>
+                        <a href="#" class="section__content__link ipss__content__link">
+                            Шкала IPSS размещена на сайте
+                        </a>
+                        <div class="section__content__instruction ipss__content__instruction">
+                            <p class="section__instruction__text ipss__instruction__text">
+                                *ВОЗ — Всемирная организация здравоохранения
+                            </p>
+                            <p class="section__instruction__text ipss__instruction__text">
+                                1. Дударев В.А., Старцев В.Ю., Бакшеева Е.Г. Клиническая оценка использования опросников
+                                симптомов нижних мочевых путей у мужчин. Вестник урологии. 2020;8(4):23–31. DOI:
+                                10.21886/2308–6424–2020–8-4–23–31.
+                            </p>
+                            <p class="section__instruction__text ipss__instruction__text">
+                                2. Клинические рекомендации. Доброкачественная гиперплазия предстательной железы. 2020.
+                                Утверждены Минздравом РФ.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__row">
+                <div class="footer__top">
+                    <img src="img/logo-footer.png.svg" alt="">
+                    <p class="footer__top__text ">
+                        18+
+                    </p>
+                </div>
+                <div class="footer__main">
+                    <div class="footer__main__block">
+                        <a href="https://uro-info.ru/zabolevanie/" class="footer__main__link_l">Заболевания</a>
+                        <a href="https://uro-info.ru/zabolevanie/gmp/" class="footer__main__link">ГМП</a>
+                        <a href="https://uro-info.ru/zabolevanie/cistit/" class="footer__main__link">Цистит</a>
+                        <a href="https://uro-info.ru/zabolevanie/prostatit/" class="footer__main__link">Простатит</a>
+                        <a href="https://uro-info.ru/zabolevanie/adenoma/" class="footer__main__link">Аденома
+                            простаты</a>
+                        <a href="https://uro-info.ru/zabolevanie/rpz/" class="footer__main__link">Рак предстательной
+                            железы</a>
+                    </div>
+
+                    <div class="footer__main__block">
+                        <a href="https://uro-info.ru/tests/" class="footer__main__link_l">Проверьте себя</a>
+                        <a href="https://uro-info.ru/tests/mezhdunarodnaya-sistema-summarnoy-otsenki-zabolevaniy-predstatelnoy-zhelezy-v-ballakh-ipss-/"
+                           class="footer__main__link">Международная система <br> суммарной оценки заболеваний
+                            <br> предстательной железы в баллах <br> (IPSS)</a>
+                        <a href="https://uro-info.ru/tests/oprosnik-dlya-otsenki-simptomov-giperaktivnogo-mochevogo-puzyrya/"
+                           class="footer__main__link">Опросник для оценки симптомов <br> гиперактивного мочевого пузыря</a>
+                        <a href="https://uro-info.ru/tests/ekspress-diagnostika-tipov-nederzhaniya-mochi/"
+                           class="footer__main__link">Экспресс-диагностика <br> типов недержания мочи</a>
+                        <a href="https://uro-info.ru/diary/" class="footer__main__link">Дневник мочеиспускания</a>
+                    </div>
+
+                    <div class="footer__main__block">
+                        <a href="https://uro-info.ru/about-us/" class="footer__main__link_l">О компании</a>
+                        <a href="https://uro-info.ru/voprosy-urologu/" class="footer__main__link_l">Вопросы урологу</a>
+                        <a href="https://uro-info.ru/istorii-pacientov/" class="footer__main__link_l">Истории
+                            пациентов</a>
+                        <a href="https://uro-info.ru/articles/" class="footer__main__link_l">Статьи</a>
+                        <a href="https://uro-info.ru/video/" class="footer__main__link_l">Видео</a>
+                        <a href="https://uro-info.ru/specTest/" class="footer__main__link_l">Раздел для специалистов</a>
+                    </div>
+
+                    <div id="footer__right" class="footer__main__block">
+                        <a href="https://uro-info.ru/politika_konfidentsialnosti/" class="footer__main__link_l">Политика
+                            конфиденциальности</a>
+                        <a href="https://uro-info.ru/map/" class="footer__main__link_l">Карта туалетов</a>
+                        <a href="https://uro-info.ru/map-clinics/" class="footer__main__link_l">Карта поликлиник</a>
+                        <a href="https://uro-info.ru/sitemap/" class="footer__main__link_l">Карта сайта</a>
+                    </div>
+                </div>
+                <div class="footer__bottom">
+                    <p class="footer__bottom__title">
+                        Сайт (www.uro-info.ru) (далее- «Сайт») является собственностью Общества с ограниченной
+                        ответственностью «Астеллас Фарма Продакшен». Адрес: 109147, Россия, г. Москва, Марксистская, 16.
+                        Информация на Сайте носит информационный характер и не содержит персональных данных. Общество с
+                        ограниченной ответственностью «Астеллас Фарма Продакшен» не обрабатывает персональные данные
+                        посредством Сайта. Запрещается любое копирование Сайта и материалов, размещённых на Сайте, без
+                        разрешения собственника – Общества с ограниченной ответственностью «Астеллас Фарма Продакшен».
+                        Информация на Сайте разработана при поддержке Общества с ограниченной ответственностью «Астеллас
+                        Фарма Продакшен» в целях повышения осведомленности пациентов о своём заболевании.
+                    </p>
+
+                    <p class="footer__bottom__text">
+                        Информация на сайте не заменяет консультацию специалиста здравоохранения. Имеются
+                        противопоказания, обратитесь к лечащему врачу.
+                    </p>
+                </div>
+
+                <div class="footer__hide">
+                    <button class="footer__hide__button"><img src="img/footer.png" alt=""></button>
+                    <div class="footer__hide__panel">
+                        <p class="footer__bottom__title">
+                            Сайт (www.uro-info.ru) (далее- «Сайт») является собственностью Общества с ограниченной
+                            ответственностью «Астеллас Фарма Продакшен». Адрес: 109147, Россия, г. Москва, Марксистская,
+                            16. Информация на Сайте носит информационный характер и не содержит персональных данных.
+                            Общество с ограниченной ответственностью «Астеллас Фарма Продакшен» не обрабатывает
+                            персональные данные посредством Сайта. Запрещается любое копирование Сайта и материалов,
+                            размещённых на Сайте, без разрешения собственника – Общества с ограниченной ответственностью
+                            «Астеллас Фарма Продакшен». Информация на Сайте разработана при поддержке Общества с
+                            ограниченной ответственностью «Астеллас Фарма Продакшен» в целях повышения осведомленности
+                            пациентов о своём заболевании.
+                        </p>
+
+                        <p class="footer__bottom__text">
+                            Информация на сайте не заменяет консультацию специалиста здравоохранения. Имеются
+                            противопоказания, обратитесь к лечащему врачу.
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <script src="js/jquery-3.6.1.min.js"></script>
-        <script src="js/app.js"></script>
-        <script src="js/mobile.js"></script>
-    </body>
+    </footer>
+</div>
+<script src="js/jquery-3.6.1.min.js"></script>
+<script src="js/app.js"></script>
+<script src="js/mobile.js"></script>
+</body>
 </html>

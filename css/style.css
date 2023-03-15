@@ -452,6 +452,8 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     padding-bottom: 110px;
 }
 
+/************* Base **************/
+
 .section {
     width: 100%;
     position: relative;
@@ -578,10 +580,31 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     margin-bottom: 10px;
 }
 
+.section__list__item {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.section__list__text {
+    width: 1000px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    color: #254660;
+}
+
 .col-pink {
     color: #F05555;
     font-weight: 600;
 }
+
+/********************************/
 
 .urolog.section {
     margin-top: 50px;
@@ -649,6 +672,53 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 
 .tell__row {
     flex-direction: column;
+}
+
+.tell__check__img {
+    margin-right: 15px;
+    margin-top: 8px;
+}
+
+.different__row {
+    flex-direction: column;
+}
+
+.different__content__cols {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.different__half__block {
+    width: 525px;
+    background: rgba(240, 85, 85, 0.2);
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.different__half__title {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 23px;
+    margin-bottom: 20px;
+    color: #F05555;
+}
+
+.different__half__text {
+    width: 444px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 140%;
+    color: #254660;
 }
 
 /*************** Footer ***************/
