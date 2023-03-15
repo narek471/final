@@ -609,19 +609,42 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 }
 
 .urolog__text {
-    width: 755px;
-    font-family: 'Tilda Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 20px;
-    line-height: 24px;
-    letter-spacing: 0.01em;
-    color: #333333;
+    line-height: 140%;
+    color: #254660;
+    width: 755px;
     margin-top: 10px;
 }
 
 .ipss__row {
     flex-direction: column;
+}
+
+.diary__row {
+    flex-direction: column;
+}
+
+.diary__check__block {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.diary__check__content {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.diary__check__img {
+    margin-right: 15px;
 }
 
 /*************** Footer ***************/
