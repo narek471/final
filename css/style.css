@@ -721,6 +721,18 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     color: #254660;
 }
 
+.accept__row {
+    flex-direction: column;
+}
+
+.operation__row {
+    flex-direction: column;
+}
+
+.symptoms__row {
+    flex-direction: column;
+}
+
 /*************** Footer ***************/
 
 .footer {
