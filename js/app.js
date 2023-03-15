@@ -27,5 +27,22 @@ for (i = 0; i < acc.length; i++) {
     });
 }
 
+let sections = document.querySelectorAll('.section__top');
+
+sections.forEach(e => (
+    e.addEventListener('click', () => {
+        let accordion = e.nextElementSibling;
+        if (accordion.style.display === "block") {
+            accordion.style.display = "none";
+            e.firstElementChild.nextElementSibling.classList.remove('section__flag__top');
+            e.classList.remove('border__row');
+        } else {
+            accordion.style.display = "block";
+            e.firstElementChild.nextElementSibling.classList.add('section__flag__top');
+            e.classList.add('border__row');
+        }
+    })
+))
+
 
 
