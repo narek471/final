@@ -541,6 +541,10 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     color: #254660;
 }
 
+.section__block__text.section__count__text {
+    width: 950px;
+}
+
 .section__pink__text {
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
@@ -602,6 +606,11 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 .col-pink {
     color: #F05555;
     font-weight: 600;
+}
+
+.col-blue {
+    font-weight: 600;
+    color: #254660;
 }
 
 /********************************/
@@ -731,6 +740,42 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 
 .symptoms__row {
     flex-direction: column;
+}
+
+.adenom__row {
+    flex-direction: column;
+}
+
+.recommendations__row {
+    flex-direction: column;
+}
+
+.special__row {
+    flex-direction: column;
+}
+
+.hospital__row {
+    flex-direction: column;
+}
+
+.impotent__row {
+    flex-direction: column;
+}
+
+.turn__row {
+    flex-direction: column;
+}
+
+.turn__block__text > sup {
+    font-size: 12px;
+}
+
+.last__row {
+    flex-direction: column;
+}
+
+.last__check__content.diary__check__content {
+    align-items: center;
 }
 
 /*************** Footer ***************/
