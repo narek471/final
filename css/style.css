@@ -1364,6 +1364,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 
     .diary__check__img.diary__check__count {
         width: 25px;
+        margin-top: 0;
     }
 
     .tell__check__img {
