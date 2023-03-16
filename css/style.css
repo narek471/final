@@ -732,6 +732,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 
 .different__half__text > a {
     text-decoration: none;
+    border-bottom: 1px solid #F05555;
 }
 
 .accept__row {
@@ -1359,6 +1360,10 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
         width: 15px;
         margin-right: 5px;
         margin-top: 5px;
+    }
+
+    .diary__check__img.diary__check__count {
+        width: 25px;
     }
 
     .tell__check__img {
