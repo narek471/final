@@ -494,7 +494,6 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 .section__content {
     padding: 0 61px 30px 61px;
     background-color: #fff;
-    display: none;
     border-radius: 0 0 15px 15px;
     transition: all 0.4s ease;
 }
@@ -702,7 +701,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 }
 
 .different__half__block {
-    width: 525px;
+    width: 490px;
     background: rgba(240, 85, 85, 0.2);
     border-radius: 16px;
     display: flex;
@@ -942,6 +941,41 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
         width: 500px;
     }
 
+}
+
+@media only screen and (max-width: 1200px) {
+    .urolog__text {
+        font-size: 18px;
+        width: 670px;
+    }
+
+    .urolog__left > img {
+        width: 350px;
+    }
+
+    .section__instruction__text,
+    .section__block__text {
+        width: 100%;
+    }
+
+    .different__half__block {
+        width: 48%;
+        padding: 20px;
+    }
+
+    .different__half__text {
+        width: 100%;
+    }
+
+    .br-urolog-hide {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .urolog__text {
+        width: 100%;
+    }
 }
 
 @media only screen and (max-width: 1006px) {
@@ -1201,6 +1235,32 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     }
 }
 
+@media only screen and (max-width: 901px) {
+
+    .row {
+        padding-left: 20px;
+    }
+
+    .urolog__row {
+        flex-direction: column-reverse;
+    }
+
+    .urolog__right {
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+
+    .different__content__cols {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .different__half__block {
+        margin-bottom: 20px;
+        width: 400px;
+    }
+}
+
 @media only screen and (max-width: 641px) {
     body {
         font-size: 19px;
@@ -1251,6 +1311,90 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     .footer__bottom {
         display: none;
     }
+}
+
+@media only screen and (max-width: 500px) {
+
+    .row {
+        padding-left: 5px;
+    }
+
+    .section__top {
+        padding: 15px 20px 10px;
+    }
+
+    .section__content {
+        padding: 10px 20px;
+    }
+
+    .section__pink__text,
+    .section__block__text {
+        font-size: 16px;
+    }
+
+    .section__title {
+        font-size: 20px;
+    }
+
+    .section__pink__block {
+        padding: 10px;
+    }
+
+    .section__content__link {
+        font-size: 14px;
+        padding: 10px 12px;
+    }
+
+    .section__instruction__text {
+        font-size: 10px;
+    }
+
+    .section__list__text {
+        font-size: 16px;
+        width: 100%;
+    }
+
+    .diary__check__img {
+        width: 15px;
+        margin-right: 5px;
+        margin-top: 5px;
+    }
+
+    .tell__check__img {
+        margin-right: 5px;
+        margin-top: 8px;
+        width: 7px;
+    }
+
+    .urolog.section {
+        margin-top: 20px;
+    }
+
+    .urolog__title {
+        font-size: 30px;
+    }
+
+    .urolog__text {
+        font-size: 16px;
+    }
+
+    .urolog__left > img {
+        width: 320px;
+    }
+
+    .different__half__block {
+        width: 300px;
+    }
+
+    .different__half__title {
+        font-size: 20px;
+    }
+
+    .different__half__text {
+        font-size: 15px;
+        width: 100%;
+    }
+
 }
 
 @media only screen and (max-width: 490px) {
