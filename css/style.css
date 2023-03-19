@@ -541,6 +541,10 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     color: #254660;
 }
 
+.section__block__text > sup {
+    font-size: 12px;
+}
+
 .section__block__text.section__count__text {
     width: 950px;
 }
@@ -781,6 +785,10 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 
 .last__check__content.diary__check__content {
     align-items: center;
+}
+
+.psa__row {
+    flex-direction: column;
 }
 
 /*************** Footer ***************/
