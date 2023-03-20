@@ -1,0 +1,1304 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Уро-Инфо – портал об урологических симптомах и заболеваниях</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="wrapper">
+    <header class="header">
+        <div class="container">
+            <div class="header__row">
+                <div class="header__top">
+                    <div class="header__top__left">
+                        <nav class="navbar__mobile">
+                            <div class="container__mobile">
+                                <div class="navbar__wrap__mobile">
+                                    <div class="hamb__mobile">
+                                        <div class="hamb__field__mobile" id="hamb">
+                                            <span class="bar__mobile"></span> <span class="bar__mobile"></span>
+                                            <span class="bar__mobile"></span>
+                                        </div>
+                                    </div>
+                                    <ul class="menu__mobile" id="menu">
+                                        <li onclick="myFunction1()"><a href="javascript:void(0)" id="dropdown__open1">Заболевания</a>
+                                            <img src="img/dropdown.svg" id="img1" alt=""></li>
+                                        <ul style="display: none;" id="dropdown__mobile1">
+                                            <li><a href="https://uro-info.ru/zabolevanie/gmp/">ГМП</a></li>
+                                            <li><a href="https://uro-info.ru/zabolevanie/cistit/">Цистит</a></li>
+                                            <li><a href="https://uro-info.ru/zabolevanie/prostatit/">Простатит</a></li>
+                                            <li><a href="https://uro-info.ru/zabolevanie/adenoma/">Аденома простаты</a>
+                                            </li>
+                                            <li><a href="https://uro-info.ru/zabolevanie/rpz/">Рак предстательной
+                                                железы</a></li>
+                                            <li><a href="https://uro-info.ru/articles/opukhol-mochevogo-puzyrya/">Рак
+                                                мочевого пузыря</a></li>
+                                        </ul>
+                                        <li><a href="https://uro-info.ru/articles/">Статьи</a></li>
+                                        <li onclick="myFunction2()"><a href="javascript:void(0)" id="dropdown__open2">Проверьте
+                                            себя</a> <img src="img/dropdown.svg" id="img2" alt=""></li>
+                                        <ul style="display: none;" id="dropdown__mobile2">
+                                            <li>
+                                                <a href="https://uro-info.ru/tests/mezhdunarodnaya-sistema-summarnoy-otsenki-zabolevaniy-predstatelnoy-zhelezy-v-ballakh-ipss-/">Международная
+                                                    система суммарной оценки заболеваний предстательной железы в баллах
+                                                    (IPSS)</a></li>
+                                            <li>
+                                                <a href="https://uro-info.ru/tests/oprosnik-dlya-otsenki-simptomov-giperaktivnogo-mochevogo-puzyrya/">Опросник
+                                                    для оценки симптомов гиперактивного мочевого пузыря</a></li>
+                                            <li>
+                                                <a href="https://uro-info.ru/tests/ekspress-diagnostika-tipov-nederzhaniya-mochi/">Экспресс-диагностика
+                                                    типов недержания мочи</a></li>
+                                            <li><a href="https://uro-info.ru/diary/">Дневник мочеиспускания</a></li>
+                                        </ul>
+                                        <li><a href="https://uro-info.ru/video/">Видео</a></li>
+                                        <li><a href="https://uro-info.ru/istorii-pacientov/">Истории пациентов</a></li>
+                                        <li><a href="https://uro-info.ru/voprosy-urologu/">Вопросы урологу</a></li>
+                                        <li onclick="myFunction4()"><a href="javascript:void(0)" id="dropdown__open4">Путь
+                                            пациента</a> <img src="img/dropdown.svg" id="img4" alt=""></li>
+                                        <ul style="display: none;" id="dropdown__mobile4">
+                                            <li><a href="https://uro-info.ru/patient-journey/gmp/">ГМП</a></li>
+                                            <li><a href="https://uro-info.ru/patient-journey/rmp/">РМП</a></li>
+                                        </ul>
+                                        <li onclick="myFunction3()"><a href="javascript:void(0)" id="dropdown__open3">
+                                            Карты </a> <img src="img/dropdown.svg" id="img3" alt=""></li>
+                                        <ul style="display: none;" id="dropdown__mobile3">
+                                            <li><a href="https://uro-info.ru/map/">Карты туалетов</a></li>
+                                            <li><a href="https://uro-info.ru/map-clinics/">Карта поликлиник</a></li>
+                                        </ul>
+                                        <li><a href="https://uro-info.ru/specTest/">Раздел для специалистов</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </nav>
+                        <div class="popup__mobile" id="popup"></div>
+                        <a href="https://uro-info.ru/" class="header__logo__link"><img src="img/logo.svg" alt=""
+                                                                                       class="header__top__logo"></a>
+                        <p class="header__top__text">Портал об урологических <br>
+                            симптомах <br id="header__br"> и заболеваниях</p>
+                    </div>
+                    <div class="header__top__right">
+                        <p class="header__right__text">
+                            18+
+                        </p>
+                        <div class="header__search__mobile">
+                            <button onclick="getSearch()" class="header__button__mobile">
+                                <img src="img/search.png" alt="">
+                            </button>
+                        </div>
+                        <form action="/search/" method="get" class="header__search">
+                            <input name="q" type="search">
+                            <button type="submit" class="header__button">
+                                <img src="img/search.png" alt="">
+                            </button>
+                        </form>
+                        <a href="/" class="header__right__star">
+                            <img src="img/star.svg" alt="">
+                            <p class="header__star__text">
+                                Избранное
+                            </p>
+                        </a>
+                    </div>
+                </div>
+                <div class="header__menu" id="fixed__menu">
+                    <nav class="nav">
+                        <div class="container__hide">
+                            <ul class="nav__list">
+                                <li class="nav__list__item">
+                                    <a href="" class="nav__list__link">
+                                        <img src="img/menu1.svg" class="menu__list__img" alt="">
+                                        <p class="menu__item">Заболевания</p>
+                                    </a>
+                                    <div class="menu__dropdown__first">
+                                        <img src="img/dropdown.svg" alt="" class="dropdown__img">
+                                        <ul class="menu__dropdown__content">
+                                            <li class="menu__dropdown__item">
+                                                <a href="https://uro-info.ru/zabolevanie/gmp/"
+                                                   class="menu__dropdown__link"> <img src="img/menu1_3.png" alt=""
+                                                                                      class="dropdown__menu__img">
+                                                    <p>ГМП</p></a>
+                                            </li>
+                                            <li class="menu__dropdown__item">
+                                                <a href="https://uro-info.ru/zabolevanie/cistit/"
+                                                   class="menu__dropdown__link"> <img src="img/menu1_2.png" alt=""
+                                                                                      class="dropdown__menu__img">
+                                                    <p>Цистит</p></a>
+                                            </li>
+                                            <li class="menu__dropdown__item">
+                                                <a href="https://uro-info.ru/zabolevanie/prostatit/"
+                                                   class="menu__dropdown__link"> <img src="img/menu1_1.png" alt=""
+                                                                                      class="dropdown__menu__img">
+                                                    <p>Простатит</p></a>
+                                            </li>
+                                            <li class="menu__dropdown__item">
+                                                <a href="https://uro-info.ru/zabolevanie/adenoma/"
+                                                   class="menu__dropdown__link"> <img src="img/menu1_4.png" alt=""
+                                                                                      class="dropdown__menu__img">
+                                                    <p>Аденома простаты</p></a>
+                                            </li>
+                                            <li class="menu__dropdown__item">
+                                                <a href="https://uro-info.ru/zabolevanie/rpz/"
+                                                   class="menu__dropdown__link"> <img src="img/menu1_5.png" alt=""
+                                                                                      class="dropdown__menu__img">
+                                                    <p>Рак предстательной железы</p></a>
+                                            </li>
+                                            <li class="menu__dropdown__item">
+                                                <a href="https://uro-info.ru/articles/opukhol-mochevogo-puzyrya/"
+                                                   class="menu__dropdown__link"> <img src="img/menu1_4.png" alt=""
+                                                                                      class="dropdown__menu__img">
+                                                    <p>Рак мочевого пузыря</p></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="nav__list__item">
+                                    <a href="https://uro-info.ru/articles/" class="nav__list__link">
+                                        <img src="img/menu2.svg" class="menu__list__img" alt="">
+                                        <p class="menu__item">Статьи</p>
+                                    </a>
+                                </li>
+                                <li class="nav__list__item">
+                                    <a href="" class="nav__list__link">
+                                        <img src="img/menu3.svg" class="menu__list__img" alt="">
+                                        <p class="menu__item">Проверьте себя</p>
+                                    </a>
+                                    <div class="menu__dropdown__first">
+                                        <img src="img/dropdown.svg" alt="" class="dropdown__img">
+                                        <ul id="dropdown2" class="menu__dropdown__content">
+                                            <li class="menu__dropdown__item">
+                                                <a href="https://uro-info.ru/tests/mezhdunarodnaya-sistema-summarnoy-otsenki-zabolevaniy-predstatelnoy-zhelezy-v-ballakh-ipss-/"
+                                                   class="menu__dropdown__link"> <img src="img/menu2_1.png" alt=""
+                                                                                      class="dropdown__menu__img2">
+                                                    <p id="text2">Международная система суммарной оценки заболеваний
+                                                        предстательной железы в баллах (IPSS) </p></a>
+                                            </li>
+                                            <li class="menu__dropdown__item">
+                                                <a href="https://uro-info.ru/tests/oprosnik-dlya-otsenki-simptomov-giperaktivnogo-mochevogo-puzyrya/"
+                                                   class="menu__dropdown__link"> <img src="img/menu2_2.png" alt=""
+                                                                                      class="dropdown__menu__img2">
+                                                    <p id="text3">Опросник для оценки симптомов гиперактивного мочевого
+                                                        пузыря </p></a>
+                                            </li>
+                                            <li class="menu__dropdown__item">
+                                                <a href="https://uro-info.ru/tests/ekspress-diagnostika-tipov-nederzhaniya-mochi/"
+                                                   class="menu__dropdown__link"> <img src="img/menu2_3.png" alt=""
+                                                                                      class="dropdown__menu__img3">
+                                                    <p id="text4">Экспресс-диагностика типов недержания мочи </p></a>
+                                            </li>
+                                            <li class="menu__dropdown__item">
+                                                <a href="https://uro-info.ru/diary/" class="menu__dropdown__link"> <img
+                                                        src="img/menu2_4.png" alt="" class="dropdown__menu__img2">
+                                                    <p id="text5">Дневник мочеиспускания </p></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="nav__list__item">
+                                    <a href="https://uro-info.ru/video/" class="nav__list__link">
+                                        <img src="img/menu4.svg" class="menu__list__img" alt="">
+                                        <p class="menu__item">Видео</p>
+                                    </a>
+                                </li>
+                                <li class="nav__list__item">
+                                    <a href="https://uro-info.ru/istorii-pacientov/" class="nav__list__link">
+                                        <img src="img/menu5.svg" class="menu__list__img" alt="">
+                                        <p class="menu__item">Истории <br> пациентов</p>
+                                    </a>
+                                </li>
+                                <li class="nav__list__item">
+                                    <a href="https://uro-info.ru/voprosy-urologu/" class="nav__list__link">
+                                        <img src="img/menu6.svg" class="menu__list__img" alt="">
+                                        <p class="menu__item">Вопросы <br> урологу</p>
+                                    </a>
+                                </li>
+                                <li class="nav__list__item">
+                                    <a href="" class="nav__list__link">
+                                        <img src="img/menu7.svg" class="menu__list__img" alt="">
+                                        <p class="menu__item">Путь <br> пациента</p>
+                                    </a>
+                                    <div class="menu__dropdown__first">
+                                        <img src="img/dropdown.svg" alt="" class="dropdown__img" id="dropdown__img">
+                                        <ul id="dropdown3" class="menu__dropdown__content">
+                                            <li class="menu__dropdown__item">
+                                                <a href="https://uro-info.ru/patient-journey/gmp/"
+                                                   class="menu__dropdown__link"> <img src="img/menu1_3.png" alt=""
+                                                                                      class="dropdown__menu__img2">
+                                                    <p id="text8"> ГМП </p></a>
+                                            </li>
+                                            <li class="menu__dropdown__item">
+                                                <a href="https://uro-info.ru/patient-journey/rmp/"
+                                                   class="menu__dropdown__link"> <img src="img/menu1_4.png" alt=""
+                                                                                      class="dropdown__menu__img2">
+                                                    <p id="text9"> РМП </p></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="nav__list__item">
+                                    <a href="" class="nav__list__link">
+                                        <img src="img/menu9.png" id="menu9" class="menu__list__img" alt="">
+                                        <p class="menu__item">Карты</p>
+                                    </a>
+                                    <div class="menu__dropdown__first">
+                                        <img src="img/dropdown.svg" alt="" class="dropdown__img">
+                                        <ul class="menu__dropdown__content">
+                                            <li class="menu__dropdown__item">
+                                                <a href="https://uro-info.ru/map/" class="menu__dropdown__link"><img
+                                                        src="img/menu3_1.png" alt="" class="dropdown__menu__img4">
+                                                    <p id="text6">Карта туалетов </p></a>
+                                            </li>
+                                            <li class="menu__dropdown__item">
+                                                <a href="https://uro-info.ru/map-clinics/" class="menu__dropdown__link">
+                                                    <img src="img/menu3_2.png" alt="" class="dropdown__menu__img4">
+                                                    <p id="text7">Карта поликлиник </p></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="nav__list__item">
+                                    <a href="https://uro-info.ru/specTest/" class="nav__list__link">
+                                        <img src="img/menu8.svg" class="menu__list__img" alt="">
+                                        <p class="menu__item">Раздел для <br> специалистов</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+                <div class="header__bottom" id="header__bottom">
+                    <a href="/" class="header__bottom__link">Главная</a>
+                    <p class="header__bottom__text"> > Вопросы урологу</p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main" itemscope itemtype="https://schema.org/FAQPage">
+        <section class="urolog section">
+            <div class="container">
+                <div class="urolog__row row">
+                    <div class="urolog__left">
+                        <img src="img/urolog-img/1.svg" alt="">
+                    </div>
+                    <div class="urolog__right">
+                        <h1 class="urolog__title">
+                            Вопросы урологу
+                        </h1>
+                        <p class="urolog__text">
+                            Ответы на популярные вопросы пациентов с урологическими проблемами о мочеиспускании, аденоме
+                            и простатите от реальных врачей на портале Уро-Инфо. Не заменяет консультацию, по любым
+                            вопросам обращайтесь к лечащему врачу!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="ipss section">
+            <div class="container">
+                <div class="ipss__row row"itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <div class="section__top ipss__top">
+                        <h3 class="section__title ipss__title" itemprop="name">Что такое шкала IPSS?</h3>
+                        <img src="img/urolog-img/7.svg" class="section__flag__bottom" alt="">
+                    </div>
+                    <div class="section__content ipss__content" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                        <div class="section__first__block ipss__content__block">
+                            <p class="ipss__block__text section__block__text">
+                                Доброкачественная гиперплазия предстательной железы (или аденома простаты) чаще всего
+                                проявляется различными нарушениями мочеиспускания. Для оценки характера
+                                <br class="br-urolog-hide"> и выраженности таких нарушений у пациентов любого возраста используется шкала IPSS
+                                (International Prostate Symptom Score).
+                            </p>
+                        </div>
+                        <div class="section__pink__block ipss__content__block">
+                            <p class="ipss__block__text section__pink__text" itemprop="text">
+                                <span class="col-pink">IPSS — международная шкала оценки простатических симптомов,</span>
+                                утверждена ВОЗ* в 1992 году и широко используется в клинической практике. Шкала проста
+                                в заполнении и представляет собой опросник, состоящий из 8 вопросов, 7 из которых
+                                относятся к оценке симптомов мочеиспускания, а один определяет влияние заболевания
+                                на качество жизни. Выраженность симптомов распределяют по степени нарушений: отсутствие
+                                (0 баллов), лёгкая степень (1–7 баллов), умеренная степень (8–19 баллов) и тяжёлая
+                                степень (20–35 баллов).
+                            </p>
+                        </div>
+                        <div class="section__content__block ipss__content__block">
+                            <p class="ipss__block__text section__block__text">
+                                Опросник можно заполнять дома, в спокойной обстановке, после заполнения его будет удобно
+                                распечатать и взять с собой на плановый визит к урологу.
+                            </p>
+                        </div>
+                        <div class="section__content__block ipss__content__block">
+                            <p class="ipss__block__text section__block__text">
+                                Обращаем ваше внимание, что только врач может правильно интерпретировать результаты
+                                заполненного опросника с учётом жалоб, истории развития заболевания и его особенностей,
+                                результатов анализов и обследований, сделать заключение и подобрать или продолжить
+                                необходимую терапию.
+                            </p>
+                        </div>
+                        <div class="section__content__block ipss__content__block">
+                            <p class="ipss__block__text section__block__text">
+                                Опросник является универсальным и подходит всем пациентам, независимо от характера
+                                нарушений мочеиспускания и наличия или отсутствия самостоятельного мочеиспускания.
+                            </p>
+                        </div>
+                        <a href="https://uro-info.ru/tests/mezhdunarodnaya-sistema-summarnoy-otsenki-zabolevaniy-predstatelnoy-zhelezy-v-ballakh-ipss-/" class="section__content__link ipss__content__link">
+                            Шкала IPSS размещена на сайте
+                        </a>
+                        <div class="section__content__instruction ipss__content__instruction">
+                            <p class="section__instruction__text ipss__instruction__text">
+                                *ВОЗ — Всемирная организация здравоохранения
+                            </p>
+                            <p class="section__instruction__text ipss__instruction__text">
+                                1. Дударев В.А., Старцев В.Ю., Бакшеева Е.Г. Клиническая оценка использования опросников
+                                симптомов нижних мочевых путей у мужчин. Вестник урологии. 2020;8(4):23–31. DOI:
+                                10.21886/2308–6424–2020–8-4–23–31.
+                            </p>
+                            <p class="section__instruction__text ipss__instruction__text">
+                                2. Клинические рекомендации. Доброкачественная гиперплазия предстательной железы. 2020.
+                                Утверждены Минздравом РФ.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="diary section">
+            <div class="container">
+                <div class="diary__row row" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <div class="section__top diary__top">
+                        <h3 itemprop="name" class="section__title diary__title">Для чего нужен дневник мочеиспускания?</h3>
+                        <img src="img/urolog-img/7.svg" class="section__flag__bottom" alt="">
+                    </div>
+                    <div class="section__content diary__content" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                        <div class="section__first__block diary__check__block">
+                            <div class="diary__check__content">
+                                <img src="img/urolog-img/2.svg" alt="" class="diary__check__img">
+                                <p class="section__block__text" itemprop="text">
+                                    Дневник мочеиспускания — простой, но важный инструмент, помогающий врачу определить
+                                    состояние, объективно проанализировать жалобы и оценить функции мочеиспускания.
+                                </p>
+                            </div>
+                            <div class="diary__check__content">
+                                <img src="img/urolog-img/2.svg" alt="" class="diary__check__img">
+                                <p class="section__block__text">
+                                    Дневник мочеиспускания позволяет зафиксировать частоту мочеиспускания, объём каждой
+                                    порции и общий объём мочи в сутки, соотношение дневного и ночного объёма мочи.
+                                    Заполнение дневника может помочь при первичном обследовании и в дальнейшем
+                                    для оценки эффективности терапии.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="section__pink__block diary__content__block">
+                            <p class="diary__block__text section__pink__text">
+                                Как правило, уролог на приёме поясняет как вести дневник мочеиспускания. Все данные
+                                вносят в течение минимум 3-х суток и очень подробно заполняют информацию об объёме
+                                потребляемой жидкости, времени каждого мочеиспускания, объёме мочи, неожиданных сильных
+                                позывов к мочеиспусканию, эпизодов недержания мочи, ночных позывов и ночного диуреза.
+                            </p>
+                        </div>
+                        <div class="section__content__block diary__content__block">
+                            <p class="diary__block__text section__block__text">
+                                В разные дни объём суточного диуреза может значительно отличаться, и это может быть
+                                в пределах нормы, поскольку зависит от разных обстоятельств, например, от объёма выпитой
+                                жидкости. И, пожалуйста, постарайтесь определять объём порции мочи максимально точно,
+                                от этого зависит дальнейшая интерпретация данных врачом.
+                            </p>
+                        </div>
+                        <div class="section__content__block diary__content__block">
+                            <p class="diary__block__text section__block__text">
+                                Не забывайте заполненный дневник мочеиспускания сохранить и взять с собой на визит
+                                к урологу.
+                            </p>
+                        </div>
+                        <a href="https://uro-info.ru/diary/" class="section__content__link diary__content__link">
+                            Дневник мочеиспускания (образец для мужчин) представлен на сайте
+                        </a>
+                        <div class="section__content__instruction diary__content__instruction">
+                            <p class="section__instruction__text diary__instruction__text">
+                                1. Клинические рекомендации. Доброкачественная гиперплазия предстательной железы. 2020.
+                                Утверждены Минздравом РФ.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="tell section">
+            <div class="container">
+                <div class="tell__row row" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <div class="section__top tell__top">
+                        <h3 itemprop="name" class="section__title tell__title">О чем важно рассказать врачу?</h3>
+                        <img src="img/urolog-img/7.svg" class="section__flag__bottom" alt="">
+                    </div>
+                    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" class="section__content tell__content">
+                        <div class="section__first__block tell__content__block">
+                            <p class="tell__block__text section__block__text" itemprop="text">
+                                Несмотря на деликатность проблем (частое мочеиспускание, частые позывы к мочеиспусканию,
+                                частое мочеиспускание и днём, и ночью или затруднённое мочеиспускание) важно
+                                без стеснения рассказать урологу обо всем, что вас беспокоит.
+                            </p>
+                        </div>
+                        <div class="section__content__block tell__content__block">
+                            <p class="tell__block__text section__block__text">
+                                Причины частого мочеиспускания могут быть разные, поэтому на приёме важно сообщить
+                                доктору следующую информацию:
+                            </p>
+                        </div>
+                        <div class="section__content__list tell__content__list">
+                            <ul class="section__list">
+                                <li class="section__list__item">
+                                    <img src="img/urolog-img/8.svg" alt="" class="tell__check__img">
+                                    <p class="section__list__text">
+                                        О всех сопутствующих заболеваниях, в том числе хронических, поскольку некоторые
+                                        состояния способны привести к нарушению мочеиспускания. К таким заболеваниям
+                                        относятся рассеянный склероз, нарушения мозгового кровообращения, инсульт,
+                                        паркинсонизм, заболевания спинного мозга, сахарный диабет, заболевания
+                                        сердечно-сосудистой системы и другие;
+                                    </p>
+                                </li>
+                                <li class="section__list__item">
+                                    <img src="img/urolog-img/8.svg" alt="" class="tell__check__img">
+                                    <p class="section__list__text">
+                                        О наличии эпизодов острой задержки мочеиспускания или примеси крови в моче
+                                        (гематурии);
+                                    </p>
+                                </li>
+                                <li class="section__list__item">
+                                    <img src="img/urolog-img/8.svg" alt="" class="tell__check__img">
+                                    <p class="section__list__text">
+                                        О перенесённых травмах позвоночника;
+                                    </p>
+                                </li>
+                                <li class="section__list__item">
+                                    <img src="img/urolog-img/8.svg" alt="" class="tell__check__img">
+                                    <p class="section__list__text">
+                                        О принимаемых лекарственных препаратах, как для лечения аденомы простаты,
+                                        так и для терапии сопутствующих заболеваний;
+                                    </p>
+                                </li>
+                                <li class="section__list__item">
+                                    <img src="img/urolog-img/8.svg" alt="" class="tell__check__img">
+                                    <p class="section__list__text">
+                                        О факторах, связанных с образом жизни, вредных привычках (злоупотреблении
+                                        алкоголем);
+                                    </p>
+                                </li>
+                                <li class="section__list__item">
+                                    <img src="img/urolog-img/8.svg" alt="" class="tell__check__img">
+                                    <p class="section__list__text">
+                                        О перенесенных ранее хирургических операциях;
+                                    </p>
+                                </li>
+                                <li class="section__list__item">
+                                    <img src="img/urolog-img/8.svg" alt="" class="tell__check__img">
+                                    <p class="section__list__text">
+                                        О принимаемых лекарственных препаратах, как для лечения аденомы простаты, так и для
+                                        терапии сопутствующих заболеваний;
+                                    </p>
+                                </li>
+                                <li class="section__list__item">
+                                    <img src="img/urolog-img/8.svg" alt="" class="tell__check__img">
+                                    <p class="section__list__text">
+                                        О перенесенных ранее хирургических операциях;
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="section__content__block tell__content__block">
+                            <p class="tell__block__text section__block__text">
+                                Вся эта информация поможет врачу найти причину появления тех или иных жалоб и симптомов,
+                                поставить правильный диагноз и назначить эффективную терапию.
+                            </p>
+                        </div>
+                        <div class="section__content__instruction tell__content__instruction">
+                            <p class="section__instruction__text tell__instruction__text">
+                                Клинические рекомендации. Доброкачественная гиперплазия предстательной железы. 2020.
+                                Утверждены Минздравом РФ.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="different section">
+            <div class="container">
+                <div class="different__row row" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <div class="section__top different__top">
+                        <h3 itemprop="name" class="section__title different__title">Чем отличается аденома простаты от простатита?</h3>
+                        <img src="img/urolog-img/7.svg" class="section__flag__bottom" alt="">
+                    </div>
+                    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" class="section__content different__content">
+                        <div class="section__first__block different__content__block">
+                            <p class="different__block__text section__block__text" itemprop="text">
+                                Аденома предстательной железы и простатит — одни из самых распространённых урологических заболеваний.
+                            </p>
+                        </div>
+                        <div class="section__content__block different__content__block">
+                            <p class="different__block__text section__block__text">
+                                При этом простатит может встречаться у мужчин в любом возрасте, чаще молодом, а аденома больше характерна для мужчин зрелого возраста.
+                            </p>
+                        </div>
+                        <div class="different__content__cols">
+                            <div class="different__half__block">
+                                <h3 class="different__half__title">
+                                    Простатит
+                                </h3>
+                                <p class="different__half__text">
+                                    В основе <a href="https://uro-info.ru/zabolevanie/prostatit/" class="col-pink">простатита</a> лежит воспаление и связанные с ним патологические процессы, включающие застой крови в предстательной железе, нарушения нервной и мышечной функций предстательной железы.
+                                </p>
+                            </div>
+                            <div class="different__half__block">
+                                <h3 class="different__half__title">
+                                    Аденома
+                                </h3>
+                                <p class="different__half__text">
+                                    <a href="https://uro-info.ru/zabolevanie/adenoma/" class="col-pink">Аденома</a> — это доброкачественная опухоль предстательной железы, которая характеризуется разрастанием железистой ткани и образованием железистых узелков в ней. Важно знать, что аденома — это не рак и метастазов при ней не бывает.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="section__content__block different__content__block">
+                            <p class="different__block__text section__block__text">
+                                И простатит, и аденома могут проявляться одинаковыми симптомами, но основное отличие простатита от аденомы простаты заключается в присутствии воспалительного процесса при простатите и разрастании ткани простаты при аденоме.
+                            </p>
+                        </div>
+                        <div class="section__content__block different__content__block">
+                            <p class="different__block__text section__block__text">
+                                Поскольку в основе развития аденомы и простатита лежат разные механизмы, подходы к их терапии тоже отличаются. Только уролог может правильно поставить диагноз и назначить необходимое лечение.
+                            </p>
+                        </div>
+                        <div class="section__content__instruction ipss__content__instruction">
+                            <p class="section__instruction__text ipss__instruction__text">
+                                1. Аполихин О.И., Сивков А.В., Комарова В.А., Никушина А.А. Болезни предстательной железы в Российской Федерации: статистические данные 2008–2017 гг. Экспериментальная и клиническая урология, 2019
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="accept section">
+            <div class="container">
+                <div class="accept__row row" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <div class="section__top accept__top">
+                        <h3 itemprop="name" class="section__title accept__title">Как долго нужно принимать препараты для лечения аденомы</h3>
+                        <img src="img/urolog-img/7.svg" class="section__flag__bottom" alt="">
+                    </div>
+                    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" class="section__content accept__content">
+                        <div class="section__first__block accept__content__block">
+                            <p class="accept__block__text section__block__text">
+                                Эффективное лечение аденомы простаты необходимо:
+                            </p>
+                        </div>
+                        <div class="diary__check__content">
+                            <img src="img/urolog-img/2.svg" alt="" class="diary__check__img">
+                            <p class="section__block__text">
+                                для облегчения симптомов
+                            </p>
+                        </div>
+                        <div class="diary__check__content">
+                            <img src="img/urolog-img/2.svg" alt="" class="diary__check__img">
+                            <p class="section__block__text">
+                                для улучшения качества жизни
+                            </p>
+                        </div>
+                        <div class="diary__check__content">
+                            <img src="img/urolog-img/2.svg" alt="" class="diary__check__img">
+                            <p class="section__block__text">
+                                для предупреждения осложнений
+                            </p>
+                        </div>
+                        <div class="section__content__block accept__content__block">
+                            <p class="accept__block__text section__block__text" itemprop="text">
+                                Аденома простаты развивается длительно, затрагивает тонкие механизмы нейро-мышечной регуляции, кровоснабжения и гормонального влияния на ткань простаты. Поэтому и терапия аденомы проводится длительно, а некоторыми группами препаратов, например, антагонистами альфа1-адренорецепторов — пожизненно.
+                            </p>
+                        </div>
+                        <div class="section__content__block accept__content__block">
+                            <p class="accept__block__text section__block__text">
+                                <span class="col-pink">Альфа1-адреноблокаторы</span> расслабляют мускулатуру органов мочевыделения и тем самым обеспечивают улучшение отхождения мочи. Антагонисты альфа-адренорецепторов оказывают эффект только пока принимаются (их можно сравнить, например, с препаратами для снижения артериального давления), поэтому их необходимо пить постоянно.
+                            </p>
+                        </div>
+                        <div class="section__pink__block accept__content__block">
+                            <p class="accept__block__text section__pink__text">
+                                Одним из самых известных представителей этой группы является <span class="col-pink">тамсулозин</span>, который избирательно действует на альфа1-адренорецепторы мускулатуры простаты, мочеточника и мочевого пузыря. Так как действие высокоизбирательно, то <span class="col-pink">тамсулозин</span> не влияет на тонус сосудов, а значит может применяться у пациентов с сердечно-сосудистой патологией.
+                            </p>
+                        </div>
+                        <div class="section__content__block accept__content__block">
+                            <p class="accept__block__text section__block__text">
+                                Однако необходимо помнить, что терапию для каждого конкретного пациента определяет только врач.
+                            </p>
+                        </div>
+                        <div class="section__content__instruction accept__content__instruction">
+                            <p class="section__instruction__text accept__instruction__text">
+                                https://yusupovs.com/articles/oncology/adenoma-prostaty-u-muzhchin-simptomy-lechenie-preparaty/?ysclid=ldzw4fixvx202537462 (дата последнего доступа 12.02.2023)
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="operation section">
+            <div class="container">
+                <div class="operation__row row" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <div class="section__top operation__top">
+                        <h3 itemprop="name" class="section__title operation__title">В каких случаях для лечения аденомы простаты необходима
+                            операция</h3>
+                        <img src="img/urolog-img/7.svg" class="section__flag__bottom" alt="">
+                    </div>
+                    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" class="section__content operation__content">
+                        <div class="section__first__block operation__content__block">
+                            <p class="operation__block__text section__block__text" itemprop="text">
+                                По статистике ещё 30 лет назад оперировали около половины пациентов, имеющих аденому простаты, в настоящее время оперативное лечение проводится лишь 25–30% пациентам1,2
+                            </p>
+                        </div>
+                        <div class="section__content__block operation__content__block">
+                            <p class="operation__block__text section__block__text">
+                                Хирургическое лечение может потребоваться некоторым пациентам при запущенной стадии аденомы простаты
+                            </p>
+                        </div>
+                        <div class="section__pink__block operation__content__block">
+                            <p class="operation__block__text section__pink__text">
+                                Показаниями к оперативному лечению ДГПЖ являются различные осложнения (повторяющаяся задержка мочи, неоднократная кровь в моче, камни мочевого пузыря и другие).
+                            </p>
+                        </div>
+                        <div class="section__content__block operation__content__block">
+                            <p class="operation__block__text section__block__text">
+                                Увеличение простаты, даже весьма выраженное, без тяжёлой симптоматики, не является показанием к выполнению оперативного вмешательства. В последнее время отмечается тенденция к проведению малоинвазивных операций (ТУР — трансуретральная резекция) с использованием современных биполярных и лазерных технологий2.
+                            </p>
+                        </div>
+                        <div class="section__content__instruction operation__content__instruction">
+                            <p class="section__instruction__text operation__instruction__text">
+                                1. Нашивочникова Н.А. Осознанный подход к выбору консервативной терапии ДГПЖ. РМЖ. Медицинское обозрение. 2022;6(4):187–194. DOI: 10.32364/2587–6821–2022–6-4–187–194.
+                            </p>
+                            <p class="section__instruction__text operation__instruction__text">
+                                2. Клинические рекомендации. Доброкачественная гиперплазия предстательной железы. 2020. Утверждены Минздравом РФ.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="symptoms section">
+            <div class="container">
+                <div class="symptoms__row row" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <div class="section__top symptoms__top">
+                        <h3 itemprop="name" class="section__title symptoms__title">Какими могут быть первые симптомы аденомы простаты</h3>
+                        <img src="img/urolog-img/7.svg" class="section__flag__bottom" alt="">
+                    </div>
+                    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" class="section__content symptoms__content">
+                        <div class="section__first__block symptoms__content__block">
+                            <p class="symptoms__block__text section__block__text" itemprop="text">
+                                Ранняя стадия аденомы простаты может протекать бессимптомно и не сопровождаться жалобами.
+                            </p>
+                        </div>
+                        <div class="section__content__block symptoms__content__block">
+                            <p class="symptoms__block__text section__block__text">
+                                Появление симптомов при аденоме простаты связано не столько с самой предстательной железой, сколько с изменениями функционирования мочевого пузыря.
+                            </p>
+                        </div>
+                        <div class="section__pink__block symptoms__content__block">
+                            <p class="symptoms__block__text section__pink__text">
+                                Аденому простаты можно заподозрить при появлении жалоб на частые позывы без мочеиспускания, затруднённое мочеиспускание, прерывающееся мочеиспускание.
+                            </p>
+                        </div>
+                        <div class="section__content__block symptoms__content__block">
+                            <p class="symptoms__block__text section__block__text">
+                                Симптомы не являются специфическими именно для аденомы, <span class="col-pink">поэтому важно пройти полное обследование для установки точного диагноза</span>
+                            </p>
+                        </div>
+                        <div class="section__content__instruction symptoms__content__instruction">
+                            <p class="section__instruction__text symptoms__instruction__text">
+                                Клинические рекомендации. Доброкачественная гиперплазия предстательной железы. 2020. Утверждены Минздравом РФ.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="adenom section">
+            <div class="container">
+                <div class="adenom__row row" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <div class="section__top adenom__top">
+                        <h3 itemprop="name" class="section__title adenom__title">Анализы при аденоме: что важно знать и какие анализы
+                            при аденоме нужны</h3>
+                        <img src="img/urolog-img/7.svg" class="section__flag__bottom" alt="">
+                    </div>
+                    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" class="section__content adenom__content">
+                        <div class="section__first__block adenom__content__block">
+                            <p class="adenom__block__text section__block__text" itemprop="text">
+                                При подозрении на аденому предстательной железы доктор обычно проводит ряд лабораторных и инструментальных обследований.
+                            </p>
+                        </div>
+                        <div class="section__content__block adenom__content__block">
+                            <p class="adenom__block__text section__block__text">
+                                <span class="col-pink">Основные анализы при аденоме простаты:</span>
+                            </p>
+                        </div>
+                        <div class="diary__check__content">
+                            <img src="img/urolog-img/3.svg" alt="" class="diary__check__img diary__check__count">
+                            <p class="section__block__text section__count__text">
+                                <span class="col-pink">Общий анализ мочи</span> для определения инфекций и злокачественных новообразований мочевыводящих путей.
+                            </p>
+                        </div>
+                        <div class="diary__check__content">
+                            <img src="img/urolog-img/4.svg" alt="" class="diary__check__img diary__check__count">
+                            <p class="section__block__text section__count__text">
+                                <span class="col-pink">Анализ крови на ПСА</span> — определение уровня простатспецифического антигена (ПСА) в крови. <span class="col-pink">Сдача анализа на ПСА</span> проводится для исключения рака предстательной железы.
+                            </p>
+                        </div>
+                        <div class="diary__check__content">
+                            <img src="img/urolog-img/5.svg" alt="" class="diary__check__img diary__check__count">
+                            <p class="section__block__text section__count__text">
+                                <span class="col-pink">Анализ ПСА</span> сдают утром, натощак с 8 до 11 часов. Подготовка к анализу ПСА проста: за 8 часов до взятия крови ограничивают приём пищи, молока, сока и других напитков. За сутки до сдачи анализа рекомендовано исключить алкоголь и ограничить физические нагрузки.
+                            </p>
+                        </div>
+                        <div class="diary__check__content">
+                            <img src="img/urolog-img/6.svg" alt="" class="diary__check__img diary__check__count">
+                            <p class="section__block__text section__count__text">
+                                Определение концентрации креатинина в крови для уточнения состояния почек и исключения почечной недостаточности.
+                            </p>
+                        </div>
+                        <div class="section__content__instruction ipss__content__instruction">
+                            <p class="section__instruction__text ipss__instruction__text">
+                                1. Клинические рекомендации. Доброкачественная гиперплазия предстательной железы. 2020. Утверждены Минздравом РФ.
+                            </p>
+                            <p class="section__instruction__text ipss__instruction__text">
+                                2. https://gemotest.ru/moskva/catalog/onkologiya/onkomarkyery/obshchiy-psa-prostaticheskiy-spetsificheskiy-antigen/ (дата последнего доступа 12.02.2023)
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="recommendations section">
+            <div class="container">
+                <div class="recommendations__row row" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <div class="section__top recommendations__top">
+                        <h3 itemprop="name" class="section__title recommendations__title">Рекомендации по образу жизни</h3>
+                        <img src="img/urolog-img/7.svg" class="section__flag__bottom" alt="">
+                    </div>
+                    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" class="section__content recommendations__content">
+                        <div class="section__first__block recommendations__content__block">
+                            <p class="recommendations__block__text section__block__text">
+                                Можно ли вылечить аденому только лекарственными препаратами? Лечение любого <br> заболевания требует комплексного подхода, который включает и коррекцию образа жизни.
+                            </p>
+                        </div>
+                        <div class="section__content__block recommendations__content__block">
+                            <p class="recommendations__block__text section__block__text col-blue">
+                                Что следует делать:
+                            </p>
+                        </div>
+                        <div class="section__content__list recommendations__content__list">
+                            <ul class="section__list">
+                                <li class="section__list__item">
+                                    <img src="img/urolog-img/8.svg" alt="" class="tell__check__img">
+                                    <p class="section__list__text" itemprop="text">
+                                        Сформируйте новые привычки и постарайтесь дозированно заниматься физическими упражнениями, например, утренней зарядкой, регулярно совершайте прогулки на свежем воздухе. Физическая активность улучшает кровообращение и кровоснабжение органов малого таза.
+                                    </p>
+                                </li>
+                                <li class="section__list__item">
+                                    <img src="img/urolog-img/8.svg" alt="" class="tell__check__img">
+                                    <p class="section__list__text">
+                                        Обеспечьте контроль за массой тела, это позволит сохранить в норме обмен веществ.
+                                    </p>
+                                </li>
+                                <li class="section__list__item">
+                                    <img src="img/urolog-img/8.svg" alt="" class="tell__check__img">
+                                    <p class="section__list__text">
+                                        Сократите употребление жидкости на ночь (за 2 часа до сна) или перед походом в общественные места.
+                                    </p>
+                                </li>
+                                <li class="section__list__item">
+                                    <img src="img/urolog-img/8.svg" alt="" class="tell__check__img">
+                                    <p class="section__list__text">
+                                        Исключите или скорректируйте потребление кофе и алкогольных напитков, которые оказывают мочегонное действие и способствуют увеличению частоты мочеиспускания.
+                                    </p>
+                                </li>
+                                <li class="section__list__item">
+                                    <img src="img/urolog-img/8.svg" alt="" class="tell__check__img">
+                                    <p class="section__list__text">
+                                        Пересмотрите свою одежду, откажитесь от тугих плавок, джинсов, обтягивающих брюк, потому что такая одежда ограничивает кровоток в малом тазу
+                                    </p>
+                                </li>
+                                <li class="section__list__item">
+                                    <img src="img/urolog-img/8.svg" alt="" class="tell__check__img">
+                                    <p class="section__list__text">
+                                        Обратите внимание на сексуальную жизнь, она должна быть регулярной, но с постоянной женщиной, исключите беспорядочные половые связи
+                                    </p>
+                                </li>
+                                <li class="section__list__item">
+                                    <img src="img/urolog-img/8.svg" alt="" class="tell__check__img">
+                                    <p class="section__list__text">
+                                        И не забывайте о контрольных визитах к урологу каждые 6–12 мес.
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="section__content__block recommendations__content__block">
+                            <p class="recommendations__block__text section__block__text">
+                                Ранняя стадия аденомы простаты может протекать бессимптомно и не сопровождаться <br> жалобами.
+                            </p>
+                        </div>
+                        <div class="section__content__instruction recommendations__content__instruction">
+                            <p class="section__instruction__text recommendations__instruction__text">
+                                1. https://uclinica.ru/o-klinike/poleznye-stati/chto-nelzya-pri-adenome-prostaty/ дата последнего доступа 12.02.2023)
+                            </p>
+                            <p class="section__instruction__text recommendations__instruction__text">
+                                2. Клинические рекомендации. Доброкачественная гиперплазия предстательной железы. 2020. Утверждены Минздравом РФ.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="special section">
+            <div class="container">
+                <div class="special__row row" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <div class="section__top special__top">
+                        <h3 itemprop="name" class="section__title special__title">Специальные упражнения для контроля мочеиспускания</h3>
+                        <img src="img/urolog-img/7.svg" class="section__flag__bottom" alt="">
+                    </div>
+                    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" class="section__content special__content">
+                        <div class="section__first__block special__content__block">
+                            <p class="special__block__text section__block__text" itemprop="text">
+                                Пациентам с аденомой предстательной железы можно порекомендовать упражнения при частом мочеиспускании (тренировка мочевого пузыря и упражнения Кегеля). Примеры таких упражнений:
+                            </p>
+                        </div>
+                        <div class="section__content__list special__content__list">
+                            <ul class="section__list">
+                                <li class="section__list__item">
+                                    <img src="img/urolog-img/8.svg" alt="" class="tell__check__img">
+                                    <p class="section__list__text">
+                                        Техники прерывания — во время мочеиспускания прерывание может быть за счёт пережатия головки полового члена
+                                    </p>
+                                </li>
+                                <li class="section__list__item">
+                                    <img src="img/urolog-img/8.svg" alt="" class="tell__check__img">
+                                    <p class="section__list__text">
+                                        Тренировка мочевого пузыря — поставить цель мочиться по расписанию через фиксированные временные интервалы, увеличивая последующий промежуток на 15–30 минут
+                                    </p>
+                                </li>
+                                <li class="section__list__item">
+                                    <img src="img/urolog-img/8.svg" alt="" class="tell__check__img">
+                                    <p class="section__list__text">
+                                        Дыхательные упражнения для отвлечения мыслей о туалете
+                                    </p>
+                                </li>
+                                <li class="section__list__item">
+                                    <img src="img/urolog-img/8.svg" alt="" class="tell__check__img">
+                                    <p class="section__list__text">
+                                        Сдавление промежности, медленное напряжение и быстрое расслабление «интимных» мышц
+                                    </p>
+                                </li>
+                                <li class="section__list__item">
+                                    <img src="img/urolog-img/8.svg" alt="" class="tell__check__img">
+                                    <p class="section__list__text">
+                                        Напряжение мышц таза на протяжении 10 секунд и такое же медленное их расслабление
+                                    </p>
+                                </li>
+                                <li class="section__list__item">
+                                    <img src="img/urolog-img/8.svg" alt="" class="tell__check__img">
+                                    <p class="section__list__text">
+                                        Двойное мочеиспускание — после окончания мочеиспускания нужно согнуться, нажать на проекцию мочевого пузыря (над лобком), встать, снова сесть и попробовать снова опорожниться
+                                    </p>
+                                </li>
+                                <li class="section__list__item">
+                                    <img src="img/urolog-img/8.svg" alt="" class="tell__check__img">
+                                    <p class="section__list__text">
+                                        Подавление позыва к мочеиспусканию — при позыве к мочеиспусканию необходимо быстро сокращать мышцы тазового дна до исчезновения позыва. Во время этого позыва и упражнения не нужно бежать в туалет, а лучше присесть, расслабиться и идти в туалет после того, как острое желание помочиться прошло.
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="section__content__instruction special__content__instruction">
+                            <p class="section__instruction__text special__instruction__text">
+                                1. Клинические рекомендации. Доброкачественная гиперплазия предстательной железы. 2020. Утверждены Минздравом РФ.
+                            </p>
+                            <p class="section__instruction__text special__instruction__text">
+                                2. https://clinica-urology.ru/stati-i-publikatsii/uprazhneniya-kotorye-pomogut-pri-nederzhanii-mochi/?ysclid=le098dlh1f645516237 (дата последнего доступа 12.02.2023)
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="hospital section">
+            <div class="container">
+                <div class="hospital__row row" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <div class="section__top hospital__top">
+                        <h3 itemprop="name" class="section__title hospital__title">Аденома простаты: когда нужна срочная госпитализация</h3>
+                        <img src="img/urolog-img/7.svg" class="section__flag__bottom" alt="">
+                    </div>
+                    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" class="section__content hospital__content">
+                        <div class="section__first__block hospital__content__block">
+                            <p class="hospital__block__text section__block__text" itemprop="text">
+                                Экстренные ситуации, которые требуют вызова скорой помощи и немедленной госпитализации:
+                            </p>
+                        </div>
+                        <div class="diary__check__content">
+                            <img src="img/urolog-img/3.svg" alt="" class="diary__check__img diary__check__count">
+                            <p class="section__block__text section__count__text">
+                                <span class="col-pink">Острая задержка мочи,</span> при которой происходит застой мочи и её скопление в мочевом пузыре. Острая задержка мочи проявляется невозможностью самостоятельного мочеиспускания несмотря на сильные позывы, болезненными позывами к мочеиспусканию, полным прекращением мочеотделения из уретры, вздутием низа живота, появлением боли в области мочевого пузыря. Острая задержка мочи может возникнуть как из-за разрастания тканей предстательной железы и сдавления мочеиспускательного канала извне, так и при перекрывании просвета мочеиспускательного канала, например, сгустком крови или камнем, так как камни в мочевом пузыре у мужчин с аденомой простаты часто образуются из-за застоя мочи
+                            </p>
+                        </div>
+                        <div class="diary__check__content">
+                            <img src="img/urolog-img/4.svg" alt="" class="diary__check__img diary__check__count">
+                            <p class="section__block__text section__count__text">
+                                <span class="col-pink">Гематурия</span> (в моче присутствует видимая примесь крови) и вероятность закупорки сгустками мочевого пузыря. Видимая кровь в моче или обнаруженная гематурия в анализе мочи может появляться в результате кровотечения из тканей аденомы или из варикозно расширенных вен шейки мочевого пузыря
+                            </p>
+                        </div>
+                        <div class="diary__check__content">
+                            <img src="img/urolog-img/5.svg" alt="" class="diary__check__img diary__check__count">
+                            <p class="section__block__text section__count__text">
+                                <span class="col-pink">Острая почечная недостаточность,</span> которая проявляется резким ухудшением самочувствия и даже возможной потерей сознания, появлением отёков, резким сокращением мочеотделения. Острая почечная недостаточность может развиваться не только в течение нескольких дней, но и быстро, в течение нескольких часов
+                            </p>
+                        </div>
+                        <div class="section__content__block hospital__content__block">
+                            <p class="hospital__block__text section__block__text">
+                                При появлении подозрения на подобные ситуации, пожалуйста, немедленно обратитесь к врачу или вызовите скорую помощь.
+                            </p>
+                        </div>
+                        <div class="section__content__instruction hospital__content__instruction">
+                            <p class="section__instruction__text hospital__instruction__text">
+                                1.Урология. Российские клинические рекомендации / под ред. Ю. Г. Аляева, П. В. Глыбочко, Д. Ю. Пушкаря. — М. : ГЭОТАР-Медиа, 2016. — 496 с.
+                            </p>
+                            <p class="section__instruction__text hospital__instruction__text">
+                                2. https://gemotest.ru/info/spravochnik/zabolevaniya/adenoma-prostaty/?ysclid=lea3c34hfs573302330, дата последнего доступа 21.02.2023
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="impotent section">
+            <div class="container">
+                <div class="impotent__row row" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <div class="section__top impotent__top">
+                        <h3 itemprop="name" class="section__title impotent__title">Является ли импотенция симптомом аденомы простаты</h3>
+                        <img src="img/urolog-img/7.svg" class="section__flag__bottom" alt="">
+                    </div>
+                    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" class="section__content impotent__content">
+                        <div class="section__first__block impotent__content__block">
+                            <p class="impotent__block__text section__block__text" itemprop="text">
+                                Аденома предстательной железы может сопровождаться снижением сексуального влечения, преждевременным семяизвержением и нарушением потенции, которое ещё называют эректильной дисфункцией. Разросшаяся ткань предстательной железы может приводить к сдавлению кровеносных сосудов и нарушению кровоснабжения в ней и близлежащих органах. Нарушенное кровоснабжение полового члена может снижать эрекцию во время секса.
+                            </p>
+                        </div>
+                        <div class="section__content__block impotent__content__block">
+                            <p class="impotent__block__text section__block__text col-pink">
+                                Однако импотенция не является симптомом аденомы.
+                            </p>
+                        </div>
+                        <div class="section__content__block impotent__content__block">
+                            <p class="impotent__block__text section__block__text">
+                                В настоящее время доказано, что нарушение потенции у четверти мужчин имеет психологический характер, когда возникает страх или беспокойство перед половым актом. Стресс, психологические травмы, сокращение времени сна также могут повлиять на сексуальное здоровье.
+                            </p>
+                        </div>
+                        <div class="section__pink__block impotent__content__block">
+                            <p class="impotent__block__text section__pink__text">
+                                Помните, проблемы с потенцией можно решить. Главное вовремя обратиться к урологу. Правильно назначенная терапия может помочь устранить проявления аденомы простаты, и секс при аденоме простаты по-прежнему будет приносить удовольствие.
+                            </p>
+                        </div>
+                        <div class="section__content__instruction impotent__content__instruction">
+                            <p class="section__instruction__text impotent__instruction__text">
+                                1. Колотинский А.Б. Секс и аденома простаты. https://imsclinic.ru/seks-i-adenoma-prostaty/?ysclid=lea7g6cfeh54443048, дата последнего доступа 21.02.2023
+                            </p>
+                            <p class="section__instruction__text impotent__instruction__text">
+                                2. Диагностика и лечение эректильной дисфункции у больных доброкачественной гиперплазией предстательной железы. Калинина С.Н., Кореньков Д.Г. Андрология и генитальная хирургия, Том 17, 2016, с. 51–61.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="turn section">
+            <div class="container">
+                <div class="turn__row row" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <div class="section__top turn__top">
+                        <h3 itemprop="name" class="section__title turn__title">При каких симптомах стоит обратиться к урологу?</h3>
+                        <img src="img/urolog-img/7.svg" class="section__flag__bottom" alt="">
+                    </div>
+                    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" class="section__content turn__content">
+                        <div class="section__first__block turn__content__block">
+                            <p class="turn__block__text section__block__text">
+                                К урологу следует обратиться, если беспокоят<sup>1,2</sup> :
+                            </p>
+                        </div>
+                        <div class="section__content__list turn__content__list">
+                            <ul class="section__list">
+                                <li class="section__list__item">
+                                    <img src="img/urolog-img/8.svg" alt="" class="tell__check__img">
+                                    <p class="section__list__text" itemprop="text">
+                                        <span class="col-pink">Боль.</span> Болеть может низ живота, поясница, половые органы, внутренняя поверхность бедра;
+                                    </p>
+                                </li>
+                                <li class="section__list__item">
+                                    <img src="img/urolog-img/8.svg" alt="" class="tell__check__img">
+                                    <p class="section__list__text">
+                                        <span class="col-pink">Изменения наружных половых органов.</span> Например, необычная окраска, увеличение объёма мошонки, искривление полового члена;
+                                    </p>
+                                </li>
+                                <li class="section__list__item">
+                                    <img src="img/urolog-img/8.svg" alt="" class="tell__check__img">
+                                    <p class="section__list__text">
+                                        <span class="col-pink">Расстройства мочеиспускания.</span> К ним относятся учащённое или редкое, болезненное мочеиспускание. Также следует обращаться к специалисту, если приходиться вставать чаще 1 раза за ночь, чтобы помочиться, есть непроизвольное подтекание, затруднено опорожнение мочевого пузыря;
+                                    </p>
+                                </li>
+                                <li class="section__list__item">
+                                    <img src="img/urolog-img/8.svg" alt="" class="tell__check__img">
+                                    <p class="section__list__text">
+                                        <span class="col-pink">Изменение количества и вида мочи.</span> Моча не должна быть мутной, содержать слизь, хлопья, кровь. Её объём не должен беспричинно увеличиваться или уменьшаться;
+                                    </p>
+                                </li>
+                                <li class="section__list__item">
+                                    <img src="img/urolog-img/8.svg" alt="" class="tell__check__img">
+                                    <p class="section__list__text">
+                                        <span class="col-pink">Патологические выделения из уретры,</span> примеси в сперме. Никаких выделений из уретры в норме быть не должно. Слизистое или гнойное отделяемое — симптом заболевания. К урологу необходимо обратиться при болезненной эякуляции, наличии прожилок крови в сперме
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="section__content__instruction turn__content__instruction">
+                            <p class="section__instruction__text turn__instruction__text">
+                                1. Васильева Е.А. Семиотика и симптоматология урологических заболеваний: уч.-метод. пособие / Е.А. Васильева, Е.П. Шурыгина; ГБОУ ВПО УГМУ Минздрава России. — Екатеринбург: Издательство УГМУ, 2016. — 56 с.
+                            </p>
+                            <p class="section__instruction__text turn__instruction__text">
+                                2. Урология: учебник / Б.К. Комяков. — 2012. — 464 с.: ил., гл.3.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="last section">
+            <div class="container">
+                <div class="last__row row" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <div class="section__top last__top">
+                        <h3 itemprop="name" class="section__title last__title">Стоит ли обращаться к урологу, если ничего
+                            не беспокоит?</h3>
+                        <img src="img/urolog-img/7.svg" class="section__flag__bottom" alt="">
+                    </div>
+                    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" class="section__content last__content">
+                        <div class="section__first__block last__content__block">
+                            <p class="last__block__text section__block__text">
+                                На частоту посещения уролога влияют несколько факторов: возраст мужчины, образ жизни, наличие жалоб.
+                            </p>
+                        </div>
+                        <div class="section__content__block last__content__block">
+                            <p class="last__block__text section__block__text">
+                                С 20 до 45 лет мужчины зачастую обращаются к урологу-андрологу с половыми инфекциями (ИППП). Если есть хронические заболевания мочеполовых органов, то осмотры проводятся по графику, рекомендованному врачом, но не реже 1 раза в год.
+                            </p>
+                        </div>
+                        <div class="section__pink__block last__content__block">
+                            <p class="last__block__text section__pink__text" itemprop="text">
+                                Даже если никакие симптомы не беспокоят, урологи-андрологи советуют молодым мужчинам профилактически обследоваться хотя бы раз в 3 года. Особенно внимательно следует отнестись к этой рекомендации людям с малоподвижным образом жизни, лишним весом, вредными привычками, сопутствующими болезнями.
+                            </p>
+                        </div>
+                        <div class="section__content__block last__content__block">
+                            <p class="last__block__text section__block__text col-blue">
+                                В возрасте от 40 до 45 лет стоит пройти первое развёрнутое обследование предстательной железы:
+                            </p>
+                        </div>
+                        <div class="diary__check__content last__check__content">
+                            <img src="img/urolog-img/3.svg" alt="" class="diary__check__img diary__check__count">
+                            <p class="section__block__text section__count__text">
+                                Пальцевое ректальное исследование;
+                            </p>
+                        </div>
+                        <div class="diary__check__content last__check__content">
+                            <img src="img/urolog-img/4.svg" alt="" class="diary__check__img diary__check__count">
+                            <p class="section__block__text section__count__text">
+                                Ультразвуковое исследование простаты датчиком через живот или прямую кишку (трансабдоминально или трансректально);
+                            </p>
+                        </div>
+                        <div class="diary__check__content last__check__content">
+                            <img src="img/urolog-img/5.svg" alt="" class="diary__check__img diary__check__count">
+                            <p class="section__block__text section__count__text">
+                                Анализ крови на простат-специфический антиген (ПСА).
+                            </p>
+                        </div>
+                        <div class="section__content__block last__content__block">
+                            <p class="last__block__text section__block__text">
+                                Такой скрининг выявляет заболевания предстательной железы на ранней стадии, когда их лечение даёт наилучшие результаты.
+                            </p>
+                        </div>
+                        <div class="section__content__block last__content__block">
+                            <p class="last__block__text section__block__text">
+                                После 40–45 лет осматриваться уролога для профилактики нужно ежегодно. К этому возрасту возрастает риск мочеполовых заболеваний, и важно их не пропустить.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="psa section">
+            <div class="container">
+                <div class="psa__row row" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <div class="section__top psa__top">
+                        <h3 itemprop="name" class="section__title psa__title">Что такое анализ крови на ПСА?</h3>
+                        <img src="img/urolog-img/7.svg" class="section__flag__bottom" alt="">
+                    </div>
+                    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" class="section__content psa__content">
+                        <div class="section__first__block psa__content__block">
+                            <p class="psa__block__text section__block__text">
+                                Благодаря анализу крови на ПСА возможно выявить рак простаты на начальных стадиях.
+                            </p>
+                        </div>
+                        <div class="section__pink__block psa__content__block">
+                            <p class="psa__block__text section__pink__text" itemprop="text">
+                                Простатический специфический антиген — это белок, который вырабатывается и накапливается в предстательной железе. В сыворотке крови он содержится в очень малых количествах и не превышает в норме 4 нг/мл1.
+                            </p>
+                        </div>
+                        <div class="section__content__block psa__content__block">
+                            <p class="psa__block__text section__block__text">
+                                Если концентрация ПСА в крови повышается, это может быть признаком заболеваний предстательной железы<sup>1</sup>:
+                            </p>
+                        </div>
+                        <div class="section__content__list psa__content__list">
+                            <ul class="section__list">
+                                <li class="section__list__item">
+                                    <img src="img/urolog-img/8.svg" alt="" class="tell__check__img">
+                                    <p class="section__list__text" itemprop="text">
+                                        рака,
+                                    </p>
+                                </li>
+                                <li class="section__list__item">
+                                    <img src="img/urolog-img/8.svg" alt="" class="tell__check__img">
+                                    <p class="section__list__text">
+                                        аденомы,
+                                    </p>
+                                </li>
+                                <li class="section__list__item">
+                                    <img src="img/urolog-img/8.svg" alt="" class="tell__check__img">
+                                    <p class="section__list__text">
+                                        простатита,
+                                    </p>
+                                </li>
+                                <li class="section__list__item">
+                                    <img src="img/urolog-img/8.svg" alt="" class="tell__check__img">
+                                    <p class="section__list__text">
+                                        ишемии или инфаркта простаты.
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="section__content__block psa__content__block">
+                            <p class="psa__block__text section__block__text">
+                                Причина, из-за которой уровень маркера в сыворотке растёт при заболеваниях простаты, — это увеличение проницаемости кровеносных сосудов в органе. При этом ПСА из тканей «пропотевает» через сосудистую стенку и попадает в общий кровоток<sup>1</sup>.
+                            </p>
+                        </div>
+                        <div class="section__content__block psa__content__block">
+                            <p class="psa__block__text section__block__text">
+                                Риск рака предстательной железы увеличивается с возрастом. В России анализ начинают проводить мужчинам с возраста 45 лет в рамках всеобщей диспансеризации взрослого населения. Далее скрининг проводится каждые 5 лет, то есть в 50, 55, 60 и прекращается в 64 года<sup>2</sup>.
+                            </p>
+                        </div>
+                        <div class="section__content__instruction psa__content__instruction">
+                            <p class="section__instruction__text psa__instruction__text">
+                                1. Сергеева Н.С., Скачкова Т.Е. и соавт. Клиническая значимость ПСА-ассоциированных тестов в диагностике и стадировании рака предстательной железы. Онкология. Журнал им. П.А. Герцена. 2018;7(1):55-67.
+                            </p>
+                            <p class="section__instruction__text turn__instruction__text">
+                                2. Катибов М.И. Скрининг рака предстательной железы: современное состояние проблемы. Экспериментальная и клиническая урология. 2020; 12 (2): 68-76.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__row">
+                <div class="footer__top">
+                    <img src="img/logo-footer.png.svg" alt="">
+                    <p class="footer__top__text ">
+                        18+
+                    </p>
+                </div>
+                <div class="footer__main">
+                    <div class="footer__main__block">
+                        <a href="https://uro-info.ru/zabolevanie/" class="footer__main__link_l">Заболевания</a>
+                        <a href="https://uro-info.ru/zabolevanie/gmp/" class="footer__main__link">ГМП</a>
+                        <a href="https://uro-info.ru/zabolevanie/cistit/" class="footer__main__link">Цистит</a>
+                        <a href="https://uro-info.ru/zabolevanie/prostatit/" class="footer__main__link">Простатит</a>
+                        <a href="https://uro-info.ru/zabolevanie/adenoma/" class="footer__main__link">Аденома
+                            простаты</a>
+                        <a href="https://uro-info.ru/zabolevanie/rpz/" class="footer__main__link">Рак предстательной
+                            железы</a>
+                    </div>
+
+                    <div class="footer__main__block">
+                        <a href="https://uro-info.ru/tests/" class="footer__main__link_l">Проверьте себя</a>
+                        <a href="https://uro-info.ru/tests/mezhdunarodnaya-sistema-summarnoy-otsenki-zabolevaniy-predstatelnoy-zhelezy-v-ballakh-ipss-/"
+                           class="footer__main__link">Международная система <br> суммарной оценки заболеваний
+                            <br> предстательной железы в баллах <br> (IPSS)</a>
+                        <a href="https://uro-info.ru/tests/oprosnik-dlya-otsenki-simptomov-giperaktivnogo-mochevogo-puzyrya/"
+                           class="footer__main__link">Опросник для оценки симптомов <br> гиперактивного мочевого пузыря</a>
+                        <a href="https://uro-info.ru/tests/ekspress-diagnostika-tipov-nederzhaniya-mochi/"
+                           class="footer__main__link">Экспресс-диагностика <br> типов недержания мочи</a>
+                        <a href="https://uro-info.ru/diary/" class="footer__main__link">Дневник мочеиспускания</a>
+                    </div>
+
+                    <div class="footer__main__block">
+                        <a href="https://uro-info.ru/about-us/" class="footer__main__link_l">О компании</a>
+                        <a href="https://uro-info.ru/voprosy-urologu/" class="footer__main__link_l">Вопросы урологу</a>
+                        <a href="https://uro-info.ru/istorii-pacientov/" class="footer__main__link_l">Истории
+                            пациентов</a>
+                        <a href="https://uro-info.ru/articles/" class="footer__main__link_l">Статьи</a>
+                        <a href="https://uro-info.ru/video/" class="footer__main__link_l">Видео</a>
+                        <a href="https://uro-info.ru/specTest/" class="footer__main__link_l">Раздел для специалистов</a>
+                    </div>
+
+                    <div id="footer__right" class="footer__main__block">
+                        <a href="https://uro-info.ru/politika_konfidentsialnosti/" class="footer__main__link_l">Политика
+                            конфиденциальности</a>
+                        <a href="https://uro-info.ru/map/" class="footer__main__link_l">Карта туалетов</a>
+                        <a href="https://uro-info.ru/map-clinics/" class="footer__main__link_l">Карта поликлиник</a>
+                        <a href="https://uro-info.ru/sitemap/" class="footer__main__link_l">Карта сайта</a>
+                    </div>
+                </div>
+                <div class="footer__bottom">
+                    <p class="footer__bottom__title">
+                        Сайт (www.uro-info.ru) (далее- «Сайт») является собственностью Общества с ограниченной
+                        ответственностью «Астеллас Фарма Продакшен». Адрес: 109147, Россия, г. Москва, Марксистская, 16.
+                        Информация на Сайте носит информационный характер и не содержит персональных данных. Общество с
+                        ограниченной ответственностью «Астеллас Фарма Продакшен» не обрабатывает персональные данные
+                        посредством Сайта. Запрещается любое копирование Сайта и материалов, размещённых на Сайте, без
+                        разрешения собственника – Общества с ограниченной ответственностью «Астеллас Фарма Продакшен».
+                        Информация на Сайте разработана при поддержке Общества с ограниченной ответственностью «Астеллас
+                        Фарма Продакшен» в целях повышения осведомленности пациентов о своём заболевании.
+                    </p>
+
+                    <p class="footer__bottom__text">
+                        Информация на сайте не заменяет консультацию специалиста здравоохранения. Имеются
+                        противопоказания, обратитесь к лечащему врачу.
+                    </p>
+                </div>
+
+                <div class="footer__hide">
+                    <button class="footer__hide__button"><img src="img/footer.png" alt=""></button>
+                    <div class="footer__hide__panel">
+                        <p class="footer__bottom__title">
+                            Сайт (www.uro-info.ru) (далее- «Сайт») является собственностью Общества с ограниченной
+                            ответственностью «Астеллас Фарма Продакшен». Адрес: 109147, Россия, г. Москва, Марксистская,
+                            16. Информация на Сайте носит информационный характер и не содержит персональных данных.
+                            Общество с ограниченной ответственностью «Астеллас Фарма Продакшен» не обрабатывает
+                            персональные данные посредством Сайта. Запрещается любое копирование Сайта и материалов,
+                            размещённых на Сайте, без разрешения собственника – Общества с ограниченной ответственностью
+                            «Астеллас Фарма Продакшен». Информация на Сайте разработана при поддержке Общества с
+                            ограниченной ответственностью «Астеллас Фарма Продакшен» в целях повышения осведомленности
+                            пациентов о своём заболевании.
+                        </p>
+
+                        <p class="footer__bottom__text">
+                            Информация на сайте не заменяет консультацию специалиста здравоохранения. Имеются
+                            противопоказания, обратитесь к лечащему врачу.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+<script src="js/jquery-3.6.1.min.js"></script>
+<script src="js/app.js"></script>
+<script src="js/mobile.js"></script>
+</body>
+</html>
