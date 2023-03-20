@@ -545,6 +545,10 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     font-size: 12px;
 }
 
+.section__pink__text > sup {
+    font-size: 12px;
+}
+
 .section__block__text.section__count__text {
     width: 950px;
 }
