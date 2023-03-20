@@ -575,6 +575,12 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     display: inline-block;
 }
 
+.section__content__link:hover {
+    transition: all 0.3s;
+    background: rgba(185, 45, 45, 0.8);
+    color: #F9F9F9;
+}
+
 .section__content__instruction {
     padding: 12px 0;
     border-top: 1px solid rgba(51, 88, 117, 0.25);
