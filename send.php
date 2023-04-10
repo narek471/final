@@ -1,12 +1,19 @@
 <?php
+if (isset($_POST['submit'])) {
+    $to = "n-ginosyan@mail.ru"; // replace with your email address
+    $subject = "New Form Submission";
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $message = $_POST['message'];
 
-    $to      = 'n-ginosyan@mail.ru';
-    $subject = 'the subject';
-    $message = 'hello';
-    $headers = 'From: webmaster@example.com'       . "\r\n" .
-                 'Reply-To: webmaster@example.com' . "\r\n" .
-                 'X-Mailer: PHP/' . phpversion();
+    $headers = "From: $name <$email>" . "\r\n" .
+               "Reply-To: $email" . "\r\n" .
+               "X-Mailer: PHP/" . phpversion();
 
-    mail($to, $subject, $message, $headers);
-
-    ?>
+    if (mail($to, $subject, $message, $headers)) {
+        echo "Thank you for your message!";
+    } else {
+        echo "Sorry, there was an error sending your message.";
+    }
+}
+?>
