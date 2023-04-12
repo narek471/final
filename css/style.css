@@ -1,0 +1,1614 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+@font-face {
+    font-family: 'Tilda Sans';
+    src: url('../fonts/TildaSans-Light.eot');
+    src: url('../fonts/TildaSans-Light.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/TildaSans-Light.woff2') format('woff2'),
+    url('../fonts/TildaSans-Light.woff') format('woff'),
+    url('../fonts/TildaSans-Light.ttf') format('truetype'),
+    url('../fonts/TildaSans-Light.svg#TildaSans-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Tilda Sans';
+    src: url('../fonts/TildaSans-Bold.eot');
+    src: url('../fonts/TildaSans-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/TildaSans-Bold.woff2') format('woff2'),
+    url('../fonts/TildaSans-Bold.woff') format('woff'),
+    url('../fonts/TildaSans-Bold.ttf') format('truetype'),
+    url('../fonts/TildaSans-Bold.svg#TildaSans-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+
+body {
+    color: #000000;
+    background: #F9F9F9;
+    line-height: 29px;
+    font-size: 23px;
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+}
+
+.wrapper {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.container {
+    width: 100%;
+    max-width: 1270px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.header {
+    width: 100%;
+    position: relative;
+}
+
+.header__row {
+    width: 94%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.header__top {
+    width: 100%;
+    position: relative;
+    padding: 14px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #dcdcdc;
+}
+
+.header__top__left {
+    width: 40%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__top__logo {
+    width: 212px;
+    height: 45px;
+    object-fit: cover;
+}
+
+.header__top__text {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 22px;
+    height: 45px;
+}
+
+.header__top__right {
+    width: 51%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.header__right__star {
+    width: 20%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
+    color: #000;
+}
+
+.header__star__text {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 24px;
+    color: #666666;
+}
+
+.header__right__text {
+    font-weight: 900;
+    font-size: 45px;
+    line-height: 54px;
+    color: #D5D5D5;
+}
+
+.header__search {
+    width: 80%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.header__search > input {
+    width: 380px;
+    height: 40px;
+    background: #FFFFFF;
+    border: 1px solid #DCDCDC;
+    border-radius: 50px;
+    font-size: 15px;
+    padding: 0 50px 0 15px;
+}
+
+.header__search > input:focus {
+    outline: 0;
+}
+
+
+.header__search__mobile {
+    width: 10%;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+
+.header__search__mobile > input {
+    width: 0;
+    height: 40px;
+    background-color: #F9F9F9;
+    border: none;
+    border-radius: 50px;
+    font-size: 15px;
+}
+
+.header__search > input:focus {
+    outline: 0;
+}
+
+input[type=search]::-ms-clear { display: none; width : 0; height: 0; }
+input[type=search]::-ms-reveal { display: none; width : 0; height: 0; }
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration { display: none; }
+
+.header__button {
+    position: absolute;
+    right: 7%;
+    top: 20%;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.header__button img  {
+    width: 23px;
+    height: 23px;
+    opacity: 0.8;
+}
+
+.header__button__mobile {
+    position: absolute;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.header__button__mobile img  {
+    width: 23px;
+    height: 23px;
+    opacity: 0.8;
+}
+
+.header__menu {
+    width: 100%;
+    position: relative;
+}
+
+.nav__list {
+    width: 100%;
+    position: relative;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 15px;
+    padding: 0 10px 15px;
+}
+
+.nav__list__link {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.nav__list__item {
+    position: relative;
+}
+
+.dropdown__menu__img {
+    width: 35px;
+    object-fit: cover;
+}
+
+.dropdown__menu__img2 {
+    width: 32px;
+    object-fit: cover;
+}
+
+.dropdown__menu__img3 {
+    width: 26px;
+    object-fit: cover;
+    margin-left: 3px;
+}
+
+.dropdown__menu__img4 {
+    width: 23px;
+    object-fit: cover;
+    margin-left: 3px;
+}
+
+#text2 {
+    margin-left: 20px;
+    padding: 10px 0;
+}
+
+#text3 {
+    margin-left: 21px;
+    padding: 10px 0;
+}
+
+#text4 {
+    margin-left: 24px;
+    padding: 10px 0;
+}
+
+#text5 {
+    margin-left: 23px;
+    padding: 10px 0;
+}
+
+#text6 {
+    margin-left: 23px;
+    padding: 10px 0;
+}
+
+#text7 {
+    margin-left: 23px;
+    padding: 10px 0;
+}
+
+.menu__item {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 20px;
+    color: #799fbb;
+    margin-top: 5px;
+}
+
+.menu__item:hover {
+    color: #dd99a1;
+}
+
+.menu__list__img {
+    object-fit: cover;
+}
+
+.menu__dropdown__first {
+    display: inline-block;
+}
+
+#dropdown3 {
+    top: 130px;
+}
+
+
+.menu__dropdown__content {
+    display: none;
+    position: absolute;
+    top: 110px;
+    background-color: white;
+    min-width: 350px;
+    border-radius: 12px;
+    z-index: 1;
+    list-style-type: none;
+    -webkit-box-shadow: 5px 5px 15px 11px rgba(104,104,104,0.13);
+    box-shadow: 5px 5px 15px 11px rgba(104,104,104,0.13);
+}
+
+#dropdown2 {
+    width: 420px;
+}
+
+#menu9 {
+    width: 45px;
+}
+
+.menu__dropdown__item {
+    position: relative;
+    padding: 0 16px 0 0;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.19);
+}
+
+.menu__dropdown__item:last-child {
+    border-bottom: 0;
+}
+
+.menu__dropdown__link {
+    text-decoration: none;
+    position: relative;
+    color: #799fbb;
+    display: flex;
+    padding: 10px 0 10px 20px;
+    font-size: 17px;
+    line-height: 22px;
+    align-items: center;
+}
+
+.menu__dropdown__link:hover {
+    color: #dd99a1;
+}
+
+.menu__dropdown__link > p {
+    margin-left: 10px;
+}
+
+.nav__list__item:hover .menu__dropdown__content {
+    display: block;
+}
+
+.dropdown__img {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: 30px;
+}
+
+#dropdown__img {
+    bottom: 10px;
+}
+
+.fixed__menu {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: auto;
+    width: 100%;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.18);
+    background-color: #F9F9F9;
+    z-index: 10;
+}
+
+.container__hide {
+    max-width: 1165px;
+    margin: 0 auto;
+}
+
+.header__bottom {
+    width: 100%;
+    position: relative;
+    margin-top: 53px;
+    margin-left: 2px;
+}
+
+.header__logo__link {
+    text-decoration: none;
+}
+
+.header__bottom__link {
+    display: inline-block;
+    color: #666666;
+    font-size: 15px;
+}
+
+.header__row > .header__bottom__margin {
+    margin-top: 214px;
+}
+
+.header__bottom__text {
+    display: inline-block;
+    color: #666666;
+    font-size: 15px;
+}
+
+.header__bottom__text > a {
+    color: #666666;
+    font-size: 15px;
+}
+
+#header__br {
+    display: none;
+}
+
+/************* Main *************/
+
+.main {
+    width: 100%;
+    position: relative;
+    padding-bottom: 110px;
+}
+
+/************* Base **************/
+
+.section {
+    width: 100%;
+    position: relative;
+    margin-top: 20px;
+}
+
+.row {
+    width: 100%;
+    position: relative;
+    display: flex;
+    padding-left: 35px;
+}
+
+.section__top {
+    width: 100%;
+    position: relative;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    padding: 30px 61px;
+    border-radius: 15px;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.section__title {
+    font-family: 'Tilda Sans', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    color: #254660;
+}
+
+.section__top.border__row {
+    border-radius: 15px 15px 0 0 ;
+}
+
+.section__content {
+    padding: 0 61px 30px 61px;
+    background-color: #fff;
+    border-radius: 0 0 15px 15px;
+    display: none;
+    transition: all 0.4s ease;
+}
+
+.section__first__block {
+    width: 100%;
+    padding-top: 30px;
+    position: relative;
+    border-top: 2px solid #F05555;
+    margin-bottom: 20px;
+}
+
+.section__pink__block {
+    width: 100%;
+    position: relative;
+    padding: 30px;
+    background: rgba(240, 85, 85, 0.2);
+    border-radius: 16px;
+    margin-bottom: 20px;
+}
+
+.section__content__block {
+    width: 100%;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.section__flag__top {
+    transform: rotate(180deg);
+    transition: all 0.4s ease;
+}
+
+.section__flag__bottom {
+    transition: all 0.4s ease;
+}
+
+.section__block__text {
+    width: 1048px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    color: #254660;
+}
+
+.section__block__text > sup {
+    font-size: 12px;
+}
+
+.section__pink__text > sup {
+    font-size: 12px;
+}
+
+.section__list__text > sup {
+    font-size: 12px;
+}
+
+.section__block__text.section__count__text {
+    width: 950px;
+}
+
+.section__pink__text {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    color: #254660;
+}
+
+.section__content__link {
+    padding: 20px 45px;
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    background: #F05555;
+    border-radius: 15px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.section__content__link:hover {
+    transition: all 0.3s;
+    background: rgba(185, 45, 45, 0.8);
+    color: #F9F9F9;
+}
+
+.section__content__instruction {
+    padding: 12px 0;
+    border-top: 1px solid rgba(51, 88, 117, 0.25);
+    margin-top: 20px;
+}
+
+.section__instruction__text {
+    width: 1048px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    color: rgba(51, 88, 117, 0.35);
+    margin-bottom: 10px;
+}
+
+.section__list__item {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.section__list__text {
+    width: 1000px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    color: #254660;
+}
+
+.col-pink {
+    color: #F05555;
+    font-weight: 600;
+}
+
+.col-blue {
+    font-weight: 600;
+    color: #254660;
+}
+
+sup {
+    white-space: nowrap;
+}
+
+.instruction__hide__br {
+    display: none;
+}
+
+/********************************/
+
+.urolog.section {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.urolog__row {
+    flex-direction: row;
+}
+
+.urolog__right {
+    margin-left: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.urolog__title {
+    font-family: 'Tilda Sans', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 45px;
+    color: #F05555;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.urolog__text {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 140%;
+    color: #254660;
+    width: 755px;
+    margin-top: 10px;
+}
+
+.ipss__row {
+    flex-direction: column;
+}
+
+.diary__row {
+    flex-direction: column;
+}
+
+.diary__check__block {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.diary__check__content {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.diary__check__img {
+    margin-right: 15px;
+}
+
+.tell__row {
+    flex-direction: column;
+}
+
+.tell__check__img {
+    margin-right: 15px;
+    margin-top: 8px;
+}
+
+.different__row {
+    flex-direction: column;
+}
+
+.different__content__cols {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.different__half__block {
+    width: 490px;
+    background: rgba(240, 85, 85, 0.2);
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.different__half__title {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 23px;
+    margin-bottom: 20px;
+    color: #F05555;
+}
+
+.different__half__text {
+    width: 444px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 140%;
+    color: #254660;
+}
+
+.different__half__text > a {
+    text-decoration: none;
+    border-bottom: 1px solid #F05555;
+}
+
+.accept__row {
+    flex-direction: column;
+}
+
+.operation__row {
+    flex-direction: column;
+}
+
+.symptoms__row {
+    flex-direction: column;
+}
+
+.adenom__row {
+    flex-direction: column;
+}
+
+.recommendations__row {
+    flex-direction: column;
+}
+
+.special__row {
+    flex-direction: column;
+}
+
+.hospital__row {
+    flex-direction: column;
+}
+
+.impotent__row {
+    flex-direction: column;
+}
+
+.turn__row {
+    flex-direction: column;
+}
+
+.turn__block__text > sup {
+    font-size: 12px;
+}
+
+.last__row {
+    flex-direction: column;
+}
+
+.last__check__content.diary__check__content {
+    align-items: center;
+}
+
+.psa__row {
+    flex-direction: column;
+}
+
+.diet__row {
+    flex-direction: column;
+}
+
+.diet__check__content.diary__check__content {
+    align-items: center;
+}
+
+.tell__check__img.diet__check__img {
+    margin-top: 11px;
+}
+
+#diet-check-sup {
+    margin-top: 14px;
+}
+
+.mode__row {
+    flex-direction: column;
+}
+
+.alcohol__row {
+    flex-direction: column;
+}
+
+.observation__row {
+    flex-direction: column;
+}
+
+.uzi__row {
+    flex-direction: column;
+}
+
+.uzi__block__text {
+    width: 985px;
+}
+
+.danger__row {
+    flex-direction: column;
+}
+
+.phytotherapy__row {
+    flex-direction: column;
+}
+
+.pro__row {
+    flex-direction: column;
+}
+
+.visit__row {
+    flex-direction: column;
+}
+
+/*************** Footer ***************/
+
+.footer {
+    width: 100%;
+    position: relative;
+    background: #727272;
+}
+
+.footer__row {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 0 30px;
+}
+
+.footer__top {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 45px 0;
+    border-bottom: 1px solid #fff;
+}
+
+.footer__top__text {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 55px;
+    color: #fff;
+    padding: 1px 6px;
+    background-color: #A0A0A0;;
+}
+
+.footer__main {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 15px 0 40px 0;
+}
+
+.footer__main__block {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+#footer__right {
+    margin-right: 70px;
+}
+
+.footer__main__link {
+    text-decoration: none;
+    color: #ffffff;
+    margin-top: 13px;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+}
+
+.footer__main__link_l {
+    color: #ffffff;
+    margin-top: 13px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.footer__bottom {
+    width: 100%;
+    position: relative;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    padding: 35px 0 40px;
+}
+
+.footer__bottom__title {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #ffffff;
+}
+
+.footer__bottom__text {
+    font-weight: 400;
+    font-size: 29px;
+    line-height: 39px;
+    color: #ACACAB;
+    margin-top: 30px;
+    text-transform: uppercase;
+}
+
+.footer__hide {
+    display: none;
+}
+
+.footer__hide__button {
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: center;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    background: #727272;
+}
+
+.footer__hide__button img {
+    width: 75px;
+}
+
+.footer__hide__panel {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    text-align: center;
+}
+
+.navbar__mobile {
+    display: none;
+}
+
+.popup__mobile {
+    display: none;
+}
+
+.analysis__dead__img1 {
+    display: none;
+}
+
+/*************** Media ***************/
+
+@media only screen and (max-width: 1270px) {
+    body {
+        font-size: 21px;
+        line-height: 24px;
+    }
+
+    .header__top__logo {
+        width: 180px;
+        height: unset;
+    }
+
+    .header__top__text {
+        font-size: 15px;
+    }
+
+    .header__top__left {
+        width: 43%;
+    }
+
+    .can__right__img {
+        width: 500px;
+    }
+
+}
+
+@media only screen and (max-width: 1200px) {
+    .urolog__text {
+        font-size: 18px;
+        width: 670px;
+    }
+
+    .urolog__left > img {
+        width: 350px;
+    }
+
+    .section__instruction__text,
+    .section__block__text {
+        width: 100%;
+    }
+
+    .different__half__block {
+        width: 48%;
+        padding: 20px;
+    }
+
+    .different__half__text {
+        width: 100%;
+    }
+
+    .br-urolog-hide {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .urolog__text {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 1006px) {
+
+    .navbar__mobile {
+        position: relative;
+        display: flex;
+        padding-bottom: 4px;
+    }
+
+    .header__top__right {
+        position: absolute;
+        width: 107%;
+        right: -30px;
+        z-index: 100;
+        margin-right: 0;
+    }
+
+    .header__search {
+        width: 88%;
+        right: -96px;
+    }
+
+    .header__logo__link {
+        position: absolute;
+        left: 45px;
+        top: 0;
+    }
+
+    .navbar__wrap__mobile {
+        display: flex;
+        justify-content: space-between;
+        height: 100%;
+    }
+
+
+    .navbar__wrap__mobile .menu__mobile > li > a {
+        display: flex;
+        align-items: center;
+        padding: 0 20px;
+        color: rgba(255, 255, 255, 0.7);
+    }
+
+    #dropdown__mobile4 > li > a,
+    #dropdown__mobile3 > li > a,
+    #dropdown__mobile2 > li > a,
+    #dropdown__mobile1 > li > a {
+        width: 100%;
+        display: flex;
+        padding: 8px 5% 10px;
+        font-size: 17px;
+        color: #799fbb;
+        text-decoration: none;
+        background-color: #fff;
+    }
+
+    #dropdown__mobile4 > li,
+    #dropdown__mobile3 > li,
+    #dropdown__mobile2 > li,
+    #dropdown__mobile1 > li{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid rgba(128, 128, 128, 0.2);
+    }
+
+    #img1,
+    #img2,
+    #img3,
+    #img4
+    {
+        margin-right: 5%;
+        height: 8px;
+        transform: rotate(270deg);
+    }
+
+    .img__rotate {
+        transform: rotate(0deg) !important;
+    }
+    
+    .mobile__dropdown__active {
+        color: #dd99a1 !important;
+    }
+
+    .navbar__wrap__mobile .menu__mobile {
+        display: none;
+    }
+
+    .hamb__mobile {
+        display: flex;
+        align-items: center;
+    }
+
+    .hamb__field__mobile {
+        cursor: pointer;
+    }
+
+    .bar__mobile {
+        display: block;
+        width: 30px;
+        height: 3px;
+        margin: 6px auto;
+        background-color: #333;
+        transition: 0.2s;
+    }
+
+    .popup {
+        border: 3px solid rgba(115, 162, 225, 1);
+    }
+
+    .popup::before {
+        display: none;
+    }
+
+    .popup__mobile {
+        position: absolute;
+        top: 96px;
+        left: -300%;
+        width: 270%;
+        background-color: #F9F9F9;
+        z-index: 100;
+        display: flex;
+        border-bottom: 1px solid rgba(128, 128, 128, 0.2);
+    }
+
+    .popup__mobile.open {
+        left: -17%;
+    }
+
+    .popup__mobile .menu__mobile {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 10px 0;
+        overflow: auto;
+    }
+
+    .popup__mobile .menu__mobile > li {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-top: 1px solid rgba(128, 128, 128, 0.2);
+    }
+
+    .popup__mobile .menu__mobile > li > a {
+        width: 100%;
+        display: flex;
+        padding: 8px 5% 10px;
+        font-size: 17px;
+        color: #799fbb;
+        text-decoration: none;
+    }
+
+    .popup__mobile .menu__mobile > li > img {
+        margin-right: 30px;
+        height: 15px;
+    }
+
+    .hamb__field__mobile.active .bar__mobile:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamb__field__mobile.active .bar__mobile:nth-child(1) {
+        transform: translateY(9px) rotate(45deg);
+    }
+
+    .hamb__field__mobile.active .bar__mobile:nth-child(3) {
+        transform: translateY(-9px) rotate(-45deg);
+    }
+
+    .header__menu {
+        display: none;
+    }
+
+    .fixed__menu {
+        display: none;
+    }
+
+    .header__search {
+        display: none;
+        position: absolute;
+        width: 144%;
+        right: 0;
+        z-index: 100;
+    }
+
+    .header__search > input {
+        width: 300%;
+        left: 20%;
+        height: 45px;
+    }
+
+    .header__search__mobile {
+        display: flex;
+    }
+
+    .header__top {
+        padding: 14px 0 60px;
+    }
+
+    .header__top__text {
+        position: absolute;
+        width: 250%;
+        top: 45px;
+        text-align: center;
+        font-size: 17px;
+    }
+
+    .header__row > .header__bottom__margin {
+        margin-top: 53px;
+    }
+
+    .header__right__text {
+        font-size: 32px;
+    }
+
+    .header__top__text > br {
+        display: none;
+    }
+
+    .header__top__right {
+        width: 175px;
+        margin-right: 10%;
+        margin-top: -3px;
+    }
+
+    .header__top__text > #header__br {
+        display: block;
+    }
+
+    .popup__text {
+        width: 110%;
+    }
+
+    .podcast__link {
+        width: 760px;
+    }
+
+    .footer__main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer__main__block {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        margin-top: 5%;
+        text-align: center;
+    }
+
+    #footer__right {
+        margin-right: 0;
+    }
+}
+
+@media only screen and (max-width: 901px) {
+
+    .row {
+        padding-left: 20px;
+    }
+
+    .urolog__row {
+        flex-direction: column-reverse;
+    }
+
+    .urolog__right {
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+
+    .different__content__cols {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .different__half__block {
+        margin-bottom: 20px;
+        width: 400px;
+    }
+}
+
+@media only screen and (max-width: 641px) {
+    body {
+        font-size: 19px;
+    }
+
+    .hide__br {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 510px) {
+    body {
+        font-size: 18px;
+    }
+
+    .header__bottom__text,
+    .header__bottom__text > a,
+    .header__bottom__link {
+        font-size: 13px;
+    }
+
+    .analysis__blood {
+        min-width: 450px;
+    }
+
+    #bottom__br {
+        display: block;
+    }
+
+    .footer__main {
+        display: none;
+    }
+
+    .footer__top {
+        flex-direction: column;
+    }
+
+    .footer__top__text {
+        margin-top: 40px;
+    }
+
+    .footer__hide {
+        display: block;
+        background: #727272;
+        padding-bottom: 20px;
+    }
+
+    .footer__bottom {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+
+    .row {
+        padding-left: 5px;
+    }
+
+    .section__top {
+        padding: 15px 20px 10px;
+    }
+
+    .section__content {
+        padding: 10px 20px;
+    }
+
+    .section__pink__text,
+    .section__block__text {
+        font-size: 16px;
+    }
+
+    .section__title {
+        font-size: 20px;
+    }
+
+    .section__pink__block {
+        padding: 10px;
+    }
+
+    .section__content__link {
+        font-size: 14px;
+        padding: 10px 12px;
+    }
+
+    .section__instruction__text {
+        font-size: 10px;
+    }
+
+    .section__list__text {
+        font-size: 16px;
+        width: 100%;
+    }
+
+    .diary__check__img {
+        width: 15px;
+        margin-right: 5px;
+        margin-top: 5px;
+    }
+
+    .diary__check__img.diary__check__count {
+        width: 25px;
+        margin-top: 0;
+    }
+
+    .tell__check__img {
+        margin-right: 5px;
+        margin-top: 8px;
+        width: 7px;
+    }
+
+    .urolog.section {
+        margin-top: 20px;
+    }
+
+    .urolog__title {
+        font-size: 30px;
+    }
+
+    .urolog__text {
+        font-size: 16px;
+    }
+
+    .urolog__left > img {
+        width: 320px;
+    }
+
+    .different__half__block {
+        width: 300px;
+    }
+
+    .different__half__title {
+        font-size: 20px;
+    }
+
+    .different__half__text {
+        font-size: 15px;
+        width: 100%;
+    }
+
+    .last__check__content.diary__check__content {
+        align-items: flex-start;
+    }
+
+    .instruction__hide__br {
+        display: block;
+    }
+
+    .diet__check__img.tell__check__img {
+        margin-top: 9px;
+    }
+
+    #diet-check-sup {
+        margin-top: 8px;
+    }
+
+    .diet__check__content.diary__check__content {
+        align-items: flex-start;
+    }
+
+}
+
+@media only screen and (max-width: 490px) {
+
+    .header__star__text {
+        display: none;
+    }
+
+    .header__top__right {
+        width: 150px;
+        margin-right: 5% !important;
+        margin-top: -3px;
+    }
+
+    .popup__text {
+        width: 130%;
+    }
+
+    .popup {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 430px) {
+
+    body {
+        font-size: 17px;
+    }
+
+    .header__bottom__text,
+    .header__bottom__text > a,
+    .header__bottom__link {
+        font-size: 15px;
+    }
+
+    .header__logo__link {
+        left: 35px;
+    }
+
+    .header__top__right {
+        width: 130px;
+    }
+
+}
+
+@media only screen and (max-width: 425px) {
+
+    .footer__top > img {
+        width: 175px;
+    }
+
+    .footer__top__text {
+        font-size: 30px;
+    }
+
+    .footer__hide__panel {
+        padding: 0;
+    }
+
+    .footer__bottom__text {
+        font-size: 26px;
+        line-height: 32px;
+    }
+
+    .footer__bottom__title {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .footer__row {
+        padding: 0;
+    }
+}
+
+@media only screen and (max-width: 415px){
+
+}
+
+@media only screen and (max-width: 390px) {
+
+    .navbar__mobile {
+        margin-left: -5px;
+    }
+
+    .header__top__logo {
+        left: 35px;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+
+}
+
+@media only screen and (max-width: 376px) {
+
+    .header__top__logo {
+        width: 160px;
+        left: 25px;
+    }
+
+
+}
+
+@media only screen and (max-width: 354px) {
+    .header__logo__link {
+        left: 25px;
+    }
+}
