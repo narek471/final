@@ -1438,6 +1438,18 @@ sup {
         width: 100%;
     }
 
+    .section__block__text > sup {
+        font-size: 9px;
+    }
+
+    .section__pink__text > sup {
+        font-size: 9px;
+    }
+
+    .section__list__text > sup {
+        font-size: 9px;
+    }
+
     .diary__check__img {
         width: 15px;
         margin-right: 5px;
