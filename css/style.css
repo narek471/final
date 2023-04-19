@@ -38,6 +38,17 @@ body {
     font-weight: 500;
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
 /* End Base */
 
 .main {
@@ -106,6 +117,42 @@ body {
 
 .variant-list__item {
     margin-bottom: 5px;
+}
+
+.gallery {
+    width: 100%;
+    position: relative;
+}
+
+.gallery__row {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.gallery__top {
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.gallery__body {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.gallery__img {
+    width: 200px;
+    height: 200px;
 }
 
 .price {
@@ -383,24 +430,6 @@ body {
     justify-content: space-between;
     flex-wrap: wrap;
     margin-top: 40px;
-}
-
-.work__block {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
-.work__block__img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-}
-
-.work__block__content {
-    margin: 0 60px;
 }
 
 .consultation {
