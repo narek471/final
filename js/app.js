@@ -9,7 +9,7 @@ $('.partner__main').owlCarousel({
     items:1,
     pagination :true,
     autoplay:false,
-    navText: ["<img src='../img/icons/arrow_left.svg'/>","<img src='../img/icons/arrow_right.svg'/>"]
+    // navText: ["<img src='../img/icons/arrow_left.svg'/>","<img src='../img/icons/arrow_right.svg'/>"]
 })
 
 // PopUps

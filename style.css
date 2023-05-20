@@ -924,10 +924,22 @@ button.owl-prev {
     top: 30%;
 }
 
+button.owl-prev > span {
+    font-size: 140px;
+    color: #40D0FF;
+    font-weight: 300;
+}
+
 button.owl-next {
     position: absolute;
     right: 50px;
     top: 30%;
+}
+
+button.owl-next > span {
+    font-size: 140px;
+    color: #40D0FF;
+    font-weight: 300;
 }
 
 /*****************/
@@ -1044,6 +1056,10 @@ button.owl-next {
     position: relative;
     display: flex;
     flex-direction: column;
+}
+
+.last__title.section-title {
+    color: #ffffff;
 }
 
 .last__top__content {
