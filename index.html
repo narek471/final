@@ -1,35 +1,849 @@
 <!doctype html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <style>
-        .rain {
-            position: fixed;
-            width: 1px; /* Ширина капли */
-            height: 6px; /* Высота капли */
-            top: -6px;
-            background-color: #8a5608; /* Цвет капли */
-            animation: rain 1.2s linear infinite;
-            z-index: 99;
-            border-radius: 1px;
-        }
-
-        @keyframes rain {
-            to {
-                transform: translate3d(-200px, 1000px, 0); /* Первое значение (200px) это направление дождя, где: 0 - вниз, положительное число - вправо, отрицательное - влево */
-            }
-        }
-    </style>
+    <title>Уро-Инфо – портал об урологических симптомах и заболеваниях</title>
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<div class="wrapper">
+    <header class="header">
+        <div class="container">
+            <div class="header__row">
+                <div class="header__top">
+                    <img src="img/logo_invert.svg" alt="" class="header__logo">
+                    <button class="header__top__button open-popup-form">Заказать звонок</button>
+                </div>
+                <div class="header__banner">
+                    <div class="header__banner__left">
+                        <h1 class="header__banner__title">
+                            CMD – ваш надёжный бизнес-партнер
+                        </h1>
+                        <p class="header__banner__subtitle">
+                            Франшиза с 2008 года
+                        </p>
+                        <div class="header__banner__block">
+                            <div class="banner__block__item">
+                                <p class="banner__block__price banner__block__warning">
+                                    1% <sup><img src="img/icons/hed_warning.svg" alt=""></sup>
+                                </p>
+                                <p class="banner__block__text">
+                                    роялти <br> от общей выручки
+                                </p>
+                            </div>
+                            <div class="banner__block__item">
+                                <p class="banner__block__price">
+                                    0 - 150 000 <span>₽</span> <sup></sup>
+                                </p>
+                                <p class="banner__block__text">
+                                    паушальный <br> взнос
+                                </p>
+                            </div>
+                            <div class="banner__block__item">
+                                <p class="banner__block__price banner__block__warning">
+                                    <span>от</span> 300 000 <span>₽</span> <sup><img src="img/icons/hed_warning.svg"
+                                                                                     alt=""></sup>
+                                </p>
+                                <p class="banner__block__text">
+                                    инвестиции <br> на открытие
+                                </p>
+                            </div>
+                        </div>
+                        <button class="header__banner__button open-popup-form">
+                            Начать сотрудничество
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="history section">
+            <div class="history__bg">
 
-
-
-
-<script src="app.js"></script>
+            </div>
+            <div class="container">
+                <div class="history__row">
+                    <div class="history__top">
+                        <h3 class="history__title section-title">
+                            Бренд с историей
+                        </h3>
+                    </div>
+                    <div class="history__main">
+                        <div class="history__left">
+                            <h4 class="history__left__title">
+                                Центральный НИИ Эпидемиологии создан в 1963 году
+                            </h4>
+                            <p class="history__left__text">
+                                Центр молекулярной диагностики (CMD) – одно из крупнейших лабораторно-диагностических
+                                учреждений России, которое функционирует на базе Центрального научно-исследовательского
+                                института Эпидемиологии Роспотребнадзора (ЦНИИЭ) – ведущего научного учреждения в
+                                области эпидемиологии и инфекционных заболеваний, ведущего разработчика и производителя
+                                отечественных тест-систем и реагентов на основе молекулярных методов.
+                            </p>
+                        </div>
+                        <div class="history__right">
+                            <h4 class="history__right__title">
+                                Сегодня ЦНИИ Эпидемиологии:
+                            </h4>
+                            <ul class="history__right__list history-list">
+                                <li class="history-list__item">
+                                    <strong>Крупнейший в России </strong> лабораторно-производственный корпус со
+                                    складскими помещениями общей площадью около 5 000 м²
+                                </li>
+                                <li class="history-list__item">
+                                    <strong>10 референс-центров </strong> по мониторингу инфекционных заболеваний
+                                </li>
+                                <li class="history-list__item">
+                                    <strong>16 научных</strong> лабораторий и <strong> 15 научных</strong> групп
+                                </li>
+                                <li class="history-list__item">
+                                    <strong>Образовательная и научная</strong> деятельность
+                                </li>
+                                <li class="history-list__item">
+                                    <strong>Международная</strong> деятельность
+                                </li>
+                                <li class="history-list__item">
+                                    <strong>Свыше 1 500</strong> видов исследований
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="sum section">
+            <div class="container-m">
+                <div class="sum__row">
+                    <div class="sum__top">
+                        <h3 class="sum__title section-title">
+                            CMD в цифрах
+                        </h3>
+                        <div class="sum__main">
+                            <div class="sum__left">
+                                <div class="sum__left__block sum-block">
+                                    <p class="sum-block__count">
+                                        > 20 000 000
+                                    </p>
+                                    <div class="sum-block__text">
+                                        исследований ежегодно
+                                    </div>
+                                </div>
+                                <div class="sum__left__block sum-block">
+                                    <p class="sum-block__count">
+                                        > 4 500 000
+                                    </p>
+                                    <div class="sum-block__text">
+                                        пациентов ежегодно
+                                    </div>
+                                </div>
+                                <div class="sum__left__block sum-block">
+                                    <p class="sum-block__count">
+                                        > 1 500
+                                    </p>
+                                    <div class="sum-block__text">
+                                        клиник по всей стране доверяют нам в
+                                        вопросе медицинских анализов
+                                    </div>
+                                </div>
+                                <div class="sum__left__block sum-block">
+                                    <p class="sum-block__count">
+                                        > 1 400
+                                    </p>
+                                    <div class="sum-block__text">
+                                        высококвалифицированных сотрудников, включая крупных ученых
+                                    </div>
+                                </div>
+                                <div class="sum__left__block sum-block">
+                                    <p class="sum-block__count">
+                                        > 265
+                                    </p>
+                                    <div class="sum-block__text">
+                                        медицинских офисов
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sum__right">
+                                <img src="img/img_cmd.jpg" class="sum__right__img" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="different section">
+            <div class="container-m">
+                <div class="different__row">
+                    <div class="different__top">
+                        <h3 class="different__title section-title">
+                            Главные причины выбора CMD
+                        </h3>
+                    </div>
+                    <div class="different__main">
+                        <div class="different__main__block different-block">
+                            <div class="different-block__right">
+                                <img src="img/icons/ico_reason_01.svg" class="different-block__img" alt="">
+                            </div>
+                            <div class="different-block__left">
+                                <p class="different-block__title">
+                                    Безупречная репутация
+                                </p>
+                                <p class="different-block__text">
+                                    ЦНИИ Эпидемиологии Роспотребнадзора
+                                </p>
+                            </div>
+                        </div>
+                        <div class="different__main__block different-block">
+                            <div class="different-block__right">
+                                <img src="img/icons/ico_reason_02.svg" class="different-block__img" alt="">
+                            </div>
+                            <div class="different-block__left">
+                                <p class="different-block__title">
+                                    Качество
+                                </p>
+                                <p class="different-block__text">
+                                    исследований подвержено независимыми международными системами оценки
+                                </p>
+                            </div>
+                        </div>
+                        <div class="different__main__block different-block">
+                            <div class="different-block__right">
+                                <img src="img/icons/ico_reason_03.svg" class="different-block__img" alt="">
+                            </div>
+                            <div class="different-block__left">
+                                <p class="different-block__title">
+                                    Рост сети более 50%
+                                </p>
+                                <p class="different-block__text">
+                                    (2016 - 2022)
+                                </p>
+                            </div>
+                        </div>
+                        <div class="different__main__block different-block">
+                            <div class="different-block__right">
+                                <img src="img/icons/ico_reason_04.svg" class="different-block__img" alt="">
+                            </div>
+                            <div class="different-block__left">
+                                <p class="different-block__title">
+                                    47-50%
+                                </p>
+                                <p class="different-block__text">
+                                    Маржинальность франшизы
+                                </p>
+                            </div>
+                        </div>
+                        <div class="different__main__block different-block">
+                            <div class="different-block__right">
+                                <img src="img/icons/ico_reason_05.svg" class="different-block__img" alt="">
+                            </div>
+                            <div class="different-block__left">
+                                <p class="different-block__title">
+                                    Низкие цены
+                                </p>
+                                <p class="different-block__text">
+                                    за счет собственных научных разработок
+                                </p>
+                            </div>
+                        </div>
+                        <div class="different__main__block different-block">
+                            <div class="different-block__right">
+                                <img src="img/icons/ico_reason_06.svg" class="different-block__img" alt="">
+                            </div>
+                            <div class="different-block__left">
+                                <p class="different-block__title">
+                                    Поддержка
+                                </p>
+                                <p class="different-block__text">
+                                    партнёров 24/7/365 на всех этапах
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="map section">
+            <div class="container">
+                <div class="map__row">
+                    <div class="map__top">
+                        <div class="container-m">
+                            <h3 class="map__title section-title">
+                                География партнёров
+                            </h3>
+                            <div class="map__top__content">
+                                <div class="map__top__block map-block">
+                                    <p class="map-block__num">
+                                        8
+                                    </p>
+                                    <p class="map-block__text">
+                                        федеральных <br> округов
+                                    </p>
+                                </div>
+                                <div class="map__top__block map-block">
+                                    <p class="map-block__num">
+                                        30
+                                    </p>
+                                    <p class="map-block__text">
+                                        субъектов <br> РФ
+                                    </p>
+                                </div>
+                                <div class="map__top__block map-block">
+                                    <p class="map-block__num">
+                                        > 90
+                                    </p>
+                                    <p class="map-block__text">
+                                        городов <br> присутствия
+                                    </p>
+                                </div>
+                                <div class="map__top__block map-block">
+                                    <p class="map-block__num">
+                                        > 50
+                                    </p>
+                                    <p class="map-block__text">
+                                        городов <br> Московской области
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="map__main">
+                        <img src="img/map.png" class="map__main__img"/>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="format section">
+            <div class="container">
+                <div class="format__row">
+                    <div class="format__top">
+                        <h3 class="format__title section-title">
+                            Выберите свой формат франшизы
+                        </h3>
+                    </div>
+                    <div class="format__main">
+                        <div class="format__main__block format-block">
+                            <img src="img/icons/ico_reason_medkabinet-01%201.svg" class="format-block__img" alt="">
+                            <h5 class="format-block__title">
+                                Процедурный кабинет
+                            </h5>
+                            <p class="format-block__text">
+                                Предназначен для действующих медицинских центров, стоматологических клиник и других
+                                учреждений с медицинской лицензией. Может работать обособлено.
+                            </p>
+                            <ul class="format-block__list format-list">
+                                <li class="format-list__item">
+                                    Услуги по взятию биоматериала
+                                </li>
+                            </ul>
+                            <div class="format-block__bottom format-bottom">
+                                <p class="format-bottom__sum">
+                                    <span>от</span> 300 тыс. ₽ <sup><img src="img/icons/ico_info.svg" alt=""></sup>
+                                </p>
+                                <p class="format-bottom__text">
+                                    инвестиции на открытие
+                                </p>
+                                <button class="format-bottom__button open-popup-form">
+                                    Получить предложение
+                                </button>
+                            </div>
+                        </div>
+                        <div class="format__main__block format-block">
+                            <img src="img/icons/ico_reason_offic_01_1.svg" class="format-block__img" alt="">
+                            <h5 class="format-block__title">
+                                Медицинский офис
+                            </h5>
+                            <p class="format-block__text">
+                                Формат позволяет оказывать не только услуги по забору биоматериала, а также услуги по
+                                инструментальной и функциональной диагностике.
+                            </p>
+                            <ul class="format-block__list format-list">
+                                <li class="format-list__item">
+                                    Услуги по взятию биоматериала
+                                </li>
+                                <li class="format-list__item">
+                                    Функциональная диагностика
+                                </li>
+                                <li class="format-list__item">
+                                    Дополнительные услуги, согласованные правообладателем
+                                </li>
+                            </ul>
+                            <div class="format-block__bottom format-bottom">
+                                <p class="format-bottom__sum">
+                                    <span>от</span> 2,8 млн. ₽ <sup><img src="img/icons/ico_info.svg" alt=""></sup>
+                                </p>
+                                <p class="format-bottom__text">
+                                    инвестиции на открытие
+                                </p>
+                                <button class="format-bottom__button open-popup-form">
+                                    Получить предложение
+                                </button>
+                            </div>
+                        </div>
+                        <div class="format__main__block format-block">
+                            <img src="img/icons/ico_med_klinika_1.svg" class="format-block__img" alt="">
+                            <h5 class="format-block__title">
+                                Медицинская клиника
+                            </h5>
+                            <p class="format-block__text">
+                                Формат включает в себя услуги по лабораторной диагностике, услуги по инструментальной и
+                                функциональной диагностике, приём врачей.
+                            </p>
+                            <ul class="format-block__list format-list">
+                                <li class="format-list__item">
+                                    Услуги по взятию биоматериала
+                                </li>
+                                <li class="format-list__item">
+                                    Приём врачей
+                                </li>
+                                <li class="format-list__item">
+                                    Инструментальная, функциональная диагностика
+                                </li>
+                                <li class="format-list__item">
+                                    Дополнительные услуги в соответствии с областью лицензируемой деятельности
+                                </li>
+                            </ul>
+                            <div class="format-block__bottom format-bottom">
+                                <p class="format-bottom__sum">
+                                    <span>от</span> 3,4 млн. ₽ <sup><img src="img/icons/ico_info.svg" alt=""></sup>
+                                </p>
+                                <p class="format-bottom__text">
+                                    инвестиции на открытие
+                                </p>
+                                <button class="format-bottom__button open-popup-form">
+                                    Получить предложение
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="calc section">
+            <div class="container">
+                <div class="calc__row">
+                    <div class="calc__top">
+                        <h3 class="calc__title section-title">
+                            Выберите подходящий формат франшизы CMD
+                        </h3>
+                    </div>
+                    <div class="calc__main">
+                        <form class="calc__left" action="#">
+                            <div class="calc__left__block calc-block">
+                                <div class="calc-block__top">
+                                    <p class="calc-block__title">
+                                        Население Вашего города, чел.
+                                    </p>
+                                    <span class="calc-block__value">
+                                                <output id="rangevalue">550000</output>
+                                            </span>
+                                </div>
+                                <input id="range2" class="calc-block__range" type="range" value="550000"
+                                       min="100000" max="1000000" oninput="rangevalue.value=value">
+                            </div>
+                            <div class="calc__left__block calc-block">
+                                <div class="calc-block__top">
+                                    <p class="calc-block__title">
+                                        Площадь Вашего помещения, м²
+                                    </p>
+                                    <span class="calc-block__value">
+                                                <output id="rangevalue2">60</output>
+                                            </span>
+                                </div>
+                                <input id="currentTimeInput2" class="calc-block__range" type="range" value="60" min="12"
+                                       max="250" oninput="rangevalue2.value=value">
+                            </div>
+                            <div class="calc__left__block calc-block">
+                                <div class="calc-block__top">
+                                    <p class="calc-block__title">
+                                        Инвестиции на открытие, руб.
+                                    </p>
+                                    <span class="calc-block__value">
+                                               <output id="rangevalue3">2850000</output>
+                                            </span>
+                                </div>
+                                <input id="currentTimeInput3" class="calc-block__range" type="range" value="2850000"
+                                       min="300000" max="4610000" oninput="rangevalue3.value=value">
+                            </div>
+                            <button type="submit" class="calc__left__button">Подробнее</button>
+                        </form>
+                        <div class="calc__right">
+                            <img src="img/calc_woman.jpg" class="calc__right__img" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="partner section">
+            <div class="container">
+                <div class="partner__row">
+                    <div class="partner__top">
+                        <h3 class="partner__title section-title">
+                            История успеха партнёров CMD
+                        </h3>
+                    </div>
+                    <div class="partner__main owl-carousel">
+                        <div class="partner__main__block partner-block item">
+                            <div class="partner-block__left">
+                                <img src="img/foto_kuznecov.jpg" class="partner-block__img" alt="">
+                            </div>
+                            <div class="partner-block__right">
+                                <h5 class="partner-block__name">
+                                    Тимофей Кузнецов
+                                </h5>
+                                <p class="partner-block__level">
+                                    Генеральный директор, ООО «МЕДЛАБТЕСТ», ООО «ТМ Медик»
+                                </p>
+                                <p class="partner-block__desc">
+                                    «Для меня работать с CMD, это возможность сделать медицинскую помощь доступнее,
+                                    участвовать в социальных акциях для своевременного выявления инфекционных
+                                    заболеваний, оказывать населению услуги экспертного уровня по лабораторной
+                                    диагностике,
+                                    видеть доверие врачей нашему бренду, возможность создавать свое дело, развиваться
+                                    вместе».
+                                </p>
+                            </div>
+                        </div>
+                        <div class="partner__main__block partner-block item">
+                            <div class="partner-block__left">
+                                <img src="img/foto_kuznecov.jpg" class="partner-block__img" alt="">
+                            </div>
+                            <div class="partner-block__right">
+                                <h5 class="partner-block__name">
+                                    Тимофей Кузнецов
+                                </h5>
+                                <p class="partner-block__level">
+                                    Генеральный директор, ООО «МЕДЛАБТЕСТ», ООО «ТМ Медик»
+                                </p>
+                                <p class="partner-block__desc">
+                                    «Для меня работать с CMD, это возможность сделать медицинскую помощь доступнее,
+                                    участвовать в социальных акциях для своевременного выявления инфекционных
+                                    заболеваний, оказывать населению услуги экспертного уровня по лабораторной
+                                    диагностике,
+                                    видеть доверие врачей нашему бренду, возможность создавать свое дело, развиваться
+                                    вместе».
+                                </p>
+                            </div>
+                        </div>
+                        <div class="partner__main__block partner-block item">
+                            <div class="partner-block__left">
+                                <img src="img/foto_kuznecov.jpg" class="partner-block__img" alt="">
+                            </div>
+                            <div class="partner-block__right">
+                                <h5 class="partner-block__name">
+                                    Тимофей Кузнецов
+                                </h5>
+                                <p class="partner-block__level">
+                                    Генеральный директор, ООО «МЕДЛАБТЕСТ», ООО «ТМ Медик»
+                                </p>
+                                <p class="partner-block__desc">
+                                    «Для меня работать с CMD, это возможность сделать медицинскую помощь доступнее,
+                                    участвовать в социальных акциях для своевременного выявления инфекционных
+                                    заболеваний, оказывать населению услуги экспертного уровня по лабораторной
+                                    диагностике,
+                                    видеть доверие врачей нашему бренду, возможность создавать свое дело, развиваться
+                                    вместе».
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="work section">
+            <div class="container">
+                <div class="work__row">
+                    <div class="work__top">
+                        <h3 class="work__title section-title">
+                            Поддержка партнёров
+                        </h3>
+                    </div>
+                    <div class="work__main">
+                        <div class="work__main__block work-block">
+                            <img src="img/icons/ico_reason_offic%201.svg" alt="" class="work-block__img">
+                            <div class="work-block__content">
+                                <h5 class="work-block__title">
+                                    Открытие офиса
+                                </h5>
+                                <p class="work-block__text">
+                                    Помощь в поиске оптимального
+                                    расположения офиса
+                                    и консультация по обустройству и
+                                    оборудованию помещений
+                                </p>
+                            </div>
+                        </div>
+                        <div class="work__main__block work-block">
+                            <img src="img/icons/ico_reason_geoanalitica%201.svg" alt="" class="work-block__img">
+                            <div class="work-block__content">
+                                <h5 class="work-block__title">
+                                    Геоаналитика
+                                </h5>
+                                <p class="work-block__text">
+                                    Предварительная консультация и оценка потенциальных перспектив
+                                    развития бизнеса исходя
+                                    из индивидуальных особенностей
+                                    клиента, региона, помещения
+                                </p>
+                            </div>
+                        </div>
+                        <div class="work__main__block work-block">
+                            <img src="img/icons/ico_reason_women.svg" alt="" class="work-block__img">
+                            <div class="work-block__content">
+                                <h5 class="work-block__title">
+                                    Персональный менеджер
+                                </h5>
+                                <p class="work-block__text">
+                                    Сопровождение и консультации
+                                    на всех этапах сотрудничества
+                                </p>
+                            </div>
+                        </div>
+                        <div class="work__main__block work-block">
+                            <img src="img/icons/ico_reason_work_personal%201.svg" alt="" class="work-block__img">
+                            <div class="work-block__content">
+                                <h5 class="work-block__title">
+                                    Работа с персоналом
+                                </h5>
+                                <p class="work-block__text">
+                                    Бесплатно обучаем медперсонал
+                                    в полном составе
+                                </p>
+                            </div>
+                        </div>
+                        <div class="work__main__block work-block">
+                            <img src="img/icons/ico_reason_marceting%201.svg" alt="" class="work-block__img">
+                            <div class="work-block__content">
+                                <h5 class="work-block__title">
+                                    Маркетинг
+                                </h5>
+                                <p class="work-block__text">
+                                    Федеральные рекламные кампании
+                                    на развитие бренда
+                                </p>
+                            </div>
+                        </div>
+                        <div class="work__main__block work-block">
+                            <img src="img/icons/ico_reason_crm%201.svg" alt="" class="work-block__img">
+                            <div class="work-block__content">
+                                <h5 class="work-block__title">
+                                    Собственная CRM-система
+                                </h5>
+                                <p class="work-block__text">
+                                    Интегрируем программное
+                                    обеспечение CMD для
+                                    оптимизации обработки и ведения
+                                    заказов
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="business section">
+            <div class="container">
+                <div class="business__row">
+                    <div class="business__top">
+                        <h3 class="business__title section-title">
+                            Как устроен наш бизнес?
+                        </h3>
+                    </div>
+                    <div class="business__main">
+                        <div class="business__main__block business-block">
+                            <img src="img/step_01_v2.jpg" alt="" class="business-block_img">
+                            <p class="business-block__text">
+                                Взятие биологического материала: клиент сдает анализы в Вашем медицинском офисе
+                            </p>
+                        </div>
+                        <div class="business__main__block business-block">
+                            <img src="img/step_02_2.jpg" alt="" class="business-block_img">
+                            <p class="business-block__text">
+                                Каждой пробирке присваивается уникальный штрих-код, который исключает ошибки и ускоряет
+                                время получения результатов
+                            </p>
+                        </div>
+                        <div class="business__main__block business-block">
+                            <img src="img/step_03_2.jpg" alt="" class="business-block_img">
+                            <p class="business-block__text">
+                                Биоматериал передается курьеру, который доставляет пробирки в лабораторию
+                            </p>
+                        </div>
+                        <div class="business__main__block business-block">
+                            <img src="img/step_04_2.jpg" alt="" class="business-block_img">
+                            <p class="business-block__text">
+                                В лаборатории, каждая пробирка попадает в полностью автоматизированный сверхсовременный
+                                лабораторный комплекс.
+                            </p>
+                        </div>
+                        <div class="business__main__block business-block">
+                            <img src="img/step_05_2.jpg" alt="" class="business-block_img">
+                            <p class="business-block__text">
+                                Результаты анализа направляются пациенту на электронную почту, смс и личный кабинет на
+                                сайте
+                            </p>
+                        </div>
+                        <div class="business__main__block business-block">
+                            <img src="img/step_06_2.jpg" alt="" class="business-block_img">
+                            <p class="business-block__text">
+                                По желанию клиента можно распечатать результат анализа на официальном бланке CMD
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="last section">
+            <div class="container">
+                <div class="last__row">
+                    <div class="last__top">
+                        <h3 class="last__title section-title">
+                            6 шагов для открытия
+                        </h3>
+                        <div class="last__top__content last-content">
+                            <div class="last-content__block last-content">
+                                <img src="img/icons/n1.svg" class="last-content__img" alt="">
+                                <p class="last-content__text">
+                                    Отправить заявку
+                                </p>
+                            </div>
+                            <div class="last-content__block">
+                                <img src="img/icons/n2.svg" class="last-content__img" alt="">
+                                <p class="last-content__text">
+                                    Найти помещение
+                                </p>
+                            </div>
+                            <div class="last-content__block">
+                                <img src="img/icons/n3.svg" class="last-content__img" alt="">
+                                <p class="last-content__text">
+                                    Заключить договор
+                                </p>
+                            </div>
+                            <div class="last-content__block">
+                                <img src="img/icons/n4.svg" class="last-content__img" alt="">
+                                <p class="last-content__text">
+                                    Подготовить помещение
+                                </p>
+                            </div>
+                            <div class="last-content__block">
+                                <img src="img/icons/n5.svg" class="last-content__img" alt="">
+                                <p class="last-content__text">
+                                    Обучить персонал
+                                </p>
+                            </div>
+                            <div class="last-content__block">
+                                <img src="img/icons/n6.svg" class="last-content__img" alt="">
+                                <p class="last-content__text">
+                                    Получить лицензию
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="last__main">
+                        <div class="last__left">
+                            <h5 class="last__left__title">
+                                Сделайте первый шаг
+                            </h5>
+                            <p class="last__left__subtitle">
+                                Отправьте заявку и получите предложение
+                            </p>
+                            <p class="last__left__conf">
+                                Отправляя форму, Вы даете согласие на <a href="#" target="_blank">обработку и хранение персональных
+                                данных</a>
+                            </p>
+                        </div>
+                        <form action="#" class="last__right" method="post">
+                            <label>
+                                <input type="text" name="name" placeholder="ФИО" class="name__input" required>
+                            </label>
+                            <label>
+                                <input type="text" name="city" placeholder="Город, где вы хотите открыть CMD" class="city__input" required>
+                            </label>
+                            <label>
+                                <input type="email" name="email" placeholder="Ваш e-mail" class="email__input" required>
+                            </label>
+                            <label>
+                                <input type="tel" name="phone" placeholder="Ваш номер телефона" class="phone__input" required>
+                            </label>
+                            <button class="last__button" type="submit">
+                                Отправить заявку
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__row">
+                <p class="footer__copyright">
+                    © 2023, ФБУН Центральный НИИ эпидемиологии Роспотребнадзора
+                </p>
+                <div class="footer__socs">
+                    <a href="#" class="footer__icons__link">
+                        <img src="img/icons/soc_vk.svg" alt="" class="footer__icons__img">
+                    </a>
+                    <a href="#" class="footer__icons__link">
+                        <img src="img/icons/soc_ok.svg" alt="" class="footer__icons__img">
+                    </a>
+                    <a href="#" class="footer__icons__link">
+                        <img src="img/icons/soc_youtube.svg" alt="" class="footer__icons__img">
+                    </a>
+                    <a href="#" class="footer__icons__link">
+                        <img src="img/icons/soc_whatsapp.svg" alt="" class="footer__icons__img">
+                    </a>
+                    <a href="#" class="footer__icons__link">
+                        <img src="img/icons/soc_telegram.svg" alt="" class="footer__icons__img">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="popup__form__bg">
+        <div class="popup__form">
+            <img src="img/icons/ico_x.svg" alt="" class="popup__close open-popup-form">
+            <p class="popup__form__title">
+                Получить предложение
+            </p>
+            <form action="#" class="last__right popup" method="post">
+                <label>
+                    <input type="text" name="name" placeholder="ФИО" class="name__input" required>
+                </label>
+                <label>
+                    <input type="text" name="city" placeholder="Город, где вы хотите открыть CMD" class="city__input" required>
+                </label>
+                <label>
+                    <input type="email" name="email" placeholder="Ваш e-mail" class="email__input" required>
+                </label>
+                <label>
+                    <input type="tel" name="phone" placeholder="Ваш номер телефона" class="phone__input" required>
+                </label>
+                <p class="last__left__conf popup__form__conf">
+                    Отправляя форму, Вы даете согласие на <a href="#" target="_blank">обработку и хранение персональных
+                    данных</a>
+                </p>
+                <button class="last__button" type="submit">
+                    Отправить заявку
+                </button>
+            </form>
+        </div>
+    </div>
+    <div class="popup__thanks__bg">
+        <div class="thanks__row">
+            <img src="img/icons/ico_x.svg" class="popup__close" alt="">
+            <img src="img/icons/ico_sent.svg" class="thanks__popup__img" alt="">
+            <p class="thanks__popup__text">
+                Ваши данные успешно отправлены.Наш менеджер свяжется с вами в ближайшее время.
+            </p>
+        </div>
+    </div>
+</div>
+<script src="js/jquery-3.6.1.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/app.js"></script>
 </body>
 </html>
