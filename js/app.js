@@ -19,6 +19,10 @@ const popUpFormBg = document.querySelector('.popup__form__bg');
 const forms = document.querySelectorAll('.last__right');
 const popUpThanksBg = document.querySelector('.popup__thanks__bg');
 const closeButtons = document.querySelectorAll('.popup__close');
+const calcButton = document.querySelector('.calc__left__button');
+const prevButton = document.querySelector('.res__top__prev');
+const calcBlock = document.querySelector('.calc__main');
+const resBlock = document.querySelector('.res__row');
 
 openPupUpFormButtons.forEach(e => {
     e.addEventListener('click', (event) => {
@@ -58,4 +62,16 @@ closeButtons.forEach(button => {
         popUpThanksBg.classList.remove('active');
         document.body.style.overflowY = 'auto';
     })
+})
+
+calcButton.addEventListener('click', (e) => {
+    e.preventDefault();
+    calcBlock.classList.remove('active');
+    resBlock.classList.add('active');
+})
+
+prevButton.addEventListener('click', (e) => {
+    e.preventDefault();
+    calcBlock.classList.add('active');
+    resBlock.classList.remove('active');
 })

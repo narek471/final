@@ -647,6 +647,12 @@ body {
     flex-direction: column;
 }
 
+.calc__main.active {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 .calc__main {
     width: 100%;
     height: 696px;
@@ -655,9 +661,7 @@ body {
     border-radius: 48px;
     overflow: hidden;
     position: relative;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    display: none;
 }
 
 .calc__left {
@@ -741,6 +745,114 @@ body {
     position: absolute;
     right: 0;
     bottom: 0;
+}
+
+.res__row.active {
+    display: flex;
+    flex-direction: column;
+}
+
+.res__row {
+    width: 100%;
+    position: relative;
+    display: none;
+    padding: 70px;
+    background-color: #fff;
+    border-radius: 48px;
+}
+
+.res__top {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.res__top__prev {
+    width: 200px;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: #0092E6;
+    cursor: pointer;
+    margin-bottom: 8px;
+}
+
+.res__top__title {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 32px;
+    margin-bottom: 20px;
+    color: #002E6D;
+}
+
+.res__top__text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    color: #000000;
+}
+
+.res__main {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.res__main__block {
+    width: 100%;
+    position: relative;
+    padding: 30px 0;
+    border-bottom: 2px solid rgba(128, 128, 128, 0.18);
+    display: flex;
+    flex-direction: row;
+}
+
+.res-block__subtitle {
+    width: 336px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #002E6D;
+}
+
+.res-block__sum {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #777777;
+}
+
+.res-block__sum > strong {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000000;
+}
+
+.res-block__button {
+    width: 330px;
+    cursor: pointer;
+    padding: 12px;
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    margin-top: 30px;
+    border: 1px solid #fff;
+    background: #0080C9;
+    border-radius: 20px;
+    transition: all 0.3s;
+}
+
+.res-block__button:hover {
+    color: #0080C9;
+    border: 1px solid #0080C9;
+    background: #ffffff;
 }
 
 .partner__row {
