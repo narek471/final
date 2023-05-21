@@ -90,3 +90,19 @@ hideBlocks.forEach(block => {
         }
     })
 })
+
+const ranges = document.querySelectorAll('.calc-block__range');
+
+ranges.forEach(range => {
+    console.log(range)
+    const progress = (range.value - range.min) / (range.max - range.min) * 100;
+    range.style.background = `linear-gradient(to right, #0080C9 ${progress}%, #ccc ${progress}%)`;
+
+    range.addEventListener("input", function(event) {
+        const progress = (this.value - this.min) / (this.max - this.min) * 100;
+        range.style.background = `linear-gradient(to right, #0080C9 ${progress}%, #ccc ${progress}%)`;
+    })
+})
+
+
+
