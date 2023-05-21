@@ -930,6 +930,7 @@ body {
 }
 
 .res-block__sum {
+    width: 60%;
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
@@ -1837,7 +1838,7 @@ button.owl-next > span {
 
     .history-list__item,
     .history__left__text {
-        width: 328px;
+        width: 300px;
         font-size: 16px;
         line-height: 24px;
     }
@@ -1954,6 +1955,35 @@ button.owl-next > span {
         width: 312px;
         padding: 8px;
         margin-top: 10px;
+    }
+
+    .res__row {
+        padding: 30px 15px;
+    }
+
+    .res__main__block {
+        flex-direction: column;
+    }
+
+    .res-block__sum {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .res__top__title {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .res__top__text {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .res-block__button {
+        width: 280px;
+        padding: 8px;
+        margin: auto;
     }
 
     .partner__main {
