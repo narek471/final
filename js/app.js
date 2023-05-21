@@ -23,6 +23,8 @@ const calcButton = document.querySelector('.calc__left__button');
 const prevButton = document.querySelector('.res__top__prev');
 const calcBlock = document.querySelector('.calc__main');
 const resBlock = document.querySelector('.res__row');
+const showButton = document.querySelector('.partner__main__button');
+const hideBlocks = document.querySelectorAll('.partner-block-hide');
 
 openPupUpFormButtons.forEach(e => {
     e.addEventListener('click', (event) => {
@@ -74,4 +76,17 @@ prevButton.addEventListener('click', (e) => {
     e.preventDefault();
     calcBlock.classList.add('active');
     resBlock.classList.remove('active');
+})
+
+hideBlocks.forEach(block => {
+    showButton.addEventListener('click', (e) => {
+        e.preventDefault();
+        if(block.classList.contains('hide')) {
+            block.classList.remove('hide');
+            showButton.firstChild.data = 'Скрыть';
+        } else {
+            block.classList.add('hide');
+            showButton.firstChild.data = 'Показать ещё';
+        }
+    })
 })
