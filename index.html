@@ -438,11 +438,23 @@
                                         Население Вашего города, чел.
                                     </p>
                                     <span class="calc-block__value">
-                                                <output id="rangevalue">550000</output>
-                                            </span>
+                                        550000
+                                    </span>
                                 </div>
-                                <input id="range2" class="calc-block__range" type="range" value="550000"
-                                       min="100000" max="1000000" oninput="rangevalue.value=value">
+                                <span class="calc-block__step1"></span>
+                                <span class="calc-block__step2"></span>
+                                <span class="calc-block__step3"></span>
+                                <span class="calc-block__step4"></span>
+                                <span class="calc-block__step5"></span>
+                                <input id="range1" class="calc-block__range" type="range" value="550000" min="100000"
+                                       max="1000000">
+                                <div class="calc-block__numbers">
+                                    <p class="calc-block__number1">100 000</p>
+                                    <p class="calc-block__number2">325 000</p>
+                                    <p class="calc-block__number3">550 000</p>
+                                    <p class="calc-block__number4">775 000</p>
+                                    <p class="calc-block__number5">1 000 000</p>
+                                </div>
                             </div>
                             <div class="calc__left__block calc-block">
                                 <div class="calc-block__top">
@@ -450,11 +462,22 @@
                                         Площадь Вашего помещения, м²
                                     </p>
                                     <span class="calc-block__value">
-                                                <output id="rangevalue2">60</output>
+                                                60
                                             </span>
                                 </div>
-                                <input id="currentTimeInput2" class="calc-block__range" type="range" value="60" min="12"
-                                       max="250" oninput="rangevalue2.value=value">
+                                <span class="calc-block__step1"></span>
+                                <span class="calc-block__step2"></span>
+                                <span class="calc-block__step3"></span>
+                                <span class="calc-block__step4"></span>
+                                <span class="calc-block__step5"></span>
+                                <input id="range2" class="calc-block__range" type="range" value="60" min="12" max="250">
+                                <div class="calc-block__numbers">
+                                    <p class="calc-block__number1">12</p>
+                                    <p class="calc-block__number6">35</p>
+                                    <p class="calc-block__number7">60</p>
+                                    <p class="calc-block__number8">100</p>
+                                    <p class="calc-block__number5">250</p>
+                                </div>
                             </div>
                             <div class="calc__left__block calc-block">
                                 <div class="calc-block__top">
@@ -462,11 +485,22 @@
                                         Инвестиции на открытие, руб.
                                     </p>
                                     <span class="calc-block__value">
-                                               <output id="rangevalue3">2850000</output>
-                                            </span>
+                                        <output id="rangevalue3">2850000</output>
+                                    </span>
                                 </div>
-                                <input id="currentTimeInput3" class="calc-block__range" type="range" value="2850000"
-                                       min="300000" max="4610000" oninput="rangevalue3.value=value">
+                                <span class="calc-block__step1"></span>
+                                <span class="calc-block__step2"></span>
+                                <span class="calc-block__step3"></span>
+                                <span class="calc-block__step4"></span>
+                                <span class="calc-block__step5"></span>
+                                <input id="range3" class="calc-block__range" type="range" value="2850000" min="300000" max="4610000" >
+                                <div class="calc-block__numbers">
+                                    <p class="calc-block__number1">300 000</p>
+                                    <p class="calc-block__number2">900 000</p>
+                                    <p class="calc-block__number3">2 850 000</p>
+                                    <p class="calc-block__number4">3 360 000</p>
+                                    <p class="calc-block__number5">4 610 000</p>
+                                </div>
                             </div>
                             <button type="submit" class="calc__left__button">Подробнее</button>
                         </form>
@@ -495,7 +529,8 @@
                                 Паушальный взнос <sup></sup>
                             </p>
                             <p class="res-block__sum">
-                                <strong>от 0 ₽ до 150 тыс. ₽</strong><sup><img src="img/icons/ico_info.svg" alt=""></sup>
+                                <strong>от 0 ₽ до 150 тыс. ₽</strong><sup><img src="img/icons/ico_info.svg"
+                                                                               alt=""></sup>
                             </p>
                         </div>
                         <div class="res__main__block res-block">
@@ -503,9 +538,11 @@
                                 Паушальный взнос <sup></sup>
                             </p>
                             <p class="res-block__sum">
-                                <strong>0,1%</strong><sup><img src="img/icons/ico_info.svg" alt=""></sup> первые 3 месяца после начала работы
+                                <strong>0,1%</strong><sup><img src="img/icons/ico_info.svg" alt=""></sup> первые 3
+                                месяца после начала работы
                                 <br> <br>
-                                <strong>1%</strong><sup><img src="img/icons/ico_info.svg" alt=""></sup> начиная с 4 месяца работы
+                                <strong>1%</strong><sup><img src="img/icons/ico_info.svg" alt=""></sup> начиная с 4
+                                месяца работы
                             </p>
                         </div>
                         <div class="res__main__block res-block">
@@ -813,7 +850,8 @@
                                 Отправьте заявку и получите предложение
                             </p>
                             <p class="last__left__conf">
-                                Отправляя форму, Вы даете согласие на <a href="#" target="_blank">обработку и хранение персональных
+                                Отправляя форму, Вы даете согласие на <a href="#" target="_blank">обработку и хранение
+                                персональных
                                 данных</a>
                             </p>
                         </div>
@@ -822,13 +860,15 @@
                                 <input type="text" name="name" placeholder="ФИО" class="name__input" required>
                             </label>
                             <label>
-                                <input type="text" name="city" placeholder="Город, где вы хотите открыть CMD" class="city__input" required>
+                                <input type="text" name="city" placeholder="Город, где вы хотите открыть CMD"
+                                       class="city__input" required>
                             </label>
                             <label>
                                 <input type="email" name="email" placeholder="Ваш e-mail" class="email__input" required>
                             </label>
                             <label>
-                                <input type="tel" name="phone" placeholder="Ваш номер телефона" class="phone__input" required>
+                                <input type="tel" name="phone" placeholder="Ваш номер телефона" class="phone__input"
+                                       required>
                             </label>
                             <button class="last__button" type="submit">
                                 Отправить заявку
@@ -876,7 +916,8 @@
                     <input type="text" name="name" placeholder="ФИО" class="name__input" required>
                 </label>
                 <label>
-                    <input type="text" name="city" placeholder="Город, где вы хотите открыть CMD" class="city__input" required>
+                    <input type="text" name="city" placeholder="Город, где вы хотите открыть CMD" class="city__input"
+                           required>
                 </label>
                 <label>
                     <input type="email" name="email" placeholder="Ваш e-mail" class="email__input" required>

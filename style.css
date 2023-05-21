@@ -678,7 +678,7 @@ body {
     position: relative;
     display: flex;
     flex-direction: column;
-    margin-bottom: 65px;
+    margin-bottom: 105px;
 }
 
 .calc-block__top {
@@ -713,6 +713,107 @@ body {
 .calc-block__range {
     cursor: pointer;
     height: 8px;
+}
+
+.calc-block__step1 {
+    width: 2px;
+    height: 20px;
+    background-color: #0080C9;
+    position: absolute;
+    left: 1px;
+    bottom: -6px;
+}
+
+.calc-block__step2 {
+    width: 2px;
+    height: 20px;
+    background-color: #0080C9;
+    position: absolute;
+    left: 25%;
+    bottom: -6px;
+}
+
+.calc-block__step3 {
+    width: 2px;
+    height: 20px;
+    background-color: #0080C9;
+    position: absolute;
+    left: 50%;
+    bottom: -6px;
+}
+
+.calc-block__step4 {
+    width: 2px;
+    height: 20px;
+    background-color: #0080C9;
+    position: absolute;
+    left: 75%;
+    bottom: -6px;
+}
+
+.calc-block__step5 {
+    width: 2px;
+    height: 20px;
+    background-color: #0080C9;
+    position: absolute;
+    right: 0;
+    bottom: -6px;
+}
+
+.calc-block__numbers {
+    width: 100%;
+    position: absolute;
+    bottom: -20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.calc-block__numbers > p {
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+
+}
+
+.calc-block__number1 {
+    position: absolute;
+    left: 0;
+}
+
+.calc-block__number2 {
+    position: absolute;
+    left: 21%;
+}
+
+.calc-block__number3 {
+    position: absolute;
+    left: 46%;
+}
+
+.calc-block__number4 {
+    position: absolute;
+    left: 71%;
+}
+
+.calc-block__number5 {
+    position: absolute;
+    right: 0;
+}
+
+.calc-block__number6 {
+    position: absolute;
+    left: 24%;
+}
+
+.calc-block__number7 {
+    position: absolute;
+    left: 49%;
+}
+
+.calc-block__number8 {
+    position: absolute;
+    left: 73%;
 }
 
 .calc__left__button {
