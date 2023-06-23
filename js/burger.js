@@ -10,3 +10,19 @@ burger.addEventListener("click", (() => {
         burger.classList.toggle('burger-active');
     }))
 }));
+
+const orderHide = document.querySelector('.preheader_order__hide');
+const consultHide = document.querySelector('.preheader_consult__hide');
+const consultForm2 = document.querySelector(".modal--feedback");
+
+orderHide.addEventListener('click', () => {
+    modal.classList.remove("modal--visible");
+    burger.classList.toggle('burger-active');
+    consultForm2.classList.add("modal--visible");
+})
+
+consultHide.addEventListener('click', () => {
+    modal.classList.remove("modal--visible");
+    burger.classList.toggle('burger-active');
+    consultForm2.classList.add("modal--visible");
+})
