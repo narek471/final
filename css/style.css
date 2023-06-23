@@ -841,6 +841,10 @@ body {
     margin-bottom: 100px;
   }
 
+  .necessary_button {
+    font-size: 14px;
+  }
+
   .effective_logo {
     margin-top: 30px;
   }
