@@ -12,6 +12,11 @@ a {
   text-decoration: none;
 }
 
+button {
+  cursor: pointer;
+  border: 0;
+}
+
 li {
   list-style: none;
 }
