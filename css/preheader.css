@@ -60,3 +60,8 @@
 .preheader_order:hover {
   filter: brightness(1.05);
 }
+
+.preheader_order__hide,
+.preheader_consult__hide {
+  display: none;
+}
