@@ -120,7 +120,7 @@ body {
   }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1045px) {
   .hero_title {
     white-space: normal;
   }
@@ -141,6 +141,45 @@ body {
 
   .header__menu a {
     font-size: 12px;
+  }
+}
+
+@media (max-width: 1000px) {
+
+  .hero_right-img {
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
+    padding: 0;
+  }
+
+  .burger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 5px;
+  }
+
+  .header__menu {
+    display: none;
+  }
+
+  .hero {
+    flex-wrap: wrap;
+  }
+
+  .hero_right {
+    width: 100%;
+    max-width: 712px;
+  }
+
+  .herobg {
+    margin-bottom: -300px;
   }
 
   .discount_right_img {
@@ -353,29 +392,6 @@ body {
     height: 100%;
   }
 
-  .hero_right-img {
-    margin-top: 20px;
-    width: 100%;
-    height: auto;
-    padding: 0;
-  }
-
-  .burger {
-    display: block;
-    cursor: pointer;
-  }
-  
-  .bar {
-    width: 25px;
-    height: 3px;
-    background-color: #333;
-    margin: 5px;
-  }
-
-  .header__menu {
-    display: none;
-  }
-
   .semicircle {
     background-size: 160% 100%;
   }
@@ -387,19 +403,6 @@ body {
   .semicircle_bg::before,
   .semicircle_bg::after {
     width: 300%;
-  }
-
-  .hero {
-    flex-wrap: wrap;
-  }
-
-  .hero_right {
-    width: 100%;
-    max-width: 712px;
-  }
-
-  .herobg {
-    margin-bottom: -300px;
   }
 
   .discount {
@@ -760,6 +763,14 @@ body {
   .present_form_input_container {
     flex-direction: column;
   }
+}
+
+@media (max-width: 635px) {
+
+  .preheader {
+    display: none;
+  }
+
 }
 
 @media (max-width: 450px) {
