@@ -1,108 +1,82 @@
-// OWl Carousel
+const fixedAside = document.querySelector('.banner__aside__scroll');
+const hideAsideMenu = document.querySelector('.banner__aside__list');
+const asideMenuBtn = document.querySelector('.aside__bottom__img');
 
-$('.partner__main').owlCarousel({
-    center: true,
-    loop:true,
-    margin: 20,
-    dots: true,
-    nav:true,
-    items:1,
-    pagination :true,
-    autoplay:false,
-    // navText: ["<img src='../img/icons/arrow_left.svg'/>","<img src='../img/icons/arrow_right.svg'/>"]
-})
-
-// PopUps
-
-const openPupUpFormButtons = document.querySelectorAll('.open-popup-form');
-const popUpFormBg = document.querySelector('.popup__form__bg');
-const forms = document.querySelectorAll('.last__right');
-const popUpThanksBg = document.querySelector('.popup__thanks__bg');
-const closeButtons = document.querySelectorAll('.popup__close');
-const calcButton = document.querySelector('.calc__left__button');
-const prevButton = document.querySelector('.res__top__prev');
-const calcBlock = document.querySelector('.calc__main');
-const resBlock = document.querySelector('.res__row');
-const showButton = document.querySelector('.partner__main__button');
-const hideBlocks = document.querySelectorAll('.partner-block-hide');
-
-openPupUpFormButtons.forEach(e => {
-    e.addEventListener('click', (event) => {
-        event.preventDefault();
-        if(popUpFormBg.classList.contains('active')) {
-            document.body.style.overflowY = 'auto';
-            popUpFormBg.classList.remove('active');
-        } else {
-            document.body.style.overflowY = 'hidden';
-            popUpFormBg.classList.add('active');
-        }
-    })
-})
-
-document.addEventListener('click', (e) => {
-    if(e.target === popUpFormBg || e.target === popUpThanksBg) {
-        popUpFormBg.classList.remove('active');
-        popUpThanksBg.classList.remove('active');
-        document.body.style.overflowY = 'auto';
+document.addEventListener('scroll', () => {
+    if (window.scrollY >= 400) {
+        fixedAside.classList.add('banner__aside__fixed');
+    } else {
+        fixedAside.classList.remove('banner__aside__fixed');
     }
 })
 
-forms.forEach(form => {
-    form.addEventListener('submit', (e) => {
-        e.preventDefault();
-        popUpFormBg.classList.remove('active');
-        popUpThanksBg.classList.add('active');
-        document.body.style.overflowY = 'hidden';
-        form.reset();
-    })
+asideMenuBtn.addEventListener('click', () => {
+    hideAsideMenu.classList.toggle('active');
+    asideMenuBtn.classList.toggle('active');
 })
 
-closeButtons.forEach(button => {
-    button.addEventListener('click', (e) => {
-        e.preventDefault();
-        popUpFormBg.classList.remove('active');
-        popUpThanksBg.classList.remove('active');
-        document.body.style.overflowY = 'auto';
-    })
+// Modal
+
+const modal = document.querySelector('.modal__bg');
+const openModalButton = document.querySelector('.question__top__button');
+const modalCloseButton = document.querySelector('.modal__close__icon');
+
+openModalButton.addEventListener('click', () => {
+    modal.classList.add('active');
 })
 
-calcButton.addEventListener('click', (e) => {
-    e.preventDefault();
-    calcBlock.classList.remove('active');
-    resBlock.classList.add('active');
+modalCloseButton.addEventListener('click', () => {
+    modal.classList.remove('active');
 })
 
-prevButton.addEventListener('click', (e) => {
-    e.preventDefault();
-    calcBlock.classList.add('active');
-    resBlock.classList.remove('active');
+document.addEventListener('click', (e) => {
+    if(e.target === modal) {
+        modal.classList.remove('active');
+    }
 })
 
-hideBlocks.forEach(block => {
-    showButton.addEventListener('click', (e) => {
-        e.preventDefault();
-        if(block.classList.contains('hide')) {
-            block.classList.remove('hide');
-            showButton.firstChild.data = 'Скрыть';
+// Scroll
+
+document.querySelectorAll(".scroll-link").forEach((e => {
+    e.addEventListener("click", (t => {
+        hideAsideMenu.classList.toggle('active');
+        asideMenuBtn.classList.toggle('active');
+        t.preventDefault();
+        const o = e.getAttribute("href"), i = document.querySelector(o);
+        if (i) {
+            const e = i.getBoundingClientRect(), t = window.pageYOffset + e.top, o = window.innerHeight,
+                l = Math.max(0, t - o / 2 + e.height / 2) - e.height / 3;
+            window.scrollTo({top: l, behavior: "smooth"})
+        }
+    }))
+}));
+
+//Accordion
+
+const sourceButton = document.querySelector('.count__source__text');
+const sourceHideBlock = document.querySelector('.count__hide__block');
+
+sourceButton.addEventListener('click', () => {
+    sourceHideBlock.classList.toggle('active');
+    if(sourceHideBlock.classList.contains('active')) {
+        sourceButton.textContent = "-  5 источников";
+    } else {
+        sourceButton.textContent = "+  5 источников";
+    }
+})
+
+//Forum
+
+const forumOpenBtn = document.querySelector('.question__content__button');
+const hideAnswers = document.querySelectorAll('.question__content__hide');
+
+forumOpenBtn.addEventListener('click', () => {
+    hideAnswers.forEach(block => {
+        block.classList.toggle('active')
+        if (block.classList.contains('active')) {
+            forumOpenBtn.textContent = "Скрыть";
         } else {
-            block.classList.add('hide');
-            showButton.firstChild.data = 'Показать ещё';
+            forumOpenBtn.textContent = "Показать еще";
         }
     })
 })
-
-const ranges = document.querySelectorAll('.calc-block__range');
-
-ranges.forEach(range => {
-    console.log(range)
-    const progress = (range.value - range.min) / (range.max - range.min) * 100;
-    range.style.background = `linear-gradient(to right, #0080C9 ${progress}%, #ccc ${progress}%)`;
-
-    range.addEventListener("input", function(event) {
-        const progress = (this.value - this.min) / (this.max - this.min) * 100;
-        range.style.background = `linear-gradient(to right, #0080C9 ${progress}%, #ccc ${progress}%)`;
-    })
-})
-
-
-

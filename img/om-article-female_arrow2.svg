@@ -1,0 +1,8 @@
+<svg width="102" height="131" viewBox="0 0 102 131" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="line-2">
+<circle id="Ellipse 34" cx="5" cy="5" r="5" transform="matrix(-1 0 0 1 10 121)" fill="white" fill-opacity="0.5"/>
+<path id="Line 27" d="M7.66667 126C7.66667 124.527 6.47276 123.333 5 123.333C3.52724 123.333 2.33334 124.527 2.33334 126C2.33334 127.473 3.52724 128.667 5 128.667C6.47276 128.667 7.66667 127.473 7.66667 126ZM62 125.5H5V126.5H62V125.5Z" fill="#424242"/>
+<line id="Line 29" x1="61.5" y1="126" x2="61.5" y2="2.18557e-08" stroke="#424242"/>
+<line id="Line 30" x1="102" y1="0.5" x2="62" y2="0.5" stroke="#424242"/>
+</g>
+</svg>
