@@ -2079,7 +2079,7 @@ a[href^="mailto:order@milescargo.ru"] {
     }
 
     .benefit__content__num.benefit__content__num1 {
-        width: 110px;
+        width: 100px;
     }
 
     .product-block {
@@ -2097,7 +2097,7 @@ a[href^="mailto:order@milescargo.ru"] {
     }
 
     .category {
-        padding:  0;
+        padding:  60px 0 30px;
     }
 
     .category__content__right,
@@ -2140,6 +2140,10 @@ a[href^="mailto:order@milescargo.ru"] {
         width: 100%;
     }
 
+    .case__content {
+        margin-top: 0;
+    }
+
     .forum__content__button {
         font-size: 20px;
     }
@@ -2171,6 +2175,10 @@ a[href^="mailto:order@milescargo.ru"] {
 
     .map__left {
         width: 100%;
+    }
+
+    .map__left__block {
+        margin-top: 20px;
     }
 
 }
