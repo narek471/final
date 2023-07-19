@@ -2037,7 +2037,7 @@ a[href^="mailto:order@milescargo.ru"] {
     }
 
     .header__banner {
-        margin-top: 40px;
+        margin-top: 0;
         padding: 70px 15px 120px 15px;
     }
 
