@@ -23,7 +23,19 @@ new Swiper('.comments-slider', {
         el: '.swiper-pagination',
         clickable: true,
     },
-    slidesPerView: 4,
+    breakpoints: {
+        767: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+        },
+        992: {
+            slidesPerView: 3,
+            spaceBetween: 40,
+        },
+        1290: {
+            slidesPerView: 4,
+        },
+    },
 });
 
 
